@@ -1,0 +1,25 @@
+units:
+    p: u + 2
+points:
+    zones:
+        matrixl:
+            columns:
+                outer: null
+                pinky:
+                    rows:
+                        func:
+                            skip: true
+                ring: null
+                middle: null
+                index: null
+                inner: null
+            rows:
+                mod: null
+                bottom: null
+                home: null
+                top: null
+                num: null
+                func: null
+outlines: null
+pcb: null
+case: null
