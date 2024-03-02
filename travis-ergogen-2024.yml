@@ -3,14 +3,30 @@ units:
 points:
   zones:
     matrixl:
+      key:
+        padding: U
+        spread: U
       columns:
         outer:
+          rows.bottom.width: 2U
+          rows.home.width: 2U
+          rows.top.width: 2U
         pinky:
+          rows.bottom.shift: [U/2, 0]
+          #rows.home.shift: [U, 0]
+          #rows.top.shift: [U/2, 0]
+          rows.num.shift: [-U/2, 0]
           rows.func.skip: true
         ring:
         middle:
         index:
+          rows:
+            mod:
+              shift: [U, 0]
+              width: 3U
+          rows.bottom.shift: [-U, 0]
         inner:
+          rows.mod.skip: true
       rows:
         mod:
         bottom:
@@ -18,22 +34,28 @@ points:
         top:
         num:
         func:
-#    matrixr:
-#      columns:
-#        inner:
-#        index:
-#        middle:
-#        ring:
-#        pinky:
-#          rows.func.skip: true
-#        outer:
-#      rows:
-#        mod:
-#        bottom:
-#        home:
-#        top:
-#        num:
-#        func:
+    matrixr:
+      anchor:
+        ref: matrixl_inner_mod
+        shift: [3U, 0]
+      columns:
+        inner:
+        index:
+        middle:
+        ring:
+        pinky:
+          rows.func.skip: true
+        outer:
+        outer2:
+        outer3:
+        outer4:
+      rows:
+        mod:
+        bottom:
+        home:
+        top:
+        num:
+        func:
 outlines:
 pcb:
 case:

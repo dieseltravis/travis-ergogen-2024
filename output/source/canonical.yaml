@@ -3,16 +3,73 @@ units:
 points:
     zones:
         matrixl:
+            key:
+                padding: U
+                spread: U
             columns:
-                outer: null
+                outer:
+                    rows:
+                        bottom:
+                            width: 2U
+                        home:
+                            width: 2U
+                        top:
+                            width: 2U
                 pinky:
                     rows:
+                        bottom:
+                            shift:
+                                - U/2
+                                - 0
+                        num:
+                            shift:
+                                - '-U/2'
+                                - 0
                         func:
                             skip: true
                 ring: null
                 middle: null
-                index: null
+                index:
+                    rows:
+                        mod:
+                            shift:
+                                - U
+                                - 0
+                            width: 3U
+                        bottom:
+                            shift:
+                                - '-U'
+                                - 0
+                inner:
+                    rows:
+                        mod:
+                            skip: true
+            rows:
+                mod: null
+                bottom: null
+                home: null
+                top: null
+                num: null
+                func: null
+        matrixr:
+            anchor:
+                ref: matrixl_inner_mod
+                shift:
+                    - 3U
+                    - 0
+            columns:
                 inner: null
+                index: null
+                middle: null
+                ring: null
+                pinky:
+                    rows:
+                        func:
+                            skip: true
+                outer: null
+                outer2: null
+                outer3: null
+                outer4: null
             rows:
                 mod: null
                 bottom: null
