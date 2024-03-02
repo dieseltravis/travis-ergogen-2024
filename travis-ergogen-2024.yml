@@ -1,0 +1,39 @@
+units:
+  p: u + 2
+points:
+  zones:
+    matrixl:
+      columns:
+        outer:
+        pinky:
+          rows.func.skip: true
+        ring:
+        middle:
+        index:
+        inner:
+      rows:
+        mod:
+        bottom:
+        home:
+        top:
+        num:
+        func:
+#    matrixr:
+#      columns:
+#        inner:
+#        index:
+#        middle:
+#        ring:
+#        pinky:
+#          rows.func.skip: true
+#        outer:
+#      rows:
+#        mod:
+#        bottom:
+#        home:
+#        top:
+#        num:
+#        func:
+outlines:
+pcb:
+case:
