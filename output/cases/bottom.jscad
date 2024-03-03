@@ -1,5 +1,5 @@
-function board_extrude_1_outline_fn(){
-    return new CSG.Path2D([[14.5,-185.5],[14.5,-69.5]]).appendArc([16.5,-67.5],{"radius":2,"clockwise":true,"large":false}).appendPoint([403.4395604,-67.5]).appendArc([405.4394303,-69.5228082],{"radius":2,"clockwise":true,"large":false}).appendPoint([404.6738101,-136.6541482]).appendArc([404.0881538,-138.0455536],{"radius":2,"clockwise":true,"large":false}).appendPoint([373.758189,-168.3755184]).appendArc([373.2950744,-168.7206827],{"radius":2,"clockwise":true,"large":false}).appendPoint([333.0227065,-190.491452]).appendArc([331.9130093,-190.7257758],{"radius":2,"clockwise":true,"large":false}).appendPoint([291.4416746,-187.5062983]).appendArc([291.2830764,-187.5],{"radius":2,"clockwise":false,"large":false}).appendPoint([16.5,-187.5]).appendArc([14.5,-185.5],{"radius":2,"clockwise":true,"large":false}).close().innerToCAG()
+function board3d_extrude_1_outline_fn(){
+    return new CSG.Path2D([[12.475,-187.525],[12.475,-67.475]]).appendArc([14.475,-65.475],{"radius":2,"clockwise":true,"large":false}).appendPoint([405.488633,-65.475]).appendArc([407.4886327,-67.4738666],{"radius":2,"clockwise":true,"large":false}).appendPoint([407.5278274,-136.6401016]).appendArc([406.9420413,-138.0554486],{"radius":2,"clockwise":true,"large":false}).appendPoint([373.758189,-171.2393009]).appendArc([373.2950744,-171.5844652],{"radius":2,"clockwise":true,"large":false}).appendPoint([333.0470439,-193.342078]).appendArc([331.8868729,-193.5717423],{"radius":2,"clockwise":true,"large":false}).appendPoint([293.4917489,-189.5359578]).appendArc([293.2826769,-189.525],{"radius":2,"clockwise":false,"large":false}).appendPoint([14.475,-189.525]).appendArc([12.475,-187.525],{"radius":2,"clockwise":true,"large":false}).close().innerToCAG()
 .extrude({ offset: [0, 0, 1] });
 }
 
@@ -10,7 +10,7 @@ function board_extrude_1_outline_fn(){
                     
 
                 // creating part 0 of case bottom
-                let bottom__part_0 = board_extrude_1_outline_fn();
+                let bottom__part_0 = board3d_extrude_1_outline_fn();
 
                 // make sure that rotations are relative
                 let bottom__part_0_bounds = bottom__part_0.getBounds();

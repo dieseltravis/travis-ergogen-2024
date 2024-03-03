@@ -2,6 +2,7 @@ units:
   p: u + 2
   pp: U + 2
   op: u + 6
+  stlp: U + 10
 points:
   zones:
     matrixl:
@@ -171,6 +172,27 @@ outlines:
         - ref: matrixl_outer_mod
           shift: [-0.5op, -0.5op]
       fillet: 2
+  board3d:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrixl_outer_func
+          shift: [-0.5stlp, 0.5stlp]
+        - ref: special_right_top
+          shift: [0.5stlp, 0.5stlp]
+        - ref: pages_right_bottom
+          shift: [0.5stlp, -0.5stlp]
+        - ref: pages_left_bottom
+          shift: [-0.5stlp, -0.5stlp]
+        #- ref: arrows_right_bottom
+        #  shift: [0.5stlp, -0.5stlp]
+        - ref: arrows_left_bottom
+          shift: [-0.5stlp, -0.5stlp]
+        - ref: matrixr_outer2_mod
+          shift: [0.5stlp, -0.5stlp]
+        - ref: matrixl_outer_mod
+          shift: [-0.5stlp, -0.5stlp]
+      fillet: 2
   combo:
     - name: board
     - operation: subtract
@@ -261,5 +283,5 @@ pcbs:
           shift: [0, -0.3u]
 cases:
   bottom:
-    - name: board
+    - name: board3d
       extrude: 1
