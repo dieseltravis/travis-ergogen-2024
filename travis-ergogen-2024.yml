@@ -1,6 +1,7 @@
 units:
   p: u + 2
   pp: U + 2
+  op: u + 4
 points:
   zones:
     matrixl:
@@ -152,21 +153,21 @@ outlines:
       operation: stack
       points:
         - ref: matrixl_outer_func
-          shift: [-0.5p, 0.5p]
+          shift: [-0.5op, 0.5op]
         - ref: special_right_top
-          shift: [0.5p, 0.5p]
+          shift: [0.5op, 0.5op]
         - ref: pages_two_a
-          shift: [0.5p, -0.5p]
+          shift: [0.5op, -0.5op]
         - ref: pages_one_a
-          shift: [-0.5p, -0.5p]
+          shift: [-0.5op, -0.5op]
         #- ref: arrows_two_a
-        #  shift: [0.5p, -0.5p]
+        #  shift: [0.5op, -0.5op]
         - ref: arrows_one_a
-          shift: [-0.5p, -0.5p]
+          shift: [-0.5op, -0.5op]
         - ref: matrixr_outer2_mod
-          shift: [0.5p, -0.5p]
+          shift: [0.5op, -0.5op]
         - ref: matrixl_outer_mod
-          shift: [-0.5p, -0.5p]
+          shift: [-0.5op, -0.5op]
       fillet: 2
   combo:
     - name: board
