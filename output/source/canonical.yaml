@@ -10,7 +10,7 @@ points:
                 outer:
                     rows:
                         bottom:
-                            width: 2U
+                            width: 2u
                         home:
                             width: 2U
                         top:
@@ -27,23 +27,53 @@ points:
                                 - 0
                         func:
                             skip: true
-                ring: null
-                middle: null
+                ring:
+                    rows:
+                        bottom:
+                            shift:
+                                - U/2
+                                - 0
+                        num:
+                            shift:
+                                - '-U/2'
+                                - 0
+                middle:
+                    rows:
+                        bottom:
+                            shift:
+                                - U/2
+                                - 0
+                        num:
+                            shift:
+                                - '-U/2'
+                                - 0
                 index:
                     rows:
                         mod:
                             shift:
                                 - U
                                 - 0
-                            width: 3U
+                            width: 3u
                         bottom:
                             shift:
-                                - '-U'
+                                - '-U/2'
+                                - 0
+                        num:
+                            shift:
+                                - '-U/2'
                                 - 0
                 inner:
                     rows:
                         mod:
                             skip: true
+                        bottom:
+                            shift:
+                                - U/2
+                                - 0
+                        num:
+                            shift:
+                                - '-U/2'
+                                - 0
             rows:
                 mod: null
                 bottom: null
@@ -55,21 +85,111 @@ points:
             anchor:
                 ref: matrixl_inner_mod
                 shift:
-                    - 3U
+                    - 4U
                     - 0
             columns:
-                inner: null
-                index: null
-                middle: null
-                ring: null
+                inner:
+                    rows:
+                        mod:
+                            shift:
+                                - U/2
+                                - 0
+                            width: 3u
+                        bottom:
+                            shift:
+                                - '-U/2'
+                                - 0
+                index:
+                    rows:
+                        mod:
+                            skip: true
+                middle:
+                    rows:
+                        mod:
+                            skip: true
+                ring:
+                    rows:
+                        mod:
+                            shift:
+                                - '-U/2'
+                                - 0
+                        bottom:
+                            shift:
+                                - U/2
+                                - 0
                 pinky:
                     rows:
+                        mod:
+                            shift:
+                                - '-U/2'
+                                - 0
+                        bottom:
+                            shift:
+                                - U/2
+                                - 0
                         func:
                             skip: true
-                outer: null
-                outer2: null
-                outer3: null
-                outer4: null
+                outer:
+                    rows:
+                        mod:
+                            shift:
+                                - '-U/2'
+                                - 0
+                        bottom:
+                            shift:
+                                - U
+                                - 0
+                            width: 2u
+                        home:
+                            shift:
+                                - '-U/2'
+                                - 0
+                outer2:
+                    rows:
+                        mod:
+                            shift:
+                                - '-U/2'
+                                - 0
+                        bottom:
+                            skip: true
+                        home:
+                            shift:
+                                - U
+                                - 0
+                            width: 2u
+                        top:
+                            shift:
+                                - '-U/2'
+                                - 0
+                outer3:
+                    rows:
+                        mod:
+                            skip: true
+                        bottom:
+                            skip: true
+                        home:
+                            skip: true
+                        num:
+                            shift:
+                                - U/2
+                                - 0
+                            width: 2u
+                        func:
+                            shift:
+                                - '-U/2'
+                                - 0
+                outer4:
+                    rows:
+                        mod:
+                            skip: true
+                        bottom:
+                            skip: true
+                        home:
+                            skip: true
+                        top:
+                            skip: true
+                        num:
+                            skip: true
             rows:
                 mod: null
                 bottom: null

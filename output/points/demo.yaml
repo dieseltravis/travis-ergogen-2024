@@ -43,34 +43,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - -19.05
+                            - -19
                             - 28.05
                         end:
-                            - 19.05
+                            - 19
                             - 28.05
                     right:
                         type: line
                         origin:
-                            - 19.05
+                            - 19
                             - 28.05
                         end:
-                            - 19.05
+                            - 19
                             - 10.05
                     bottom:
                         type: line
                         origin:
-                            - 19.05
+                            - 19
                             - 10.05
                         end:
-                            - -19.05
+                            - -19
                             - 10.05
                     left:
                         type: line
                         origin:
-                            - -19.05
+                            - -19
                             - 10.05
                         end:
-                            - -19.05
+                            - -19
                             - 28.05
                 origin:
                     - 0
@@ -450,34 +450,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 29.1
+                            - 38.625
                             - 28.05
                         end:
-                            - 47.1
+                            - 56.625
                             - 28.05
                     right:
                         type: line
                         origin:
-                            - 47.1
+                            - 56.625
                             - 28.05
                         end:
-                            - 47.1
+                            - 56.625
                             - 10.05
                     bottom:
                         type: line
                         origin:
-                            - 47.1
+                            - 56.625
                             - 10.05
                         end:
-                            - 29.1
+                            - 38.625
                             - 10.05
                     left:
                         type: line
                         origin:
-                            - 29.1
+                            - 38.625
                             - 10.05
                         end:
-                            - 29.1
+                            - 38.625
                             - 28.05
                 origin:
                     - 0
@@ -487,34 +487,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 29.1
+                            - 38.625
                             - 47.1
                         end:
-                            - 47.1
+                            - 56.625
                             - 47.1
                     right:
                         type: line
                         origin:
-                            - 47.1
+                            - 56.625
                             - 47.1
                         end:
-                            - 47.1
+                            - 56.625
                             - 29.1
                     bottom:
                         type: line
                         origin:
-                            - 47.1
+                            - 56.625
                             - 29.1
                         end:
-                            - 29.1
+                            - 38.625
                             - 29.1
                     left:
                         type: line
                         origin:
-                            - 29.1
+                            - 38.625
                             - 29.1
                         end:
-                            - 29.1
+                            - 38.625
                             - 47.1
                 origin:
                     - 0
@@ -524,34 +524,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 29.1
+                            - 38.625
                             - 66.15
                         end:
-                            - 47.1
+                            - 56.625
                             - 66.15
                     right:
                         type: line
                         origin:
-                            - 47.1
+                            - 56.625
                             - 66.15
                         end:
-                            - 47.1
+                            - 56.625
                             - 48.150000000000006
                     bottom:
                         type: line
                         origin:
-                            - 47.1
+                            - 56.625
                             - 48.150000000000006
                         end:
-                            - 29.1
+                            - 38.625
                             - 48.150000000000006
                     left:
                         type: line
                         origin:
-                            - 29.1
+                            - 38.625
                             - 48.150000000000006
                         end:
-                            - 29.1
+                            - 38.625
                             - 66.15
                 origin:
                     - 0
@@ -672,34 +672,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 48.15
+                            - 57.675
                             - 28.05
                         end:
-                            - 66.15
+                            - 75.675
                             - 28.05
                     right:
                         type: line
                         origin:
-                            - 66.15
+                            - 75.675
                             - 28.05
                         end:
-                            - 66.15
+                            - 75.675
                             - 10.05
                     bottom:
                         type: line
                         origin:
-                            - 66.15
+                            - 75.675
                             - 10.05
                         end:
-                            - 48.15
+                            - 57.675
                             - 10.05
                     left:
                         type: line
                         origin:
-                            - 48.15
+                            - 57.675
                             - 10.05
                         end:
-                            - 48.15
+                            - 57.675
                             - 28.05
                 origin:
                     - 0
@@ -709,34 +709,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 48.15
+                            - 57.675
                             - 47.1
                         end:
-                            - 66.15
+                            - 75.675
                             - 47.1
                     right:
                         type: line
                         origin:
-                            - 66.15
+                            - 75.675
                             - 47.1
                         end:
-                            - 66.15
+                            - 75.675
                             - 29.1
                     bottom:
                         type: line
                         origin:
-                            - 66.15
+                            - 75.675
                             - 29.1
                         end:
-                            - 48.15
+                            - 57.675
                             - 29.1
                     left:
                         type: line
                         origin:
-                            - 48.15
+                            - 57.675
                             - 29.1
                         end:
-                            - 48.15
+                            - 57.675
                             - 47.1
                 origin:
                     - 0
@@ -746,34 +746,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 48.15
+                            - 57.675
                             - 66.15
                         end:
-                            - 66.15
+                            - 75.675
                             - 66.15
                     right:
                         type: line
                         origin:
-                            - 66.15
+                            - 75.675
                             - 66.15
                         end:
-                            - 66.15
+                            - 75.675
                             - 48.150000000000006
                     bottom:
                         type: line
                         origin:
-                            - 66.15
+                            - 75.675
                             - 48.150000000000006
                         end:
-                            - 48.15
+                            - 57.675
                             - 48.150000000000006
                     left:
                         type: line
                         origin:
-                            - 48.15
+                            - 57.675
                             - 48.150000000000006
                         end:
-                            - 48.15
+                            - 57.675
                             - 66.15
                 origin:
                     - 0
@@ -857,34 +857,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 66.675
+                            - 66.75
                             - 9
                         end:
-                            - 123.825
+                            - 123.75
                             - 9
                     right:
                         type: line
                         origin:
-                            - 123.825
+                            - 123.75
                             - 9
                         end:
-                            - 123.825
+                            - 123.75
                             - -9
                     bottom:
                         type: line
                         origin:
-                            - 123.825
+                            - 123.75
                             - -9
                         end:
-                            - 66.675
+                            - 66.75
                             - -9
                     left:
                         type: line
                         origin:
-                            - 66.675
+                            - 66.75
                             - -9
                         end:
-                            - 66.675
+                            - 66.75
                             - 9
                 origin:
                     - 0
@@ -894,34 +894,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 67.2
+                            - 76.725
                             - 28.05
                         end:
-                            - 85.2
+                            - 94.725
                             - 28.05
                     right:
                         type: line
                         origin:
-                            - 85.2
+                            - 94.725
                             - 28.05
                         end:
-                            - 85.2
+                            - 94.725
                             - 10.05
                     bottom:
                         type: line
                         origin:
-                            - 85.2
+                            - 94.725
                             - 10.05
                         end:
-                            - 67.2
+                            - 76.725
                             - 10.05
                     left:
                         type: line
                         origin:
-                            - 67.2
+                            - 76.725
                             - 10.05
                         end:
-                            - 67.2
+                            - 76.725
                             - 28.05
                 origin:
                     - 0
@@ -931,34 +931,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 67.2
+                            - 76.725
                             - 47.1
                         end:
-                            - 85.2
+                            - 94.725
                             - 47.1
                     right:
                         type: line
                         origin:
-                            - 85.2
+                            - 94.725
                             - 47.1
                         end:
-                            - 85.2
+                            - 94.725
                             - 29.1
                     bottom:
                         type: line
                         origin:
-                            - 85.2
+                            - 94.725
                             - 29.1
                         end:
-                            - 67.2
+                            - 76.725
                             - 29.1
                     left:
                         type: line
                         origin:
-                            - 67.2
+                            - 76.725
                             - 29.1
                         end:
-                            - 67.2
+                            - 76.725
                             - 47.1
                 origin:
                     - 0
@@ -968,34 +968,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 67.2
+                            - 76.725
                             - 66.15
                         end:
-                            - 85.2
+                            - 94.725
                             - 66.15
                     right:
                         type: line
                         origin:
-                            - 85.2
+                            - 94.725
                             - 66.15
                         end:
-                            - 85.2
+                            - 94.725
                             - 48.150000000000006
                     bottom:
                         type: line
                         origin:
-                            - 85.2
+                            - 94.725
                             - 48.150000000000006
                         end:
-                            - 67.2
+                            - 76.725
                             - 48.150000000000006
                     left:
                         type: line
                         origin:
-                            - 67.2
+                            - 76.725
                             - 48.150000000000006
                         end:
-                            - 67.2
+                            - 76.725
                             - 66.15
                 origin:
                     - 0
@@ -1005,34 +1005,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 67.2
+                            - 67.19999999999999
                             - 85.2
                         end:
-                            - 85.2
+                            - 85.19999999999999
                             - 85.2
                     right:
                         type: line
                         origin:
-                            - 85.2
+                            - 85.19999999999999
                             - 85.2
                         end:
-                            - 85.2
+                            - 85.19999999999999
                             - 67.2
                     bottom:
                         type: line
                         origin:
-                            - 85.2
+                            - 85.19999999999999
                             - 67.2
                         end:
-                            - 67.2
+                            - 67.19999999999999
                             - 67.2
                     left:
                         type: line
                         origin:
-                            - 67.2
+                            - 67.19999999999999
                             - 67.2
                         end:
-                            - 67.2
+                            - 67.19999999999999
                             - 85.2
                 origin:
                     - 0
@@ -1042,34 +1042,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 67.2
+                            - 67.19999999999999
                             - 104.25
                         end:
-                            - 85.2
+                            - 85.19999999999999
                             - 104.25
                     right:
                         type: line
                         origin:
-                            - 85.2
+                            - 85.19999999999999
                             - 104.25
                         end:
-                            - 85.2
+                            - 85.19999999999999
                             - 86.25
                     bottom:
                         type: line
                         origin:
-                            - 85.2
+                            - 85.19999999999999
                             - 86.25
                         end:
-                            - 67.2
+                            - 67.19999999999999
                             - 86.25
                     left:
                         type: line
                         origin:
-                            - 67.2
+                            - 67.19999999999999
                             - 86.25
                         end:
-                            - 67.2
+                            - 67.19999999999999
                             - 104.25
                 origin:
                     - 0
@@ -1079,34 +1079,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 86.25
+                            - 95.775
                             - 28.05
                         end:
-                            - 104.25
+                            - 113.775
                             - 28.05
                     right:
                         type: line
                         origin:
-                            - 104.25
+                            - 113.775
                             - 28.05
                         end:
-                            - 104.25
+                            - 113.775
                             - 10.05
                     bottom:
                         type: line
                         origin:
-                            - 104.25
+                            - 113.775
                             - 10.05
                         end:
-                            - 86.25
+                            - 95.775
                             - 10.05
                     left:
                         type: line
                         origin:
-                            - 86.25
+                            - 95.775
                             - 10.05
                         end:
-                            - 86.25
+                            - 95.775
                             - 28.05
                 origin:
                     - 0
@@ -1116,34 +1116,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 86.25
+                            - 95.775
                             - 47.1
                         end:
-                            - 104.25
+                            - 113.775
                             - 47.1
                     right:
                         type: line
                         origin:
-                            - 104.25
+                            - 113.775
                             - 47.1
                         end:
-                            - 104.25
+                            - 113.775
                             - 29.1
                     bottom:
                         type: line
                         origin:
-                            - 104.25
+                            - 113.775
                             - 29.1
                         end:
-                            - 86.25
+                            - 95.775
                             - 29.1
                     left:
                         type: line
                         origin:
-                            - 86.25
+                            - 95.775
                             - 29.1
                         end:
-                            - 86.25
+                            - 95.775
                             - 47.1
                 origin:
                     - 0
@@ -1153,34 +1153,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 86.25
+                            - 95.775
                             - 66.15
                         end:
-                            - 104.25
+                            - 113.775
                             - 66.15
                     right:
                         type: line
                         origin:
-                            - 104.25
+                            - 113.775
                             - 66.15
                         end:
-                            - 104.25
+                            - 113.775
                             - 48.150000000000006
                     bottom:
                         type: line
                         origin:
-                            - 104.25
+                            - 113.775
                             - 48.150000000000006
                         end:
-                            - 86.25
+                            - 95.775
                             - 48.150000000000006
                     left:
                         type: line
                         origin:
-                            - 86.25
+                            - 95.775
                             - 48.150000000000006
                         end:
-                            - 86.25
+                            - 95.775
                             - 66.15
                 origin:
                     - 0
@@ -1264,34 +1264,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 143.4
+                            - 152.475
                             - 9
                         end:
-                            - 161.4
+                            - 209.475
                             - 9
                     right:
                         type: line
                         origin:
-                            - 161.4
+                            - 209.475
                             - 9
                         end:
-                            - 161.4
+                            - 209.475
                             - -9
                     bottom:
                         type: line
                         origin:
-                            - 161.4
+                            - 209.475
                             - -9
                         end:
-                            - 143.4
+                            - 152.475
                             - -9
                     left:
                         type: line
                         origin:
-                            - 143.4
+                            - 152.475
                             - -9
                         end:
-                            - 143.4
+                            - 152.475
                             - 9
                 origin:
                     - 0
@@ -1301,34 +1301,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 28
                         end:
-                            - 161.4
+                            - 180.45
                             - 28
                     right:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 28
                         end:
-                            - 161.4
+                            - 180.45
                             - 10
                     bottom:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 10
                         end:
-                            - 143.4
+                            - 162.45
                             - 10
                     left:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 10
                         end:
-                            - 143.4
+                            - 162.45
                             - 28
                 origin:
                     - 0
@@ -1338,34 +1338,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 47
                         end:
-                            - 161.4
+                            - 180.45
                             - 47
                     right:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 47
                         end:
-                            - 161.4
+                            - 180.45
                             - 29
                     bottom:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 29
                         end:
-                            - 143.4
+                            - 162.45
                             - 29
                     left:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 29
                         end:
-                            - 143.4
+                            - 162.45
                             - 47
                 origin:
                     - 0
@@ -1375,34 +1375,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 66
                         end:
-                            - 161.4
+                            - 180.45
                             - 66
                     right:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 66
                         end:
-                            - 161.4
+                            - 180.45
                             - 48
                     bottom:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 48
                         end:
-                            - 143.4
+                            - 162.45
                             - 48
                     left:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 48
                         end:
-                            - 143.4
+                            - 162.45
                             - 66
                 origin:
                     - 0
@@ -1412,34 +1412,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 85
                         end:
-                            - 161.4
+                            - 180.45
                             - 85
                     right:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 85
                         end:
-                            - 161.4
+                            - 180.45
                             - 67
                     bottom:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 67
                         end:
-                            - 143.4
+                            - 162.45
                             - 67
                     left:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 67
                         end:
-                            - 143.4
+                            - 162.45
                             - 85
                 origin:
                     - 0
@@ -1449,72 +1449,35 @@ models:
                     top:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 104
                         end:
-                            - 161.4
+                            - 180.45
                             - 104
                     right:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 104
                         end:
-                            - 161.4
+                            - 180.45
                             - 86
                     bottom:
                         type: line
                         origin:
-                            - 161.4
+                            - 180.45
                             - 86
                         end:
-                            - 143.4
+                            - 162.45
                             - 86
                     left:
                         type: line
                         origin:
-                            - 143.4
+                            - 162.45
                             - 86
                         end:
-                            - 143.4
+                            - 162.45
                             - 104
-                origin:
-                    - 0
-                    - 0
-            matrixr_index_mod:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 162.4
-                            - 9
-                        end:
-                            - 180.4
-                            - 9
-                    right:
-                        type: line
-                        origin:
-                            - 180.4
-                            - 9
-                        end:
-                            - 180.4
-                            - -9
-                    bottom:
-                        type: line
-                        origin:
-                            - 180.4
-                            - -9
-                        end:
-                            - 162.4
-                            - -9
-                    left:
-                        type: line
-                        origin:
-                            - 162.4
-                            - -9
-                        end:
-                            - 162.4
-                            - 9
                 origin:
                     - 0
                     - 0
@@ -1523,34 +1486,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 28
                         end:
-                            - 180.4
+                            - 199.45
                             - 28
                     right:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 28
                         end:
-                            - 180.4
+                            - 199.45
                             - 10
                     bottom:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 10
                         end:
-                            - 162.4
+                            - 181.45
                             - 10
                     left:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 10
                         end:
-                            - 162.4
+                            - 181.45
                             - 28
                 origin:
                     - 0
@@ -1560,34 +1523,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 47
                         end:
-                            - 180.4
+                            - 199.45
                             - 47
                     right:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 47
                         end:
-                            - 180.4
+                            - 199.45
                             - 29
                     bottom:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 29
                         end:
-                            - 162.4
+                            - 181.45
                             - 29
                     left:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 29
                         end:
-                            - 162.4
+                            - 181.45
                             - 47
                 origin:
                     - 0
@@ -1597,34 +1560,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 66
                         end:
-                            - 180.4
+                            - 199.45
                             - 66
                     right:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 66
                         end:
-                            - 180.4
+                            - 199.45
                             - 48
                     bottom:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 48
                         end:
-                            - 162.4
+                            - 181.45
                             - 48
                     left:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 48
                         end:
-                            - 162.4
+                            - 181.45
                             - 66
                 origin:
                     - 0
@@ -1634,34 +1597,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 85
                         end:
-                            - 180.4
+                            - 199.45
                             - 85
                     right:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 85
                         end:
-                            - 180.4
+                            - 199.45
                             - 67
                     bottom:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 67
                         end:
-                            - 162.4
+                            - 181.45
                             - 67
                     left:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 67
                         end:
-                            - 162.4
+                            - 181.45
                             - 85
                 origin:
                     - 0
@@ -1671,72 +1634,35 @@ models:
                     top:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 104
                         end:
-                            - 180.4
+                            - 199.45
                             - 104
                     right:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 104
                         end:
-                            - 180.4
+                            - 199.45
                             - 86
                     bottom:
                         type: line
                         origin:
-                            - 180.4
+                            - 199.45
                             - 86
                         end:
-                            - 162.4
+                            - 181.45
                             - 86
                     left:
                         type: line
                         origin:
-                            - 162.4
+                            - 181.45
                             - 86
                         end:
-                            - 162.4
+                            - 181.45
                             - 104
-                origin:
-                    - 0
-                    - 0
-            matrixr_middle_mod:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 181.4
-                            - 9
-                        end:
-                            - 199.4
-                            - 9
-                    right:
-                        type: line
-                        origin:
-                            - 199.4
-                            - 9
-                        end:
-                            - 199.4
-                            - -9
-                    bottom:
-                        type: line
-                        origin:
-                            - 199.4
-                            - -9
-                        end:
-                            - 181.4
-                            - -9
-                    left:
-                        type: line
-                        origin:
-                            - 181.4
-                            - -9
-                        end:
-                            - 181.4
-                            - 9
                 origin:
                     - 0
                     - 0
@@ -1745,34 +1671,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 28
                         end:
-                            - 199.4
+                            - 218.45
                             - 28
                     right:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 28
                         end:
-                            - 199.4
+                            - 218.45
                             - 10
                     bottom:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 10
                         end:
-                            - 181.4
+                            - 200.45
                             - 10
                     left:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 10
                         end:
-                            - 181.4
+                            - 200.45
                             - 28
                 origin:
                     - 0
@@ -1782,34 +1708,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 47
                         end:
-                            - 199.4
+                            - 218.45
                             - 47
                     right:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 47
                         end:
-                            - 199.4
+                            - 218.45
                             - 29
                     bottom:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 29
                         end:
-                            - 181.4
+                            - 200.45
                             - 29
                     left:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 29
                         end:
-                            - 181.4
+                            - 200.45
                             - 47
                 origin:
                     - 0
@@ -1819,34 +1745,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 66
                         end:
-                            - 199.4
+                            - 218.45
                             - 66
                     right:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 66
                         end:
-                            - 199.4
+                            - 218.45
                             - 48
                     bottom:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 48
                         end:
-                            - 181.4
+                            - 200.45
                             - 48
                     left:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 48
                         end:
-                            - 181.4
+                            - 200.45
                             - 66
                 origin:
                     - 0
@@ -1856,34 +1782,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 85
                         end:
-                            - 199.4
+                            - 218.45
                             - 85
                     right:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 85
                         end:
-                            - 199.4
+                            - 218.45
                             - 67
                     bottom:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 67
                         end:
-                            - 181.4
+                            - 200.45
                             - 67
                     left:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 67
                         end:
-                            - 181.4
+                            - 200.45
                             - 85
                 origin:
                     - 0
@@ -1893,34 +1819,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 104
                         end:
-                            - 199.4
+                            - 218.45
                             - 104
                     right:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 104
                         end:
-                            - 199.4
+                            - 218.45
                             - 86
                     bottom:
                         type: line
                         origin:
-                            - 199.4
+                            - 218.45
                             - 86
                         end:
-                            - 181.4
+                            - 200.45
                             - 86
                     left:
                         type: line
                         origin:
-                            - 181.4
+                            - 200.45
                             - 86
                         end:
-                            - 181.4
+                            - 200.45
                             - 104
                 origin:
                     - 0
@@ -1930,34 +1856,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 200.4
+                            - 209.92499999999998
                             - 9
                         end:
-                            - 218.4
+                            - 227.92499999999998
                             - 9
                     right:
                         type: line
                         origin:
-                            - 218.4
+                            - 227.92499999999998
                             - 9
                         end:
-                            - 218.4
+                            - 227.92499999999998
                             - -9
                     bottom:
                         type: line
                         origin:
-                            - 218.4
+                            - 227.92499999999998
                             - -9
                         end:
-                            - 200.4
+                            - 209.92499999999998
                             - -9
                     left:
                         type: line
                         origin:
-                            - 200.4
+                            - 209.92499999999998
                             - -9
                         end:
-                            - 200.4
+                            - 209.92499999999998
                             - 9
                 origin:
                     - 0
@@ -1967,34 +1893,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 28
                         end:
-                            - 218.4
+                            - 237.45
                             - 28
                     right:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 28
                         end:
-                            - 218.4
+                            - 237.45
                             - 10
                     bottom:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 10
                         end:
-                            - 200.4
+                            - 219.45
                             - 10
                     left:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 10
                         end:
-                            - 200.4
+                            - 219.45
                             - 28
                 origin:
                     - 0
@@ -2004,34 +1930,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 47
                         end:
-                            - 218.4
+                            - 237.45
                             - 47
                     right:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 47
                         end:
-                            - 218.4
+                            - 237.45
                             - 29
                     bottom:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 29
                         end:
-                            - 200.4
+                            - 219.45
                             - 29
                     left:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 29
                         end:
-                            - 200.4
+                            - 219.45
                             - 47
                 origin:
                     - 0
@@ -2041,34 +1967,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 66
                         end:
-                            - 218.4
+                            - 237.45
                             - 66
                     right:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 66
                         end:
-                            - 218.4
+                            - 237.45
                             - 48
                     bottom:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 48
                         end:
-                            - 200.4
+                            - 219.45
                             - 48
                     left:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 48
                         end:
-                            - 200.4
+                            - 219.45
                             - 66
                 origin:
                     - 0
@@ -2078,34 +2004,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 85
                         end:
-                            - 218.4
+                            - 237.45
                             - 85
                     right:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 85
                         end:
-                            - 218.4
+                            - 237.45
                             - 67
                     bottom:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 67
                         end:
-                            - 200.4
+                            - 219.45
                             - 67
                     left:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 67
                         end:
-                            - 200.4
+                            - 219.45
                             - 85
                 origin:
                     - 0
@@ -2115,34 +2041,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 104
                         end:
-                            - 218.4
+                            - 237.45
                             - 104
                     right:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 104
                         end:
-                            - 218.4
+                            - 237.45
                             - 86
                     bottom:
                         type: line
                         origin:
-                            - 218.4
+                            - 237.45
                             - 86
                         end:
-                            - 200.4
+                            - 219.45
                             - 86
                     left:
                         type: line
                         origin:
-                            - 200.4
+                            - 219.45
                             - 86
                         end:
-                            - 200.4
+                            - 219.45
                             - 104
                 origin:
                     - 0
@@ -2152,34 +2078,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 219.4
+                            - 228.92499999999998
                             - 9
                         end:
-                            - 237.4
+                            - 246.92499999999998
                             - 9
                     right:
                         type: line
                         origin:
-                            - 237.4
+                            - 246.92499999999998
                             - 9
                         end:
-                            - 237.4
+                            - 246.92499999999998
                             - -9
                     bottom:
                         type: line
                         origin:
-                            - 237.4
+                            - 246.92499999999998
                             - -9
                         end:
-                            - 219.4
+                            - 228.92499999999998
                             - -9
                     left:
                         type: line
                         origin:
-                            - 219.4
+                            - 228.92499999999998
                             - -9
                         end:
-                            - 219.4
+                            - 228.92499999999998
                             - 9
                 origin:
                     - 0
@@ -2189,34 +2115,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 219.4
+                            - 238.45
                             - 28
                         end:
-                            - 237.4
+                            - 256.45
                             - 28
                     right:
                         type: line
                         origin:
-                            - 237.4
+                            - 256.45
                             - 28
                         end:
-                            - 237.4
+                            - 256.45
                             - 10
                     bottom:
                         type: line
                         origin:
-                            - 237.4
+                            - 256.45
                             - 10
                         end:
-                            - 219.4
+                            - 238.45
                             - 10
                     left:
                         type: line
                         origin:
-                            - 219.4
+                            - 238.45
                             - 10
                         end:
-                            - 219.4
+                            - 238.45
                             - 28
                 origin:
                     - 0
@@ -2226,34 +2152,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 219.4
+                            - 238.45
                             - 47
                         end:
-                            - 237.4
+                            - 256.45
                             - 47
                     right:
                         type: line
                         origin:
-                            - 237.4
+                            - 256.45
                             - 47
                         end:
-                            - 237.4
+                            - 256.45
                             - 29
                     bottom:
                         type: line
                         origin:
-                            - 237.4
+                            - 256.45
                             - 29
                         end:
-                            - 219.4
+                            - 238.45
                             - 29
                     left:
                         type: line
                         origin:
-                            - 219.4
+                            - 238.45
                             - 29
                         end:
-                            - 219.4
+                            - 238.45
                             - 47
                 origin:
                     - 0
@@ -2263,34 +2189,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 219.4
+                            - 238.45
                             - 66
                         end:
-                            - 237.4
+                            - 256.45
                             - 66
                     right:
                         type: line
                         origin:
-                            - 237.4
+                            - 256.45
                             - 66
                         end:
-                            - 237.4
+                            - 256.45
                             - 48
                     bottom:
                         type: line
                         origin:
-                            - 237.4
+                            - 256.45
                             - 48
                         end:
-                            - 219.4
+                            - 238.45
                             - 48
                     left:
                         type: line
                         origin:
-                            - 219.4
+                            - 238.45
                             - 48
                         end:
-                            - 219.4
+                            - 238.45
                             - 66
                 origin:
                     - 0
@@ -2300,34 +2226,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 219.4
+                            - 238.45
                             - 85
                         end:
-                            - 237.4
+                            - 256.45
                             - 85
                     right:
                         type: line
                         origin:
-                            - 237.4
+                            - 256.45
                             - 85
                         end:
-                            - 237.4
+                            - 256.45
                             - 67
                     bottom:
                         type: line
                         origin:
-                            - 237.4
+                            - 256.45
                             - 67
                         end:
-                            - 219.4
+                            - 238.45
                             - 67
                     left:
                         type: line
                         origin:
-                            - 219.4
+                            - 238.45
                             - 67
                         end:
-                            - 219.4
+                            - 238.45
                             - 85
                 origin:
                     - 0
@@ -2337,34 +2263,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 238.4
+                            - 247.925
                             - 9
                         end:
-                            - 256.4
+                            - 265.925
                             - 9
                     right:
                         type: line
                         origin:
-                            - 256.4
+                            - 265.925
                             - 9
                         end:
-                            - 256.4
+                            - 265.925
                             - -9
                     bottom:
                         type: line
                         origin:
-                            - 256.4
+                            - 265.925
                             - -9
                         end:
-                            - 238.4
+                            - 247.925
                             - -9
                     left:
                         type: line
                         origin:
-                            - 238.4
+                            - 247.925
                             - -9
                         end:
-                            - 238.4
+                            - 247.925
                             - 9
                 origin:
                     - 0
@@ -2374,34 +2300,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 238.4
+                            - 256.975
                             - 28
                         end:
-                            - 256.4
+                            - 294.975
                             - 28
                     right:
                         type: line
                         origin:
-                            - 256.4
+                            - 294.975
                             - 28
                         end:
-                            - 256.4
+                            - 294.975
                             - 10
                     bottom:
                         type: line
                         origin:
-                            - 256.4
+                            - 294.975
                             - 10
                         end:
-                            - 238.4
+                            - 256.975
                             - 10
                     left:
                         type: line
                         origin:
-                            - 238.4
+                            - 256.975
                             - 10
                         end:
-                            - 238.4
+                            - 256.975
                             - 28
                 origin:
                     - 0
@@ -2411,34 +2337,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 238.4
+                            - 257.45000000000005
                             - 47
                         end:
-                            - 256.4
+                            - 275.45000000000005
                             - 47
                     right:
                         type: line
                         origin:
-                            - 256.4
+                            - 275.45000000000005
                             - 47
                         end:
-                            - 256.4
+                            - 275.45000000000005
                             - 29
                     bottom:
                         type: line
                         origin:
-                            - 256.4
+                            - 275.45000000000005
                             - 29
                         end:
-                            - 238.4
+                            - 257.45000000000005
                             - 29
                     left:
                         type: line
                         origin:
-                            - 238.4
+                            - 257.45000000000005
                             - 29
                         end:
-                            - 238.4
+                            - 257.45000000000005
                             - 47
                 origin:
                     - 0
@@ -2448,34 +2374,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 238.4
+                            - 257.45000000000005
                             - 66
                         end:
-                            - 256.4
+                            - 275.45000000000005
                             - 66
                     right:
                         type: line
                         origin:
-                            - 256.4
+                            - 275.45000000000005
                             - 66
                         end:
-                            - 256.4
+                            - 275.45000000000005
                             - 48
                     bottom:
                         type: line
                         origin:
-                            - 256.4
+                            - 275.45000000000005
                             - 48
                         end:
-                            - 238.4
+                            - 257.45000000000005
                             - 48
                     left:
                         type: line
                         origin:
-                            - 238.4
+                            - 257.45000000000005
                             - 48
                         end:
-                            - 238.4
+                            - 257.45000000000005
                             - 66
                 origin:
                     - 0
@@ -2485,34 +2411,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 238.4
+                            - 257.45000000000005
                             - 85
                         end:
-                            - 256.4
+                            - 275.45000000000005
                             - 85
                     right:
                         type: line
                         origin:
-                            - 256.4
+                            - 275.45000000000005
                             - 85
                         end:
-                            - 256.4
+                            - 275.45000000000005
                             - 67
                     bottom:
                         type: line
                         origin:
-                            - 256.4
+                            - 275.45000000000005
                             - 67
                         end:
-                            - 238.4
+                            - 257.45000000000005
                             - 67
                     left:
                         type: line
                         origin:
-                            - 238.4
+                            - 257.45000000000005
                             - 67
                         end:
-                            - 238.4
+                            - 257.45000000000005
                             - 85
                 origin:
                     - 0
@@ -2522,34 +2448,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 238.4
+                            - 257.45000000000005
                             - 104
                         end:
-                            - 256.4
+                            - 275.45000000000005
                             - 104
                     right:
                         type: line
                         origin:
-                            - 256.4
+                            - 275.45000000000005
                             - 104
                         end:
-                            - 256.4
+                            - 275.45000000000005
                             - 86
                     bottom:
                         type: line
                         origin:
-                            - 256.4
+                            - 275.45000000000005
                             - 86
                         end:
-                            - 238.4
+                            - 257.45000000000005
                             - 86
                     left:
                         type: line
                         origin:
-                            - 238.4
+                            - 257.45000000000005
                             - 86
                         end:
-                            - 238.4
+                            - 257.45000000000005
                             - 104
                 origin:
                     - 0
@@ -2559,72 +2485,35 @@ models:
                     top:
                         type: line
                         origin:
-                            - 257.4
+                            - 266.925
                             - 9
                         end:
-                            - 275.4
+                            - 284.925
                             - 9
                     right:
                         type: line
                         origin:
-                            - 275.4
+                            - 284.925
                             - 9
                         end:
-                            - 275.4
+                            - 284.925
                             - -9
                     bottom:
                         type: line
                         origin:
-                            - 275.4
+                            - 284.925
                             - -9
                         end:
-                            - 257.4
+                            - 266.925
                             - -9
                     left:
                         type: line
                         origin:
-                            - 257.4
+                            - 266.925
                             - -9
                         end:
-                            - 257.4
+                            - 266.925
                             - 9
-                origin:
-                    - 0
-                    - 0
-            matrixr_outer2_bottom:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 257.4
-                            - 28
-                        end:
-                            - 275.4
-                            - 28
-                    right:
-                        type: line
-                        origin:
-                            - 275.4
-                            - 28
-                        end:
-                            - 275.4
-                            - 10
-                    bottom:
-                        type: line
-                        origin:
-                            - 275.4
-                            - 10
-                        end:
-                            - 257.4
-                            - 10
-                    left:
-                        type: line
-                        origin:
-                            - 257.4
-                            - 10
-                        end:
-                            - 257.4
-                            - 28
                 origin:
                     - 0
                     - 0
@@ -2633,34 +2522,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 257.4
+                            - 275.975
                             - 47
                         end:
-                            - 275.4
+                            - 313.975
                             - 47
                     right:
                         type: line
                         origin:
-                            - 275.4
+                            - 313.975
                             - 47
                         end:
-                            - 275.4
+                            - 313.975
                             - 29
                     bottom:
                         type: line
                         origin:
-                            - 275.4
+                            - 313.975
                             - 29
                         end:
-                            - 257.4
+                            - 275.975
                             - 29
                     left:
                         type: line
                         origin:
-                            - 257.4
+                            - 275.975
                             - 29
                         end:
-                            - 257.4
+                            - 275.975
                             - 47
                 origin:
                     - 0
@@ -2670,34 +2559,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 257.4
+                            - 276.45000000000005
                             - 66
                         end:
-                            - 275.4
+                            - 294.45000000000005
                             - 66
                     right:
                         type: line
                         origin:
-                            - 275.4
+                            - 294.45000000000005
                             - 66
                         end:
-                            - 275.4
+                            - 294.45000000000005
                             - 48
                     bottom:
                         type: line
                         origin:
-                            - 275.4
+                            - 294.45000000000005
                             - 48
                         end:
-                            - 257.4
+                            - 276.45000000000005
                             - 48
                     left:
                         type: line
                         origin:
-                            - 257.4
+                            - 276.45000000000005
                             - 48
                         end:
-                            - 257.4
+                            - 276.45000000000005
                             - 66
                 origin:
                     - 0
@@ -2707,34 +2596,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 257.4
+                            - 276.45000000000005
                             - 85
                         end:
-                            - 275.4
+                            - 294.45000000000005
                             - 85
                     right:
                         type: line
                         origin:
-                            - 275.4
+                            - 294.45000000000005
                             - 85
                         end:
-                            - 275.4
+                            - 294.45000000000005
                             - 67
                     bottom:
                         type: line
                         origin:
-                            - 275.4
+                            - 294.45000000000005
                             - 67
                         end:
-                            - 257.4
+                            - 276.45000000000005
                             - 67
                     left:
                         type: line
                         origin:
-                            - 257.4
+                            - 276.45000000000005
                             - 67
                         end:
-                            - 257.4
+                            - 276.45000000000005
                             - 85
                 origin:
                     - 0
@@ -2744,146 +2633,35 @@ models:
                     top:
                         type: line
                         origin:
-                            - 257.4
+                            - 276.45000000000005
                             - 104
                         end:
-                            - 275.4
+                            - 294.45000000000005
                             - 104
                     right:
                         type: line
                         origin:
-                            - 275.4
+                            - 294.45000000000005
                             - 104
                         end:
-                            - 275.4
+                            - 294.45000000000005
                             - 86
                     bottom:
                         type: line
                         origin:
-                            - 275.4
+                            - 294.45000000000005
                             - 86
                         end:
-                            - 257.4
+                            - 276.45000000000005
                             - 86
                     left:
                         type: line
                         origin:
-                            - 257.4
+                            - 276.45000000000005
                             - 86
                         end:
-                            - 257.4
+                            - 276.45000000000005
                             - 104
-                origin:
-                    - 0
-                    - 0
-            matrixr_outer3_mod:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 276.4
-                            - 9
-                        end:
-                            - 294.4
-                            - 9
-                    right:
-                        type: line
-                        origin:
-                            - 294.4
-                            - 9
-                        end:
-                            - 294.4
-                            - -9
-                    bottom:
-                        type: line
-                        origin:
-                            - 294.4
-                            - -9
-                        end:
-                            - 276.4
-                            - -9
-                    left:
-                        type: line
-                        origin:
-                            - 276.4
-                            - -9
-                        end:
-                            - 276.4
-                            - 9
-                origin:
-                    - 0
-                    - 0
-            matrixr_outer3_bottom:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 276.4
-                            - 28
-                        end:
-                            - 294.4
-                            - 28
-                    right:
-                        type: line
-                        origin:
-                            - 294.4
-                            - 28
-                        end:
-                            - 294.4
-                            - 10
-                    bottom:
-                        type: line
-                        origin:
-                            - 294.4
-                            - 10
-                        end:
-                            - 276.4
-                            - 10
-                    left:
-                        type: line
-                        origin:
-                            - 276.4
-                            - 10
-                        end:
-                            - 276.4
-                            - 28
-                origin:
-                    - 0
-                    - 0
-            matrixr_outer3_home:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 276.4
-                            - 47
-                        end:
-                            - 294.4
-                            - 47
-                    right:
-                        type: line
-                        origin:
-                            - 294.4
-                            - 47
-                        end:
-                            - 294.4
-                            - 29
-                    bottom:
-                        type: line
-                        origin:
-                            - 294.4
-                            - 29
-                        end:
-                            - 276.4
-                            - 29
-                    left:
-                        type: line
-                        origin:
-                            - 276.4
-                            - 29
-                        end:
-                            - 276.4
-                            - 47
                 origin:
                     - 0
                     - 0
@@ -2892,34 +2670,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 276.4
+                            - 295.45
                             - 66
                         end:
-                            - 294.4
+                            - 313.45
                             - 66
                     right:
                         type: line
                         origin:
-                            - 294.4
+                            - 313.45
                             - 66
                         end:
-                            - 294.4
+                            - 313.45
                             - 48
                     bottom:
                         type: line
                         origin:
-                            - 294.4
+                            - 313.45
                             - 48
                         end:
-                            - 276.4
+                            - 295.45
                             - 48
                     left:
                         type: line
                         origin:
-                            - 276.4
+                            - 295.45
                             - 48
                         end:
-                            - 276.4
+                            - 295.45
                             - 66
                 origin:
                     - 0
@@ -2929,34 +2707,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 276.4
+                            - 294.97499999999997
                             - 85
                         end:
-                            - 294.4
+                            - 332.97499999999997
                             - 85
                     right:
                         type: line
                         origin:
-                            - 294.4
+                            - 332.97499999999997
                             - 85
                         end:
-                            - 294.4
+                            - 332.97499999999997
                             - 67
                     bottom:
                         type: line
                         origin:
-                            - 294.4
+                            - 332.97499999999997
                             - 67
                         end:
-                            - 276.4
+                            - 294.97499999999997
                             - 67
                     left:
                         type: line
                         origin:
-                            - 276.4
+                            - 294.97499999999997
                             - 67
                         end:
-                            - 276.4
+                            - 294.97499999999997
                             - 85
                 origin:
                     - 0
@@ -2966,220 +2744,35 @@ models:
                     top:
                         type: line
                         origin:
-                            - 276.4
+                            - 295.45
                             - 104
                         end:
-                            - 294.4
+                            - 313.45
                             - 104
                     right:
                         type: line
                         origin:
-                            - 294.4
+                            - 313.45
                             - 104
                         end:
-                            - 294.4
+                            - 313.45
                             - 86
                     bottom:
                         type: line
                         origin:
-                            - 294.4
+                            - 313.45
                             - 86
                         end:
-                            - 276.4
+                            - 295.45
                             - 86
                     left:
                         type: line
                         origin:
-                            - 276.4
+                            - 295.45
                             - 86
                         end:
-                            - 276.4
+                            - 295.45
                             - 104
-                origin:
-                    - 0
-                    - 0
-            matrixr_outer4_mod:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 295.4
-                            - 9
-                        end:
-                            - 313.4
-                            - 9
-                    right:
-                        type: line
-                        origin:
-                            - 313.4
-                            - 9
-                        end:
-                            - 313.4
-                            - -9
-                    bottom:
-                        type: line
-                        origin:
-                            - 313.4
-                            - -9
-                        end:
-                            - 295.4
-                            - -9
-                    left:
-                        type: line
-                        origin:
-                            - 295.4
-                            - -9
-                        end:
-                            - 295.4
-                            - 9
-                origin:
-                    - 0
-                    - 0
-            matrixr_outer4_bottom:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 295.4
-                            - 28
-                        end:
-                            - 313.4
-                            - 28
-                    right:
-                        type: line
-                        origin:
-                            - 313.4
-                            - 28
-                        end:
-                            - 313.4
-                            - 10
-                    bottom:
-                        type: line
-                        origin:
-                            - 313.4
-                            - 10
-                        end:
-                            - 295.4
-                            - 10
-                    left:
-                        type: line
-                        origin:
-                            - 295.4
-                            - 10
-                        end:
-                            - 295.4
-                            - 28
-                origin:
-                    - 0
-                    - 0
-            matrixr_outer4_home:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 295.4
-                            - 47
-                        end:
-                            - 313.4
-                            - 47
-                    right:
-                        type: line
-                        origin:
-                            - 313.4
-                            - 47
-                        end:
-                            - 313.4
-                            - 29
-                    bottom:
-                        type: line
-                        origin:
-                            - 313.4
-                            - 29
-                        end:
-                            - 295.4
-                            - 29
-                    left:
-                        type: line
-                        origin:
-                            - 295.4
-                            - 29
-                        end:
-                            - 295.4
-                            - 47
-                origin:
-                    - 0
-                    - 0
-            matrixr_outer4_top:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 295.4
-                            - 66
-                        end:
-                            - 313.4
-                            - 66
-                    right:
-                        type: line
-                        origin:
-                            - 313.4
-                            - 66
-                        end:
-                            - 313.4
-                            - 48
-                    bottom:
-                        type: line
-                        origin:
-                            - 313.4
-                            - 48
-                        end:
-                            - 295.4
-                            - 48
-                    left:
-                        type: line
-                        origin:
-                            - 295.4
-                            - 48
-                        end:
-                            - 295.4
-                            - 66
-                origin:
-                    - 0
-                    - 0
-            matrixr_outer4_num:
-                paths:
-                    top:
-                        type: line
-                        origin:
-                            - 295.4
-                            - 85
-                        end:
-                            - 313.4
-                            - 85
-                    right:
-                        type: line
-                        origin:
-                            - 313.4
-                            - 85
-                        end:
-                            - 313.4
-                            - 67
-                    bottom:
-                        type: line
-                        origin:
-                            - 313.4
-                            - 67
-                        end:
-                            - 295.4
-                            - 67
-                    left:
-                        type: line
-                        origin:
-                            - 295.4
-                            - 67
-                        end:
-                            - 295.4
-                            - 85
                 origin:
                     - 0
                     - 0
@@ -3188,34 +2781,34 @@ models:
                     top:
                         type: line
                         origin:
-                            - 295.4
+                            - 314.45
                             - 104
                         end:
-                            - 313.4
+                            - 332.45
                             - 104
                     right:
                         type: line
                         origin:
-                            - 313.4
+                            - 332.45
                             - 104
                         end:
-                            - 313.4
+                            - 332.45
                             - 86
                     bottom:
                         type: line
                         origin:
-                            - 313.4
+                            - 332.45
                             - 86
                         end:
-                            - 295.4
+                            - 314.45
                             - 86
                     left:
                         type: line
                         origin:
-                            - 295.4
+                            - 314.45
                             - 86
                         end:
-                            - 295.4
+                            - 314.45
                             - 104
                 origin:
                     - 0

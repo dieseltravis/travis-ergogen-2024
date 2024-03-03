@@ -8,25 +8,38 @@ points:
         spread: U
       columns:
         outer:
-          rows.bottom.width: 2U
-          rows.home.width: 2U
-          rows.top.width: 2U
+          rows:
+            bottom:
+              #shift: [U/2, 0]
+              width: 2u
+            home.width: 2U
+            top.width: 2U
+            #num.shift: [-U/2, 0]
         pinky:
-          rows.bottom.shift: [U/2, 0]
-          #rows.home.shift: [U, 0]
-          #rows.top.shift: [U/2, 0]
-          rows.num.shift: [-U/2, 0]
-          rows.func.skip: true
+          rows:
+            bottom.shift: [U/2, 0]
+            num.shift: [-U/2, 0]
+            func.skip: true
         ring:
+          rows:
+            bottom.shift: [U/2, 0]
+            num.shift: [-U/2, 0]
         middle:
+          rows:
+            bottom.shift: [U/2, 0]
+            num.shift: [-U/2, 0]
         index:
           rows:
             mod:
               shift: [U, 0]
-              width: 3U
-          rows.bottom.shift: [-U, 0]
+              width: 3u
+            bottom.shift: [-U/2, 0]
+            num.shift: [-U/2, 0]
         inner:
-          rows.mod.skip: true
+          rows:
+            mod.skip: true
+            bottom.shift: [U/2, 0]
+            num.shift: [-U/2, 0]
       rows:
         mod:
         bottom:
@@ -37,18 +50,52 @@ points:
     matrixr:
       anchor:
         ref: matrixl_inner_mod
-        shift: [3U, 0]
+        shift: [4U, 0]
       columns:
         inner:
+          rows.mod:
+            shift: [U/2, 0]
+            width: 3u
+          rows.bottom.shift: [-U/2, 0]
         index:
+          rows.mod.skip: true
         middle:
+          rows.mod.skip: true
         ring:
+          rows.mod.shift: [-U/2, 0]
+          rows.bottom.shift: [U/2, 0]
         pinky:
+          rows.mod.shift: [-U/2, 0]
+          rows.bottom.shift: [U/2, 0]
           rows.func.skip: true
         outer:
+          rows.mod.shift: [-U/2, 0]
+          rows.bottom:
+            shift: [U, 0]
+            width: 2u
+          rows.home.shift: [-U/2, 0]
         outer2:
+          rows.mod.shift: [-U/2, 0]
+          rows.bottom.skip: true
+          rows.home:
+            shift: [U, 0]
+            width: 2u
+          rows.top.shift: [-U/2, 0]
         outer3:
+          rows.mod.skip: true
+          rows.bottom.skip: true
+          rows.home.skip: true
+          rows.num:
+            shift: [U/2, 0]
+            width: 2u
+          rows.func:
+            shift: [-U/2, 0]
         outer4:
+          rows.mod.skip: true
+          rows.bottom.skip: true
+          rows.home.skip: true
+          rows.top.skip: true
+          rows.num.skip: true
       rows:
         mod:
         bottom:
