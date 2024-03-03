@@ -1,11 +1,12 @@
 units:
   p: u + 2
+  pp: U + 2
 points:
   zones:
     matrixl:
-      key:
-        padding: U
-        spread: U
+      #key:
+      #  padding: U
+      #  spread: U
       columns:
         outer:
           rows:
@@ -54,7 +55,6 @@ points:
       columns:
         inner:
           rows.mod:
-            #shift: [U/2, 0]
             width: 3u
         index:
           rows.mod.skip: true
@@ -72,12 +72,12 @@ points:
           rows.bottom:
             shift: [U, 0]
             width: 2u
-          rows.home.shift: [0, 0]
+          rows.home.shift: [-U/2, 0]
         outer2:
           rows.mod.shift: [-U, 0]
           rows.bottom.skip: true
           rows.home:
-            shift: [2U, 0]
+            shift: [1.5U, 0]
             width: 2u
           rows.top.shift: [-U/2, 0]
         outer3:
@@ -88,7 +88,7 @@ points:
             shift: [U/2, 0]
             width: 2u
           rows.func:
-            shift: [-U/2, 0]
+            shift: [-U, 0]
         outer4:
           rows.mod.skip: true
           rows.bottom.skip: true
@@ -100,14 +100,14 @@ points:
         bottom:
           shift: [-U/2, 0]
         home:
-          shift: [U/2, 0]
         top:
         num:
         func:
+          shift: [-U/2, 0]
     arrows:
       anchor:
         ref: matrixr_inner_mod
-        shift: [8.5U, 0U]
+        shift: [8U, 0U]
         rotate: 45
       columns:
         one:
@@ -118,7 +118,7 @@ points:
     pages:
       anchor:
         ref: arrows_two_a
-        shift: [1.9U, 0U]
+        shift: [1.5U, -0.75U]
       columns:
         one:
         two:
@@ -127,14 +127,23 @@ points:
         b:
     special:
       anchor:
-        ref: matrixr_outer4_func
+        ref: matrixr_outer4_num
         shift: [1.5U, 0U]
       columns:
-        del:
-        ins:
-        brk:
+        left:
+        mid:
+        right:
       rows:
         top:
+        bottom:
 outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [pp, pp]
+  keys:
+    - what: rectangle
+      where: true
+      size: [u-0.5,u-0.5]
 pcb:
 case:
