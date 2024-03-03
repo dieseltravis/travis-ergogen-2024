@@ -204,7 +204,7 @@ pcbs:
           orientation: "down"
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
-          shift: [0,-4]
+          shift: [0,-7.25]
           rotate: -90
       reset:
         what: button
@@ -238,7 +238,7 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
           shift: [0, 0]
-          rotate: -45
+          rotate: -90
       holeTopLeft:
         what: mountinghole
         where:
@@ -248,7 +248,7 @@ pcbs:
         what: mountinghole
         where:
           ref.aggregate.parts: [special_mid_top, special_right_top]
-          shift: [0, -0.3u]
+          shift: [0, -u/2]
       holeBottomRight:
         what: mountinghole
         where:

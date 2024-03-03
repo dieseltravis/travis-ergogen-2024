@@ -7631,7 +7631,7 @@
 
         
       (module ProMicro (layer F.Cu) (tedit 5B307E4C)
-      (at 143.43124999999998 84 -90)
+      (at 143.43124999999998 87.25 -90)
 
       
       (fp_text reference "MCU1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -7779,7 +7779,7 @@
 
         (module rotary_encoder (layer F.Cu) (tedit 603326DE)
 
-            (at 152.95625 156 -45)
+            (at 152.95625 156 -90)
         
             
             (fp_text reference "ROT1" (at 0 0.5) (layer F.SilkS) 
@@ -7816,15 +7816,15 @@
             (fp_circle (center -0.12 -0.04) (end 2.88 -0.04) (layer F.Fab) (width 0.12))
 
             
-            (pad A thru_hole rect (at -7.62 -2.54 -45) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 52 "GND"))
+            (pad A thru_hole rect (at -7.62 -2.54 -90) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 52 "GND"))
             (pad C thru_hole circle (at -7.62 -0.04) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 52 "GND"))
             (pad B thru_hole circle (at -7.62 2.46) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 52 "GND"))
             (pad 1 thru_hole circle (at 6.88 -2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 52 "GND"))
             (pad 2 thru_hole circle (at 6.88 2.46) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 52 "GND"))
 
             
-            (pad "" thru_hole rect (at -0.12 -5.64 -45) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
-            (pad "" thru_hole rect (at -0.12 5.56 -45)  (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
+            (pad "" thru_hole rect (at -0.12 -5.64 -90) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
+            (pad "" thru_hole rect (at -0.12 5.56 -90)  (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
         )
     
 
@@ -7851,7 +7851,7 @@
 
     (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "F.Cu")
       (tedit 56DDB9C7)
-      (at 383.46250000000003 85.7 0) 
+      (at 383.46250000000003 89.5 0) 
     
       (fp_text reference "_2" (at 0 -3.2) (layer "F.SilkS") hide 
         (effects (font (size 1 1) (thickness 0.15)))
