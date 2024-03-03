@@ -51,7 +51,7 @@ points:
     matrixr:
       anchor:
         ref: matrixl_inner_mod
-        shift: [4U, 0]
+        shift: [3.5U, 0]
       columns:
         inner:
           rows.mod:
@@ -134,16 +134,43 @@ points:
         mid:
         right:
       rows:
-        top:
         bottom:
+        top:
 outlines:
   raw:
     - what: rectangle
       where: true
+      bound: true
       size: [pp, pp]
   keys:
     - what: rectangle
       where: true
+      bound: false
       size: [u-0.5,u-0.5]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrixl_outer_func
+          shift: [-0.5p, 0.5p]
+        - ref: special_right_top
+          shift: [0.5p, 0.5p]
+        - ref: pages_two_a
+          shift: [0.5p, -0.5p]
+        - ref: pages_one_a
+          shift: [-0.5p, -0.5p]
+        #- ref: arrows_two_a
+        #  shift: [0.5p, -0.5p]
+        - ref: arrows_one_a
+          shift: [-0.5p, -0.5p]
+        - ref: matrixr_outer2_mod
+          shift: [0.5p, -0.5p]
+        - ref: matrixl_outer_mod
+          shift: [-0.5p, -0.5p]
+      fillet: 2
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
 pcb:
 case:
