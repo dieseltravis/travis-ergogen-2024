@@ -3,6 +3,8 @@ units:
   pp: U + 2
   op: u + 6
   stlp: U + 10
+  screwSize: 1.5
+  standoffSize: 2.5
 points:
   zones:
     matrixl:
@@ -17,8 +19,8 @@ points:
             bottom:
               #shift: [U/2, 0]
               width: 2u
-            home.width: 2U
-            top.width: 2U
+            home.width: 2u
+            top.width: 2u
             #num.shift: [-U/2, 0]
         pinky:
           rows:
@@ -197,6 +199,48 @@ outlines:
     - name: board
     - operation: subtract
       name: keys
+  mounting:
+    - what: circle
+      radius: screwSize
+      where:
+        ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
+        shift: [0, 0.3u]
+    - what: circle
+      radius: screwSize
+      where:
+        ref.aggregate.parts: [special_mid_top, special_right_top]
+        shift: [0, -u/2]
+    - what: circle
+      radius: screwSize
+      where:
+        ref.aggregate.parts: [matrixr_outer2_mod, arrows_left_bottom]
+        shift: [0, -0.3u]
+    - what: circle
+      radius: screwSize
+      where:
+        ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
+        shift: [0, -0.3u]
+  standoff:
+    - what: circle
+      radius: standoffSize
+      where:
+        ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
+        shift: [0, 0.3u]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref.aggregate.parts: [special_mid_top, special_right_top]
+        shift: [0, -u/2]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref.aggregate.parts: [matrixr_outer2_mod, arrows_left_bottom]
+        shift: [0, -0.3u]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
+        shift: [0, -0.3u]
 pcbs:
   tutorial:
     outlines:
@@ -285,3 +329,35 @@ cases:
   bottom:
     - name: board3d
       extrude: 1
+  _outerWall:
+    - name: board3d
+      extrude: 5.6
+  _innerWall:
+    - name: board
+      extrude: 5.6
+  wall:
+    - what: case
+      name: _outerWall
+      operation: add
+    - what: case
+      name: _innerWall
+      operation: subtract
+  _holes:
+    - name: mounting
+      extrude: 4
+  _standoffs:
+    - name: standoff
+      extrude: 4
+  case:
+    - what: case
+      name: _standoffs
+      operation: add
+    - what: case
+      name: _holes
+      operation: subtract
+    - what: case
+      name: bottom
+      operation: add
+    - what: case
+      name: wall
+      operation: add
