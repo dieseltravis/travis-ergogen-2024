@@ -1,12 +1,12 @@
 units:
   p: u + 2
   pp: U + 2
-  op: u + 4
+  op: u + 6
 points:
   zones:
     matrixl:
       anchor:
-        shift: [28, -175]
+        shift: [27, -175]
       #key:
       #  padding: U
       #  spread: U
@@ -113,21 +113,21 @@ points:
         shift: [7.8U, 0.1U]
         rotate: 45
       columns:
-        one:
-        two:
+        left:
+        right:
       rows:
-        a:
-        b:
+        bottom:
+        top:
     pages:
       anchor:
-        ref: arrows_two_a
+        ref: arrows_right_bottom
         shift: [1.35U, -0.7U]
       columns:
-        one:
-        two:
+        left:
+        right:
       rows:
-        a:
-        b:
+        bottom:
+        top:
     special:
       anchor:
         ref: matrixr_outer4_num
@@ -158,13 +158,13 @@ outlines:
           shift: [-0.5op, 0.5op]
         - ref: special_right_top
           shift: [0.5op, 0.5op]
-        - ref: pages_two_a
+        - ref: pages_right_bottom
           shift: [0.5op, -0.5op]
-        - ref: pages_one_a
+        - ref: pages_left_bottom
           shift: [-0.5op, -0.5op]
-        #- ref: arrows_two_a
+        #- ref: arrows_right_bottom
         #  shift: [0.5op, -0.5op]
-        - ref: arrows_one_a
+        - ref: arrows_left_bottom
           shift: [-0.5op, -0.5op]
         - ref: matrixr_outer2_mod
           shift: [0.5op, -0.5op]
@@ -214,4 +214,52 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixr_outer4_func, special_left_top]
           shift: [0, 0]
-case:
+          rotate: -45
+      scrollwheel:
+        what: scrollwheel
+        params:
+          from: GND
+          to: GND
+          A: GND
+          B: GND
+          C: GND
+          D: GND
+        where:
+          ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
+          shift: [0, 0]
+      rotary:
+        what: rotary
+        params:
+          from: GND
+          to: GND
+          A: GND
+          B: GND
+          C: GND
+        where:
+          ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
+          shift: [0, 0]
+          rotate: -45
+      holeTopLeft:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
+          shift: [0, 0.3u]
+      holeTopRight:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [special_mid_top, special_right_top]
+          shift: [0, -0.3u]
+      holeBottomRight:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [matrixr_outer2_mod, arrows_left_bottom]
+          shift: [0, -0.3u]
+      holeBottomLeft:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
+          shift: [0, -0.3u]
+cases:
+  bottom:
+    - name: board
+      extrude: 1
