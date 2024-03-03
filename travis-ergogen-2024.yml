@@ -6,7 +6,7 @@ points:
   zones:
     matrixl:
       anchor:
-        shift: [25, -150]
+        shift: [28, -175]
       #key:
       #  padding: U
       #  spread: U
@@ -206,4 +206,12 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
           shift: [0,-4]
           rotate: -90
+      reset:
+        what: button
+        params:
+          from: GND
+          to: RST
+        where:
+          ref.aggregate.parts: [matrixr_outer4_func, special_left_top]
+          shift: [0, 0]
 case:
