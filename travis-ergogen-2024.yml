@@ -5,6 +5,8 @@ units:
 points:
   zones:
     matrixl:
+      anchor:
+        shift: [100, -100]
       #key:
       #  padding: U
       #  spread: U
@@ -173,5 +175,9 @@ outlines:
     - name: board
     - operation: subtract
       name: keys
-pcb:
+pcbs:
+  tutorial:
+    outlines:
+      main:
+        outline: board
 case:
