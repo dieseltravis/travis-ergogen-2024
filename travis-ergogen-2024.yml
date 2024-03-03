@@ -6,7 +6,7 @@ points:
   zones:
     matrixl:
       anchor:
-        shift: [100, -100]
+        shift: [30, -200]
       #key:
       #  padding: U
       #  spread: U
@@ -54,7 +54,7 @@ points:
     matrixr:
       anchor:
         ref: matrixl_inner_mod
-        shift: [3.5U, 0]
+        shift: [3.0U, 0]
       columns:
         inner:
           rows.mod:
@@ -110,7 +110,7 @@ points:
     arrows:
       anchor:
         ref: matrixr_inner_mod
-        shift: [8U, 0U]
+        shift: [7.8U, 0.1U]
         rotate: 45
       columns:
         one:
@@ -121,7 +121,7 @@ points:
     pages:
       anchor:
         ref: arrows_two_a
-        shift: [1.5U, -0.75U]
+        shift: [1.35U, -0.7U]
       columns:
         one:
         two:
