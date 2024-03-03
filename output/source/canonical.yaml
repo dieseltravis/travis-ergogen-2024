@@ -91,14 +91,7 @@ points:
                 inner:
                     rows:
                         mod:
-                            shift:
-                                - U/2
-                                - 0
                             width: 3u
-                        bottom:
-                            shift:
-                                - '-U/2'
-                                - 0
                 index:
                     rows:
                         mod:
@@ -111,7 +104,7 @@ points:
                     rows:
                         mod:
                             shift:
-                                - '-U/2'
+                                - '-U'
                                 - 0
                         bottom:
                             shift:
@@ -121,7 +114,7 @@ points:
                     rows:
                         mod:
                             shift:
-                                - '-U/2'
+                                - '-U'
                                 - 0
                         bottom:
                             shift:
@@ -133,7 +126,7 @@ points:
                     rows:
                         mod:
                             shift:
-                                - '-U/2'
+                                - '-U'
                                 - 0
                         bottom:
                             shift:
@@ -142,19 +135,19 @@ points:
                             width: 2u
                         home:
                             shift:
-                                - '-U/2'
+                                - 0
                                 - 0
                 outer2:
                     rows:
                         mod:
                             shift:
-                                - '-U/2'
+                                - '-U'
                                 - 0
                         bottom:
                             skip: true
                         home:
                             shift:
-                                - U
+                                - 2U
                                 - 0
                             width: 2u
                         top:
@@ -192,11 +185,54 @@ points:
                             skip: true
             rows:
                 mod: null
-                bottom: null
-                home: null
+                bottom:
+                    shift:
+                        - '-U/2'
+                        - 0
+                home:
+                    shift:
+                        - U/2
+                        - 0
                 top: null
                 num: null
                 func: null
+        arrows:
+            anchor:
+                ref: matrixr_inner_mod
+                shift:
+                    - 8.5U
+                    - 0U
+                rotate: 45
+            columns:
+                one: null
+                two: null
+            rows:
+                a: null
+                b: null
+        pages:
+            anchor:
+                ref: arrows_two_a
+                shift:
+                    - 1.9U
+                    - 0U
+            columns:
+                one: null
+                two: null
+            rows:
+                a: null
+                b: null
+        special:
+            anchor:
+                ref: matrixr_outer4_func
+                shift:
+                    - 1.5U
+                    - 0U
+            columns:
+                del: null
+                ins: null
+                brk: null
+            rows:
+                top: null
 outlines: null
 pcb: null
 case: null

@@ -54,31 +54,30 @@ points:
       columns:
         inner:
           rows.mod:
-            shift: [U/2, 0]
+            #shift: [U/2, 0]
             width: 3u
-          rows.bottom.shift: [-U/2, 0]
         index:
           rows.mod.skip: true
         middle:
           rows.mod.skip: true
         ring:
-          rows.mod.shift: [-U/2, 0]
+          rows.mod.shift: [-U, 0]
           rows.bottom.shift: [U/2, 0]
         pinky:
-          rows.mod.shift: [-U/2, 0]
+          rows.mod.shift: [-U, 0]
           rows.bottom.shift: [U/2, 0]
           rows.func.skip: true
         outer:
-          rows.mod.shift: [-U/2, 0]
+          rows.mod.shift: [-U, 0]
           rows.bottom:
             shift: [U, 0]
             width: 2u
-          rows.home.shift: [-U/2, 0]
+          rows.home.shift: [0, 0]
         outer2:
-          rows.mod.shift: [-U/2, 0]
+          rows.mod.shift: [-U, 0]
           rows.bottom.skip: true
           rows.home:
-            shift: [U, 0]
+            shift: [2U, 0]
             width: 2u
           rows.top.shift: [-U/2, 0]
         outer3:
@@ -99,10 +98,43 @@ points:
       rows:
         mod:
         bottom:
+          shift: [-U/2, 0]
         home:
+          shift: [U/2, 0]
         top:
         num:
         func:
+    arrows:
+      anchor:
+        ref: matrixr_inner_mod
+        shift: [8.5U, 0U]
+        rotate: 45
+      columns:
+        one:
+        two:
+      rows:
+        a:
+        b:
+    pages:
+      anchor:
+        ref: arrows_two_a
+        shift: [1.9U, 0U]
+      columns:
+        one:
+        two:
+      rows:
+        a:
+        b:
+    special:
+      anchor:
+        ref: matrixr_outer4_func
+        shift: [1.5U, 0U]
+      columns:
+        del:
+        ins:
+        brk:
+      rows:
+        top:
 outlines:
 pcb:
 case:
