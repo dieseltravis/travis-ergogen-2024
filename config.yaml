@@ -285,11 +285,15 @@ pcbs:
         what: scrollwheel
         params:
           from: GND
+          #TODO:
           to: GND
+          #TODO:
           A: GND
           B: GND
+          #TODO:
           C: GND
-          D: GND
+          # This pin is unused
+          D: ""
         where:
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
           shift: [0, 0]
@@ -297,9 +301,12 @@ pcbs:
         what: rotary
         params:
           from: GND
+          #TODO:
           to: GND
+          #TODO:
           A: GND
           B: GND
+          #TODO:
           C: GND
         where:
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]

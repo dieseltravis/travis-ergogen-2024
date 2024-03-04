@@ -7770,7 +7770,7 @@
           (pad A thru_hole circle (at -5.625 -3.81 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 52 "GND"))
           (pad B thru_hole circle (at -5.625 -1.27 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 52 "GND"))
           (pad C thru_hole circle (at -5.625 1.27 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 52 "GND"))
-          (pad D thru_hole circle (at -5.625 3.81 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 52 "GND"))
+          (pad D thru_hole circle (at -5.625 3.81 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 0 ""))
 
           
           (pad "" np_thru_hole circle (at -5.625 6.3 0) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
