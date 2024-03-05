@@ -14,178 +14,6 @@
   resolved "https://registry.npmjs.org/@danmarshall/jscad-typings/-/jscad-typings-1.0.0.tgz"
   integrity sha512-MGGIGDItK2UQSsz7yTrXErQXDAFXR3UPxyQ7WZ5RHOwnv60CBXjmkJlXYMYPkSvo+7fUuQL2/ODcvECtc/fi9g==
 
-"@jscad/amf-deserializer@^0.2.1":
-  version "0.2.3"
-  resolved "https://registry.npmjs.org/@jscad/amf-deserializer/-/amf-deserializer-0.2.3.tgz"
-  integrity sha512-zf7grKFqvDZg5i2P5+/bg347Ci71JmJYVWMco+pTJQjJoH2nnNUbhjWh7jhhSQDWpaPyZ3RuLvbtSfCOkGcNYg==
-  dependencies:
-    "@jscad/csg" "^0.7.0"
-    sax "^1.2.1"
-
-"@jscad/amf-serializer@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/@jscad/amf-serializer/-/amf-serializer-0.1.2.tgz"
-  integrity sha512-Pvw2ErU5G3tRI2s/e9+6446AFm5bPGVdNMYq55vaLk7tVHYSAQuOkOMbt3Ye1GjNbO7+XkNvKGhw2MbAs9rdoA==
-  dependencies:
-    "@jscad/io-utils" "^0.1.3"
-    sax "^1.2.1"
-    xmldom "^0.1.27"
-
-"@jscad/cli@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.npmjs.org/@jscad/cli/-/cli-1.10.0.tgz"
-  integrity sha512-TCVedt7Pe4RMnoPhXb3vC4XiE0h5gkH6YRcO/kC8gqGKoAZlqL9CSxEZjW5WPGJ3kwAvlKWwfo0/xelGiCvJgg==
-  dependencies:
-    "@jscad/core" "^0.4.0"
-    "@jscad/csg" "0.7.0"
-    "@jscad/examples" "^1.7.2"
-    "@jscad/io" "0.4.7"
-    "@jscad/openscad-openjscad-translator" "0.0.11"
-
-"@jscad/core@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/@jscad/core/-/core-0.4.0.tgz"
-  integrity sha512-Bufnvi6J9SthrrYIcV6VIgMcU3f5ye89fV3nJA2xpCqLi8Svyg12WN6STYUz8pnDAasw7cZClzIpQP9uMJQZOw==
-  dependencies:
-    "@jscad/csg" "0.7.0"
-    "@jscad/io" "0.4.7"
-    "@jscad/openscad-openjscad-translator" "0.0.11"
-    astring "^1.3.1"
-    esprima "^3.1.3"
-    estraverse "^4.2.0"
-    require-from-string "^2.0.1"
-    strip-bom "^3.0.0"
-    webworkify "^1.4.0"
-
-"@jscad/csg@^0.7.0", "@jscad/csg@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.npmjs.org/@jscad/csg/-/csg-0.7.0.tgz"
-  integrity sha512-v91oCgmGq2h8TJsxSv8EdcEzf+3K/U6JVPrprHqhU7+dfjfD/Nezz/AHKNZFQxQ++k/8xMpwZWt22MgDqygiVA==
-
-"@jscad/dxf-deserializer@^0.1.1":
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/@jscad/dxf-deserializer/-/dxf-deserializer-0.1.3.tgz"
-  integrity sha512-rk9A2WpOlov4TsXdgVi98Zguwa+R1F+p4G6a5SSGiq1GfhNnah/FO1eybY9kZNSHhuckHK/ziSs8NgL96/p0iw==
-  dependencies:
-    "@jscad/csg" "^0.7.0"
-
-"@jscad/dxf-serializer@^0.2.4":
-  version "0.2.5"
-  resolved "https://registry.npmjs.org/@jscad/dxf-serializer/-/dxf-serializer-0.2.5.tgz"
-  integrity sha512-kh77mLyZECCSgjSTs3PCnnFncuHAR66dOpvx0v9Ct221nfmWYz6bqy66sH/Uy9MEwzZicIOIiashN59bginC6g==
-  dependencies:
-    "@jscad/csg" "^0.7.0"
-    "@jscad/io-utils" "^0.1.3"
-
-"@jscad/examples@^1.7.2":
-  version "1.7.2"
-  resolved "https://registry.npmjs.org/@jscad/examples/-/examples-1.7.2.tgz"
-  integrity sha512-WbZwU+KV2XMMZ99gJEyX8CmE8k6QM2JwXXsvcUCFiC6V0LOE7k6zXVuH6fTPy1VJa54U3m9dzlGVcP1XzZ0Rag==
-
-"@jscad/gcode-deserializer@^0.2.0":
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/@jscad/gcode-deserializer/-/gcode-deserializer-0.2.1.tgz"
-  integrity sha512-Gn5emOcE6cjRdaSlzcDDYe/5spSXNG6FlnoXGX5ciIo04UHJjYvJN6i9YRRCiypX3rFvxfR84LaST2PxIbrsQw==
-
-"@jscad/io-utils@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/@jscad/io-utils/-/io-utils-0.1.3.tgz"
-  integrity sha512-aCVUZovewI4njtEJ1fvjhasqd8EHIzQaPb88MtFWf/ff1NdGOu/vRH3yGG8vu0NZektGEDCKp028g2nTBL7aFg==
-
-"@jscad/io@0.4.7":
-  version "0.4.7"
-  resolved "https://registry.npmjs.org/@jscad/io/-/io-0.4.7.tgz"
-  integrity sha512-D4yuBDppfVNNYSQpm6D+Vgn80aTIF7K64i6aCPrjl5AQYX8oRKdgm5biRZU/RDg1pxkSUs5s/vfOmU/86U8SFQ==
-  dependencies:
-    "@jscad/amf-deserializer" "^0.2.1"
-    "@jscad/amf-serializer" "^0.1.2"
-    "@jscad/dxf-deserializer" "^0.1.1"
-    "@jscad/dxf-serializer" "^0.2.4"
-    "@jscad/gcode-deserializer" "^0.2.0"
-    "@jscad/io-utils" "^0.1.3"
-    "@jscad/json-deserializer" "^0.1.2"
-    "@jscad/json-serializer" "^0.1.2"
-    "@jscad/obj-deserializer" "^0.2.1"
-    "@jscad/stl-deserializer" "^0.3.2"
-    "@jscad/stl-serializer" "^0.1.3"
-    "@jscad/svg-deserializer" "^0.4.2"
-    "@jscad/svg-serializer" "^0.1.3"
-    "@jscad/x3d-serializer" "^0.1.2"
-
-"@jscad/json-deserializer@^0.1.2":
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/@jscad/json-deserializer/-/json-deserializer-0.1.3.tgz"
-  integrity sha512-8zvtCqfYL7nBFJ8fj9Oqo5VuplzU9kupUJBjumkYTEvUUkr63Nv0U7slse0Tu8ZkpYc2rjbpBBZHXosCchicsQ==
-  dependencies:
-    "@jscad/csg" "0.7.0"
-
-"@jscad/json-serializer@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/@jscad/json-serializer/-/json-serializer-0.1.2.tgz"
-  integrity sha512-fptGLXaeK56AYWWcfXDaiXCjZm70OKEHaAzHUpmjFRzH13gbZ7j27oS7jSe23xElPffst2/U5QJq70V/psYHCQ==
-  dependencies:
-    "@jscad/csg" "0.7.0"
-    "@jscad/io-utils" "^0.1.3"
-
-"@jscad/obj-deserializer@^0.2.1":
-  version "0.2.3"
-  resolved "https://registry.npmjs.org/@jscad/obj-deserializer/-/obj-deserializer-0.2.3.tgz"
-  integrity sha512-txwW8ESSz2WtwlcfVnr+S1IGPJLZt/QA1aXRNGqsYLacLyYN6EIWu4DEjmz6ebQ2KUgwHgiCE1l6bl+bJ+3NIA==
-  dependencies:
-    "@jscad/csg" "^0.7.0"
-
-"@jscad/openscad-openjscad-translator@0.0.11":
-  version "0.0.11"
-  resolved "https://registry.npmjs.org/@jscad/openscad-openjscad-translator/-/openscad-openjscad-translator-0.0.11.tgz"
-  integrity sha512-wnsIBsRaYJRxdhyUnglzf6SDBREjRyrOEKU9BRD+PudjcV5wy5PwB6quxWADilAPRO5fxnMJjNJ2vywR88oE5g==
-  dependencies:
-    "@kaosat-dev/sylvester" "0.0.21"
-    lodash "^4.17.4"
-
-"@jscad/stl-deserializer@^0.3.2":
-  version "0.3.3"
-  resolved "https://registry.npmjs.org/@jscad/stl-deserializer/-/stl-deserializer-0.3.3.tgz"
-  integrity sha512-k9uij49SX1S993qQVqbDFr4auU0uyd+qtRDf7muLBSzyP5h6Qip6Z9YjbED4lvzGKfnyh9PNE8IdaoZVgs1dAg==
-  dependencies:
-    "@jscad/csg" "0.7.0"
-    "@jscad/io-utils" "^0.1.3"
-
-"@jscad/stl-serializer@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/@jscad/stl-serializer/-/stl-serializer-0.1.3.tgz"
-  integrity sha512-Zdrluf82TnBL6hHm28DfQGpjHHuN69XONH8SYwF0x3gnr5q+281erj+NRgH5odHYuxmetVNgoT5G1c654cIJag==
-  dependencies:
-    "@jscad/io-utils" "^0.1.3"
-
-"@jscad/svg-deserializer@^0.4.2":
-  version "0.4.3"
-  resolved "https://registry.npmjs.org/@jscad/svg-deserializer/-/svg-deserializer-0.4.3.tgz"
-  integrity sha512-kN8Ug8BbT1JLJGEl+QB3j+Olj3MOEN+XC9yTHpWaYdmwAGQ0/ULEmUkbse4xHhnEgIjYLO3fPZe3xWSkedPNxg==
-  dependencies:
-    "@jscad/csg" "0.7.0"
-    sax "1.2.4"
-
-"@jscad/svg-serializer@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/@jscad/svg-serializer/-/svg-serializer-0.1.3.tgz"
-  integrity sha512-2ToKwVmVyNk9XD9WHm2QhbBI9LAQdfPxhCCOp13YNmXV8Ebl44V+IoIVzYdfcQuX1tSLOX7UPsL+zEcoQuVBbw==
-  dependencies:
-    "@jscad/csg" "0.7.0"
-    onml "^0.4.1"
-
-"@jscad/x3d-serializer@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/@jscad/x3d-serializer/-/x3d-serializer-0.1.2.tgz"
-  integrity sha512-kIkB+1CasHOClgxslKLPvgr+z93Go9luvZlFyz+leWtpJt07BPcEzaQQDap5E7HL3EUgorIeythx3+CvLntPZg==
-  dependencies:
-    "@jscad/io-utils" "^0.1.3"
-    xmldom "^0.1.27"
-
-"@kaosat-dev/sylvester@0.0.21":
-  version "0.0.21"
-  resolved "https://registry.npmjs.org/@kaosat-dev/sylvester/-/sylvester-0.0.21.tgz"
-  integrity sha512-a/z8DU57XFW8d8Kd9jWbDU55W54BDcXmXJeg+dFZ4AoQYji41EjJY+Cw1v+5HG03mKkjzNNCSid/pa861gMpHQ==
-
 "@types/bezier-js@^0.0.6":
   version "0.0.6"
   resolved "https://registry.npmjs.org/@types/bezier-js/-/bezier-js-0.0.6.tgz"
@@ -233,11 +61,6 @@ argparse@^1.0.7:
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
   dependencies:
     sprintf-js "~1.0.2"
-
-astring@^1.3.1:
-  version "1.8.6"
-  resolved "https://registry.npmjs.org/astring/-/astring-1.8.6.tgz"
-  integrity sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==
 
 bezier-js@^2.1.0:
   version "2.6.1"
@@ -313,20 +136,10 @@ escape-latex@^1.2.0:
   resolved "https://registry.npmjs.org/escape-latex/-/escape-latex-1.2.0.tgz"
   integrity sha512-nV5aVWW1K0wEiUIEdZ4erkGGH8mDxGyxSeqPzRNtWP7ataw+/olFObw7hujFWlVjNsaDFw5VZ5NzVSIqRgfTiw==
 
-esprima@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.npmjs.org/esprima/-/esprima-3.1.3.tgz"
-  integrity sha512-AWwVMNxwhN8+NIPQzAQZCm7RkLC4RbM3B1OobMuyp3i+w73X57KCKaVIxaRZb+DYCojq7rspo+fmuQfAboyhFg==
-
 esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.npmjs.org/esprima/-/esprima-4.0.1.tgz"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
-
-estraverse@^4.2.0:
-  version "4.3.0"
-  resolved "https://registry.npmjs.org/estraverse/-/estraverse-4.3.0.tgz"
-  integrity sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==
 
 fraction.js@4.3.4:
   version "4.3.4"
@@ -432,11 +245,6 @@ lie@~3.3.0:
   dependencies:
     immediate "~3.0.5"
 
-lodash@^4.17.4:
-  version "4.17.21"
-  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
-
 "makerjs@github:ergogen/maker.js#ergogen":
   version "0.17.0"
   resolved "git+ssh://git@github.com/ergogen/maker.js.git#a0ca32948845efe8ad5c9ca454f1285926853138"
@@ -465,13 +273,6 @@ mathjs@^11.5.0:
     seedrandom "^3.0.5"
     tiny-emitter "^2.1.0"
     typed-function "^4.1.1"
-
-onml@^0.4.1:
-  version "0.4.5"
-  resolved "https://registry.npmjs.org/onml/-/onml-0.4.5.tgz"
-  integrity sha512-57s3RgVQZa7fGpPFqnJ/AreTQQMZVmHLNCmwAvV0LD4vacPhiWN+ggFvChzpGWNQ/tkCn5W1omJtbcjaukAFJA==
-  dependencies:
-    sax "^1.2.1"
 
 pako@~1.0.2:
   version "1.0.11"
@@ -506,25 +307,10 @@ require-directory@^2.1.1:
   resolved "https://registry.npmjs.org/require-directory/-/require-directory-2.1.1.tgz"
   integrity sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==
 
-require-from-string@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz"
-  integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
-
 safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
-
-sax@^1.2.1:
-  version "1.3.0"
-  resolved "https://registry.npmjs.org/sax/-/sax-1.3.0.tgz"
-  integrity sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==
-
-sax@1.2.4:
-  version "1.2.4"
-  resolved "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz"
-  integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
 seedrandom@^3.0.5:
   version "3.0.5"
@@ -564,11 +350,6 @@ strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   dependencies:
     ansi-regex "^5.0.1"
 
-strip-bom@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/strip-bom/-/strip-bom-3.0.0.tgz"
-  integrity sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==
-
 tiny-emitter@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-2.1.0.tgz"
@@ -594,11 +375,6 @@ util-deprecate@~1.0.1:
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
-webworkify@^1.4.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/webworkify/-/webworkify-1.5.0.tgz"
-  integrity sha512-AMcUeyXAhbACL8S2hqqdqOLqvJ8ylmIbNwUIqQujRSouf4+eUFaXbG6F1Rbu+srlJMmxQWsiU7mOJi0nMBfM1g==
-
 wrap-ansi@^7.0.0:
   version "7.0.0"
   resolved "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz"
@@ -607,11 +383,6 @@ wrap-ansi@^7.0.0:
     ansi-styles "^4.0.0"
     string-width "^4.1.0"
     strip-ansi "^6.0.0"
-
-xmldom@^0.1.27:
-  version "0.1.31"
-  resolved "https://registry.npmjs.org/xmldom/-/xmldom-0.1.31.tgz"
-  integrity sha512-yS2uJflVQs6n+CyjHoaBmVSqIDevTAWrzMmjG1Gc7h1qQ7uVozNhEPJAwZXWyGQ/Gafo3fCwrcaokezLPupVyQ==
 
 y18n@^5.0.5:
   version "5.0.8"
