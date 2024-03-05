@@ -272,6 +272,32 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
           shift: [0,-7.25]
           rotate: -90
+      dip1:
+        what: DIP16W762
+        params:
+          #TODO: map 1 - 3 to promicro, Y0 - Y7 to columns
+          # add cap across power and ground?
+          p01: GND #A
+          p02: GND #B
+          p03: GND #C
+          p04: GND #G2A
+          p05: GND #G2B
+          p06: GND #G1
+          p07: GND #Y7
+          p08: GND #GND
+          p09: GND #Y6
+          p10: GND #Y5
+          p11: GND #Y4
+          p12: GND #Y3
+          p13: GND #Y2
+          p14: GND #Y1
+          p15: GND #Y0
+          p16: VCC #VCC
+        where:
+          ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
+          # adjust to pin 1
+          shift: [-(7.62 / 2), (21.34 / 2)]
+          rotate: 0
       reset:
         what: button
         params:
