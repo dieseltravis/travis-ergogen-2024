@@ -5,6 +5,8 @@ units:
   stlp: U + 10
   screwSize: 1.5
   standoffSize: 2.5
+  standoffHeight: 4.0
+  boardThick: 1.6
 points:
   zones:
     matrixl:
@@ -17,11 +19,11 @@ points:
         outer:
           rows:
             bottom:
-              #shift: [U/2, 0]
-              width: 2u
-            home.width: 2u
-            top.width: 2u
-            #num.shift: [-U/2, 0]
+              shift: [U/4, 0]
+              width: 1.5u
+            home.width: 1.5u
+            top.width: 1.5u
+            num.shift: [-U/4, 0]
         pinky:
           rows:
             bottom.shift: [U/2, 0]
@@ -57,7 +59,7 @@ points:
     matrixr:
       anchor:
         ref: matrixl_inner_mod
-        shift: [3.25U, 0]
+        shift: [3U, 0]
       columns:
         inner:
           rows.mod:
@@ -76,25 +78,25 @@ points:
         outer:
           rows.mod.shift: [-U, 0]
           rows.bottom:
-            shift: [U, 0]
-            width: 2u
-          rows.home.shift: [-U/2, 0]
+            shift: [3U/4, 0]
+            width: 1.5u
+          rows.home.shift: [-U/4, 0]
         outer2:
           rows.mod.shift: [-U, 0]
           rows.bottom.skip: true
           rows.home:
-            shift: [1.5U, 0]
-            width: 2u
-          rows.top.shift: [-U/2, 0]
+            shift: [5U/4, 0]
+            width: 1.5u
+          rows.top.shift: [-U/4, 0]
         outer3:
           rows.mod.skip: true
           rows.bottom.skip: true
           rows.home.skip: true
           rows.num:
-            shift: [U/2, 0]
-            width: 2u
+            shift: [U/4, 0]
+            width: 1.5u
           rows.func:
-            shift: [-U, 0]
+            shift: [-3U/4, 0]
         outer4:
           rows.mod.skip: true
           rows.bottom.skip: true
@@ -113,7 +115,7 @@ points:
     arrows:
       anchor:
         ref: matrixr_inner_mod
-        shift: [7.8U, 0.1U]
+        shift: [7.5U, 0.1U]
         rotate: 45
       columns:
         left:
@@ -134,7 +136,7 @@ points:
     special:
       anchor:
         ref: matrixr_outer4_num
-        shift: [1.5U, 0U]
+        shift: [1U, 0]
       columns:
         left:
         mid:
@@ -186,15 +188,13 @@ outlines:
           shift: [0.5stlp, -0.5stlp]
         - ref: pages_left_bottom
           shift: [-0.5stlp, -0.5stlp]
-        #- ref: arrows_right_bottom
-        #  shift: [0.5stlp, -0.5stlp]
         - ref: arrows_left_bottom
           shift: [-0.5stlp, -0.5stlp]
         - ref: matrixr_outer2_mod
           shift: [0.5stlp, -0.5stlp]
         - ref: matrixl_outer_mod
           shift: [-0.5stlp, -0.5stlp]
-      fillet: 2
+      fillet: 3
   combo:
     - name: board
     - operation: subtract
@@ -312,36 +312,37 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
           shift: [0, 0]
           rotate: -90
-      holeTopLeft:
-        what: mountinghole
-        where:
-          ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
-          shift: [0, 0.3u]
-      holeTopRight:
-        what: mountinghole
-        where:
-          ref.aggregate.parts: [special_mid_top, special_right_top]
-          shift: [0, -u/2]
-      holeBottomRight:
-        what: mountinghole
-        where:
-          ref.aggregate.parts: [matrixr_outer2_mod, arrows_left_bottom]
-          shift: [0, -0.3u]
-      holeBottomLeft:
-        what: mountinghole
-        where:
-          ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
-          shift: [0, -0.3u]
+# use custom footprints/mountinghole.js
+#      holeTopLeft:
+#        what: mountinghole
+#        where:
+#          ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
+#          shift: [0, 0.3u]
+#      holeTopRight:
+#        what: mountinghole
+#        where:
+#          ref.aggregate.parts: [special_mid_top, special_right_top]
+#          shift: [0, -u/2]
+#      holeBottomRight:
+#        what: mountinghole
+#        where:
+#          ref.aggregate.parts: [matrixr_outer2_mod, arrows_left_bottom]
+#          shift: [0, -0.3u]
+#      holeBottomLeft:
+#        what: mountinghole
+#        where:
+#          ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
+#          shift: [0, -0.3u]
 cases:
   bottom:
     - name: board3d
       extrude: 1
   _outerWall:
     - name: board3d
-      extrude: 5.6
+      extrude: standoffHeight + boardThick
   _innerWall:
     - name: board
-      extrude: 5.6
+      extrude: standoffHeight + boardThick
   wall:
     - what: case
       name: _outerWall
@@ -351,10 +352,10 @@ cases:
       operation: subtract
   _holes:
     - name: mounting
-      extrude: 4
+      extrude: standoffHeight
   _standoffs:
     - name: standoff
-      extrude: 4
+      extrude: standoffHeight
   case:
     - what: case
       name: _standoffs
