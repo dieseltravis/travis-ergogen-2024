@@ -4,8 +4,8 @@
   "description": "Travis's first Ergogen keyboard",
   "main": "index.js",
   "scripts": {
-    "gen": "ergogen . -o output --clean",
-    "3d": "ergogen . -o output --clean && for i in output/cases/*.jscad; do npx @jscad/cli@1 \"$i\" -of stla; done"
+    "gen": "ergogen . -o output",
+    "3d": "ergogen . -o output && for i in output/cases/*.jscad; do npx @jscad/cli@1 \"$i\" -of stla; done"
   },
   "engines": {
     "node": ">=20.0.0"
