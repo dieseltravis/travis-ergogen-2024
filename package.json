@@ -4,6 +4,7 @@
   "description": "Travis's first Ergogen keyboard",
   "main": "index.js",
   "scripts": {
+    "test": "npx yamllint config.yaml",
     "gen": "ergogen . -o output",
     "3d": "ergogen . -o output && for i in output/cases/*.jscad; do npx @jscad/cli@1 \"$i\" -of stla; done"
   },
@@ -21,5 +22,8 @@
   },
   "dependencies": {
     "ergogen": "^4.0.5"
+  },
+  "devDependencies": {
+    "yaml-lint": "^1.7.0"
   }
 }

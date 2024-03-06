@@ -261,7 +261,7 @@ outlines:
         ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
         shift: [0, -0.3U]
 pcbs:
-  tutorial:
+  travis_erg2024:
     outlines:
       main:
         outline: board
@@ -289,55 +289,72 @@ pcbs:
           orientation: "down"
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
-          shift: [0,-7.25]
+          shift: [0,-2.75]
           rotate: -90
+      c1:
+        what: CDiscD38W26P25
+        params:
+          p1: VCC
+          p2: GND
+        where:
+          ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
+          # adjust to pin 1
+          shift: [(2.5 / 2), (21.34 / 2) + 3]
+          rotate: 180
       dip1:
         what: DIP16W762
         params:
-          #TODO: map 1 - 3 to promicro, Y0 - Y7 to columns
-          # add cap across power and ground?
-          p01: GND #A
-          p02: GND #B
-          p03: GND #C
+          #TODO: add cap across p16 power and p08 ground
+          p01: mux0 #A
+          p02: mux1 #B
+          p03: mux2 #C
           p04: GND #G2A
-          p05: GND #G2B
-          p06: GND #G1
-          p07: GND #Y7
-          p08: GND #GND
-          p09: GND #Y6
-          p10: GND #Y5
-          p11: GND #Y4
-          p12: GND #Y3
-          p13: GND #Y2
-          p14: GND #Y1
-          p15: GND #Y0
-          p16: VCC #VCC
+          p05: mux3 #G2B
+          p06: VCC #G1
+          p07: col7 #Y7
+          p08: GND #GND C1 P2
+          p09: col6 #Y6
+          p10: col5 #Y5
+          p11: col4 #Y4
+          p12: col3 #Y3
+          p13: col2 #Y2
+          p14: col1 #Y1
+          p15: col0 #Y0
+          p16: VCC #VCC C1 P1
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
           # adjust to pin 1
           shift: [-(7.62 / 2), (21.34 / 2)]
           rotate: 0
+      c2:
+        what: CDiscD38W26P25
+        params:
+          p1: VCC
+          p2: GND
+        where:
+          ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
+          # adjust to pin 1
+          shift: [(2.5 / 2), (21.34 / 2) + 3]
+          rotate: 180
       dip2:
         what: DIP16W762
         params:
-          #TODO: map 1 - 3 to promicro, Y0 - Y7 to columns
-          # add cap across power and ground?
-          p01: GND #A
-          p02: GND #B
-          p03: GND #C
+          p01: mux0 #A
+          p02: mux1 #B
+          p03: mux2 #C
           p04: GND #G2A
           p05: GND #G2B
-          p06: GND #G1
-          p07: GND #Y7
-          p08: GND #GND
-          p09: GND #Y6
-          p10: GND #Y5
-          p11: GND #Y4
-          p12: GND #Y3
-          p13: GND #Y2
-          p14: GND #Y1
-          p15: GND #Y0
-          p16: VCC #VCC
+          p06: mux3 #G1
+          p07: col15 #Y7
+          p08: GND #GND C2 P2
+          p09: col14 #Y6
+          p10: col13 #Y5
+          p11: col12 #Y4
+          p12: col11 #Y3
+          p13: col10 #Y2
+          p14: col9 #Y1
+          p15: col8 #Y0
+          p16: VCC #VCC C2 P1
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
           # adjust to pin 1
@@ -380,30 +397,30 @@ pcbs:
           #TODO:
           C: GND
         where:
-          ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
+          ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
           shift: [0, 0]
           rotate: -90
-# use custom footprints/mountinghole.js
-#      holeTopLeft:
-#        what: mountinghole
-#        where:
-#          ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
-#          shift: [0, 0.3U]
-#      holeTopRight:
-#        what: mountinghole
-#        where:
-#          ref.aggregate.parts: [special_mid_top, special_right_top]
-#          shift: [0, -U/2]
-#      holeBottomRight:
-#        what: mountinghole
-#        where:
-#          ref.aggregate.parts: [matrixr_outer2_mod, arrows_left_bottom]
-#          shift: [0, -0.3U]
-#      holeBottomLeft:
-#        what: mountinghole
-#        where:
-#          ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
-#          shift: [0, -0.3U]
+      holeTopLeft:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
+          shift: [0, 0.3U]
+      holeTopRight:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [special_mid_top, special_right_top]
+          shift: [0, -U/2]
+      holeBottomRight:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [matrixr_outer_mod, arrows_left_bottom]
+          shift: [0, -0.3U]
+      holeBottomLeft:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
+          shift: [0, -0.3U]
+    references: true
 cases:
   bottom:
     - name: board3d

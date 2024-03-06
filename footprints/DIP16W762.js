@@ -3,6 +3,7 @@
 module.exports = {
     params: {
         designator: 'DIP',
+        side: 'F',
         p01: undefined,
         p02: undefined,
         p03: undefined,
@@ -21,40 +22,40 @@ module.exports = {
         p16: undefined
     },
     body: p => `
-    (module DIP-16_W7.62mm_Socket (layer F.Cu) (tedit 5A02E8C5)
+    (module DIP-16_W7.62mm_Socket (layer ${p.side}.Cu) (tedit 5A02E8C5)
   (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
+  (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
   ${p.at /* parametric position */}
 
-  (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
-  (fp_text reference "${p.ref}" (at 3.81 -2.33) (layer F.SilkS) ${p.ref_hide}
+  (fp_text reference "${p.ref}" (at 3.81 -2.33) (layer ${p.side}.SilkS) ${p.ref_hide}
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value DIP-16_W7.62mm_Socket (at 3.81 20.11) (layer F.Fab)
+  (fp_text value DIP-16_W7.62mm_Socket (at 3.81 20.11) (layer ${p.side}.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_arc (start 3.81 -1.33) (end 2.81 -1.33) (angle -180.000000) (layer F.SilkS) (width 0.12))
-  (fp_line (start 1.635 -1.27) (end 6.985 -1.27) (layer F.Fab) (width 0.1))
-  (fp_line (start 6.985 -1.27) (end 6.985 19.05) (layer F.Fab) (width 0.1))
-  (fp_line (start 6.985 19.05) (end 0.635 19.05) (layer F.Fab) (width 0.1))
-  (fp_line (start 0.635 19.05) (end 0.635 -0.27) (layer F.Fab) (width 0.1))
-  (fp_line (start 0.635 -0.27) (end 1.635 -1.27) (layer F.Fab) (width 0.1))
-  (fp_line (start -1.27 -1.33) (end -1.27 19.11) (layer F.Fab) (width 0.1))
-  (fp_line (start -1.27 19.11) (end 8.89 19.11) (layer F.Fab) (width 0.1))
-  (fp_line (start 8.89 19.11) (end 8.89 -1.33) (layer F.Fab) (width 0.1))
-  (fp_line (start 8.89 -1.33) (end -1.27 -1.33) (layer F.Fab) (width 0.1))
-  (fp_line (start 2.81 -1.33) (end 1.16 -1.33) (layer F.SilkS) (width 0.12))
-  (fp_line (start 1.16 -1.33) (end 1.16 19.11) (layer F.SilkS) (width 0.12))
-  (fp_line (start 1.16 19.11) (end 6.46 19.11) (layer F.SilkS) (width 0.12))
-  (fp_line (start 6.46 19.11) (end 6.46 -1.33) (layer F.SilkS) (width 0.12))
-  (fp_line (start 6.46 -1.33) (end 4.81 -1.33) (layer F.SilkS) (width 0.12))
-  (fp_line (start -1.33 -1.39) (end -1.33 19.17) (layer F.SilkS) (width 0.12))
-  (fp_line (start -1.33 19.17) (end 8.95 19.17) (layer F.SilkS) (width 0.12))
-  (fp_line (start 8.95 19.17) (end 8.95 -1.39) (layer F.SilkS) (width 0.12))
-  (fp_line (start 8.95 -1.39) (end -1.33 -1.39) (layer F.SilkS) (width 0.12))
-  (fp_line (start -1.55 -1.6) (end -1.55 19.4) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -1.55 19.4) (end 9.15 19.4) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 9.15 19.4) (end 9.15 -1.6) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 9.15 -1.6) (end -1.55 -1.6) (layer F.CrtYd) (width 0.05))
+  (fp_arc (start 3.81 -1.33) (end 2.81 -1.33) (angle -180.000000) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start 1.635 -1.27) (end 6.985 -1.27) (layer ${p.side}.Fab) (width 0.1))
+  (fp_line (start 6.985 -1.27) (end 6.985 19.05) (layer ${p.side}.Fab) (width 0.1))
+  (fp_line (start 6.985 19.05) (end 0.635 19.05) (layer ${p.side}.Fab) (width 0.1))
+  (fp_line (start 0.635 19.05) (end 0.635 -0.27) (layer ${p.side}.Fab) (width 0.1))
+  (fp_line (start 0.635 -0.27) (end 1.635 -1.27) (layer ${p.side}.Fab) (width 0.1))
+  (fp_line (start -1.27 -1.33) (end -1.27 19.11) (layer ${p.side}.Fab) (width 0.1))
+  (fp_line (start -1.27 19.11) (end 8.89 19.11) (layer ${p.side}.Fab) (width 0.1))
+  (fp_line (start 8.89 19.11) (end 8.89 -1.33) (layer ${p.side}.Fab) (width 0.1))
+  (fp_line (start 8.89 -1.33) (end -1.27 -1.33) (layer ${p.side}.Fab) (width 0.1))
+  (fp_line (start 2.81 -1.33) (end 1.16 -1.33) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start 1.16 -1.33) (end 1.16 19.11) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start 1.16 19.11) (end 6.46 19.11) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start 6.46 19.11) (end 6.46 -1.33) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start 6.46 -1.33) (end 4.81 -1.33) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start -1.33 -1.39) (end -1.33 19.17) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start -1.33 19.17) (end 8.95 19.17) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start 8.95 19.17) (end 8.95 -1.39) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start 8.95 -1.39) (end -1.33 -1.39) (layer ${p.side}.SilkS) (width 0.12))
+  (fp_line (start -1.55 -1.6) (end -1.55 19.4) (layer ${p.side}.CrtYd) (width 0.05))
+  (fp_line (start -1.55 19.4) (end 9.15 19.4) (layer ${p.side}.CrtYd) (width 0.05))
+  (fp_line (start 9.15 19.4) (end 9.15 -1.6) (layer ${p.side}.CrtYd) (width 0.05))
+  (fp_line (start 9.15 -1.6) (end -1.55 -1.6) (layer ${p.side}.CrtYd) (width 0.05))
   (pad 1 thru_hole rect (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p01})
   (pad 9 thru_hole oval (at 7.62 17.78) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p09})
   (pad 2 thru_hole oval (at 0 2.54) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p02})
@@ -72,7 +73,7 @@ module.exports = {
   (pad 8 thru_hole oval (at 0 17.78) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p08})
   (pad 16 thru_hole oval (at 7.62 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p16})
 
-  (fp_text user %R (at 3.81 8.89) (layer F.Fab)
+  (fp_text user %R (at 3.81 8.89) (layer ${p.side}.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
 
@@ -82,4 +83,4 @@ module.exports = {
     (rotate (xyz 0 0 0))
   )
 )`
-}
+};
