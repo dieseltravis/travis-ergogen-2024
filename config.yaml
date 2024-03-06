@@ -72,9 +72,11 @@ points:
         func:
     matrixr:
       anchor:
-        ref: matrixl_inner_mod
+        #ref: matrixl_inner_mod
         #shift: [3U+2.2, 0]
-        shift: [3.5U, 2]
+        #shift: [3.5U, 2]
+        ref: matrixl_inner_home
+        shift: [3U+2, -2U+2.1]
         rotate: 5
       key:
         padding: U
