@@ -6,14 +6,20 @@ units:
   standoffSize: 2.5
   standoffHeight: 4.0
   boardThick: 1.6
+  stabilizer_width: 7
+  stabilizer_height: 14
+  stabilizer_offset: -1 # This means south stabs, use `orient` to rotate them for north facing scenarios
+  stabilizer_spacing_3u: U * ((3 - 1) / 2)
 points:
   zones:
     matrixl:
       anchor:
         shift: [27, -175]
+        rotate: 0
       key:
         padding: U
         spread: U
+        splay: -1
       columns:
         outer:
           rows:
@@ -29,23 +35,32 @@ points:
             num.shift: [0, 0]
             func.skip: true
         ring:
+          key:
+            stagger: 2
           rows:
             bottom.shift: [0, 0]
             num.shift: [0, 0]
         middle:
+          key:
+            stagger: 1
           rows:
             bottom.shift: [0, 0]
             num.shift: [0, 0]
         index:
-          rows:
-            mod:
-              shift: [U+0.6, 0]
-              width: 3U
-            bottom.shift: [-U-0.6, 0]
-            num.shift: [0, 0]
-        inner:
+          key:
+            stagger: -1
           rows:
             mod.skip: true
+            #bottom.shift: [-U-0.6, 0]
+            num.shift: [0, 0]
+        inner:
+          key:
+            stagger: -0.25
+          rows:
+            mod:
+              shift: [0.6, 0]
+              width: 3U
+              tags: 3u_stabilizers
             bottom.shift: [0, 0]
             num.shift: [0, 0]
       rows:
@@ -58,10 +73,13 @@ points:
     matrixr:
       anchor:
         ref: matrixl_inner_mod
-        shift: [3U+2.2, 0]
+        #shift: [3U+2.2, 0]
+        shift: [3.5U, 2]
+        rotate: 5
       key:
         padding: U
         spread: U
+        splay: -1
       columns:
         inner:
           rows.mod:
@@ -69,10 +87,18 @@ points:
             width: 3U
           rows.bottom.shift: [0.6, 0]
         index:
+          key:
+            stagger: 0.25
           rows.mod.skip: true
         middle:
+          key:
+            stagger: 1
         ring:
+          key:
+            stagger: -1
         pinky:
+          key:
+            stagger: -2
           rows.func.skip: true
         outer:
           rows.bottom:
@@ -111,7 +137,7 @@ points:
     arrows:
       anchor:
         ref: matrixr_inner_mod
-        shift: [8U, 0.1U]
+        shift: [8U, -0.5U]
         rotate: 45
       key:
         padding: U
@@ -125,7 +151,7 @@ points:
     pages:
       anchor:
         ref: arrows_right_bottom
-        shift: [1.35U, -0.7U]
+        shift: [1.25U, -1.0U]
       key:
         padding: U
         spread: U
@@ -149,7 +175,21 @@ points:
       rows:
         bottom:
         top:
+  rotate: 5
 outlines:
+  3u_stabilizer: # This creates the stabilizer, you just need to use its name in a `where` clause of another outline
+    - operation: stack
+      where: 3u_stabilizers # Set this tag on the keys you want
+      what: rectangle
+      size: [stabilizer_width, stabilizer_height]
+      adjust:
+        shift: [stabilizer_spacing_3u, stabilizer_offset]
+    - operation: stack
+      where: 3u_stabilizers
+      what: rectangle
+      size: [stabilizer_width, stabilizer_height]
+      adjust:
+        shift: [-stabilizer_spacing_3u, stabilizer_offset]
   raw:
     - what: rectangle
       where: true
