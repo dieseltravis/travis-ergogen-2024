@@ -237,9 +237,9 @@ outlines:
         - ref: matrixr_ring_mod
           shift: [0, -0.5op]
         - ref: matrixr_middle_mod
-          shift: [0, -0.5op]
+          shift: [-0.5op, -0.5op]
         - ref: matrixr_inner_mod
-          shift: [0, -0.5op]
+          shift: [0.5op, -0.5op]
         - ref: matrixr_inner_mod
           shift: [-1op, -0.5op - 1]
         - ref: matrixl_inner_mod
@@ -318,9 +318,9 @@ outlines:
         - ref: matrixr_ring_mod
           shift: [0, -0.5stlp]
         - ref: matrixr_middle_mod
-          shift: [0, -0.5stlp]
+          shift: [-0.5stlp, -0.5stlp]
         - ref: matrixr_inner_mod
-          shift: [0, -0.5stlp]
+          shift: [0.5stlp, -0.5stlp]
         - ref: matrixr_inner_mod
           shift: [-1stlp, -0.5stlp - 1]
         - ref: matrixl_inner_mod
@@ -381,7 +381,7 @@ outlines:
       radius: screwSize
       where:
         ref: matrixl_outer_mod
-        shift: [-0.5U - 3, 0.5U - 3]
+        shift: [-0.5U - 3, 0]
   standoff:
     - what: circle
       radius: standoffSize
@@ -417,7 +417,7 @@ outlines:
       radius: standoffSize
       where:
         ref: matrixl_outer_mod
-        shift: [-0.5U - 3, 0.5U - 3]
+        shift: [-0.5U - 3, 0]
   plate:
     - name: combo
     - operation: subtract
