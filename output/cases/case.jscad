@@ -1,9 +1,15 @@
 function standoff_extrude_4_outline_fn(){
     return CAG.circle({"center":[25.5641052,-166.9428674],"radius":2.5})
 .union(
-    CAG.circle({"center":[315.7300076,-182.4274464],"radius":2.5})
+    CAG.circle({"center":[317.1418314,-185.9662108],"radius":2.5})
+).union(
+    CAG.circle({"center":[398.4751154,-124.7916516],"radius":2.5})
 ).union(
     CAG.circle({"center":[412.1055918,-74.3869609],"radius":2.5})
+).union(
+    CAG.circle({"center":[163.7676778,-156.6761783],"radius":2.5})
+).union(
+    CAG.circle({"center":[164.0168889,-99.5615362],"radius":2.5})
 ).union(
     CAG.circle({"center":[25.6525833,-64.5707292],"radius":2.5})
 ).extrude({ offset: [0, 0, 4] });
@@ -13,9 +19,15 @@ function standoff_extrude_4_outline_fn(){
 function mounting_extrude_4_outline_fn(){
     return CAG.circle({"center":[25.5641052,-166.9428674],"radius":1.5})
 .union(
-    CAG.circle({"center":[315.7300076,-182.4274464],"radius":1.5})
+    CAG.circle({"center":[317.1418314,-185.9662108],"radius":1.5})
+).union(
+    CAG.circle({"center":[398.4751154,-124.7916516],"radius":1.5})
 ).union(
     CAG.circle({"center":[412.1055918,-74.3869609],"radius":1.5})
+).union(
+    CAG.circle({"center":[163.7676778,-156.6761783],"radius":1.5})
+).union(
+    CAG.circle({"center":[164.0168889,-99.5615362],"radius":1.5})
 ).union(
     CAG.circle({"center":[25.6525833,-64.5707292],"radius":1.5})
 ).extrude({ offset: [0, 0, 4] });

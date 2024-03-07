@@ -20,11 +20,11 @@ points:
         outer:
           rows:
             bottom:
-              shift: [-(pp)/4, 0]
+              shift: [-pp / 4, 0]
               width: 1.5U
             home.width: 1.5U
             top.width: 1.5U
-            num.shift: [pp/4, 0]
+            num.shift: [pp / 4, 0]
         pinky:
           rows:
             bottom.shift: [0, 0]
@@ -47,7 +47,6 @@ points:
             stagger: -1
           rows:
             mod.skip: true
-            #bottom.shift: [-U-0.6, 0]
             num.shift: [0, 0]
         inner:
           key:
@@ -56,7 +55,6 @@ points:
             mod:
               shift: [0.6, 0]
               width: 3U
-              tags: 3u_stabilizers
             bottom.shift: [0, 0]
             num.shift: [0, 0]
       rows:
@@ -68,11 +66,8 @@ points:
         func:
     matrixr:
       anchor:
-        #ref: matrixl_inner_mod
-        #shift: [3U+2.2, 0]
-        #shift: [3.5U, 2]
         ref: matrixl_inner_home
-        shift: [3U+2, -2U+2.1]
+        shift: [3U + 2, -2U + 2.1]
         rotate: 5
       key:
         padding: U
@@ -100,25 +95,25 @@ points:
           rows.func.skip: true
         outer:
           rows.bottom:
-            shift: [U/4+0.6, 0]
+            shift: [U / 4 + 0.6, 0]
             width: 1.5U
-          rows.home.shift: [-U/4-0.6, 0]
+          rows.home.shift: [-U / 4 - 0.6, 0]
         outer2:
           rows.mod.skip: true
           rows.bottom.skip: true
           rows.home:
-            shift: [U/4+0.6, 0]
+            shift: [U / 4 + 0.6, 0]
             width: 1.5U
-          rows.top.shift: [-U/4-0.6, 0]
+          rows.top.shift: [-U / 4 - 0.6, 0]
         outer3:
           rows.mod.skip: true
           rows.bottom.skip: true
           rows.home.skip: true
           rows.num:
-            shift: [U/4+0.6, 0]
+            shift: [U / 4 + 0.6, 0]
             width: 1.5U
           rows.func:
-            shift: [-U/4-0.6, 0]
+            shift: [-U / 4 - 0.6, 0]
         outer4:
           rows.mod.skip: true
           rows.bottom.skip: true
@@ -184,7 +179,7 @@ outlines:
     - what: rectangle
       where: true
       bound: false
-      size: [U-0.5,U-0.5]
+      size: [U - 0.5,U - 0.5]
   board:
     - what: polygon
       operation: stack
@@ -246,9 +241,9 @@ outlines:
         - ref: matrixr_inner_mod
           shift: [0, -0.5op]
         - ref: matrixr_inner_mod
-          shift: [-1op, -0.5op-1]
+          shift: [-1op, -0.5op - 1]
         - ref: matrixl_inner_mod
-          shift: [1op, -0.5op-1]
+          shift: [1op, -0.5op - 1]
         - ref: matrixl_inner_mod
           shift: [-0.5op, -0.5op]
         - ref: matrixl_middle_mod
@@ -327,9 +322,9 @@ outlines:
         - ref: matrixr_inner_mod
           shift: [0, -0.5stlp]
         - ref: matrixr_inner_mod
-          shift: [-1stlp, -0.5stlp-1]
+          shift: [-1stlp, -0.5stlp - 1]
         - ref: matrixl_inner_mod
-          shift: [1stlp, -0.5stlp-1]
+          shift: [1stlp, -0.5stlp - 1]
         - ref: matrixl_inner_mod
           shift: [-0.5stlp, -0.5stlp]
         - ref: matrixl_middle_mod
@@ -356,43 +351,73 @@ outlines:
       radius: screwSize
       where:
         ref: matrixl_outer_func
-        shift: [-0.5U+2, 0.5U+4]
+        shift: [-0.5U + 2, 0.5U + 4]
     - what: circle
       radius: screwSize
       where:
-        ref: special_right_top
-        shift: [0.5U-2, 0.5U+4]
-    - what: circle
-      radius: screwSize
-      where:
-        ref.aggregate.parts: [matrixr_outer_mod, arrows_left_bottom]
+        ref.aggregate.parts: [matrixl_inner_num, matrixr_inner_num]
         shift: [0, -0.3U]
     - what: circle
       radius: screwSize
       where:
+        ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
+        shift: [0, -0.3U]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: special_right_top
+        shift: [0.5U - 2, 0.5U + 4]
+    - what: circle
+      radius: screwSize
+      where:
+        ref.aggregate.parts: [pages_right_bottom, special_right_bottom]
+        shift: [0.3U, -0.3U]
+    - what: circle
+      radius: screwSize
+      where:
+        ref.aggregate.parts: [matrixr_outer_mod, arrows_left_bottom]
+        shift: [0, -0.5U]
+    - what: circle
+      radius: screwSize
+      where:
         ref: matrixl_outer_mod
-        shift: [-0.5U-3, 0.5U-3]
+        shift: [-0.5U - 3, 0.5U - 3]
   standoff:
     - what: circle
       radius: standoffSize
       where:
         ref: matrixl_outer_func
-        shift: [-0.5U+2, 0.5U+4]
+        shift: [-0.5U + 2, 0.5U + 4]
     - what: circle
       radius: standoffSize
       where:
-        ref: special_right_top
-        shift: [0.5U-2, 0.5U+4]
-    - what: circle
-      radius: standoffSize
-      where:
-        ref.aggregate.parts: [matrixr_outer_mod, arrows_left_bottom]
+        ref.aggregate.parts: [matrixl_inner_num, matrixr_inner_num]
         shift: [0, -0.3U]
     - what: circle
       radius: standoffSize
       where:
+        ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
+        shift: [0, -0.3U]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: special_right_top
+        shift: [0.5U - 2, 0.5U + 4]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref.aggregate.parts: [pages_right_bottom, special_right_bottom]
+        shift: [0.3U, -0.3U]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref.aggregate.parts: [matrixr_outer_mod, arrows_left_bottom]
+        shift: [0, -0.5U]
+    - what: circle
+      radius: standoffSize
+      where:
         ref: matrixl_outer_mod
-        shift: [-0.5U-3, 0.5U-3]
+        shift: [-0.5U - 3, 0.5U - 3]
   plate:
     - name: combo
     - operation: subtract
@@ -426,7 +451,7 @@ pcbs:
           orientation: "down"
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
-          shift: [0,-2.75]
+          shift: [0, -2.75]
           rotate: -90
       c1:
         what: CDiscD38W26P25
@@ -510,7 +535,7 @@ pcbs:
         what: scrollwheel
         params:
           from: GND
-          #TODO:
+          #TODO: add diode
           to: GND
           #TODO:
           A: GND
@@ -522,6 +547,14 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
           shift: [0, 0]
+      sdiode:
+        what: diode
+        where: 
+          ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
+          shift: [-6, 9]
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
       rotary:
         what: rotary
         params:
@@ -537,26 +570,49 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
           shift: [0, 0]
           rotate: -90
+      rdiode:
+        what: diode
+        where: 
+          ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
+          shift: [0, -10]
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
       holeTopLeft:
         what: mountinghole
         where:
           ref: matrixl_outer_func
-          shift: [-0.5U+2, 0.5U+4]
+          shift: [-0.5U + 2, 0.5U + 4]
+      holeTopMid:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [matrixl_inner_num, matrixr_inner_num]
+          shift: [0, -0.3U]
+      holeBottomMid:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
+          shift: [0, -0.3U]
       holeTopRight:
         what: mountinghole
         where:
           ref: special_right_top
-          shift: [0.5U-2, 0.5U+4]
-      holeBottomRight:
+          shift: [0.5U - 2, 0.5U + 4]
+      holeBottomRight1:
+        what: mountinghole
+        where:
+          ref.aggregate.parts: [pages_right_bottom, special_right_bottom]
+          shift: [0.3U, -0.3U]
+      holeBottomRight2:
         what: mountinghole
         where:
           ref.aggregate.parts: [matrixr_outer_mod, arrows_left_bottom]
-          shift: [0, -0.3U]
+          shift: [0, -0.5U]
       holeBottomLeft:
         what: mountinghole
         where:
           ref: matrixl_outer_mod
-          shift: [-0.5U-3, 0.5U-3]
+          shift: [-0.5U - 3, 0]
     references: true
 cases:
   bottom:
