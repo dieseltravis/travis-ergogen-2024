@@ -6,7 +6,8 @@ module.exports = {
         designator: 'C',
         side: 'F',
         p1: undefined,
-        p2: undefined
+        p2: undefined,
+        KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
     (module C_Disc_D3.8mm_W2.6mm_P2.50mm (layer ${p.side}.Cu) (tedit 5AE50EF0)
@@ -39,7 +40,7 @@ module.exports = {
     (fp_text user %R (at 1.25 0) (layer ${p.side}.Fab)
       (effects (font (size 0.76 0.76) (thickness 0.114)))
     )
-    (model ${'' /*KISYS3DMOD*/}/Capacitor_THT.3dshapes/C_Disc_D3.8mm_W2.6mm_P2.50mm.wrl
+    (model ${p.KISYS3DMOD}/Capacitor_THT.3dshapes/C_Disc_D3.8mm_W2.6mm_P2.50mm.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

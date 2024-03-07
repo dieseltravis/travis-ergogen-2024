@@ -19,7 +19,8 @@ module.exports = {
         p13: undefined,
         p14: undefined,
         p15: undefined,
-        p16: undefined
+        p16: undefined,
+        KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
     (module DIP-16_W7.62mm_Socket (layer ${p.side}.Cu) (tedit 5A02E8C5)
@@ -77,7 +78,7 @@ module.exports = {
     (effects (font (size 1 1) (thickness 0.15)))
   )
 
-  (model ${'' /*KISYS3DMOD*/ }/Package_DIP.3dshapes/DIP-16_W7.62mm_Socket.wrl
+  (model ${p.KISYS3DMOD}/Package_DIP.3dshapes/DIP-16_W7.62mm_Socket.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

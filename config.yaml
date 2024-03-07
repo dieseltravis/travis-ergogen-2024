@@ -172,26 +172,13 @@ points:
         spread: U
       columns:
         left:
-        mid:
+        #mid:
         right:
       rows:
         bottom:
         top:
-  rotate: 5
+  rotate: 3.75
 outlines:
-  3u_stabilizer: # This creates the stabilizer, you just need to use its name in a `where` clause of another outline
-    - operation: stack
-      where: 3u_stabilizers # Set this tag on the keys you want
-      what: rectangle
-      size: [stabilizer_width, stabilizer_height]
-      adjust:
-        shift: [stabilizer_spacing_3u, stabilizer_offset]
-    - operation: stack
-      where: 3u_stabilizers
-      what: rectangle
-      size: [stabilizer_width, stabilizer_height]
-      adjust:
-        shift: [-stabilizer_spacing_3u, stabilizer_offset]
   raw:
     - what: rectangle
       where: true
@@ -208,6 +195,14 @@ outlines:
       points:
         - ref: matrixl_outer_func
           shift: [-0.5op, 20]
+        - ref: matrixl_outer_func
+          shift: [0, 20]
+        - ref: matrixl_ring_func
+          shift: [0, 20]
+        - ref: matrixl_middle_func
+          shift: [0, 20]
+        - ref: matrixl_index_func
+          shift: [0, 20]
         - ref: matrixl_inner_func
           shift: [0.5op, 20]
         - ref: matrixl_inner_func
@@ -215,6 +210,22 @@ outlines:
         - ref: matrixr_inner_func
           shift: [-0.75op, 15]
         - ref: matrixr_inner_func
+          shift: [-0.5op, 20]
+        - ref: matrixr_index_func
+          shift: [0, 20]
+        - ref: matrixr_middle_func
+          shift: [0, 20]
+        - ref: matrixr_ring_func
+          shift: [0, 20]
+        - ref: matrixr_outer_func
+          shift: [0, 20]
+        - ref: matrixr_outer2_func
+          shift: [0, 20]
+        - ref: matrixr_outer3_func
+          shift: [0, 20]
+        - ref: matrixr_outer4_func
+          shift: [0, 20]
+        - ref: special_left_top
           shift: [-0.5op, 20]
         - ref: special_right_top
           shift: [0.5op, 20]
@@ -224,12 +235,34 @@ outlines:
           shift: [0.5op, -0.5op]
         - ref: pages_left_bottom
           shift: [-0.5op, -0.5op]
-        #- ref: arrows_right_bottom
-        #  shift: [0.5op, -0.5op]
         - ref: arrows_left_bottom
           shift: [-0.5op, -0.5op]
         - ref: matrixr_outer_mod
           shift: [0.5op, -0.5op]
+        - ref: matrixr_outer_mod
+          shift: [0, -0.5op]
+        - ref: matrixr_pinky_mod
+          shift: [0, -0.5op]
+        - ref: matrixr_ring_mod
+          shift: [0, -0.5op]
+        - ref: matrixr_middle_mod
+          shift: [0, -0.5op]
+        - ref: matrixr_inner_mod
+          shift: [0, -0.5op]
+        - ref: matrixr_inner_mod
+          shift: [-1op, -0.5op-1]
+        - ref: matrixl_inner_mod
+          shift: [1op, -0.5op-1]
+        - ref: matrixl_inner_mod
+          shift: [-0.5op, -0.5op]
+        - ref: matrixl_middle_mod
+          shift: [0.5op, -0.5op]
+        - ref: matrixl_ring_mod
+          shift: [0, -0.5op]
+        - ref: matrixl_pinky_mod
+          shift: [0, -0.5op]
+        - ref: matrixl_outer_mod
+          shift: [0, -0.5op]
         - ref: matrixl_outer_mod
           shift: [-0.5op, -0.5op]
         - ref: matrixl_outer_bottom
@@ -242,9 +275,43 @@ outlines:
       operation: stack
       points:
         - ref: matrixl_outer_func
-          shift: [-0.5stlp, 0.5stlp]
+          shift: [-0.5stlp, 20]
+        - ref: matrixl_outer_func
+          shift: [0, 20]
+        - ref: matrixl_ring_func
+          shift: [0, 20]
+        - ref: matrixl_middle_func
+          shift: [0, 20]
+        - ref: matrixl_index_func
+          shift: [0, 20]
+        - ref: matrixl_inner_func
+          shift: [0.5stlp, 20]
+        - ref: matrixl_inner_func
+          shift: [0.75stlp, 15]
+        - ref: matrixr_inner_func
+          shift: [-0.75stlp, 15]
+        - ref: matrixr_inner_func
+          shift: [-0.5stlp, 20]
+        - ref: matrixr_index_func
+          shift: [0, 20]
+        - ref: matrixr_middle_func
+          shift: [0, 20]
+        - ref: matrixr_ring_func
+          shift: [0, 20]
+        - ref: matrixr_outer_func
+          shift: [0, 20]
+        - ref: matrixr_outer2_func
+          shift: [0, 20]
+        - ref: matrixr_outer3_func
+          shift: [0, 20]
+        - ref: matrixr_outer4_func
+          shift: [0, 20]
+        - ref: special_left_top
+          shift: [-0.5stlp, 20]
         - ref: special_right_top
-          shift: [0.5stlp, 0.5stlp]
+          shift: [0.5stlp, 20]
+        - ref: special_right_bottom
+          shift: [0.5stlp, -0.5stlp]
         - ref: pages_right_bottom
           shift: [0.5stlp, -0.5stlp]
         - ref: pages_left_bottom
@@ -253,8 +320,36 @@ outlines:
           shift: [-0.5stlp, -0.5stlp]
         - ref: matrixr_outer_mod
           shift: [0.5stlp, -0.5stlp]
+        - ref: matrixr_outer_mod
+          shift: [0, -0.5stlp]
+        - ref: matrixr_pinky_mod
+          shift: [0, -0.5stlp]
+        - ref: matrixr_ring_mod
+          shift: [0, -0.5stlp]
+        - ref: matrixr_middle_mod
+          shift: [0, -0.5stlp]
+        - ref: matrixr_inner_mod
+          shift: [0, -0.5stlp]
+        - ref: matrixr_inner_mod
+          shift: [-1stlp, -0.5stlp-1]
+        - ref: matrixl_inner_mod
+          shift: [1stlp, -0.5stlp-1]
+        - ref: matrixl_inner_mod
+          shift: [-0.5stlp, -0.5stlp]
+        - ref: matrixl_middle_mod
+          shift: [0.5stlp, -0.5stlp]
+        - ref: matrixl_ring_mod
+          shift: [0, -0.5stlp]
+        - ref: matrixl_pinky_mod
+          shift: [0, -0.5stlp]
+        - ref: matrixl_outer_mod
+          shift: [0, -0.5stlp]
         - ref: matrixl_outer_mod
           shift: [-0.5stlp, -0.5stlp]
+        - ref: matrixl_outer_bottom
+          shift: [-0.75stlp, -0.5stlp]
+        - ref: matrixl_outer_top
+          shift: [-0.75stlp, 0.5stlp]
       fillet: 3
   combo:
     - name: board
@@ -264,13 +359,13 @@ outlines:
     - what: circle
       radius: screwSize
       where:
-        ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
-        shift: [0, 0.3U]
+        ref: matrixl_outer_func
+        shift: [0, 1U]
     - what: circle
       radius: screwSize
       where:
-        ref.aggregate.parts: [special_mid_top, special_right_top]
-        shift: [0, -U/2]
+        ref: special_right_top
+        shift: [0, 1U]
     - what: circle
       radius: screwSize
       where:
@@ -279,19 +374,19 @@ outlines:
     - what: circle
       radius: screwSize
       where:
-        ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
-        shift: [0, -0.3U]
+        ref: matrixl_outer_bottom
+        shift: [-1U, 0.5U]
   standoff:
     - what: circle
       radius: standoffSize
       where:
-        ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
-        shift: [0, 0.3U]
+        ref: matrixl_outer_func
+        shift: [0, 1U]
     - what: circle
       radius: standoffSize
       where:
-        ref.aggregate.parts: [special_mid_top, special_right_top]
-        shift: [0, -U/2]
+        ref: special_right_top
+        shift: [0, 1U]
     - what: circle
       radius: standoffSize
       where:
@@ -445,13 +540,13 @@ pcbs:
       holeTopLeft:
         what: mountinghole
         where:
-          ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
-          shift: [0, 0.3U]
+          ref: matrixl_outer_func
+          shift: [-0.5U+2, 0.5U+4]
       holeTopRight:
         what: mountinghole
         where:
-          ref.aggregate.parts: [special_mid_top, special_right_top]
-          shift: [0, -U/2]
+          ref: special_right_top
+          shift: [0.5U-2, 0.5U+4]
       holeBottomRight:
         what: mountinghole
         where:
@@ -460,8 +555,8 @@ pcbs:
       holeBottomLeft:
         what: mountinghole
         where:
-          ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
-          shift: [0, -0.3U]
+          ref: matrixl_outer_mod
+          shift: [-0.5U-3, 0.5U-3]
     references: true
 cases:
   bottom:
