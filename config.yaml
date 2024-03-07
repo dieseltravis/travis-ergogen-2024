@@ -6,10 +6,6 @@ units:
   standoffSize: 2.5
   standoffHeight: 4.0
   boardThick: 1.6
-  stabilizer_width: 7
-  stabilizer_height: 14
-  stabilizer_offset: -1 # This means south stabs, use `orient` to rotate them for north facing scenarios
-  stabilizer_spacing_3u: U * ((3 - 1) / 2)
 points:
   zones:
     matrixl:
@@ -139,7 +135,7 @@ points:
     arrows:
       anchor:
         ref: matrixr_inner_mod
-        shift: [8U, -0.5U]
+        shift: [7.75U - 2, -0.75U - 2]
         rotate: 45
       key:
         padding: U
@@ -153,7 +149,7 @@ points:
     pages:
       anchor:
         ref: arrows_right_bottom
-        shift: [1.25U, -1.0U]
+        shift: [1.25U, 0]
       key:
         padding: U
         spread: U
@@ -360,12 +356,12 @@ outlines:
       radius: screwSize
       where:
         ref: matrixl_outer_func
-        shift: [0, 1U]
+        shift: [-0.5U+2, 0.5U+4]
     - what: circle
       radius: screwSize
       where:
         ref: special_right_top
-        shift: [0, 1U]
+        shift: [0.5U-2, 0.5U+4]
     - what: circle
       radius: screwSize
       where:
@@ -374,19 +370,19 @@ outlines:
     - what: circle
       radius: screwSize
       where:
-        ref: matrixl_outer_bottom
-        shift: [-1U, 0.5U]
+        ref: matrixl_outer_mod
+        shift: [-0.5U-3, 0.5U-3]
   standoff:
     - what: circle
       radius: standoffSize
       where:
         ref: matrixl_outer_func
-        shift: [0, 1U]
+        shift: [-0.5U+2, 0.5U+4]
     - what: circle
       radius: standoffSize
       where:
         ref: special_right_top
-        shift: [0, 1U]
+        shift: [0.5U-2, 0.5U+4]
     - what: circle
       radius: standoffSize
       where:
@@ -395,8 +391,12 @@ outlines:
     - what: circle
       radius: standoffSize
       where:
-        ref.aggregate.parts: [matrixl_outer_bottom, matrixl_pinky_bottom]
-        shift: [0, -0.3U]
+        ref: matrixl_outer_mod
+        shift: [-0.5U-3, 0.5U-3]
+  plate:
+    - name: combo
+    - operation: subtract
+      name: mounting
 pcbs:
   travis_erg2024:
     outlines:
