@@ -1,7 +1,8 @@
 units:
   pp: U + 2
   op: U + 6
-  stlp: U + 10
+  wall3d: 2
+  stlp: U + 6 + (2 * wall3d)
   screwSize: 1.5
   standoffSize: 2.5
   standoffHeight: 4.0
@@ -184,6 +185,7 @@ outlines:
     - what: polygon
       operation: stack
       points:
+        # top left
         - ref: matrixl_outer_func
           shift: [-0.5op, 20]
         - ref: matrixl_outer_func
@@ -198,6 +200,7 @@ outlines:
           shift: [0.5op, 20]
         - ref: matrixl_inner_func
           shift: [0.75op, 15]
+        # top center
         - ref: matrixr_inner_func
           shift: [-0.75op, 15]
         - ref: matrixr_inner_func
@@ -220,6 +223,7 @@ outlines:
           shift: [-0.5op, 20]
         - ref: special_right_top
           shift: [0.5op, 20]
+        # top right
         - ref: special_right_bottom
           shift: [0.5op, -0.5op]
         - ref: pages_right_bottom
@@ -228,6 +232,7 @@ outlines:
           shift: [-0.5op, -0.5op]
         - ref: arrows_left_bottom
           shift: [-0.5op, -0.5op]
+        # bottom right
         - ref: matrixr_outer_mod
           shift: [0.5op, -0.5op]
         - ref: matrixr_outer_mod
@@ -242,6 +247,7 @@ outlines:
           shift: [0.5op, -0.5op]
         - ref: matrixr_inner_mod
           shift: [-1op, -0.5op - 1]
+        # bottom center
         - ref: matrixl_inner_mod
           shift: [1op, -0.5op - 1]
         - ref: matrixl_inner_mod
@@ -256,6 +262,7 @@ outlines:
           shift: [0, -0.5op]
         - ref: matrixl_outer_mod
           shift: [-0.5op, -0.5op]
+        # bottom left
         - ref: matrixl_outer_bottom
           shift: [-0.75op, -0.5op]
         - ref: matrixl_outer_top
@@ -265,42 +272,45 @@ outlines:
     - what: polygon
       operation: stack
       points:
+        # top left
         - ref: matrixl_outer_func
-          shift: [-0.5stlp, 20]
+          shift: [-0.5stlp, 20 + wall3d]
         - ref: matrixl_outer_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixl_ring_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixl_middle_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixl_index_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixl_inner_func
-          shift: [0.5stlp, 20]
+          shift: [0.5stlp, 20 + wall3d]
         - ref: matrixl_inner_func
-          shift: [0.75stlp, 15]
+          shift: [0.75stlp, 15 + wall3d]
+        # top center
         - ref: matrixr_inner_func
-          shift: [-0.75stlp, 15]
+          shift: [-0.75stlp, 15 + wall3d]
         - ref: matrixr_inner_func
-          shift: [-0.5stlp, 20]
+          shift: [-0.5stlp, 20 + wall3d]
         - ref: matrixr_index_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_middle_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_ring_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_outer_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_outer2_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_outer3_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_outer4_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: special_left_top
-          shift: [-0.5stlp, 20]
+          shift: [-0.5stlp, 20 + wall3d]
         - ref: special_right_top
-          shift: [0.5stlp, 20]
+          shift: [0.5stlp, 20 + wall3d]
+        # top right
         - ref: special_right_bottom
           shift: [0.5stlp, -0.5stlp]
         - ref: pages_right_bottom
@@ -309,6 +319,7 @@ outlines:
           shift: [-0.5stlp, -0.5stlp]
         - ref: arrows_left_bottom
           shift: [-0.5stlp, -0.5stlp]
+        # bottom right
         - ref: matrixr_outer_mod
           shift: [0.5stlp, -0.5stlp]
         - ref: matrixr_outer_mod
@@ -323,6 +334,7 @@ outlines:
           shift: [0.5stlp, -0.5stlp]
         - ref: matrixr_inner_mod
           shift: [-1stlp, -0.5stlp - 1]
+        # bottom center
         - ref: matrixl_inner_mod
           shift: [1stlp, -0.5stlp - 1]
         - ref: matrixl_inner_mod
@@ -337,6 +349,7 @@ outlines:
           shift: [0, -0.5stlp]
         - ref: matrixl_outer_mod
           shift: [-0.5stlp, -0.5stlp]
+        # bottom left
         - ref: matrixl_outer_bottom
           shift: [-0.75stlp, -0.5stlp]
         - ref: matrixl_outer_top
