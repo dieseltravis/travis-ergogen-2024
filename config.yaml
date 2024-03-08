@@ -582,16 +582,19 @@ pcbs:
         where:
           ref: matrixl_inner_mod
           shift: [0, 0]
+          rotate: 180
       spacel3u:
         what: ScottoKeebs-Stabilizer_MX_3u
         where:
           ref: matrixl_inner_mod
           shift: [0, 0]
       spacer2u:
+        #what: MX_Stabilizer_Cutout-2u
         what: ScottoKeebs-Stabilizer_MX_2u
         where:
           ref: matrixr_inner_mod
           shift: [0, 0]
+          rotate: 180
       spacer3u:
         what: ScottoKeebs-Stabilizer_MX_3u
         where:
@@ -633,7 +636,7 @@ pcbs:
         where:
           ref: matrixl_outer_mod
           shift: [-0.5U - 3, 0]
-    references: true
+    #references: true
 cases:
   bottom:
     - name: board3d
