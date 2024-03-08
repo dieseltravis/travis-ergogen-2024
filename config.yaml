@@ -19,6 +19,7 @@ points:
         splay: -1
       columns:
         outer:
+          key.splay: 0
           rows:
             bottom:
               shift: [-pp / 4, 0]
@@ -27,6 +28,7 @@ points:
             top.width: 1.5U
             num.shift: [pp / 4, 0]
         pinky:
+          key.splay: 0
           rows:
             bottom.shift: [0, 0]
             num.shift: [0, 0]
@@ -52,6 +54,7 @@ points:
         inner:
           key:
             stagger: -0.25
+            splay: 0
           rows:
             mod:
               shift: [0.6, 0]
@@ -68,7 +71,7 @@ points:
     matrixr:
       anchor:
         ref: matrixl_inner_home
-        shift: [3U + 2, -2U + 2.1]
+        shift: [3U + 2, -2U + 2.6]
         rotate: 5
       key:
         padding: U
@@ -76,6 +79,7 @@ points:
         splay: -1
       columns:
         inner:
+          key.splay: 0
           rows.mod:
             shift: [-0.6, 0]
             width: 3U
@@ -83,6 +87,7 @@ points:
         index:
           key:
             stagger: 0.25
+            splay: 0
           rows.mod.skip: true
         middle:
           key:
@@ -95,11 +100,13 @@ points:
             stagger: -2
           rows.func.skip: true
         outer:
+          key.splay: 0
           rows.bottom:
             shift: [U / 4 + 0.6, 0]
             width: 1.5U
           rows.home.shift: [-U / 4 - 0.6, 0]
         outer2:
+          key.splay: 0
           rows.mod.skip: true
           rows.bottom.skip: true
           rows.home:
@@ -107,6 +114,7 @@ points:
             width: 1.5U
           rows.top.shift: [-U / 4 - 0.6, 0]
         outer3:
+          key.splay: 0
           rows.mod.skip: true
           rows.bottom.skip: true
           rows.home.skip: true
@@ -116,6 +124,7 @@ points:
           rows.func:
             shift: [-U / 4 - 0.6, 0]
         outer4:
+          key.splay: 0
           rows.mod.skip: true
           rows.bottom.skip: true
           rows.home.skip: true
@@ -169,7 +178,7 @@ points:
       rows:
         bottom:
         top:
-  rotate: 3.75
+  rotate: 0.6660
 outlines:
   raw:
     - what: rectangle
