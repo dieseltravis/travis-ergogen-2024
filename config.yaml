@@ -1,7 +1,8 @@
 units:
   pp: U + 2
   op: U + 6
-  stlp: U + 10
+  wall3d: 2
+  stlp: U + 6 + (2 * wall3d)
   screwSize: 1.5
   standoffSize: 2.5
   standoffHeight: 4.0
@@ -184,6 +185,7 @@ outlines:
     - what: polygon
       operation: stack
       points:
+        # top left
         - ref: matrixl_outer_func
           shift: [-0.5op, 20]
         - ref: matrixl_outer_func
@@ -198,6 +200,7 @@ outlines:
           shift: [0.5op, 20]
         - ref: matrixl_inner_func
           shift: [0.75op, 15]
+        # top center
         - ref: matrixr_inner_func
           shift: [-0.75op, 15]
         - ref: matrixr_inner_func
@@ -220,6 +223,7 @@ outlines:
           shift: [-0.5op, 20]
         - ref: special_right_top
           shift: [0.5op, 20]
+        # top right
         - ref: special_right_bottom
           shift: [0.5op, -0.5op]
         - ref: pages_right_bottom
@@ -228,6 +232,7 @@ outlines:
           shift: [-0.5op, -0.5op]
         - ref: arrows_left_bottom
           shift: [-0.5op, -0.5op]
+        # bottom right
         - ref: matrixr_outer_mod
           shift: [0.5op, -0.5op]
         - ref: matrixr_outer_mod
@@ -242,6 +247,7 @@ outlines:
           shift: [0.5op, -0.5op]
         - ref: matrixr_inner_mod
           shift: [-1op, -0.5op - 1]
+        # bottom center
         - ref: matrixl_inner_mod
           shift: [1op, -0.5op - 1]
         - ref: matrixl_inner_mod
@@ -256,6 +262,7 @@ outlines:
           shift: [0, -0.5op]
         - ref: matrixl_outer_mod
           shift: [-0.5op, -0.5op]
+        # bottom left
         - ref: matrixl_outer_bottom
           shift: [-0.75op, -0.5op]
         - ref: matrixl_outer_top
@@ -265,42 +272,45 @@ outlines:
     - what: polygon
       operation: stack
       points:
+        # top left
         - ref: matrixl_outer_func
-          shift: [-0.5stlp, 20]
+          shift: [-0.5stlp, 20 + wall3d]
         - ref: matrixl_outer_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixl_ring_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixl_middle_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixl_index_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixl_inner_func
-          shift: [0.5stlp, 20]
+          shift: [0.5stlp, 20 + wall3d]
         - ref: matrixl_inner_func
-          shift: [0.75stlp, 15]
+          shift: [0.75stlp, 15 + wall3d]
+        # top center
         - ref: matrixr_inner_func
-          shift: [-0.75stlp, 15]
+          shift: [-0.75stlp, 15 + wall3d]
         - ref: matrixr_inner_func
-          shift: [-0.5stlp, 20]
+          shift: [-0.5stlp, 20 + wall3d]
         - ref: matrixr_index_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_middle_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_ring_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_outer_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_outer2_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_outer3_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: matrixr_outer4_func
-          shift: [0, 20]
+          shift: [0, 20 + wall3d]
         - ref: special_left_top
-          shift: [-0.5stlp, 20]
+          shift: [-0.5stlp, 20 + wall3d]
         - ref: special_right_top
-          shift: [0.5stlp, 20]
+          shift: [0.5stlp, 20 + wall3d]
+        # top right
         - ref: special_right_bottom
           shift: [0.5stlp, -0.5stlp]
         - ref: pages_right_bottom
@@ -309,6 +319,7 @@ outlines:
           shift: [-0.5stlp, -0.5stlp]
         - ref: arrows_left_bottom
           shift: [-0.5stlp, -0.5stlp]
+        # bottom right
         - ref: matrixr_outer_mod
           shift: [0.5stlp, -0.5stlp]
         - ref: matrixr_outer_mod
@@ -323,6 +334,7 @@ outlines:
           shift: [0.5stlp, -0.5stlp]
         - ref: matrixr_inner_mod
           shift: [-1stlp, -0.5stlp - 1]
+        # bottom center
         - ref: matrixl_inner_mod
           shift: [1stlp, -0.5stlp - 1]
         - ref: matrixl_inner_mod
@@ -337,6 +349,7 @@ outlines:
           shift: [0, -0.5stlp]
         - ref: matrixl_outer_mod
           shift: [-0.5stlp, -0.5stlp]
+        # bottom left
         - ref: matrixl_outer_bottom
           shift: [-0.75stlp, -0.5stlp]
         - ref: matrixl_outer_top
@@ -436,7 +449,7 @@ pcbs:
           reverse: false
           hotswap: true
           from: "{{column_net}}"
-          to: "{{colrow}}"
+          to: "{{colrow}}"        
       diode:
         what: diode
         where: true
@@ -467,21 +480,21 @@ pcbs:
         what: DIP16W762
         params:
           #TODO: add cap across p16 power and p08 ground
-          p01: mux0 #A
-          p02: mux1 #B
-          p03: mux2 #C
+          p01: "{{mux0}}" #A
+          p02: "{{mux1}}" #B
+          p03: "{{mux2}}" #C
           p04: GND #G2A
-          p05: mux3 #G2B
+          p05: "{{mux3}}" #G2B
           p06: VCC #G1
-          p07: col7 #Y7
+          p07: "{{col7}}" #Y7
           p08: GND #GND C1 P2
-          p09: col6 #Y6
-          p10: col5 #Y5
-          p11: col4 #Y4
-          p12: col3 #Y3
-          p13: col2 #Y2
-          p14: col1 #Y1
-          p15: col0 #Y0
+          p09: "{{col6}}" #Y6
+          p10: "{{col5}}" #Y5
+          p11: "{{col4}}" #Y4
+          p12: "{{col3}}" #Y3
+          p13: "{{col2}}" #Y2
+          p14: "{{col1}}" #Y1
+          p15: "{{col0}}" #Y0
           p16: VCC #VCC C1 P1
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
@@ -534,16 +547,15 @@ pcbs:
       scrollwheel:
         what: scrollwheel
         params:
-          from: GND
-          #TODO: add diode
-          to: GND
+          from: "{{column_net}}"
+          to: "{{colrow}}"
           #TODO:
           A: GND
           B: GND
           #TODO:
           C: GND
           # This pin is unused
-          D: ""
+          D: undefined
         where:
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
           shift: [0, 0]
@@ -558,9 +570,8 @@ pcbs:
       rotary:
         what: rotary
         params:
-          from: GND
-          #TODO:
-          to: GND
+          from: "{{column_net}}"
+          to: "{{colrow}}"
           #TODO:
           A: GND
           B: GND
@@ -578,6 +589,31 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
+      # stabs
+      spacel2u:
+        what: ScottoKeebs-Stabilizer_MX_2u
+        where:
+          ref: matrixl_inner_mod
+          shift: [0, 0]
+          rotate: 180
+      spacel3u:
+        what: ScottoKeebs-Stabilizer_MX_3u
+        where:
+          ref: matrixl_inner_mod
+          shift: [0, 0]
+      spacer2u:
+        #what: MX_Stabilizer_Cutout-2u
+        what: ScottoKeebs-Stabilizer_MX_2u
+        where:
+          ref: matrixr_inner_mod
+          shift: [0, 0]
+          rotate: 180
+      spacer3u:
+        what: ScottoKeebs-Stabilizer_MX_3u
+        where:
+          ref: matrixr_inner_mod
+          shift: [0, 0]
+      # holes:
       holeTopLeft:
         what: mountinghole
         where:
@@ -613,7 +649,7 @@ pcbs:
         where:
           ref: matrixl_outer_mod
           shift: [-0.5U - 3, 0]
-    references: true
+    #references: true
 cases:
   bottom:
     - name: board3d
@@ -637,6 +673,9 @@ cases:
   _standoffs:
     - name: standoff
       extrude: standoffHeight
+  plate3d:
+    - name: plate
+      extrude: 1
   case:
     - what: case
       name: _standoffs
