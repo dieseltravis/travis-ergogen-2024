@@ -673,6 +673,9 @@ cases:
   _standoffs:
     - name: standoff
       extrude: standoffHeight
+  plate3d:
+    - name: plate
+      extrude: 1
   case:
     - what: case
       name: _standoffs
