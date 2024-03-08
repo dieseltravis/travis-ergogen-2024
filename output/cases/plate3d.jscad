@@ -9,9 +9,13 @@ function plate_extrude_1_outline_fn(){
 ).union(
     CAG.circle({"center":[412.1055918,-74.3869609],"radius":1.5})
 ).union(
-    CAG.circle({"center":[163.7676778,-156.6761783],"radius":1.5})
+    CAG.circle({"center":[180.0271299,-151.4580894],"radius":1.5})
 ).union(
-    CAG.circle({"center":[164.0168889,-99.5615362],"radius":1.5})
+    CAG.circle({"center":[147.5542304,-151.3508147],"radius":1.5})
+).union(
+    CAG.circle({"center":[178.2818538,-94.3347446],"radius":1.5})
+).union(
+    CAG.circle({"center":[149.7979288,-94.2448753],"radius":1.5})
 ).union(
     CAG.circle({"center":[25.6525833,-64.5707292],"radius":1.5})
 ).union(

@@ -368,13 +368,23 @@ outlines:
     - what: circle
       radius: screwSize
       where:
-        ref.aggregate.parts: [matrixl_inner_num, matrixr_inner_num]
-        shift: [0, -0.3U]
+        ref: matrixl_inner_num
+        shift: [2U/3, 0]
     - what: circle
       radius: screwSize
       where:
-        ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
-        shift: [0, -0.3U]
+        ref: matrixr_inner_num
+        shift: [-2U/3, 0]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: matrixl_inner_bottom
+        shift: [2U/3, 0]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: matrixr_inner_bottom
+        shift: [-2U/3, 0]
     - what: circle
       radius: screwSize
       where:
@@ -404,13 +414,23 @@ outlines:
     - what: circle
       radius: standoffSize
       where:
-        ref.aggregate.parts: [matrixl_inner_num, matrixr_inner_num]
-        shift: [0, -0.3U]
+        ref: matrixl_inner_num
+        shift: [2U/3, 0]
     - what: circle
       radius: standoffSize
       where:
-        ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
-        shift: [0, -0.3U]
+        ref: matrixr_inner_num
+        shift: [-2U/3, 0]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: matrixl_inner_bottom
+        shift: [2U/3, 0]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: matrixr_inner_bottom
+        shift: [-2U/3, 0]
     - what: circle
       radius: standoffSize
       where:
@@ -619,16 +639,26 @@ pcbs:
         where:
           ref: matrixl_outer_func
           shift: [-0.5U + 2, 0.5U + 4]
-      holeTopMid:
+      holeTopMidL:
         what: mountinghole
         where:
-          ref.aggregate.parts: [matrixl_inner_num, matrixr_inner_num]
-          shift: [0, -0.3U]
-      holeBottomMid:
+          ref: matrixl_inner_num
+          shift: [2U/3, 0]
+      holeTopMidR:
         what: mountinghole
         where:
-          ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom]
-          shift: [0, -0.3U]
+          ref: matrixr_inner_num
+          shift: [-2U/3, 0]
+      holeBottomMidL:
+        what: mountinghole
+        where:
+          ref: matrixl_inner_bottom
+          shift: [2U/3, 0]
+      holeBottomMidR:
+        what: mountinghole
+        where:
+          ref: matrixr_inner_bottom
+          shift: [-2U/3, 0]
       holeTopRight:
         what: mountinghole
         where:
