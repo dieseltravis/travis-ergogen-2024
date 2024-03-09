@@ -499,7 +499,16 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -5]
+          shift: [7.25, -1.25]
+          rotate: 90
+      rgb:
+        what: led_sk6812mini-e
+        where: true
+        params:
+          P2: "" # next P4
+          P4: "" # previous P2 or pro micro data pin
+        adjust:
+          shift: [0, -4.96]
       promicro:
         what: promicro
         params:
@@ -637,7 +646,7 @@ pcbs:
         where:
           ref: matrixl_inner_mod
           shift: [0, 0]
-          rotate: 180
+          #rotate: 180
       spacel3u:
         what: ScottoKeebs-Stabilizer_MX_3u
         where:
@@ -649,7 +658,7 @@ pcbs:
         where:
           ref: matrixr_inner_mod
           shift: [0, 0]
-          rotate: 180
+          #rotate: 180
       spacer3u:
         what: ScottoKeebs-Stabilizer_MX_3u
         where:
