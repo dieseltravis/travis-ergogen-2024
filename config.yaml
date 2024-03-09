@@ -512,7 +512,7 @@ pcbs:
       promicro:
         what: promicro
         params:
-          orientation: "down"
+          orientation: "up"
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
           shift: [0, -2.75]
@@ -592,9 +592,12 @@ pcbs:
           from: GND
           to: RST
         where:
-          ref.aggregate.parts: [matrixr_outer4_func, special_left_top]
-          shift: [0, 0]
-          rotate: -45
+          ref: matrixr_inner_func
+          shift: [-1U/2 - 1, 2U/3]
+          rotate: -2.5 + 45
+          #ref.aggregate.parts: [matrixr_outer4_func, special_left_top]
+          #shift: [0, 0]
+          #rotate: -45
       scrollwheel:
         what: scrollwheel
         params:
