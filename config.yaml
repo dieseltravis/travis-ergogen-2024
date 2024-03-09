@@ -1,11 +1,17 @@
+# ergogen v4
 units:
   pp: U + 2
+  # outer perimeter of board
   op: U + 6
-  wall3d: 2
+  # STL wall width
+  wall3d: 1
+  # stl padding
   stlp: U + 6 + (2 * wall3d)
   screwSize: 1.5
   standoffSize: 2.5
   standoffHeight: 4.0
+  # plate switch width
+  pw: 14
   boardThick: 1.6
 points:
   zones:
@@ -190,6 +196,11 @@ outlines:
       where: true
       bound: false
       size: [U - 0.5,U - 0.5]
+  keyholes:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [pw, pw]
   board:
     - what: polygon
       operation: stack
@@ -243,9 +254,9 @@ outlines:
           shift: [-0.5op, -0.5op]
         # bottom right
         - ref: matrixr_outer_mod
-          shift: [0.5op, -0.5op]
+          shift: [0.5op+1, -0.5op]
         - ref: matrixr_outer_mod
-          shift: [0, -0.5op]
+          shift: [-0.5op, -0.5op]
         - ref: matrixr_pinky_mod
           shift: [0, -0.5op]
         - ref: matrixr_ring_mod
@@ -276,7 +287,7 @@ outlines:
           shift: [-0.75op, -0.5op]
         - ref: matrixl_outer_top
           shift: [-0.75op, 0.5op]
-      fillet: 3
+      fillet: 2
   board3d:
     - what: polygon
       operation: stack
@@ -330,9 +341,9 @@ outlines:
           shift: [-0.5stlp, -0.5stlp]
         # bottom right
         - ref: matrixr_outer_mod
-          shift: [0.5stlp, -0.5stlp]
+          shift: [0.5stlp-1, -0.5stlp]
         - ref: matrixr_outer_mod
-          shift: [0, -0.5stlp]
+          shift: [-0.5stlp, -0.5stlp]
         - ref: matrixr_pinky_mod
           shift: [0, -0.5stlp]
         - ref: matrixr_ring_mod
@@ -461,7 +472,9 @@ outlines:
         ref: matrixl_outer_mod
         shift: [-0.5U - 3, 0]
   plate:
-    - name: combo
+    - name: board
+    - operation: subtract
+      name: keyholes
     - operation: subtract
       name: mounting
 pcbs:
