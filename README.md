@@ -1,5 +1,6 @@
 # Travis's Ergogen Keyboard 2024 #
 Built with Ergogen v4.
+![keyboard plate outline](./output/outlines/plate.svg)
 
 ## Project Details ##
 /config.yaml

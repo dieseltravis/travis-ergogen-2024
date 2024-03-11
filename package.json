@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npx yamllint config.yaml",
+    "svg": "for i in output/outlines/*.dxf; do npx dxf-to-svg \"$i\"; done",
     "gen": "ergogen . -o output",
-    "3d": "ergogen . -o output && for i in output/cases/*.jscad; do npx @jscad/cli@1 \"$i\" -of stla; done"
+    "3d": "for i in output/cases/*.jscad; do npx @jscad/cli@1 \"$i\" -of stla; done",
+    "all": "yarn gen && yarn svg && yarn 3d"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -25,6 +27,7 @@
     "ergogen": "^4.0.5"
   },
   "devDependencies": {
-    "yaml-lint": "^1.7.0"
+    "yaml-lint": "^1.7.0",
+    "dxf": "^5.1.0"
   }
 }
