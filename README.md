@@ -3,13 +3,13 @@ Built with Ergogen v4.
 ![keyboard plate outline](./output/outlines/plate.svg)
 
 ## Project Details ##
-/config.yaml
-/package.json yarn commands and metadata
-/output/outlines/ generated 2d models
-/output/cases/ generated 3d models
-/output/pcbs/ generated PCB
-/footprints/ Custom parts' footprints
-/datasheets/ PDFs for some of the parts used
+* `/config.yaml`
+* `/package.json` yarn commands and metadata
+* `/output/outlines/` generated 2d models
+* `/output/cases/` generated 3d models
+* `/output/pcbs/` generated PCB
+* `/footprints/` Custom parts' footprints
+* `/datasheets/` PDFs for some of the parts used
 
 ## References ##
 * Ergogen project: https://github.com/ergogen/ergogen/
