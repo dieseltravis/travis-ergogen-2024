@@ -498,6 +498,7 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
+          # value: 
         adjust:
           shift: [7.25, -1.25]
           rotate: 90
@@ -505,10 +506,44 @@ pcbs:
         what: led_sk6812mini-e
         where: true
         params:
-          P2: "" # next P4
-          P4: "" # previous P2 or pro micro data pin
+          P2: "" # DOUT: next P4
+          P4: "" # DIN: previous P2 or pro micro data pin
+          gnd_trace_width: 0.5
+          vcc_trace_width: 0.5
         adjust:
           shift: [0, -4.96]
+          rotate: 180
+      rgbcap: # 104
+        what: CSMD_0805_2012Metric
+        where: true
+        params:
+          P1: VCC
+          P2: GND
+          side: B
+          # value: 104
+        adjust:
+          shift: [0, -7.96]
+          #rotate: 180
+      rgbr: # 470 ohm resistor
+        what: RAxialL6D25P10H
+        params:
+          # designator: "R"
+          # value: 470
+          from: "led_pin"
+          to: "RGB5_P4"
+        where:
+          ref: matrixl_inner_func
+          shift: [10, -5.96]
+          rotate: 90
+      cap3: # 6.3V 1000uF
+        what: CRadialD63H11P25
+        params:
+          P1: VCC
+          P2: GND
+        where:
+          ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
+          shift: [+(2.5 / 2), 4]
+          rotate: 180
       promicro:
         what: promicro
         params:
@@ -517,11 +552,11 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
           shift: [0, -2.75]
           rotate: -90
-      c1:
+      cap1: # 104
         what: CDiscD38W26P25
         params:
-          p1: VCC
-          p2: GND
+          P1: VCC
+          P2: GND
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
           # adjust to pin 1
@@ -530,7 +565,6 @@ pcbs:
       dip1:
         what: DIP16W762
         params:
-          #TODO: add cap across p16 power and p08 ground
           p01: "{{mux0}}" #A
           p02: "{{mux1}}" #B
           p03: "{{mux2}}" #C
@@ -552,11 +586,11 @@ pcbs:
           # adjust to pin 1
           shift: [-(7.62 / 2), (21.34 / 2)]
           rotate: 0
-      c2:
+      cap2: # 104
         what: CDiscD38W26P25
         params:
-          p1: VCC
-          p2: GND
+          P1: VCC
+          P2: GND
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
           # adjust to pin 1

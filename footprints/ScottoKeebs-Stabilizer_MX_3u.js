@@ -16,9 +16,11 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 0 -2) (layer ${p.side}.SilkS) ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
+${'' /*
     (fp_text value Stabilizer_MX_3.00u (at 0 2) (layer ${p.side}.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
+*/}
     (fp_line (start 0 2) (end 0 -2) (layer Dwgs.User) (width 0.1))
     (fp_line (start -2 0) (end 2 0) (layer Dwgs.User) (width 0.1))
     (fp_line (start 15.675 -5.53) (end 15.675 6.77) (layer Eco1.User) (width 0.1))

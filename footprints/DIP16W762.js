@@ -31,9 +31,11 @@ module.exports = {
   (fp_text reference "${p.ref}" (at 3.81 -2.33) (layer ${p.side}.SilkS) ${p.ref_hide}
     (effects (font (size 1 1) (thickness 0.15)))
   )
+${'' /*
   (fp_text value DIP-16_W7.62mm_Socket (at 3.81 20.11) (layer ${p.side}.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
+*/}
   (fp_arc (start 3.81 -1.33) (end 2.81 -1.33) (angle -180.000000) (layer ${p.side}.SilkS) (width 0.12))
   (fp_line (start 1.635 -1.27) (end 6.985 -1.27) (layer ${p.side}.Fab) (width 0.1))
   (fp_line (start 6.985 -1.27) (end 6.985 19.05) (layer ${p.side}.Fab) (width 0.1))
