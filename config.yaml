@@ -1,4 +1,7 @@
-# ergogen v4
+meta:
+  engine: 4.0.5
+  version: "2024.03.10"
+  author: Travis Hardiman
 units:
   pp: U + 2
   # outer perimeter of board
@@ -477,6 +480,45 @@ outlines:
       name: keyholes
     - operation: subtract
       name: mounting
+cases:
+  bottom:
+    - name: board3d
+      extrude: 1
+  _outerWall:
+    - name: board3d
+      extrude: standoffHeight + boardThick
+  _innerWall:
+    - name: board
+      extrude: standoffHeight + boardThick
+  wall:
+    - what: case
+      name: _outerWall
+      operation: add
+    - what: case
+      name: _innerWall
+      operation: subtract
+  _holes:
+    - name: mounting
+      extrude: standoffHeight
+  _standoffs:
+    - name: standoff
+      extrude: standoffHeight
+  plate3d:
+    - name: plate
+      extrude: 1
+  case:
+    - what: case
+      name: _standoffs
+      operation: add
+    - what: case
+      name: _holes
+      operation: subtract
+    - what: case
+      name: bottom
+      operation: add
+    - what: case
+      name: wall
+      operation: add
 pcbs:
   travis_erg2024:
     outlines:
@@ -748,42 +790,3 @@ pcbs:
           ref: matrixl_outer_mod
           shift: [-0.5U - 3, 0]
     #references: true
-cases:
-  bottom:
-    - name: board3d
-      extrude: 1
-  _outerWall:
-    - name: board3d
-      extrude: standoffHeight + boardThick
-  _innerWall:
-    - name: board
-      extrude: standoffHeight + boardThick
-  wall:
-    - what: case
-      name: _outerWall
-      operation: add
-    - what: case
-      name: _innerWall
-      operation: subtract
-  _holes:
-    - name: mounting
-      extrude: standoffHeight
-  _standoffs:
-    - name: standoff
-      extrude: standoffHeight
-  plate3d:
-    - name: plate
-      extrude: 1
-  case:
-    - what: case
-      name: _standoffs
-      operation: add
-    - what: case
-      name: _holes
-      operation: subtract
-    - what: case
-      name: bottom
-      operation: add
-    - what: case
-      name: wall
-      operation: add
