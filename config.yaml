@@ -147,11 +147,17 @@ points:
           rows.num.skip: true
       rows:
         mod:
+          tags: row_odd
         bottom:
+          tags: row_even
         home:
+          tags: row_odd
         top:
+          tags: row_even
         num:
+          tags: row_odd
         func:
+          tags: row_even
     arrows:
       anchor:
         ref: matrixr_inner_mod
@@ -165,7 +171,9 @@ points:
         right:
       rows:
         bottom:
+          tags: row_odd
         top:
+          tags: row_even
     pages:
       anchor:
         ref: arrows_right_bottom
@@ -178,7 +186,9 @@ points:
         right:
       rows:
         bottom:
+          tags: row_odd
         top:
+          tags: row_even
     special:
       anchor:
         ref: matrixr_outer4_func
@@ -192,7 +202,9 @@ points:
         right:
       rows:
         bottom:
+          tags: row_odd
         top:
+          tags: row_even
   rotate: 0.6660
 outlines:
   raw:
@@ -551,7 +563,7 @@ pcbs:
           rotate: 90
       rgb_e:
         what: led_sk6812mini-e
-        where: meta.tags ~ -/row_even/
+        where: meta.tags ~ /row_even/
         params:
           P2: "" # DOUT: next P4
           P4: "" # DIN: previous P2 or pro micro data pin
@@ -562,7 +574,7 @@ pcbs:
           rotate: 180
       rgb_o:
         what: led_sk6812mini-e
-        where: meta.tags ~ -/row_odd/
+        where: meta.tags ~ /row_odd/
         params:
           P2: "" # DOUT: next P4
           P4: "" # DIN: previous P2 or pro micro data pin
@@ -572,24 +584,24 @@ pcbs:
           shift: [0, -4.96]
       rgbcap_e: # 104
         what: CDiscD38W26P25 #CSMD_0805_2012Metric
-        where: meta.tags ~ -/row_even/
+        where: meta.tags ~ /row_even/
         params:
           P1: VCC
           P2: GND
           side: B
           #value: 104
         adjust:
-          shift: [0, -7.96]
+          shift: [-(2.5 / 2), -7.96]
       rgbcap_o: # 104
         what: CDiscD38W26P25 #CSMD_0805_2012Metric
-        where: meta.tags ~ -/row_odd/
+        where: meta.tags ~ /row_odd/
         params:
           P1: VCC
           P2: GND
           side: B
           #value: 104
         adjust:
-          shift: [0, -7.96]
+          shift: [(2.5 / 2), -7.96]
           rotate: 180
       rgbr: # 470 ohm resistor
         what: RAxialL6D25P10H
