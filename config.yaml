@@ -1,7 +1,7 @@
 meta:
   engine: 4.0.5
   version: "2024.03.10"
-  author: Travis Hardiman
+  author: '"Travis Hardiman"'
 units:
   pp: U + 2
   # outer perimeter of board
@@ -72,11 +72,17 @@ points:
             num.shift: [0, 0]
       rows:
         mod:
+          tags: row_odd
         bottom:
+          tags: row_even
         home:
+          tags: row_odd
         top:
+          tags: row_even
         num:
+          tags: row_odd
         func:
+          tags: row_even
     matrixr:
       anchor:
         ref: matrixl_inner_home
@@ -540,13 +546,12 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
-          # value: 
         adjust:
           shift: [7.25, -1.25]
           rotate: 90
-      rgb:
+      rgb_e:
         what: led_sk6812mini-e
-        where: true
+        where: meta.tags ~ -/row_even/
         params:
           P2: "" # DOUT: next P4
           P4: "" # DIN: previous P2 or pro micro data pin
@@ -555,17 +560,37 @@ pcbs:
         adjust:
           shift: [0, -4.96]
           rotate: 180
-      rgbcap: # 104
-        what: CSMD_0805_2012Metric
-        where: true
+      rgb_o:
+        what: led_sk6812mini-e
+        where: meta.tags ~ -/row_odd/
+        params:
+          P2: "" # DOUT: next P4
+          P4: "" # DIN: previous P2 or pro micro data pin
+          gnd_trace_width: 0.5
+          vcc_trace_width: 0.5
+        adjust:
+          shift: [0, -4.96]
+      rgbcap_e: # 104
+        what: CDiscD38W26P25 #CSMD_0805_2012Metric
+        where: meta.tags ~ -/row_even/
         params:
           P1: VCC
           P2: GND
           side: B
-          # value: 104
+          #value: 104
         adjust:
           shift: [0, -7.96]
-          #rotate: 180
+      rgbcap_o: # 104
+        what: CDiscD38W26P25 #CSMD_0805_2012Metric
+        where: meta.tags ~ -/row_odd/
+        params:
+          P1: VCC
+          P2: GND
+          side: B
+          #value: 104
+        adjust:
+          shift: [0, -7.96]
+          rotate: 180
       rgbr: # 470 ohm resistor
         what: RAxialL6D25P10H
         params:
@@ -573,6 +598,7 @@ pcbs:
           # value: 470
           from: "led_pin"
           to: "RGB5_P4"
+          side: B
         where:
           ref: matrixl_inner_func
           shift: [10, -5.96]
@@ -582,6 +608,7 @@ pcbs:
         params:
           P1: VCC
           P2: GND
+          side: B
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
           shift: [+(2.5 / 2), 4]
