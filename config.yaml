@@ -566,7 +566,9 @@ pcbs:
         what: led_sk6812mini-e
         where: meta.tags ~ /row_even/
         params:
+          P1: RAW
           P2: "" # DOUT: next P4
+          P3: GND
           P4: "" # DIN: previous P2 or pro micro data pin
           gnd_trace_width: 0.5
           vcc_trace_width: 0.5
@@ -577,7 +579,9 @@ pcbs:
         what: led_sk6812mini-e
         where: meta.tags ~ /row_odd/
         params:
+          P1: RAW
           P2: "" # DOUT: next P4
+          P3: GND
           P4: "" # DIN: previous P2 or pro micro data pin
           gnd_trace_width: 0.5
           vcc_trace_width: 0.5
@@ -587,7 +591,7 @@ pcbs:
         what: CDiscD38W26P25 #CSMD_0805_2012Metric
         where: meta.tags ~ /row_even/
         params:
-          P1: VCC
+          P1: RAW
           P2: GND
           side: B
           #value: 104
@@ -597,7 +601,7 @@ pcbs:
         what: CDiscD38W26P25 #CSMD_0805_2012Metric
         where: meta.tags ~ /row_odd/
         params:
-          P1: VCC
+          P1: RAW
           P2: GND
           side: B
           #value: 104
@@ -631,8 +635,8 @@ pcbs:
         params:
           orientation: "up"
           # left
-          #P1: # TX0/PD3
-          #P0: # RX1/PD2
+          #P1: # TXO/PD3
+          #P0: # RXI/PD2
           #GND: GND
           #GND: GND
           P2: mux0 # SDA
@@ -644,7 +648,7 @@ pcbs:
           #P8: #A8
           P9: LED #A9 PWM
           # right
-          #RAW: undefined
+          #RAW: LEDV
           #GND: GND
           #RESET
           #VCC: 5V
