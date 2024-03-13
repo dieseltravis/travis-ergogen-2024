@@ -1,6 +1,6 @@
 {
   "name": "travis-ergogen-2024",
-  "version": "2024.03.11",
+  "version": "2024.03.12",
   "description": "Travis's first Ergogen keyboard",
   "main": "index.js",
   "scripts": {

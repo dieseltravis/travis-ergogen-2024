@@ -1,7 +1,8 @@
 meta:
   engine: 4.0.5
-  version: "2024.03.10"
+  version: "2024.03.12"
   author: '"Travis Hardiman"'
+  url: https://github.com/dieseltravis/travis-ergogen-2024
 units:
   pp: U + 2
   # outer perimeter of board
@@ -629,6 +630,32 @@ pcbs:
         what: promicro
         params:
           orientation: "up"
+          # left
+          #P1: # TX0/PD3
+          #P0: # RX1/PD2
+          #GND: GND
+          #GND: GND
+          P2: mux0 # SDA
+          P3: mux1 # SCL PWM
+          P4: mux2 # A6
+          P5: mux3 # PWM
+          P6: scrA # A7 PWM
+          P7: scrB
+          #P8: #A8
+          P9: LED #A9 PWM
+          # right
+          #RAW: undefined
+          #GND: GND
+          #RESET
+          #VCC: 5V
+          P21: col6 # A3
+          P20: col5 # A2
+          P19: col4 # A1
+          P18: col3 # A0
+          P15: col2 # SCLK
+          P14: col1 # MISO
+          P16: encA # MOSI
+          P10: encC # A10 PWM
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
           shift: [0, -2.75]
@@ -643,7 +670,7 @@ pcbs:
           # adjust to pin 1
           shift: [(2.5 / 2), (21.34 / 2) + 3]
           rotate: 180
-      dip1:
+      dip1: # 74HC138N
         what: DIP16W762
         params:
           p01: "{{mux0}}" #A
@@ -652,14 +679,14 @@ pcbs:
           p04: GND #G2A
           p05: "{{mux3}}" #G2B
           p06: VCC #G1
-          p07: "{{col7}}" #Y7
+          p07: "{{row6}}" #Y7
           p08: GND #GND C1 P2
-          p09: "{{col6}}" #Y6
-          p10: "{{col5}}" #Y5
-          p11: "{{col4}}" #Y4
-          p12: "{{col3}}" #Y3
-          p13: "{{col2}}" #Y2
-          p14: "{{col1}}" #Y1
+          p09: "{{row5}}" #Y6
+          p10: "{{row4}}" #Y5
+          p11: "{{row3}}" #Y4
+          p12: "{{row2}}" #Y3
+          p13: "{{row1}}" #Y2
+          p14: "{{row0}}" #Y1
           p15: "{{col0}}" #Y0
           p16: VCC #VCC C1 P1
         where:
@@ -677,7 +704,7 @@ pcbs:
           # adjust to pin 1
           shift: [(2.5 / 2), (21.34 / 2) + 3]
           rotate: 180
-      dip2:
+      dip2: # 74HC138N
         what: DIP16W762
         params:
           p01: mux0 #A
@@ -686,15 +713,15 @@ pcbs:
           p04: GND #G2A
           p05: GND #G2B
           p06: mux3 #G1
-          p07: col15 #Y7
+          p07: col14 #Y7
           p08: GND #GND C2 P2
-          p09: col14 #Y6
-          p10: col13 #Y5
-          p11: col12 #Y4
-          p12: col11 #Y3
-          p13: col10 #Y2
-          p14: col9 #Y1
-          p15: col8 #Y0
+          p09: col13 #Y6
+          p10: col12 #Y5
+          p11: col11 #Y4
+          p12: col10 #Y3
+          p13: col9 #Y2
+          p14: col8 #Y1
+          p15: col7 #Y0
           p16: VCC #VCC C2 P1
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
