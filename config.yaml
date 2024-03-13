@@ -1,8 +1,10 @@
 meta:
   engine: 4.0.5
+  name: "travis-ergogen-2024"
   version: "2024.03.12"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
+  tags: [ "ergogen", "promicro", "keyboard" ]
 units:
   pp: U + 2
   # outer perimeter of board
@@ -557,6 +559,8 @@ pcbs:
         what: diode
         where: true
         params:
+          #reversible: true
+          #include_tht: true
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
