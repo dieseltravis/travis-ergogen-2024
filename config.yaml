@@ -31,7 +31,9 @@ points:
         splay: -1
       columns:
         outer:
-          key.splay: 0
+          key:
+            splay: 0
+            column_net: col0
           rows:
             bottom:
               shift: [-pp / 4, 0]
@@ -40,7 +42,9 @@ points:
             top.width: 1.5U
             num.shift: [pp / 4, 0]
         pinky:
-          key.splay: 0
+          key:
+            splay: 0
+            column_net: col1
           rows:
             bottom.shift: [0, 0]
             num.shift: [0, 0]
@@ -48,18 +52,21 @@ points:
         ring:
           key:
             stagger: 2
+            column_net: col2
           rows:
             bottom.shift: [0, 0]
             num.shift: [0, 0]
         middle:
           key:
             stagger: 1
+            column_net: col3
           rows:
             bottom.shift: [0, 0]
             num.shift: [0, 0]
         index:
           key:
             stagger: -1
+            column_net: col4
           rows:
             mod.skip: true
             num.shift: [0, 0]
@@ -67,25 +74,33 @@ points:
           key:
             stagger: -0.25
             splay: 0
+            column_net: col5
           rows:
             mod:
               shift: [0.6, 0]
               width: 3U
-            bottom.shift: [0, 0]
+            bottom:
+              shift: [0, 0]
             num.shift: [0, 0]
       rows:
         mod:
           tags: row_odd
+          row_net: row5
         bottom:
           tags: row_even
+          row_net: row4
         home:
           tags: row_odd
+          row_net: row3
         top:
           tags: row_even
+          row_net: row2
         num:
           tags: row_odd
+          row_net: row1
         func:
           tags: row_even
+          row_net: row0
     matrixr:
       anchor:
         ref: matrixl_inner_home
@@ -97,7 +112,9 @@ points:
         splay: -1
       columns:
         inner:
-          key.splay: 0
+          key:
+            splay: 0
+            column_net: col6
           rows.mod:
             shift: [-0.6, 0]
             width: 3U
@@ -106,25 +123,33 @@ points:
           key:
             stagger: 0.25
             splay: 0
+            column_net: col7
           rows.mod.skip: true
         middle:
           key:
             stagger: 1
+            column_net: col8
         ring:
           key:
             stagger: -1
+            column_net: col9
         pinky:
           key:
             stagger: -2
+            column_net: col10
           rows.func.skip: true
         outer:
-          key.splay: 0
+          key:
+            splay: 0
+            column_net: col11
           rows.bottom:
             shift: [U / 4 + 0.6, 0]
             width: 1.5U
           rows.home.shift: [-U / 4 - 0.6, 0]
         outer2:
-          key.splay: 0
+          key:
+            splay: 0
+            column_net: col12
           rows.mod.skip: true
           rows.bottom.skip: true
           rows.home:
@@ -132,7 +157,9 @@ points:
             width: 1.5U
           rows.top.shift: [-U / 4 - 0.6, 0]
         outer3:
-          key.splay: 0
+          key:
+            splay: 0
+            column_net: col13
           rows.mod.skip: true
           rows.bottom.skip: true
           rows.home.skip: true
@@ -142,25 +169,34 @@ points:
           rows.func:
             shift: [-U / 4 - 0.6, 0]
         outer4:
-          key.splay: 0
+          key:
+            splay: 0
+            column_net: col13
           rows.mod.skip: true
           rows.bottom.skip: true
           rows.home.skip: true
           rows.top.skip: true
           rows.num.skip: true
+          rows.func.row_net: row3            
       rows:
         mod:
           tags: row_odd
+          row_net: row5
         bottom:
           tags: row_even
+          row_net: row4
         home:
           tags: row_odd
+          row_net: row3
         top:
           tags: row_even
+          row_net: row2
         num:
           tags: row_odd
+          row_net: row1
         func:
           tags: row_even
+          row_net: row0
     arrows:
       anchor:
         ref: matrixr_inner_mod
@@ -171,7 +207,15 @@ points:
         spread: U
       columns:
         left:
+          key.column_net: col14
+          rows.bottom.row_net: row5
+          rows.bottom.column_net: col15
+          rows.top.row_net: row5
         right:
+          key.column_net: col14
+          rows.bottom.row_net: row4
+          rows.bottom.column_net: col15
+          rows.top.row_net: row4
       rows:
         bottom:
           tags: row_odd
@@ -186,7 +230,15 @@ points:
         spread: U
       columns:
         left:
+          key.column_net: col14
+          rows.bottom.row_net: row3
+          rows.bottom.column_net: col15
+          rows.top.row_net: row3
         right:
+          key.column_net: col14
+          rows.bottom.row_net: row2
+          rows.bottom.column_net: col15
+          rows.top.row_net: row2
       rows:
         bottom:
           tags: row_odd
@@ -201,20 +253,23 @@ points:
         spread: U
       columns:
         left:
-        #mid:
+          key.column_net: col14
         right:
+          key.column_net: col15
       rows:
         bottom:
           tags: row_odd
+          row_net: row1
         top:
           tags: row_even
+          row_net: row0
   rotate: 0.6660
 outlines:
-  raw:
-    - what: rectangle
-      where: true
-      bound: true
-      size: [pp, pp]
+  #raw:
+  #  - what: rectangle
+  #    where: true
+  #    bound: true
+  #    size: [pp, pp]
   keys:
     - what: rectangle
       where: true
@@ -627,7 +682,7 @@ pcbs:
       cap3: # 6.3V 1000uF
         what: CRadialD63H11P25
         params:
-          P1: VCC
+          P1: RAW
           P2: GND
           side: B
         where:
@@ -656,12 +711,12 @@ pcbs:
           #GND: GND
           #RESET
           #VCC: 5V
-          P21: col6 # A3
-          P20: col5 # A2
-          P19: col4 # A1
-          P18: col3 # A0
-          P15: col2 # SCLK
-          P14: col1 # MISO
+          P21: col7 # A3
+          P20: col6 # A2
+          P19: col5 # A1
+          P18: col4 # A0
+          P15: col3 # SCLK
+          P14: col2 # MISO
           P16: encA # MOSI
           P10: encC # A10 PWM
         where:
@@ -681,21 +736,21 @@ pcbs:
       dip1: # 74HC138N
         what: DIP16W762
         params:
-          p01: "{{mux0}}" #A
-          p02: "{{mux1}}" #B
-          p03: "{{mux2}}" #C
+          p01: mux0 #A
+          p02: mux1 #B
+          p03: mux2 #C
           p04: GND #G2A
-          p05: "{{mux3}}" #G2B
+          p05: mux3 #G2B
           p06: VCC #G1
-          p07: "{{row6}}" #Y7
+          p07: row5 #Y7 (there is no row6)
           p08: GND #GND C1 P2
-          p09: "{{row5}}" #Y6
-          p10: "{{row4}}" #Y5
-          p11: "{{row3}}" #Y4
-          p12: "{{row2}}" #Y3
-          p13: "{{row1}}" #Y2
-          p14: "{{row0}}" #Y1
-          p15: "{{col0}}" #Y0
+          p09: row4 #Y6
+          p10: row3 #Y5
+          p11: row2 #Y4
+          p12: row1 #Y3
+          p13: row0 #Y2
+          p14: col0 #Y1
+          p15: col1 #Y0
           p16: VCC #VCC C1 P1
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
@@ -721,15 +776,15 @@ pcbs:
           p04: GND #G2A
           p05: GND #G2B
           p06: mux3 #G1
-          p07: col14 #Y7
+          p07: col15 #Y7
           p08: GND #GND C2 P2
-          p09: col13 #Y6
-          p10: col12 #Y5
-          p11: col11 #Y4
-          p12: col10 #Y3
-          p13: col9 #Y2
-          p14: col8 #Y1
-          p15: col7 #Y0
+          p09: col14 #Y6
+          p10: col13 #Y5
+          p11: col12 #Y4
+          p12: col11 #Y3
+          p13: col10 #Y2
+          p14: col9 #Y1
+          p15: col8 #Y0
           p16: VCC #VCC C2 P1
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
@@ -751,13 +806,11 @@ pcbs:
       scrollwheel:
         what: scrollwheel
         params:
-          from: "{{column_net}}"
-          to: "{{colrow}}"
-          #TODO:
-          A: GND
+          from: col1
+          to: scr_to
+          A: scrA
           B: GND
-          #TODO:
-          C: GND
+          C: scrC
           # This pin is unused
           D: undefined
         where:
@@ -769,18 +822,16 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
           shift: [-6, 9]
         params:
-          from: "{{colrow}}"
-          to: "{{row_net}}"
+          from: scr_to
+          to: row0
       rotary:
         what: rotary
         params:
-          from: "{{column_net}}"
-          to: "{{colrow}}"
-          #TODO:
-          A: GND
+          from: col4
+          to: enc_to
+          A: encA
           B: GND
-          #TODO:
-          C: GND
+          C: encC
         where:
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
           shift: [0, 0]
@@ -791,8 +842,8 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
           shift: [0, -10]
         params:
-          from: "{{colrow}}"
-          to: "{{row_net}}"
+          from: enc_to
+          to: row5
       # stabs
       spacel2u:
         what: ScottoKeebs-Stabilizer_MX_2u
