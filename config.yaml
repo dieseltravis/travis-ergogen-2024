@@ -793,17 +793,16 @@ pcbs:
           shift: [-(7.62 / 2), (21.34 / 2)]
           rotate: 0
       reset:
-        what: button
+        what: SWPUSH6H43  #button
         params:
-          from: GND
-          to: RST
+          #from: GND
+          P1: GND
+          #to: RST
+          P2: RST
         where:
           ref: matrixr_inner_func
-          shift: [-1U/2 - 1, 2U/3]
-          rotate: -2.5 + 45
-          #ref.aggregate.parts: [matrixr_outer4_func, special_left_top]
-          #shift: [0, 0]
-          #rotate: -45
+          shift: [-1U / 2, 3U / 4 + 2]
+          #rotate: -2.5  # + 45
       scrollwheel:
         what: scrollwheel
         params:
