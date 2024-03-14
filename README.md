@@ -2,6 +2,8 @@
 Built with Ergogen v4.
 ![keyboard plate outline](./output/outlines/plate.svg)
 
+![keyboard key and led mapping](./datasheets/plate-legend.webp)
+
 ## Project Details ##
 * `/config.yaml`
 * `/package.json` yarn commands and metadata

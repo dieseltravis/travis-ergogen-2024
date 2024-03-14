@@ -1,7 +1,8 @@
 meta:
   engine: 4.0.5
   name: "travis-ergogen-2024"
-  version: "2024.03.12"
+  version: "2024.03.13"
+  date: "2024-03-13"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
   tags: [ "ergogen", "promicro", "keyboard" ]
