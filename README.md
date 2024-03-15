@@ -26,6 +26,7 @@ Built with Ergogen v4.
     * Convert Kicad Footprints to Ergogen https://nilnil.notion.site/Convert-Kicad-Footprints-to-Ergogen-8340ce87ad554c69af4e3f92bc9a0898
     * KiCad Footprints: https://kicad.github.io/footprints/
 * Other helpful build guides:
+    * ceoloide's corney-island build https://github.com/ceoloide/corney-island
     * Kimiko Build Guide https://keycapsss.com/help/kimiko/buildguide_en
     * Nullbits Nibble https://github.com/nullbitsco/docs/blob/main/nibble/build_guide_en.md
     * Lagom https://github.com/mohoyt/lagom/

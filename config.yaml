@@ -24,53 +24,112 @@ points:
   zones:
     matrixl:
       anchor:
+        # move the PCB into view for KiCad
         shift: [36, -175]
         rotate: 0
       key:
         padding: U
         spread: U
         splay: -1
+        tags: 
+          - key
       columns:
         outer:
           key:
             splay: 0
             column_net: col0
           rows:
+            mod.key.led_next: LED_30
+            mod.key.led_prev: LED_29
             bottom:
               shift: [-pp / 4, 0]
               width: 1.5U
+            bottom.key.led_next: LED_29
+            bottom.key.led_prev: LED_28
             home.width: 1.5U
+            home.key.led_next: LED_18
+            home.key.led_prev: LED_17
             top.width: 1.5U
+            top.key.led_next: LED_17
+            top.key.led_prev: LED_16
             num.shift: [pp / 4, 0]
+            num.key.led_next: LED_6
+            num.key.led_prev: LED_5
+            func.key.led_next: LED_5
+            func.key.led_prev: LED_4
         pinky:
           key:
             splay: 0
             column_net: col1
           rows:
+            mod.key.led_next: LED_31
+            mod.key.led_prev: LED_30
             bottom.shift: [0, 0]
+            bottom.key.led_next: LED_28
+            bottom.key.led_prev: LED_27
+            home.key.led_next: LED_19
+            home.key.led_prev: LED_18
+            top.key.led_next: LED_16
+            top.key.led_prev: LED_15
             num.shift: [0, 0]
+            num.key.led_next: LED_7
+            num.key.led_prev: LED_6
             func.skip: true
         ring:
           key:
             stagger: 2
             column_net: col2
           rows:
+            mod.key.led_next: LED_32
+            mod.key.led_prev: LED_31
             bottom.shift: [0, 0]
+            bottom.key.led_next: LED_27
+            bottom.key.led_prev: LED_26
+            home.key.led_next: LED_20
+            home.key.led_prev: LED_19
+            top.key.led_next: LED_15
+            top.key.led_prev: LED_14
             num.shift: [0, 0]
+            num.key.led_next: LED_8
+            num.key.led_prev: LED_7
+            func.key.led_next: LED_4
+            func.key.led_prev: LED_3
         middle:
           key:
             stagger: 1
             column_net: col3
           rows:
+            mod.key.led_next: LED_33
+            mod.key.led_prev: LED_32
             bottom.shift: [0, 0]
+            bottom.key.led_next: LED_26
+            bottom.key.led_prev: LED_25
+            home.key.led_next: LED_21
+            home.key.led_prev: LED_20
+            top.key.led_next: LED_14
+            top.key.led_prev: LED_13
             num.shift: [0, 0]
+            num.key.led_next: LED_9
+            num.key.led_prev: LED_8
+            func.key.led_next: LED_3
+            func.key.led_prev: LED_2
         index:
           key:
             stagger: -1
             column_net: col4
           rows:
             mod.skip: true
+            bottom.key.led_next: LED_25
+            bottom.key.led_prev: LED_24
+            home.key.led_next: LED_22
+            home.key.led_prev: LED_21
+            top.key.led_next: LED_13
+            top.key.led_prev: LED_12
             num.shift: [0, 0]
+            num.key.led_next: LED_10
+            num.key.led_prev: LED_9
+            func.key.led_next: LED_2
+            func.key.led_prev: LED_1
         inner:
           key:
             stagger: -0.25
@@ -80,9 +139,21 @@ points:
             mod:
               shift: [0.6, 0]
               width: 3U
+            mod.key.led_next: LED_34
+            mod.key.led_prev: LED_33
             bottom:
               shift: [0, 0]
+            bottom.key.led_next: LED_24
+            bottom.key.led_prev: LED_23
+            home.key.led_next: LED_23
+            home.key.led_prev: LED_22
+            top.key.led_next: LED_12
+            top.key.led_prev: LED_11
             num.shift: [0, 0]
+            num.key.led_next: LED_11
+            num.key.led_prev: LED_10
+            func.key.led_next: LED_1
+            func.key.led_prev: LED_0  # resistor to P9 on promicro
       rows:
         mod:
           tags: row_odd
@@ -111,6 +182,8 @@ points:
         padding: U
         spread: U
         splay: -1
+        tags: 
+          - key
       columns:
         inner:
           key:
@@ -206,6 +279,8 @@ points:
       key:
         padding: U
         spread: U
+        tags: 
+          - key
       columns:
         left:
           key.column_net: col14
@@ -229,6 +304,8 @@ points:
       key:
         padding: U
         spread: U
+        tags: 
+          - key
       columns:
         left:
           key.column_net: col14
@@ -252,6 +329,8 @@ points:
       key:
         padding: U
         spread: U
+        tags: 
+          - key
       columns:
         left:
           key.column_net: col14
@@ -625,9 +704,9 @@ pcbs:
         where: meta.tags ~ /row_even/
         params:
           P1: RAW
-          P2: "C{{column_net}}R{{row_net}}" # DOUT: next P4
+          P2: "{{key.led_next}}" # DOUT: next P4
           P3: GND
-          P4: "C{{column_net}}R{{row_net}}" # DIN: previous P2 or pro micro data pin
+          P4: "{{key.led_prev}}" # DIN: previous P2 or pro micro data pin
           gnd_trace_width: 0.5
           vcc_trace_width: 0.5
           include_keepout: true
@@ -639,9 +718,9 @@ pcbs:
         where: meta.tags ~ /row_odd/
         params:
           P1: RAW
-          P2: led_in # DOUT: next P4
+          P2: "{{key.led_next}}" # DOUT: next P4
           P3: GND
-          P4: led_out # DIN: previous P2 or pro micro data pin
+          P4: "{{key.led_prev}}" # DIN: previous P2 or pro micro data pin
           gnd_trace_width: 0.5
           vcc_trace_width: 0.5
           include_keepout: true
@@ -673,12 +752,12 @@ pcbs:
         params:
           # designator: "R"
           # value: 470
-          from: "led_pin"
-          to: "RGB5_P4"
+          from: LED #P9 on Promicro
+          to: LED_0 #P2 on LED 0
           side: B
         where:
           ref: matrixl_inner_func
-          shift: [U / 2 + 2, -5.96]
+          shift: [U / 2 + 2, -14]
           rotate: 90
       cap3: # 6.3V 1000uF
         what: CRadialD63H11P25
