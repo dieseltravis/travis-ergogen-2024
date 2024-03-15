@@ -1,8 +1,8 @@
 meta:
   engine: 4.0.5
   name: "travis-ergogen-2024"
-  version: "2024.03.13"
-  date: "2024-03-13"
+  version: "2024.03.14"
+  date: "2024-03-14"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
   tags: [ "ergogen", "promicro", "keyboard" ]
@@ -615,8 +615,6 @@ pcbs:
         what: diode
         where: true
         params:
-          #reversible: true
-          #include_tht: true
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
@@ -627,11 +625,12 @@ pcbs:
         where: meta.tags ~ /row_even/
         params:
           P1: RAW
-          P2: "" # DOUT: next P4
+          P2: "C{{column_net}}R{{row_net}}" # DOUT: next P4
           P3: GND
-          P4: "" # DIN: previous P2 or pro micro data pin
+          P4: "C{{column_net}}R{{row_net}}" # DIN: previous P2 or pro micro data pin
           gnd_trace_width: 0.5
           vcc_trace_width: 0.5
+          include_keepout: true
         adjust:
           shift: [0, -4.96]
           rotate: 180
@@ -640,11 +639,12 @@ pcbs:
         where: meta.tags ~ /row_odd/
         params:
           P1: RAW
-          P2: "" # DOUT: next P4
+          P2: led_in # DOUT: next P4
           P3: GND
-          P4: "" # DIN: previous P2 or pro micro data pin
+          P4: led_out # DIN: previous P2 or pro micro data pin
           gnd_trace_width: 0.5
           vcc_trace_width: 0.5
+          include_keepout: true
         adjust:
           shift: [0, -4.96]
       rgbcap_e: # 104
@@ -656,7 +656,7 @@ pcbs:
           side: B
           #value: 104
         adjust:
-          shift: [-(2.5 / 2), -7.96]
+          shift: [-(2.5 / 2), -8.25]
       rgbcap_o: # 104
         what: CDiscD38W26P25 #CSMD_0805_2012Metric
         where: meta.tags ~ /row_odd/
@@ -666,7 +666,7 @@ pcbs:
           side: B
           #value: 104
         adjust:
-          shift: [(2.5 / 2), -7.96]
+          shift: [(2.5 / 2), -8.25]
           rotate: 180
       rgbr: # 470 ohm resistor
         what: RAxialL6D25P10H
@@ -678,7 +678,7 @@ pcbs:
           side: B
         where:
           ref: matrixl_inner_func
-          shift: [10, -5.96]
+          shift: [U / 2 + 2, -5.96]
           rotate: 90
       cap3: # 6.3V 1000uF
         what: CRadialD63H11P25
@@ -802,7 +802,6 @@ pcbs:
         where:
           ref: matrixr_inner_func
           shift: [-1U / 2, 3U / 4 + 2]
-          #rotate: -2.5  # + 45
       scrollwheel:
         what: scrollwheel
         params:
@@ -914,4 +913,22 @@ pcbs:
         where:
           ref: matrixl_outer_mod
           shift: [-0.5U - 3, 0]
-    #references: true
+      # logos
+      #danger:
+      #  what: Symbol_Danger_Copper_Small
+      #  where:
+      #    ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
+      #    shift: [0, 11]
+      ki:
+        what: KiCad-Logo5Copper
+        where:
+          ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
+          shift: [0, -5]
+      #oshw:
+      #  what: OSHW-Symbol67x6Copper
+      #  where:
+      #    ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
+      #    shift: [0, -20]
+      # TODO: ergogen, travis
+
+    references: true
