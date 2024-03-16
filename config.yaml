@@ -336,12 +336,12 @@ points:
           key:
             splay: 0
             column_net: col13
-          rows.mod.skip: true
-          rows.bottom.skip: true
-          rows.home.skip: true
-          rows.top.skip: true
-          rows.num.skip: true
           rows:
+            mod.skip: true
+            bottom.skip: true
+            home.skip: true
+            top.skip: true
+            num.skip: true
             func.row_net: row3
             func.key.led_next: LED_81
             func.key.led_prev: LED_80
@@ -833,6 +833,7 @@ pcbs:
           P4: "{{key.led_prev}}" # DIN: previous P2 or pro micro data pin
           gnd_trace_width: 0.5
           vcc_trace_width: 0.5
+          #reversible: true
           include_keepout: true
         adjust:
           shift: [0, -4.96]
@@ -847,6 +848,7 @@ pcbs:
           P4: "{{key.led_prev}}" # DIN: previous P2 or pro micro data pin
           gnd_trace_width: 0.5
           vcc_trace_width: 0.5
+          #reversible: true
           include_keepout: true
         adjust:
           shift: [0, -4.96]
@@ -859,7 +861,7 @@ pcbs:
           side: B
           #value: 104
         adjust:
-          shift: [-(2.5 / 2), -8.25]
+          shift: [-(2.5 / 2), -8.4]
       rgbcap_o: # 104
         what: CDiscD38W26P25 #CSMD_0805_2012Metric
         where: meta.tags ~ /row_odd/
@@ -869,7 +871,7 @@ pcbs:
           side: B
           #value: 104
         adjust:
-          shift: [(2.5 / 2), -8.25]
+          shift: [(2.5 / 2), -8.4]
           rotate: 180
       rgbr: # 470 ohm resistor
         what: RAxialL6D25P10H
@@ -1133,5 +1135,15 @@ pcbs:
       #    ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
       #    shift: [0, -20]
       # TODO: ergogen, travis
+      jlcpcb:
+        what: ceoloide/text
+        where: 
+          ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
+        params:
+          text: JLCJLCJLCJLC
+          reversible: true
+        adjust:
+          shift: [0, 0]
+          #rotate: 90
 
     references: true
