@@ -1078,6 +1078,11 @@ pcbs:
         where:
           ref: matrixl_outer_func
           shift: [-0.5U + 2, 0.5U + 4]
+      holeTopLeft2:
+        what: mountinghole
+        where:
+          ref: matrixl_outer_func
+          shift: [-0.5U + 2, 0.5U + 4]
       holeTopMidL:
         what: infused-kim/mounting_hole #mountinghole
         where:
