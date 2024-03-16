@@ -1151,5 +1151,13 @@ pcbs:
         adjust:
           shift: [0, 0]
           #rotate: 90
+      version:
+        what: ceoloide/text
+        where: 
+          ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
+        params:
+          text: "{{meta.name}} {{meta.version}}"
+        adjust:
+          shift: [0, -5]
 
     references: true
