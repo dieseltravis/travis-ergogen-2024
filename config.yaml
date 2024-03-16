@@ -189,59 +189,149 @@ points:
           key:
             splay: 0
             column_net: col6
-          rows.mod:
-            shift: [-0.6, 0]
-            width: 3U
-          rows.bottom.shift: [0.6, 0]
+          rows:
+            mod:
+              shift: [-0.6, 0]
+              width: 3U
+            mod.key.led_next: LED_35
+            mod.key.led_prev: LED_34
+            bottom.shift: [0.6, 0]
+            bottom.key.led_next: LED_49
+            bottom.key.led_prev: LED_48
+            home.key.led_next: LED_50
+            home.key.led_prev: LED_49
+            top.key.led_next: LED_68
+            top.key.led_prev: LED_67
+            num.key.led_next: LED_69
+            num.key.led_prev: LED_68
+            func.key.led_next: "" # Last LED doesn't go anywhere
+            func.key.led_prev: LED_87
         index:
           key:
             stagger: 0.25
             splay: 0
             column_net: col7
-          rows.mod.skip: true
+          rows:
+            mod.skip: true
+            bottom.key.led_next: LED_48
+            bottom.key.led_prev: LED_47
+            home.key.led_next: LED_51
+            home.key.led_prev: LED_50
+            top.key.led_next: LED_67
+            top.key.led_prev: LED_66
+            num.key.led_next: LED_70
+            num.key.led_prev: LED_69
+            func.key.led_next: LED_87
+            func.key.led_prev: LED_86
         middle:
           key:
             stagger: 1
             column_net: col8
+          rows:
+            mod.key.led_next: LED_36
+            mod.key.led_prev: LED_35
+            bottom.key.led_next: LED_47
+            bottom.key.led_prev: LED_46
+            home.key.led_next: LED_52
+            home.key.led_prev: LED_51
+            top.key.led_next: LED_66
+            top.key.led_prev: LED_65
+            num.key.led_next: LED_71
+            num.key.led_prev: LED_70
+            func.key.led_next: LED_86
+            func.key.led_prev: LED_85
         ring:
           key:
             stagger: -1
             column_net: col9
+          rows:
+            mod.key.led_next: LED_37
+            mod.key.led_prev: LED_36
+            bottom.key.led_next: LED_46
+            bottom.key.led_prev: LED_45
+            home.key.led_next: LED_53
+            home.key.led_prev: LED_52
+            top.key.led_next: LED_65
+            top.key.led_prev: LED_64
+            num.key.led_next: LED_72
+            num.key.led_prev: LED_71
+            func.key.led_next: LED_85
+            func.key.led_prev: LED_84
         pinky:
           key:
             stagger: -2
             column_net: col10
-          rows.func.skip: true
+          rows:
+            mod.key.led_next: LED_38
+            mod.key.led_prev: LED_37
+            bottom.key.led_next: LED_45
+            bottom.key.led_prev: LED_44
+            home.key.led_next: LED_54
+            home.key.led_prev: LED_53
+            top.key.led_next: LED_64
+            top.key.led_prev: LED_63
+            num.key.led_next: LED_73
+            num.key.led_prev: LED_72
+            func.skip: true
         outer:
           key:
             splay: 0
             column_net: col11
-          rows.bottom:
-            shift: [U / 4 + 0.6, 0]
-            width: 1.5U
-          rows.home.shift: [-U / 4 - 0.6, 0]
+          rows:
+            mod.key.led_next: LED_39
+            mod.key.led_prev: LED_38
+            bottom:
+              shift: [U / 4 + 0.6, 0]
+              width: 1.5U
+            bottom.key.led_next: LED_44
+            bottom.key.led_prev: LED_43
+            home.shift: [-U / 4 - 0.6, 0]
+            home.key.led_next: LED_55
+            home.key.led_prev: LED_54
+            top.key.led_next: LED_63
+            top.key.led_prev: LED_62
+            num.key.led_next: LED_74
+            num.key.led_prev: LED_73
+            func.key.led_next: LED_84
+            func.key.led_prev: LED_83
         outer2:
           key:
             splay: 0
             column_net: col12
-          rows.mod.skip: true
-          rows.bottom.skip: true
-          rows.home:
-            shift: [U / 4 + 0.6, 0]
-            width: 1.5U
-          rows.top.shift: [-U / 4 - 0.6, 0]
+          rows:
+            mod.skip: true
+            bottom.skip: true
+            home:
+              shift: [U / 4 + 0.6, 0]
+              width: 1.5U
+            home.key.led_next: LED_56
+            home.key.led_prev: LED_55
+            top.shift: [-U / 4 - 0.6, 0]
+            top.key.led_next: LED_62
+            top.key.led_prev: LED_61
+            num.key.led_next: LED_75
+            num.key.led_prev: LED_74
+            func.key.led_next: LED_83
+            func.key.led_prev: LED_82
         outer3:
           key:
             splay: 0
             column_net: col13
-          rows.mod.skip: true
-          rows.bottom.skip: true
-          rows.home.skip: true
-          rows.num:
-            shift: [U / 4 + 0.6, 0]
-            width: 1.5U
-          rows.func:
-            shift: [-U / 4 - 0.6, 0]
+          rows:
+            mod.skip: true
+            bottom.skip: true
+            home.skip: true
+            top.key.led_next: LED_61
+            top.key.led_prev: LED_60
+            num:
+              shift: [U / 4 + 0.6, 0]
+              width: 1.5U
+            num.key.led_next: LED_76
+            num.key.led_prev: LED_75
+            func:
+              shift: [-U / 4 - 0.6, 0]
+            func.key.led_next: LED_82
+            func.key.led_prev: LED_81
         outer4:
           key:
             splay: 0
@@ -251,7 +341,10 @@ points:
           rows.home.skip: true
           rows.top.skip: true
           rows.num.skip: true
-          rows.func.row_net: row3            
+          rows:
+            func.row_net: row3
+            func.key.led_next: LED_81
+            func.key.led_prev: LED_80
       rows:
         mod:
           tags: row_odd
@@ -284,14 +377,24 @@ points:
       columns:
         left:
           key.column_net: col14
-          rows.bottom.row_net: row5
-          rows.bottom.column_net: col15
-          rows.top.row_net: row5
+          rows:
+            bottom.row_net: row5
+            bottom.column_net: col15
+            bottom.key.led_next: LED_41
+            bottom.key.led_prev: LED_40
+            top.row_net: row5
+            top.key.led_next: LED_40
+            top.key.led_prev: LED_39
         right:
           key.column_net: col14
-          rows.bottom.row_net: row4
-          rows.bottom.column_net: col15
-          rows.top.row_net: row4
+          rows:
+            bottom.row_net: row4
+            bottom.column_net: col15
+            bottom.key.led_next: LED_42
+            bottom.key.led_prev: LED_41
+            top.row_net: row4
+            top.key.led_next: LED_43
+            top.key.led_prev: LED_42
       rows:
         bottom:
           tags: row_odd
@@ -309,14 +412,24 @@ points:
       columns:
         left:
           key.column_net: col14
-          rows.bottom.row_net: row3
-          rows.bottom.column_net: col15
-          rows.top.row_net: row3
+          rows:
+            bottom.row_net: row3
+            bottom.column_net: col15
+            bottom.key.led_next: LED_58
+            bottom.key.led_prev: LED_57
+            top.row_net: row3
+            top.key.led_next: LED_57
+            top.key.led_prev: LED_56
         right:
           key.column_net: col14
-          rows.bottom.row_net: row2
-          rows.bottom.column_net: col15
-          rows.top.row_net: row2
+          rows:
+            bottom.row_net: row2
+            bottom.column_net: col15
+            bottom.key.led_next: LED_59
+            bottom.key.led_prev: LED_58
+            top.row_net: row2
+            top.key.led_next: LED_60
+            top.key.led_prev: LED_59
       rows:
         bottom:
           tags: row_odd
@@ -334,8 +447,18 @@ points:
       columns:
         left:
           key.column_net: col14
+          rows:
+            bottom.key.led_next: LED_77
+            bottom.key.led_prev: LED_76
+            top.key.led_next: LED_80
+            top.key.led_prev: LED_79
         right:
           key.column_net: col15
+          rows:
+            bottom.key.led_next: LED_78
+            bottom.key.led_prev: LED_77
+            top.key.led_next: LED_79
+            top.key.led_prev: LED_78
       rows:
         bottom:
           tags: row_odd
@@ -345,6 +468,7 @@ points:
           row_net: row0
   rotate: 0.6660
 outlines:
+  # hmm this doesn't work any more
   #raw:
   #  - what: rectangle
   #    where: true
