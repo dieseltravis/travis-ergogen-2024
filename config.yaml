@@ -1074,52 +1074,47 @@ pcbs:
           shift: [0, 0]
       # holes:
       holeTopLeft:
-        what: infused-kim/mounting_hole #mountinghole
-        where:
-          ref: matrixl_outer_func
-          shift: [-0.5U + 2, 0.5U + 4]
-      holeTopLeft2:
-        what: mountinghole
+        what: mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixl_outer_func
           shift: [-0.5U + 2, 0.5U + 4]
       holeTopMidL:
-        what: infused-kim/mounting_hole #mountinghole
+        what: mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixl_inner_num
           shift: [2U/3, 0]
       holeTopMidR:
-        what: infused-kim/mounting_hole #mountinghole
+        what: mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixr_inner_num
           shift: [-2U/3, 0]
       holeBottomMidL:
-        what: infused-kim/mounting_hole #mountinghole
+        what: mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixl_inner_bottom
           shift: [2U/3, 0]
       holeBottomMidR:
-        what: infused-kim/mounting_hole #mountinghole
+        what: mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixr_inner_bottom
           shift: [-2U/3, 0]
       holeTopRight:
-        what: infused-kim/mounting_hole #mountinghole
+        what: mountinghole #infused-kim/mounting_hole
         where:
           ref: special_right_top
           shift: [0.5U - 2, 0.5U + 4]
       holeBottomRight1:
-        what: infused-kim/mounting_hole #mountinghole
+        what: mountinghole #infused-kim/mounting_hole
         where:
           ref.aggregate.parts: [pages_right_bottom, special_right_bottom]
           shift: [0.3U, -0.3U]
       holeBottomRight2:
-        what: infused-kim/mounting_hole #mountinghole
+        what: mountinghole #infused-kim/mounting_hole
         where:
           ref.aggregate.parts: [matrixr_outer_mod, arrows_left_bottom]
           shift: [0, -0.5U]
       holeBottomLeft:
-        what: infused-kim/mounting_hole #mountinghole
+        what: mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixl_outer_mod
           shift: [-0.5U - 3, 0]
