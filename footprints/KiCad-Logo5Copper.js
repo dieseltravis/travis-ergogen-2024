@@ -9,7 +9,7 @@ module.exports = {
     (tags "Logo KiCad")
     ${p.at /* parametric position */}
     (attr virtual)
-    (fp_text reference "${p.ref}" (at 0 -5.08) (layer ${p.side}.SilkS) ${p.ref_hide}
+    (fp_text reference "${p.ref}" (at 0 -5.08) (layer ${p.side}.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
 ${'' /*    
