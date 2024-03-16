@@ -853,7 +853,7 @@ pcbs:
         adjust:
           shift: [0, -4.96]
       rgbcap_e: # 104
-        what: CDiscD38W26P25 #CSMD_0805_2012Metric
+        what: CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
         where: meta.tags ~ /row_even/
         params:
           P1: RAW
@@ -861,9 +861,12 @@ pcbs:
           side: B
           #value: 104
         adjust:
-          shift: [-(2.5 / 2), -8.4]
+          #shift: [-(2.5 / 2), -8.4]
+          #shift: [-(5 / 2), -8.4]
+          shift: [-5, -4]
+          rotate: 270
       rgbcap_o: # 104
-        what: CDiscD38W26P25 #CSMD_0805_2012Metric
+        what: CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
         where: meta.tags ~ /row_odd/
         params:
           P1: RAW
@@ -871,8 +874,11 @@ pcbs:
           side: B
           #value: 104
         adjust:
-          shift: [(2.5 / 2), -8.4]
-          rotate: 180
+          #shift: [(2.5 / 2), -8.4]
+          #shift: [(5 / 2), -8.4]
+          shift: [4.5, -6]
+          #rotate: 180
+          rotate: -90
       rgbr: # 470 ohm resistor
         what: RAxialL6D25P10H
         params:
