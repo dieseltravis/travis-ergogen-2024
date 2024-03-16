@@ -824,7 +824,7 @@ pcbs:
           shift: [7.25, -1.25]
           rotate: 90
       rgb_e:
-        what: led_sk6812mini-e
+        what: ceoloide/led_sk6812mini-e
         where: meta.tags ~ /row_even/
         params:
           P1: RAW
@@ -838,7 +838,7 @@ pcbs:
           shift: [0, -4.96]
           rotate: 180
       rgb_o:
-        what: led_sk6812mini-e
+        what: ceoloide/led_sk6812mini-e
         where: meta.tags ~ /row_odd/
         params:
           P1: RAW
