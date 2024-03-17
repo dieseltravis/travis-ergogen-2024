@@ -1140,7 +1140,6 @@ pcbs:
       #  where:
       #    ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
       #    shift: [0, -20]
-      # TODO: ergogen, travis
       jlcpcb:
         what: ceoloide/text
         where: 
@@ -1149,15 +1148,28 @@ pcbs:
           text: JLCJLCJLCJLC
           reversible: true
         adjust:
-          shift: [0, 0]
+          shift: [0, -8]
           #rotate: 90
+      ergologo:
+        what: ergogen
+        where: 
+          ref.aggregate.parts: [matrixl_inner_num, matrixr_inner_num]
+        adjust:
+          shift: [0, -3]
+      travis:
+        what: travis
+        where: 
+          ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
+        adjust:
+          shift: [0, -3]
+      # TODO: fix version
       version:
         what: ceoloide/text
         where: 
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
         params:
-          text: "{{meta.name}} {{meta.version}}"
+          text: "v{{meta.version}}"
         adjust:
-          shift: [0, -5]
+          shift: [0, -1]
 
     references: true

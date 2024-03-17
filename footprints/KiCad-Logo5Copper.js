@@ -4,7 +4,8 @@ module.exports = {
         designator: 'SYM',
         side: 'F'
     },
-    body: p => `(module KiCad-Logo_5mm_Copper (layer ${p.side}.Cu) (tedit 0)
+    body: p => `
+    (module KiCad-Logo_5mm_Copper (layer ${p.side}.Cu) (tedit 0)
     (descr "KiCad Logo")
     (tags "Logo KiCad")
     ${p.at /* parametric position */}
@@ -256,6 +257,5 @@ ${'' /*
       (xy -2.804669 -2.465693) (xy -2.804948 -2.511778) (xy -2.800861 -2.596135) (xy -2.787446 -2.665414)
       (xy -2.762256 -2.726039) (xy -2.722846 -2.784433) (xy -2.684298 -2.828698) (xy -2.612406 -2.894516)
       (xy -2.537313 -2.939947) (xy -2.454562 -2.96715) (xy -2.376928 -2.977424) (xy -2.273043 -2.973429)) (layer ${p.side}.Cu) (width 0.01))
-  )
-`
+  )`
 };
