@@ -79,8 +79,8 @@ module.exports = {
     (fp_line (start 7.62 0) (end 5.81 0)
       (stroke (width 0.1) (type solid)) (layer "${p.side}.Fab") )
     
-    (pad 1 thru_hole rect (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${ p.from })
-    (pad 2 thru_hole oval (at 7.62 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${ p.to })
+    (pad 1 thru_hole rect (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${ p.to })
+    (pad 2 thru_hole oval (at 7.62 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${ p.from })
 
     (model "${p.SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
       (offset (xyz 0 0 0))

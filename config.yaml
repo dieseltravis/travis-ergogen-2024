@@ -1,8 +1,8 @@
 meta:
   engine: 4.0.5
   name: "travis-ergogen-2024"
-  version: &meta_version "2024.03.15"
-  date: "2024-03-15"
+  version: &meta_version "2024.03.17"
+  date: "2024-03-17"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
   tags: [ "ergogen", "promicro", "keyboard" ]
@@ -78,6 +78,7 @@ points:
         ring:
           key:
             stagger: 2
+            shift: [0.2, 0]
             column_net: col2
           rows:
             mod.key.led_next: LED_32
@@ -97,6 +98,7 @@ points:
         middle:
           key:
             stagger: 1
+            shift: [0.4, 0]
             column_net: col3
           rows:
             mod.key.led_next: LED_33
@@ -116,6 +118,7 @@ points:
         index:
           key:
             stagger: -1
+            shift: [0.2, 0]
             column_net: col4
           rows:
             mod.skip: true
@@ -182,12 +185,14 @@ points:
         padding: U
         spread: U
         splay: -1
+        rotate: 0
         tags: 
           - key
       columns:
         inner:
           key:
             splay: 0
+            rotate: 0
             column_net: col6
           rows:
             mod:
@@ -225,6 +230,7 @@ points:
             func.key.led_prev: LED_86
         middle:
           key:
+            shift: [0.2, 0]
             stagger: 1
             column_net: col8
           rows:
@@ -242,6 +248,7 @@ points:
             func.key.led_prev: LED_85
         ring:
           key:
+            shift: [0.2, 0]
             stagger: -1
             column_net: col9
           rows:
@@ -259,6 +266,7 @@ points:
             func.key.led_prev: LED_84
         pinky:
           key:
+            shift: [0.2, 0]
             stagger: -2
             column_net: col10
           rows:
@@ -466,7 +474,7 @@ points:
         top:
           tags: row_even
           row_net: row0
-  rotate: 0.6660
+  rotate: 0.25
 outlines:
   # hmm this doesn't work any more
   #raw:
@@ -1034,7 +1042,9 @@ pcbs:
         where: 
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
           #shift: [-6, 9]
-          shift: [-5, 9]
+          #shift: [-5.5, 16]
+          shift: [-8.5, 15]
+          rotate: -60
         params:
           side: B
           from: scr_to
@@ -1056,7 +1066,9 @@ pcbs:
         where: 
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
           #shift: [0, -10]
-          shift: [-2.5, -10]
+          #shift: [-4.5, -14.5]
+          shift: [-6.5, -15.5]
+          rotate: 60
         params:
           side: B
           from: enc_to

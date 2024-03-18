@@ -1,6 +1,6 @@
 {
   "name": "travis-ergogen-2024",
-  "version": "2024.03.15",
+  "version": "2024.03.17",
   "description": "Travis's first Ergogen keyboard (2024)",
   "scripts": {
     "test": "npx yamllint config.yaml",
