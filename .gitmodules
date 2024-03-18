@@ -4,3 +4,6 @@
 [submodule "footprints/infused-kim"]
 	path = footprints/infused-kim
 	url = https://github.com/infused-kim/kb_ergogen_fp.git
+[submodule "footprints/tildewill"]
+	path = footprints/tildewill
+	url = https://github.com/tildewill/ergogen_footprints.git
