@@ -18,11 +18,9 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 1.25 -2.55) (layer ${p.side}.SilkS) ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
-${'' /*
-    (fp_text value C_Disc_D3.8mm_W2.6mm_P2.50mm (at 1.25 2.55) (layer ${p.side}.Fab)
+    (fp_text value C_Disc_D3.8mm_W2.6mm_P2.50mm (at 1.25 2.55) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-*/}
     (fp_line (start -0.65 -1.3) (end -0.65 1.3) (layer ${p.side}.Fab) (width 0.1))
     (fp_line (start -0.65 1.3) (end 3.15 1.3) (layer ${p.side}.Fab) (width 0.1))
     (fp_line (start 3.15 1.3) (end 3.15 -1.3) (layer ${p.side}.Fab) (width 0.1))
@@ -38,7 +36,7 @@ ${'' /*
     (fp_line (start 3.55 1.55) (end 3.55 -1.55) (layer ${p.side}.CrtYd) (width 0.05))
     (fp_line (start 3.55 -1.55) (end -1.05 -1.55) (layer ${p.side}.CrtYd) (width 0.05))
     (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.P1})
-    (pad 2 thru_hole circle (at 2.5 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)  ${p.P2})
+    (pad 2 thru_hole circle (at 2.5 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.P2})
     (fp_text user %R (at 1.25 0) (layer ${p.side}.Fab)
       (effects (font (size 0.76 0.76) (thickness 0.114)))
     )

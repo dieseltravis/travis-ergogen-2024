@@ -77,10 +77,10 @@ module.exports = {
     (pad B4 thru_hole circle (at 5.1 1.35) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) ${p.B4})
     (pad B1 thru_hole circle (at 5.95 1.35) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) ${p.B1})
     (pad B6 thru_hole circle (at 3.4 1.35) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) ${p.B6})
-    (pad S1 thru_hole oval (at -1.35 0.98) (size 0.9 2.4) (drill oval 0.6 2.1) (layers *.Cu *.Mask) ${p.S1})
-    (pad S1 thru_hole oval (at 7.3 0.98) (size 0.9 2.4) (drill oval 0.6 2.1) (layers *.Cu *.Mask) ${p.S1})
-    (pad S1 thru_hole oval (at -1.35 4.36) (size 0.9 1.7) (drill oval 0.6 1.4) (layers *.Cu *.Mask) ${p.S1})
-    (pad S1 thru_hole oval (at 7.3 4.36) (size 0.9 1.7) (drill oval 0.6 1.4) (layers *.Cu *.Mask) ${p.S1})
+    (pad S1 thru_hole oval (at -1.35 0.98 ${p.r}) (size 0.9 2.4) (drill oval 0.6 2.1) (layers *.Cu *.Mask) ${p.S1})
+    (pad S1 thru_hole oval (at 7.3 0.98 ${p.r}) (size 0.9 2.4) (drill oval 0.6 2.1) (layers *.Cu *.Mask) ${p.S1})
+    (pad S1 thru_hole oval (at -1.35 4.36 ${p.r}) (size 0.9 1.7) (drill oval 0.6 1.4) (layers *.Cu *.Mask) ${p.S1})
+    (pad S1 thru_hole oval (at 7.3 4.36 ${p.r}) (size 0.9 1.7) (drill oval 0.6 1.4) (layers *.Cu *.Mask) ${p.S1})
 
     (model ${p.KISYS3DMOD}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4085.wrl
       (at (xyz 0 0 0))

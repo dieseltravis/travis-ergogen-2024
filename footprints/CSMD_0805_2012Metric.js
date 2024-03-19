@@ -1,5 +1,6 @@
 // CSMD_0805_2012Metric
 // Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal
+// NOTE: untested
 module.exports = {
     params: {
         designator: 'C',
@@ -17,11 +18,9 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 0 -1.68) (layer ${p.side}.SilkS) ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
-${'' /*
-    (fp_text value C_0805_2012Metric (at 0 1.68) (layer ${p.side}.Fab)
+    (fp_text value C_0805_2012Metric (at 0 1.68) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-*/}
     (fp_line (start -1 0.625) (end -1 -0.625) (layer ${p.side}.Fab) (width 0.1))
     (fp_line (start -1 -0.625) (end 1 -0.625) (layer ${p.side}.Fab) (width 0.1))
     (fp_line (start 1 -0.625) (end 1 0.625) (layer ${p.side}.Fab) (width 0.1))
@@ -32,8 +31,8 @@ ${'' /*
     (fp_line (start -1.7 -0.98) (end 1.7 -0.98) (layer ${p.side}.CrtYd) (width 0.05))
     (fp_line (start 1.7 -0.98) (end 1.7 0.98) (layer ${p.side}.CrtYd) (width 0.05))
     (fp_line (start 1.7 0.98) (end -1.7 0.98) (layer ${p.side}.CrtYd) (width 0.05))
-    (pad 1 smd roundrect (at -0.95 0) (size 1 1.45) (layers F.Cu F.Mask F.Paste) (roundrect_rratio 0.25) ${p.P1})
-    (pad 2 smd roundrect (at 0.95 0) (size 1 1.45) (layers F.Cu F.Mask F.Paste) (roundrect_rratio 0.25) ${p.P2})
+    (pad 1 smd roundrect (at -0.95 0 ${p.r}) (size 1 1.45) (layers ${p.side}.Cu ${p.side}.Mask ${p.side}.Paste) (roundrect_rratio 0.25) ${p.P1})
+    (pad 2 smd roundrect (at 0.95 0 ${p.r}) (size 1 1.45) (layers ${p.side}.Cu ${p.side}.Mask ${p.side}.Paste) (roundrect_rratio 0.25) ${p.P2})
     (fp_text user %R (at 0 0) (layer ${p.side}.Fab)
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )

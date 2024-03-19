@@ -1,8 +1,10 @@
 // OSHW-Symbol67x6Copper
+// NOTE: untested
 module.exports = {
     params: {
         designator: 'SYM',
-        side: 'F'
+        side: 'F',
+        layer: 'Cu'
     },
     body: p => `
     (module OSHW-Symbol_6.7x6mm_Copper (layer ${p.side}.Cu) (tedit 0)
@@ -14,11 +16,9 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 0 0) (layer ${p.side}.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-${'' /*    
     (fp_text value OSHW-Symbol_6.7x6mm_Copper (at 0.75 0) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-*/}
     (fp_poly (pts (xy 0.555814 -2.531069) (xy 0.639635 -2.086445) (xy 0.94892 -1.958947) (xy 1.258206 -1.831449)
       (xy 1.629246 -2.083754) (xy 1.733157 -2.154004) (xy 1.827087 -2.216728) (xy 1.906652 -2.269062)
       (xy 1.96747 -2.308143) (xy 2.005157 -2.331107) (xy 2.015421 -2.336058) (xy 2.03391 -2.323324)
@@ -103,7 +103,7 @@ ${'' /*
       (xy -1.996478 -2.336058) (xy -1.977654 -2.326047) (xy -1.932631 -2.297922) (xy -1.865787 -2.254546)
       (xy -1.781499 -2.198782) (xy -1.684144 -2.133494) (xy -1.610707 -2.083754) (xy -1.239667 -1.831449)
       (xy -0.621095 -2.086445) (xy -0.537275 -2.531069) (xy -0.453454 -2.975693) (xy 0.471994 -2.975693)
-      (xy 0.555814 -2.531069)) (layer ${p.side}.Cu) (width 0.01))
+      (xy 0.555814 -2.531069)) (layer ${p.side}.${p.layer}) (width 0.01))
   )
 `
 };

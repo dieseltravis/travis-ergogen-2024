@@ -17,11 +17,9 @@ module.exports = {
   (fp_text reference "${p.ref}" (at 1.25 -4.4) (layer ${p.side}.SilkS) ${p.ref_hide}
     (effects (font (size 1 1) (thickness 0.15)))
   )
-${'' /*
-  (fp_text value C_Radial_D6.3mm_H11.0mm_P2.50mm (at 1.25 4.4) (layer ${p.side}.Fab)
+  (fp_text value C_Radial_D6.3mm_H11.0mm_P2.50mm (at 1.25 4.4) (layer ${p.side}.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
-*/}
   (fp_circle (center 1.25 0) (end 4.4 0) (layer ${p.side}.Fab) (width 0.1))
   (fp_circle (center 1.25 0) (end 4.52 0) (layer ${p.side}.SilkS) (width 0.12))
   (fp_circle (center 1.25 0) (end 4.65 0) (layer ${p.side}.CrtYd) (width 0.05))

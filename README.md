@@ -19,8 +19,9 @@ Built with Ergogen v4.
     * https://ergogen.xyz/
 * FlatFootFox's Let's Design A Keyboard With Ergogen v4 https://flatfootfox.com/ergogen-introduction/
 * Footprints:
-    * ceoloide's ergogen PCB footprints https://github.com/ceoloide/ergogen-footprints
-    * infused-kim's ergogen PCB footprints https://github.com/infused-kim/kb_ergogen_fp/
+    * ceoloide's Ergogen PCB footprints https://github.com/ceoloide/ergogen-footprints
+    * infused-kim's Ergogen PCB footprints https://github.com/infused-kim/kb_ergogen_fp/
+    * TildeWill's Ergogen PCB footprints https://github.com/TildeWill/ergogen_footprints
     * MvEerd https://github.com/MvEerd/ergogen/tree/mveerd/src/footprints
     * daprice's keyswitches.pretty https://github.com/daprice/keyswitches.pretty
     * Convert Kicad Footprints to Ergogen https://nilnil.notion.site/Convert-Kicad-Footprints-to-Ergogen-8340ce87ad554c69af4e3f92bc9a0898

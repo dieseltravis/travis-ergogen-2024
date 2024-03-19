@@ -17,11 +17,9 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 5.08 -2.37) (layer ${p.side}.SilkS) ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
-${'' /*
-    (fp_text value R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (at 5.08 2.37) (layer ${p.side}.Fab)
+    (fp_text value R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (at 5.08 2.37) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-*/}
     (fp_line (start 1.93 -1.25) (end 1.93 1.25) (layer ${p.side}.Fab) (width 0.1))
     (fp_line (start 1.93 1.25) (end 8.23 1.25) (layer ${p.side}.Fab) (width 0.1))
     (fp_line (start 8.23 1.25) (end 8.23 -1.25) (layer ${p.side}.Fab) (width 0.1))
@@ -39,7 +37,7 @@ ${'' /*
     (fp_line (start 11.21 1.5) (end 11.21 -1.5) (layer ${p.side}.CrtYd) (width 0.05))
     (fp_line (start 11.21 -1.5) (end -1.05 -1.5) (layer ${p.side}.CrtYd) (width 0.05))
     (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.from})
-    (pad 2 thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.to})
+    (pad 2 thru_hole oval (at 10.16 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.to})
     (fp_text user %R (at 5.08 0) (layer ${p.side}.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )

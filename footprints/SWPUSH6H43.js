@@ -18,10 +18,9 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 3.25 -2) (layer ${p.side}.SilkS) ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
-${'' /*
-    (fp_text value SW_PUSH_6mm_H4.3mm (at 3.75 6.7) (layer ${p.side}.Fab)
+    (fp_text value SW_PUSH_6mm_H4.3mm (at 3.75 6.7) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
-)*/}
+    )
     (fp_text user %R (at 3.25 2.25) (layer ${p.side}.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )

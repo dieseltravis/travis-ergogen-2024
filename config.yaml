@@ -1175,7 +1175,7 @@ pcbs:
         where: 
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
         params:
-          face: "DejaVu Sans Mono"
+          face: "CaskaydiaMono NFP"
           text: *meta_version
         adjust:
           shift: [0, -1.25]

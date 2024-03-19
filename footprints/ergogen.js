@@ -2,13 +2,14 @@
 module.exports = {
     params: {
         designator: 'LOGO',
-        side: 'F'
+        side: 'F',
+        layer: 'SilkS'
     },
     body: p => `
     (module ergogen (layer "${p.side}.Cu") (tedit 0)
     ${p.at /* parametric position */}
     (attr virtual)
-    (fp_text reference "${p.ref}" (at 4.572 0 0) (layer "${p.side}.SilkS") hide
+    (fp_text reference "${p.ref}" (at 4.572 0 0) (layer "${p.side}.${p.layer}") hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
 
@@ -67,6 +68,6 @@ module.exports = {
       (xy -2.50123 -1.063023)
       (xy -2.50123 -2.50123)
       (xy 0 -2.50123)
-      (xy 2.501231 -2.50123)) (layer "${p.side}.SilkS") (width 0.01))
+      (xy 2.501231 -2.50123)) (layer "${p.side}.${p.layer}") (width 0.01))
   )`
 };

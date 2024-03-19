@@ -35,6 +35,7 @@ module.exports = {
   params: {
     designator: 'TXT',
     side: 'F',
+    layer: 'SilkS',
     reversible: false,
     thickness: 0.15,
     size: 1,
@@ -44,22 +45,22 @@ module.exports = {
     text: ''
   },
   body: p => {
-    const generate_text = (side, mirror, thickness, size, text, face, bold, italic) => {
+    const generate_text = (side, layer, mirror, thickness, size, text, face, bold, italic) => {
       const gr_text = `
-      (gr_text "${text}" ${p.at} (layer ${side}.SilkS)
+      (gr_text "${text}" ${p.at} (layer ${side}.${layer})
         (effects (font${face && face.length ? " (face \"" + face + "\")" : "" } (size ${size} ${size}) (thickness ${thickness})${ bold ? " (bold yes)" : ""}${ italic ? " (italic yes)" : ""})
         ${(mirror && side != p.side ? ` (justify mirror)` : ``)})
       )
       `;
       return gr_text;
-    }
+    };
 
     let final = '';
     if (p.reversible) {
-      final += generate_text(p.side, false, p.thickness, p.size, p.text, p.face, p.bold, p.italic);
-      final += generate_text((p.side == 'F' ? 'B' : 'F'), true, p.thickness, p.size, p.text, p.face, p.bold, p.italic);
+      final += generate_text(p.side, p.layer, false, p.thickness, p.size, p.text, p.face, p.bold, p.italic);
+      final += generate_text((p.side == 'F' ? 'B' : 'F'), p.layer, true, p.thickness, p.size, p.text, p.face, p.bold, p.italic);
     } else {
-      final += generate_text(p.side, false, p.thickness, p.size, p.text, p.face, p.bold, p.italic);
+      final += generate_text(p.side, p.layer, false, p.thickness, p.size, p.text, p.face, p.bold, p.italic);
     }
     return final;
   }

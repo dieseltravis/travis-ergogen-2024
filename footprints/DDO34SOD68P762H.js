@@ -1,13 +1,15 @@
 // DDO34SOD68P762H
 // Diode, DO-34_SOD68 series, Axial, Horizontal, pin pitch=7.62mm, length*diameter=3.04*1.6mm^2
 // https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf
+// NOTE: untested!
 module.exports = {
     params: {
         designator: 'D',
         side: 'F',
         KICAD8_3DMODEL_DIR: "${KICAD8_3DMODEL_DIR}"
     },
-    body: p => `(footprint "D_DO-34_SOD68_P7.62mm_Horizontal"
+    body: p => `
+	(footprint "D_DO-34_SOD68_P7.62mm_Horizontal"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -329,7 +331,7 @@ module.exports = {
 		)
 	)
 	(pad "1" thru_hole rect
-		(at 0 0)
+		(at 0 0 ${p.r})
 		(size 1.5 1.5)
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
@@ -337,7 +339,7 @@ module.exports = {
 		(uuid "406db0b9-5962-4909-a922-7a49bdff9859")
 	)
 	(pad "2" thru_hole oval
-		(at 7.62 0)
+		(at 7.62 0 ${p.r})
 		(size 1.5 1.5)
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
