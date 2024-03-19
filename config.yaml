@@ -821,13 +821,13 @@ pcbs:
           reverse: false
           hotswap: true
           from: "{{column_net}}"
-          to: "{{colrow}}"        
+          to: "{{name}}"        
       diode:
         what: ScottoKeebs-Diode_DO-35 #diode
         where: true
         params:
           side: B
-          from: "{{colrow}}"
+          from: "{{name}}"
           to: "{{row_net}}"
         adjust:
           #shift: [7.25, -1.25]
