@@ -5,8 +5,8 @@ module.exports = {
     params: {
         designator: 'SW',
         side: 'F',
-        P1: undefined,
-        P2: undefined,
+        P1: { type: 'net', value: 'GND' },
+        P2: { type: 'net', value: 'RST' },
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
@@ -46,10 +46,10 @@ module.exports = {
     (fp_line (start 5.5 -1) (end 1 -1) (layer ${p.side}.SilkS) (width 0.12))
     (fp_line (start 6.75 3) (end 6.75 1.5) (layer ${p.side}.SilkS) (width 0.12))
     (fp_circle (center 3.25 2.25) (end 1.25 2.5) (layer ${p.side}.Fab) (width 0.1))
-    (pad 2 thru_hole circle (at 0 4.5 90) (size 2 2) (drill 1.1) (layers *.Cu *.Mask)  ${p.P2})
-    (pad 1 thru_hole circle (at 0 0 90) (size 2 2) (drill 1.1) (layers *.Cu *.Mask)  ${p.P1})
-    (pad 2 thru_hole circle (at 6.5 4.5 90) (size 2 2) (drill 1.1) (layers *.Cu *.Mask) ${p.P2})
-    (pad 1 thru_hole circle (at 6.5 0 90) (size 2 2) (drill 1.1) (layers *.Cu *.Mask)  ${p.P1})
+    (pad 2 thru_hole circle (at 0 4.5 90) (size 2 2) (drill 1.1) (layers *.Cu *.Mask)  ${p.P2.str})
+    (pad 1 thru_hole circle (at 0 0 90) (size 2 2) (drill 1.1) (layers *.Cu *.Mask)  ${p.P1.str})
+    (pad 2 thru_hole circle (at 6.5 4.5 90) (size 2 2) (drill 1.1) (layers *.Cu *.Mask) ${p.P2.str})
+    (pad 1 thru_hole circle (at 6.5 0 90) (size 2 2) (drill 1.1) (layers *.Cu *.Mask)  ${p.P1.str})
     (model ${p.KISYS3DMOD}/Button_Switch_THT.3dshapes/SW_PUSH_6mm_H4.3mm.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))

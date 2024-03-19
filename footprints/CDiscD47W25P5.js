@@ -5,8 +5,8 @@ module.exports = {
     params: {
         designator: 'C',
         side: 'F',
-        P1: undefined,
-        P2: undefined,
+        P1: {type: 'net', value: ''},
+        P2: {type: 'net', value: ''},
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
@@ -35,8 +35,8 @@ module.exports = {
     (fp_line (start -1.05 1.5) (end 6.05 1.5) (layer ${p.side}.CrtYd) (width 0.05))
     (fp_line (start 6.05 1.5) (end 6.05 -1.5) (layer ${p.side}.CrtYd) (width 0.05))
     (fp_line (start 6.05 -1.5) (end -1.05 -1.5) (layer ${p.side}.CrtYd) (width 0.05))
-    (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.P1})
-    (pad 2 thru_hole circle (at 5 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.P2})
+    (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.P1.str})
+    (pad 2 thru_hole circle (at 5 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.P2.str})
     (fp_text user %R (at 2.5 0) (layer ${p.side}.Fab)
       (effects (font (size 0.94 0.94) (thickness 0.141)))
     )

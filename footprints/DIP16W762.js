@@ -4,22 +4,22 @@ module.exports = {
     params: {
         designator: 'DIP',
         side: 'F',
-        p01: undefined,
-        p02: undefined,
-        p03: undefined,
-        p04: undefined,
-        p05: undefined,
-        p06: undefined,
-        p07: undefined,
-        p08: undefined,
-        p09: undefined,
-        p10: undefined,
-        p11: undefined,
-        p12: undefined,
-        p13: undefined,
-        p14: undefined,
-        p15: undefined,
-        p16: undefined,
+        p01: {type: 'net', value: ''},
+        p02: {type: 'net', value: ''},
+        p03: {type: 'net', value: ''},
+        p04: {type: 'net', value: ''},
+        p05: {type: 'net', value: ''},
+        p06: {type: 'net', value: ''},
+        p07: {type: 'net', value: ''},
+        p08: {type: 'net', value: ''},
+        p09: {type: 'net', value: ''},
+        p10: {type: 'net', value: ''},
+        p11: {type: 'net', value: ''},
+        p12: {type: 'net', value: ''},
+        p13: {type: 'net', value: ''},
+        p14: {type: 'net', value: ''},
+        p15: {type: 'net', value: ''},
+        p16: {type: 'net', value: ''},
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
@@ -57,22 +57,22 @@ module.exports = {
   (fp_line (start -1.55 19.4) (end 9.15 19.4) (layer ${p.side}.CrtYd) (width 0.05))
   (fp_line (start 9.15 19.4) (end 9.15 -1.6) (layer ${p.side}.CrtYd) (width 0.05))
   (fp_line (start 9.15 -1.6) (end -1.55 -1.6) (layer ${p.side}.CrtYd) (width 0.05))
-  (pad 1 thru_hole rect (at 0 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p01})
-  (pad 9 thru_hole oval (at 7.62 17.78 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p09})
-  (pad 2 thru_hole oval (at 0 2.54 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p02})
-  (pad 10 thru_hole oval (at 7.62 15.24 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p10})
-  (pad 3 thru_hole oval (at 0 5.08 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p03})
-  (pad 11 thru_hole oval (at 7.62 12.7 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p11})
-  (pad 4 thru_hole oval (at 0 7.62 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p04})
-  (pad 12 thru_hole oval (at 7.62 10.16 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p12})
-  (pad 5 thru_hole oval (at 0 10.16 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p05})
-  (pad 13 thru_hole oval (at 7.62 7.62 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p13})
-  (pad 6 thru_hole oval (at 0 12.7 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p06})
-  (pad 14 thru_hole oval (at 7.62 5.08 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p14})
-  (pad 7 thru_hole oval (at 0 15.24 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p07})
-  (pad 15 thru_hole oval (at 7.62 2.54 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p15})
-  (pad 8 thru_hole oval (at 0 17.78 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p08})
-  (pad 16 thru_hole oval (at 7.62 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p16})
+  (pad 1 thru_hole rect (at 0 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p01.str})
+  (pad 9 thru_hole oval (at 7.62 17.78 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p09.str})
+  (pad 2 thru_hole oval (at 0 2.54 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p02.str})
+  (pad 10 thru_hole oval (at 7.62 15.24 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p10.str})
+  (pad 3 thru_hole oval (at 0 5.08 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p03.str})
+  (pad 11 thru_hole oval (at 7.62 12.7 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p11.str})
+  (pad 4 thru_hole oval (at 0 7.62 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p04.str})
+  (pad 12 thru_hole oval (at 7.62 10.16 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p12.str})
+  (pad 5 thru_hole oval (at 0 10.16 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p05.str})
+  (pad 13 thru_hole oval (at 7.62 7.62 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p13.str})
+  (pad 6 thru_hole oval (at 0 12.7 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p06.str})
+  (pad 14 thru_hole oval (at 7.62 5.08 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p14.str})
+  (pad 7 thru_hole oval (at 0 15.24 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p07.str})
+  (pad 15 thru_hole oval (at 7.62 2.54 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p15.str})
+  (pad 8 thru_hole oval (at 0 17.78 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p08.str})
+  (pad 16 thru_hole oval (at 7.62 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.p16.str})
 
   (fp_text user %R (at 3.81 8.89) (layer ${p.side}.Fab)
     (effects (font (size 1 1) (thickness 0.15)))

@@ -35,7 +35,7 @@ module.exports = {
   params: {
     designator: 'TXT',
     side: 'F',
-    layer: 'SilkS',
+    layer: 'SilkS', // use Mask and Cu for metal text
     reversible: false,
     thickness: 0.15,
     size: 1,

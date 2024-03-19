@@ -1018,9 +1018,9 @@ pcbs:
         what: SWPUSH6H43  #button
         params:
           #from: GND
-          P1: GND
+          #P1: GND
           #to: RST
-          P2: RST
+          #P2: RST
         where:
           ref: matrixr_inner_func
           shift: [-1U / 2, 3U / 4 + 2]
@@ -1177,6 +1177,7 @@ pcbs:
         params:
           face: "CaskaydiaMono NFP"
           text: *meta_version
+          size: 0.9
         adjust:
           shift: [0, -1.25]
 
