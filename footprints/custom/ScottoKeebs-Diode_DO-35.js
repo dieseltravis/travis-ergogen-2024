@@ -6,8 +6,10 @@ module.exports = {
     params: {
         designator: 'D',
         side: 'F',
-        from: undefined,
-        to: undefined,
+        value: "1N4148",
+        from: { type: 'net', value: '' },
+        to: { type: 'net', value: '' },
+        REFERENCE: '${REFERENCE}',
         SCOTTOKEEBS_KICAD: '${SCOTTOKEEBS_KICAD}'
     },
     body: p => `
@@ -17,22 +19,23 @@ module.exports = {
     ${p.at /* parametric position */}
 
     ${'' /* (attr through_hole) */}
-    (fp_text reference "${p.ref}" (at 3.81 -2.12) (layer "${p.side}.SilkS") ${p.ref_hide}
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference "${p.ref}" (at 3.81 -2.12 ${p.r}) (layer "${p.side}.SilkS") ${p.ref_hide}
+      (effects (font (size 1 1) (thickness 0.15))${p.side === 'B' ? ' (justify mirror)' : ''})
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "${p.side}.Fab")
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "${p.value}" (at 3.81 0 ${p.r}) (layer "${p.side}.Fab")
+      (effects (font (size 0.8 1) (thickness 0.15)))
     )
-    (fp_text user "K" (at 0 -1.8) (layer "${p.side}.SilkS")
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text user "K" (at 0 -1.8 ${p.r}) (layer "${p.side}.SilkS")
+      (effects (font (size 1 1) (thickness 0.15))${p.side === 'B' ? ' (justify mirror)' : ''})
     )
-    (fp_text user "K" (at 0 -1.8) (layer "${p.side}.Fab")
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text user "K" (at 0 -1.8 ${p.r}) (layer "${p.side}.Fab")
+      (effects (font (size 1 1) (thickness 0.15))${p.side === 'B' ? ' (justify mirror)' : ''})
     )
-    (fp_text user "${p.REFERENCE}" (at 4.11 0) (layer "${p.side}.Fab") hide
+${'' /*
+    (fp_text user "${p.REFERENCE}" (at 4.11 0 ${p.r}) (layer "${p.side}.Fab") hide
       (effects (font (size 0.8 0.8) (thickness 0.12)))
     )
-
+*/}
     (fp_line (start 1.04 0) (end 1.69 0)
       (stroke (width 0.12) (type solid)) (layer "${p.side}.SilkS") )
     (fp_line (start 1.69 -1.12) (end 1.69 1.12)
@@ -80,8 +83,8 @@ module.exports = {
     (fp_line (start 7.62 0) (end 5.81 0)
       (stroke (width 0.1) (type solid)) (layer "${p.side}.Fab") )
     
-    (pad 1 thru_hole rect (at 0 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${ p.to })
-    (pad 2 thru_hole oval (at 7.62 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${ p.from })
+    (pad 1 thru_hole rect (at 0 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${ p.to.str })
+    (pad 2 thru_hole oval (at 7.62 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${ p.from.str })
 
     (model "${p.SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
       (offset (xyz 0 0 0))

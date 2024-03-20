@@ -1,0 +1,129 @@
+meta:
+  engine: 4.0.5
+  name: "travis_key"
+  version: &meta_version "2024.03.20"
+  date: "2024-03-20"
+  author: '"Travis Hardiman"'
+  url: https://github.com/dieseltravis/travis-ergogen-2024
+  tags: [ "ergogen", "mx", "key" ]
+units:
+points:
+  zones:
+    single:
+      anchor:
+        shift: [100, -100]
+        rotate: 0
+      key:
+        padding: U
+        spread: U
+        tags: 
+          - key
+      columns:
+        A:
+          key:
+            column_net: col0
+          rows:
+            one:
+              row_net: row0
+              key:
+                led_next: LED_0
+                led_this: LED_1
+              width: 1.0U
+      rows:
+        one:
+          tags: 
+            - row_odd
+  rotate: 0
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      bound: true
+      size: [U + 2, U + 2]
+  keys:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [U - 0.5, U - 0.5]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        # top left
+        - ref: single_A_one
+          shift: [-1U, 1U]
+        # top right
+        - ref: single_A_one
+          shift: [1U, 1U]
+        # bottom right
+        - ref: single_A_one
+          shift: [1U, -1U]
+        # bottom left
+        - ref: single_A_one
+          shift: [-1U, -1U]
+      fillet: 3
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+cases:
+pcbs:
+  travis_key:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      mx_hotswap:
+        what: mx
+        where: true
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{name}}"        
+      diode:
+        what: custom/ScottoKeebs-Diode_DO-35 #diode
+        where: true
+        params:
+          side: B
+          from: "{{name}}"
+          to: "{{row_net}}"
+        adjust:
+          #shift: [7.35, -4.75]
+          #shift: [U / 2, -4.75]
+          # place "to" pin in top right
+          shift: [U / 2 - 1, U / 2 - 1]
+          rotate: 90 + 180
+      rgb:
+        what: ceoloide/led_sk6812mini-e
+        where: meta.tags ~ /row_odd/
+        params:
+          P1: "RAW"
+          P2: "{{key.led_next}}" # DOUT: next P4
+          P3: "GND"
+          P4: "{{key.led_this}}" # DIN: previous P2 or pro micro data pin
+          #reversible: true
+          #gnd_trace_width: 0.5
+          #vcc_trace_width: 0.5
+          include_keepout: true
+        adjust:
+          shift: [0, -4.96]
+          #TODO: flip based on LTR or RTL
+          #rotate: 180
+      rgbcap_o: # 104
+        what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
+        where: meta.tags ~ /row_odd/
+        params:
+          P1: RAW
+          P2: GND
+          side: B
+          #value: 104
+        adjust:
+          #shift: [(2.5 / 2), -8.4]
+          #shift: [(5 / 2), -8.4]
+          #shift: [4.5, -6]
+          shift: [2.5, -8.3]
+          rotate: 180
+          #rotate: -90
+    references: true

@@ -5,6 +5,7 @@ module.exports = {
     params: {
         designator: 'C',
         side: 'F',
+        value: "104",
         P1: {type: 'net', value: ''},
         P2: {type: 'net', value: ''},
         KISYS3DMOD: '${KISYS3DMOD}'
@@ -15,11 +16,11 @@ module.exports = {
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
     ${p.at /* parametric position */}
 
-    (fp_text reference "${p.ref}" (at 2.5 -2.5) (layer ${p.side}.SilkS) ${p.ref_hide}
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference "${p.ref}" (at 2.5 -2.5 ${p.r}) (layer ${p.side}.SilkS) ${p.ref_hide}
+      (effects (font (size 1 1) (thickness 0.15))${p.side === 'B' ? ' (justify mirror)' : ''})
     )
-    (fp_text value C_Disc_D4.7mm_W2.5mm_P5.00mm (at 2.5 2.5) (layer ${p.side}.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "${p.value}" (at 2.5 2.5 ${p.r}) (layer ${p.side}.Fab)
+      (effects (font (size 1 1) (thickness 0.15))${p.side === 'B' ? ' (justify mirror)' : ''})
     )
     (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer ${p.side}.Fab) (width 0.1))
     (fp_line (start 0.15 1.25) (end 4.85 1.25) (layer ${p.side}.Fab) (width 0.1))

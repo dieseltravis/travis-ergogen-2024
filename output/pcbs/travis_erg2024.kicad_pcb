@@ -5,7 +5,7 @@
   (page A3)
   (title_block
     (title travis_erg2024)
-    (rev 2024.03.17)
+    (rev 2024.03.20)
     (company "Travis Hardiman")
   )
 
@@ -305,12 +305,11 @@
 (net 210 "mux2")
 (net 211 "mux3")
 (net 212 "scrA")
-(net 213 "scrB")
+(net 213 "scrC")
 (net 214 "P8")
 (net 215 "scr_to")
-(net 216 "scrC")
-(net 217 "undefined")
-(net 218 "enc_to")
+(net 216 "undefined")
+(net 217 "enc_to")
             
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -532,10 +531,9 @@
 (add_net "mux2")
 (add_net "mux3")
 (add_net "scrA")
-(add_net "scrB")
+(add_net "scrC")
 (add_net "P8")
 (add_net "scr_to")
-(add_net "scrC")
 (add_net "undefined")
 (add_net "enc_to")
   )
@@ -22064,7 +22062,7 @@
         (pad 19 thru_hole circle (at 1.27 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 210 "mux2"))
         (pad 20 thru_hole circle (at 3.81 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 211 "mux3"))
         (pad 21 thru_hole circle (at 6.35 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 212 "scrA"))
-        (pad 22 thru_hole circle (at 8.89 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 213 "scrB"))
+        (pad 22 thru_hole circle (at 8.89 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 213 "scrC"))
         (pad 23 thru_hole circle (at 11.43 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 214 "P8"))
         (pad 24 thru_hole circle (at 13.97 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 201 "LED"))
       )
@@ -22073,7 +22071,7 @@
     (module C_Disc_D3.8mm_W2.6mm_P2.50mm (layer F.Cu) (tedit 5AE50EF0)
     (descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.8*2.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 2.50mm  diameter 3.8mm width 2.6mm Capacitor")
-    (at 57.9338812 64.85349715000001 179.75)
+    (at 57.9360629 64.35350185 179.75)
 
     (fp_text reference "C90" (at 1.25 -2.55) (layer F.SilkS) 
       (effects (font (size 1 1) (thickness 0.15)))
@@ -22172,7 +22170,7 @@
     (module C_Disc_D3.8mm_W2.6mm_P2.50mm (layer F.Cu) (tedit 5AE50EF0)
     (descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.8*2.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 2.50mm  diameter 3.8mm width 2.6mm Capacitor")
-    (at 270.2156903 64.94911099999999 179.75)
+    (at 270.217872 64.4491157 179.75)
 
     (fp_text reference "C91" (at 1.25 -2.55) (layer F.SilkS) 
       (effects (font (size 1 1) (thickness 0.15)))
@@ -22344,8 +22342,8 @@
           (pad S2 thru_hole circle (at -5 -6.2 -0.25) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 215 "scr_to"))
           (pad A thru_hole circle (at -5.625 -3.81 -0.25) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 212 "scrA"))
           (pad B thru_hole circle (at -5.625 -1.27 -0.25) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 113 "GND"))
-          (pad C thru_hole circle (at -5.625 1.27 -0.25) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 216 "scrC"))
-          (pad D thru_hole circle (at -5.625 3.81 -0.25) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 217 "undefined"))
+          (pad C thru_hole circle (at -5.625 1.27 -0.25) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 213 "scrC"))
+          (pad D thru_hole circle (at -5.625 3.81 -0.25) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 216 "undefined"))
 
           
           (pad "" np_thru_hole circle (at -5.625 6.3 -0.25) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
@@ -22474,7 +22472,7 @@
             (pad C thru_hole circle (at -7.62 -0.04) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 205 "encC"))
             (pad B thru_hole circle (at -7.62 2.46) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 113 "GND"))
             (pad 1 thru_hole circle (at 6.88 -2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 28 "col4"))
-            (pad 2 thru_hole circle (at 6.88 2.46) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 218 "enc_to"))
+            (pad 2 thru_hole circle (at 6.88 2.46) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 217 "enc_to"))
 
             
             (pad "" thru_hole rect (at -0.12 -5.64 -90.25) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
@@ -22552,7 +22550,7 @@
       (stroke (width 0.1) (type solid)) (layer "B.Fab") )
     
     (pad 1 thru_hole rect (at 0 0 59.75) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 105 "row5"))
-    (pad 2 thru_hole oval (at 7.62 0 59.75) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 218 "enc_to"))
+    (pad 2 thru_hole oval (at 7.62 0 59.75) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 217 "enc_to"))
 
     (model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
       (offset (xyz 0 0 0))
@@ -23983,7 +23981,7 @@
        (stroke (width 0) (type solid)) (fill solid) (layer F.Cu)(uuid "7029871f-efcc-4fab-92ba-136af30a4742"))
    )
 
-      (gr_text "2024.03.17" (at 161.8396472 176.08046545 -0.25) (layer F.SilkS)
+      (gr_text "2024.03.20" (at 161.8396472 176.08046545 -0.25) (layer F.SilkS)
         (effects (font (face "CaskaydiaMono NFP") (size 0.9 0.9) (thickness 0.15))
         )
       )
