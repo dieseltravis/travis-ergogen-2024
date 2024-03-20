@@ -926,7 +926,7 @@ pcbs:
           P4: mux2 # A6
           P5: mux3 # PWM
           P6: scrA # A7 PWM
-          P7: scrB
+          P7: scrC
           #P8: #A8
           P9: LED #A9 PWM
           # right
@@ -954,7 +954,7 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
           # adjust to pin 1
-          shift: [(2.5 / 2), (21.34 / 2) + 3]
+          shift: [(2.5 / 2), (21.34 / 2) + 3.5]
           rotate: 180
       dip1: # 74HC138N
         what: DIP16W762
@@ -988,7 +988,7 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
           # adjust to pin 1
-          shift: [(2.5 / 2), (21.34 / 2) + 3]
+          shift: [(2.5 / 2), (21.34 / 2) + 3.5]
           rotate: 180
       dip2: # 74HC138N
         what: DIP16W762
