@@ -40,40 +40,40 @@ points:
             column_net: col0
           rows:
             mod.key.led_next: LED_30
-            mod.key.led_prev: LED_29
+            mod.key.led_this: LED_29
             bottom:
               shift: [-pp / 4, 0]
               width: 1.5U
             bottom.key.led_next: LED_29
-            bottom.key.led_prev: LED_28
+            bottom.key.led_this: LED_28
             home.width: 1.5U
             home.key.led_next: LED_18
-            home.key.led_prev: LED_17
+            home.key.led_this: LED_17
             top.width: 1.5U
             top.key.led_next: LED_17
-            top.key.led_prev: LED_16
+            top.key.led_this: LED_16
             num.shift: [pp / 4, 0]
             num.key.led_next: LED_6
-            num.key.led_prev: LED_5
+            num.key.led_this: LED_5
             func.key.led_next: LED_5
-            func.key.led_prev: LED_4
+            func.key.led_this: LED_4
         pinky:
           key:
             splay: 0
             column_net: col1
           rows:
             mod.key.led_next: LED_31
-            mod.key.led_prev: LED_30
+            mod.key.led_this: LED_30
             bottom.shift: [0, 0]
             bottom.key.led_next: LED_28
-            bottom.key.led_prev: LED_27
+            bottom.key.led_this: LED_27
             home.key.led_next: LED_19
-            home.key.led_prev: LED_18
+            home.key.led_this: LED_18
             top.key.led_next: LED_16
-            top.key.led_prev: LED_15
+            top.key.led_this: LED_15
             num.shift: [0, 0]
             num.key.led_next: LED_7
-            num.key.led_prev: LED_6
+            num.key.led_this: LED_6
             func.skip: true
         ring:
           key:
@@ -82,19 +82,19 @@ points:
             column_net: col2
           rows:
             mod.key.led_next: LED_32
-            mod.key.led_prev: LED_31
+            mod.key.led_this: LED_31
             bottom.shift: [0, 0]
             bottom.key.led_next: LED_27
-            bottom.key.led_prev: LED_26
+            bottom.key.led_this: LED_26
             home.key.led_next: LED_20
-            home.key.led_prev: LED_19
+            home.key.led_this: LED_19
             top.key.led_next: LED_15
-            top.key.led_prev: LED_14
+            top.key.led_this: LED_14
             num.shift: [0, 0]
             num.key.led_next: LED_8
-            num.key.led_prev: LED_7
+            num.key.led_this: LED_7
             func.key.led_next: LED_4
-            func.key.led_prev: LED_3
+            func.key.led_this: LED_3
         middle:
           key:
             stagger: 1
@@ -102,19 +102,19 @@ points:
             column_net: col3
           rows:
             mod.key.led_next: LED_33
-            mod.key.led_prev: LED_32
+            mod.key.led_this: LED_32
             bottom.shift: [0, 0]
             bottom.key.led_next: LED_26
-            bottom.key.led_prev: LED_25
+            bottom.key.led_this: LED_25
             home.key.led_next: LED_21
-            home.key.led_prev: LED_20
+            home.key.led_this: LED_20
             top.key.led_next: LED_14
-            top.key.led_prev: LED_13
+            top.key.led_this: LED_13
             num.shift: [0, 0]
             num.key.led_next: LED_9
-            num.key.led_prev: LED_8
+            num.key.led_this: LED_8
             func.key.led_next: LED_3
-            func.key.led_prev: LED_2
+            func.key.led_this: LED_2
         index:
           key:
             stagger: -1
@@ -123,16 +123,16 @@ points:
           rows:
             mod.skip: true
             bottom.key.led_next: LED_25
-            bottom.key.led_prev: LED_24
+            bottom.key.led_this: LED_24
             home.key.led_next: LED_22
-            home.key.led_prev: LED_21
+            home.key.led_this: LED_21
             top.key.led_next: LED_13
-            top.key.led_prev: LED_12
+            top.key.led_this: LED_12
             num.shift: [0, 0]
             num.key.led_next: LED_10
-            num.key.led_prev: LED_9
+            num.key.led_this: LED_9
             func.key.led_next: LED_2
-            func.key.led_prev: LED_1
+            func.key.led_this: LED_1
         inner:
           key:
             stagger: -0.25
@@ -143,20 +143,20 @@ points:
               shift: [0.6, 0]
               width: 3U
             mod.key.led_next: LED_34
-            mod.key.led_prev: LED_33
+            mod.key.led_this: LED_33
             bottom:
               shift: [0, 0]
             bottom.key.led_next: LED_24
-            bottom.key.led_prev: LED_23
+            bottom.key.led_this: LED_23
             home.key.led_next: LED_23
-            home.key.led_prev: LED_22
+            home.key.led_this: LED_22
             top.key.led_next: LED_12
-            top.key.led_prev: LED_11
+            top.key.led_this: LED_11
             num.shift: [0, 0]
             num.key.led_next: LED_11
-            num.key.led_prev: LED_10
+            num.key.led_this: LED_10
             func.key.led_next: LED_1
-            func.key.led_prev: LED_0  # resistor to P9 on promicro
+            func.key.led_this: LED_0  # resistor to P9 on promicro
       rows:
         mod:
           tags: row_odd
@@ -199,18 +199,18 @@ points:
               shift: [-0.6, 0]
               width: 3U
             mod.key.led_next: LED_35
-            mod.key.led_prev: LED_34
+            mod.key.led_this: LED_34
             bottom.shift: [0.6, 0]
             bottom.key.led_next: LED_49
-            bottom.key.led_prev: LED_48
+            bottom.key.led_this: LED_48
             home.key.led_next: LED_50
-            home.key.led_prev: LED_49
+            home.key.led_this: LED_49
             top.key.led_next: LED_68
-            top.key.led_prev: LED_67
+            top.key.led_this: LED_67
             num.key.led_next: LED_69
-            num.key.led_prev: LED_68
+            num.key.led_this: LED_68
             func.key.led_next: "" # Last LED doesn't go anywhere
-            func.key.led_prev: LED_87
+            func.key.led_this: LED_87
         index:
           key:
             stagger: 0.25
@@ -219,15 +219,15 @@ points:
           rows:
             mod.skip: true
             bottom.key.led_next: LED_48
-            bottom.key.led_prev: LED_47
+            bottom.key.led_this: LED_47
             home.key.led_next: LED_51
-            home.key.led_prev: LED_50
+            home.key.led_this: LED_50
             top.key.led_next: LED_67
-            top.key.led_prev: LED_66
+            top.key.led_this: LED_66
             num.key.led_next: LED_70
-            num.key.led_prev: LED_69
+            num.key.led_this: LED_69
             func.key.led_next: LED_87
-            func.key.led_prev: LED_86
+            func.key.led_this: LED_86
         middle:
           key:
             shift: [0.2, 0]
@@ -235,17 +235,17 @@ points:
             column_net: col8
           rows:
             mod.key.led_next: LED_36
-            mod.key.led_prev: LED_35
+            mod.key.led_this: LED_35
             bottom.key.led_next: LED_47
-            bottom.key.led_prev: LED_46
+            bottom.key.led_this: LED_46
             home.key.led_next: LED_52
-            home.key.led_prev: LED_51
+            home.key.led_this: LED_51
             top.key.led_next: LED_66
-            top.key.led_prev: LED_65
+            top.key.led_this: LED_65
             num.key.led_next: LED_71
-            num.key.led_prev: LED_70
+            num.key.led_this: LED_70
             func.key.led_next: LED_86
-            func.key.led_prev: LED_85
+            func.key.led_this: LED_85
         ring:
           key:
             shift: [0.2, 0]
@@ -253,17 +253,17 @@ points:
             column_net: col9
           rows:
             mod.key.led_next: LED_37
-            mod.key.led_prev: LED_36
+            mod.key.led_this: LED_36
             bottom.key.led_next: LED_46
-            bottom.key.led_prev: LED_45
+            bottom.key.led_this: LED_45
             home.key.led_next: LED_53
-            home.key.led_prev: LED_52
+            home.key.led_this: LED_52
             top.key.led_next: LED_65
-            top.key.led_prev: LED_64
+            top.key.led_this: LED_64
             num.key.led_next: LED_72
-            num.key.led_prev: LED_71
+            num.key.led_this: LED_71
             func.key.led_next: LED_85
-            func.key.led_prev: LED_84
+            func.key.led_this: LED_84
         pinky:
           key:
             shift: [0.2, 0]
@@ -271,15 +271,15 @@ points:
             column_net: col10
           rows:
             mod.key.led_next: LED_38
-            mod.key.led_prev: LED_37
+            mod.key.led_this: LED_37
             bottom.key.led_next: LED_45
-            bottom.key.led_prev: LED_44
+            bottom.key.led_this: LED_44
             home.key.led_next: LED_54
-            home.key.led_prev: LED_53
+            home.key.led_this: LED_53
             top.key.led_next: LED_64
-            top.key.led_prev: LED_63
+            top.key.led_this: LED_63
             num.key.led_next: LED_73
-            num.key.led_prev: LED_72
+            num.key.led_this: LED_72
             func.skip: true
         outer:
           key:
@@ -287,21 +287,21 @@ points:
             column_net: col11
           rows:
             mod.key.led_next: LED_39
-            mod.key.led_prev: LED_38
+            mod.key.led_this: LED_38
             bottom:
               shift: [U / 4 + 0.6, 0]
               width: 1.5U
             bottom.key.led_next: LED_44
-            bottom.key.led_prev: LED_43
+            bottom.key.led_this: LED_43
             home.shift: [-U / 4 - 0.6, 0]
             home.key.led_next: LED_55
-            home.key.led_prev: LED_54
+            home.key.led_this: LED_54
             top.key.led_next: LED_63
-            top.key.led_prev: LED_62
+            top.key.led_this: LED_62
             num.key.led_next: LED_74
-            num.key.led_prev: LED_73
+            num.key.led_this: LED_73
             func.key.led_next: LED_84
-            func.key.led_prev: LED_83
+            func.key.led_this: LED_83
         outer2:
           key:
             splay: 0
@@ -313,14 +313,14 @@ points:
               shift: [U / 4 + 0.6, 0]
               width: 1.5U
             home.key.led_next: LED_56
-            home.key.led_prev: LED_55
+            home.key.led_this: LED_55
             top.shift: [-U / 4 - 0.6, 0]
             top.key.led_next: LED_62
-            top.key.led_prev: LED_61
+            top.key.led_this: LED_61
             num.key.led_next: LED_75
-            num.key.led_prev: LED_74
+            num.key.led_this: LED_74
             func.key.led_next: LED_83
-            func.key.led_prev: LED_82
+            func.key.led_this: LED_82
         outer3:
           key:
             splay: 0
@@ -330,16 +330,16 @@ points:
             bottom.skip: true
             home.skip: true
             top.key.led_next: LED_61
-            top.key.led_prev: LED_60
+            top.key.led_this: LED_60
             num:
               shift: [U / 4 + 0.6, 0]
               width: 1.5U
             num.key.led_next: LED_76
-            num.key.led_prev: LED_75
+            num.key.led_this: LED_75
             func:
               shift: [-U / 4 - 0.6, 0]
             func.key.led_next: LED_82
-            func.key.led_prev: LED_81
+            func.key.led_this: LED_81
         outer4:
           key:
             splay: 0
@@ -352,7 +352,7 @@ points:
             num.skip: true
             func.row_net: row3
             func.key.led_next: LED_81
-            func.key.led_prev: LED_80
+            func.key.led_this: LED_80
       rows:
         mod:
           tags: row_odd
@@ -389,20 +389,20 @@ points:
             bottom.row_net: row5
             bottom.column_net: col15
             bottom.key.led_next: LED_41
-            bottom.key.led_prev: LED_40
+            bottom.key.led_this: LED_40
             top.row_net: row5
             top.key.led_next: LED_40
-            top.key.led_prev: LED_39
+            top.key.led_this: LED_39
         right:
           key.column_net: col14
           rows:
             bottom.row_net: row4
             bottom.column_net: col15
             bottom.key.led_next: LED_42
-            bottom.key.led_prev: LED_41
+            bottom.key.led_this: LED_41
             top.row_net: row4
             top.key.led_next: LED_43
-            top.key.led_prev: LED_42
+            top.key.led_this: LED_42
       rows:
         bottom:
           tags: row_odd
@@ -424,20 +424,20 @@ points:
             bottom.row_net: row3
             bottom.column_net: col15
             bottom.key.led_next: LED_58
-            bottom.key.led_prev: LED_57
+            bottom.key.led_this: LED_57
             top.row_net: row3
             top.key.led_next: LED_57
-            top.key.led_prev: LED_56
+            top.key.led_this: LED_56
         right:
           key.column_net: col14
           rows:
             bottom.row_net: row2
             bottom.column_net: col15
             bottom.key.led_next: LED_59
-            bottom.key.led_prev: LED_58
+            bottom.key.led_this: LED_58
             top.row_net: row2
             top.key.led_next: LED_60
-            top.key.led_prev: LED_59
+            top.key.led_this: LED_59
       rows:
         bottom:
           tags: row_odd
@@ -457,16 +457,16 @@ points:
           key.column_net: col14
           rows:
             bottom.key.led_next: LED_77
-            bottom.key.led_prev: LED_76
+            bottom.key.led_this: LED_76
             top.key.led_next: LED_80
-            top.key.led_prev: LED_79
+            top.key.led_this: LED_79
         right:
           key.column_net: col15
           rows:
             bottom.key.led_next: LED_78
-            bottom.key.led_prev: LED_77
+            bottom.key.led_this: LED_77
             top.key.led_next: LED_79
-            top.key.led_prev: LED_78
+            top.key.led_this: LED_78
       rows:
         bottom:
           tags: row_odd
@@ -813,83 +813,88 @@ pcbs:
       main:
         outline: board
     footprints:
-      mx_hotswap:
-        what: mx
+      keymod:
+        what: custom/key-module
         where: true
         params:
-          keycaps: true
-          reverse: false
-          hotswap: true
-          from: "{{column_net}}"
-          to: "{{name}}"        
-      diode:
-        what: custom/ScottoKeebs-Diode_DO-35 #diode
-        where: true
-        params:
-          side: B
-          from: "{{name}}"
-          to: "{{row_net}}"
-        adjust:
-          #shift: [7.25, -1.25]
-          shift: [7.35, -4.75]
-          rotate: 90
-      rgb_e:
-        what: ceoloide/led_sk6812mini-e
-        where: meta.tags ~ /row_even/
-        params:
-          P1: RAW
-          P2: "{{key.led_next}}" # DOUT: next P4
-          P3: GND
-          P4: "{{key.led_prev}}" # DIN: previous P2 or pro micro data pin
-          #gnd_trace_width: 0.5
-          #vcc_trace_width: 0.5
-          #reversible: true
-          include_keepout: true
-        adjust:
-          shift: [0, -4.96]
-          rotate: 180
-      rgb_o:
-        what: ceoloide/led_sk6812mini-e
-        where: meta.tags ~ /row_odd/
-        params:
-          P1: RAW
-          P2: "{{key.led_next}}" # DOUT: next P4
-          P3: GND
-          P4: "{{key.led_prev}}" # DIN: previous P2 or pro micro data pin
-          #gnd_trace_width: 0.5
-          #vcc_trace_width: 0.5
-          #reversible: true
-          include_keepout: true
-        adjust:
-          shift: [0, -4.96]
-      rgbcap_e: # 104
-        what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
-        where: meta.tags ~ /row_even/
-        params:
-          P1: RAW
-          P2: GND
-          side: B
-          #value: 104
-        adjust:
-          #shift: [-(2.5 / 2), -8.4]
-          #shift: [-(5 / 2), -8.4]
-          shift: [-5, -4]
-          rotate: 270
-      rgbcap_o: # 104
-        what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
-        where: meta.tags ~ /row_odd/
-        params:
-          P1: RAW
-          P2: GND
-          side: B
-          #value: 104
-        adjust:
-          #shift: [(2.5 / 2), -8.4]
-          #shift: [(5 / 2), -8.4]
-          #shift: [4.5, -6]
-          shift: [2.5, -8.3]
-          rotate: 180
-          #rotate: -90
+          U: U
+          name: "{{name}}"
+          colnet: "{{column_net}}"
+          rownet: "{{row_net}}"
+          led_this: "{{key.led_this}}"
+          led_next: "{{key.led_next}}"
+      # mx_hotswap:
+      #   what: mx
+      #   where: true
+      #   params:
+      #     keycaps: true
+      #     reverse: false
+      #     hotswap: true
+      #     from: "{{column_net}}"
+      #     to: "{{name}}"        
+      # diode:
+      #   what: custom/ScottoKeebs-Diode_DO-35 #diode
+      #   where: true
+      #   params:
+      #     side: B
+      #     from: "{{name}}"
+      #     to: "{{row_net}}"
+      #   adjust:
+      #     # place "to" pin in top right
+      #     shift: [U / 2 - 1, U / 2 - 1]
+      #     rotate: 90 + 180
+      # rgb_e:
+      #   what: ceoloide/led_sk6812mini-e
+      #   where: meta.tags ~ /row_even/
+      #   params:
+      #     P1: RAW
+      #     P2: "{{key.led_next}}" # DOUT: next P4
+      #     P3: GND
+      #     P4: "{{key.led_this}}" # DIN: previous P2 or pro micro data pin
+      #     include_keepout: true
+      #   adjust:
+      #     shift: [0, -4.96]
+      #     rotate: 180
+      # rgb_o:
+      #   what: ceoloide/led_sk6812mini-e
+      #   where: meta.tags ~ /row_odd/
+      #   params:
+      #     P1: RAW
+      #     P2: "{{key.led_next}}" # DOUT: next P4
+      #     P3: GND
+      #     P4: "{{key.led_this}}" # DIN: previous P2 or pro micro data pin
+      #     include_keepout: true
+      #   adjust:
+      #     shift: [0, -4.96]
+      # rgbcap_e: # 104
+      #   what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
+      #   where: meta.tags ~ /row_even/
+      #   params:
+      #     P1: RAW
+      #     P2: GND
+      #     side: B
+      #     #value: 104
+      #   adjust:
+      #     #shift: [-(2.5 / 2), -8.4]
+      #     #shift: [-(5 / 2), -8.4]
+      #     #shift: [-5, -4]
+      #     #rotate: 270
+      #     shift: [-2.5, -8.3]
+      # rgbcap_o: # 104
+      #   what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
+      #   where: meta.tags ~ /row_odd/
+      #   params:
+      #     P1: RAW
+      #     P2: GND
+      #     side: B
+      #     #value: 104
+      #   adjust:
+      #     #shift: [(2.5 / 2), -8.4]
+      #     #shift: [(5 / 2), -8.4]
+      #     #shift: [4.5, -6]
+      #     shift: [2.5, -8.3]
+      #     rotate: 180
+      #     #rotate: -90
       rgbr: # 470 ohm resistor
         what: custom/RAxialL6D25P10H
         params:
@@ -954,7 +959,7 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
           # adjust to pin 1
-          shift: [(2.5 / 2), (21.34 / 2) + 3.5]
+          shift: [(2.5 / 2), (21.34 / 2) + 3.25]
           rotate: 180
       dip1: # 74HC138N
         what: custom/DIP16W762
@@ -965,13 +970,13 @@ pcbs:
           p04: GND #G2A
           p05: mux3 #G2B
           p06: VCC #G1
-          p07: row5 #Y7 (there is no row6)
+          p07: row0 #row5 #Y7 (there is no row6)
           p08: GND #GND C1 P2
-          p09: row4 #Y6
-          p10: row3 #Y5
-          p11: row2 #Y4
-          p12: row1 #Y3
-          p13: row0 #Y2
+          p09: row1 #row4 #Y6
+          p10: row2 #row3 #Y5
+          p11: row3 #row2 #Y4
+          p12: row4 #row1 #Y3
+          p13: row5 #row0 #Y2
           p14: col0 #Y1
           p15: col1 #Y0
           p16: VCC #VCC C1 P1
@@ -988,7 +993,7 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
           # adjust to pin 1
-          shift: [(2.5 / 2), (21.34 / 2) + 3.5]
+          shift: [(2.5 / 2), (21.34 / 2) + 3.25]
           rotate: 180
       dip2: # 74HC138N
         what: custom/DIP16W762
@@ -999,15 +1004,15 @@ pcbs:
           p04: GND #G2A
           p05: GND #G2B
           p06: mux3 #G1
-          p07: col15 #Y7
+          p07: col8 #col15 #Y7
           p08: GND #GND C2 P2
-          p09: col14 #Y6
-          p10: col13 #Y5
-          p11: col12 #Y4
-          p12: col11 #Y3
-          p13: col10 #Y2
-          p14: col9 #Y1
-          p15: col8 #Y0
+          p09: col9 # #Y6
+          p10: col10 #col13 #Y5
+          p11: col11 #col12 #Y4
+          p12: col12 #col11 #Y3
+          p13: col13 #col10 #Y2
+          p14: col14 #col9 #Y1
+          p15: col15 #col8 #Y0
           p16: VCC #VCC C2 P1
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]

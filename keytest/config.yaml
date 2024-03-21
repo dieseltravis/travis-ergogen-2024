@@ -12,7 +12,7 @@ points:
     single:
       anchor:
         shift: [100, -100]
-        rotate: 0
+        rotate: 45
       key:
         padding: U
         spread: U
@@ -73,55 +73,14 @@ pcbs:
       main:
         outline: board
     footprints:
-      mx_hotswap:
-        what: mx
+      keymod:
+        what: custom/key-module
         where: true
         params:
-          keycaps: true
-          reverse: false
-          hotswap: true
-          from: "{{column_net}}"
-          to: "{{name}}"        
-      diode:
-        what: custom/ScottoKeebs-Diode_DO-35 #diode
-        where: true
-        params:
-          side: B
-          from: "{{name}}"
-          to: "{{row_net}}"
-        adjust:
-          # place "to" pin in top right
-          shift: [U / 2 - 1, U / 2 - 1]
-          rotate: 90 + 180
-      rgb:
-        what: ceoloide/led_sk6812mini-e
-        where: meta.tags ~ /row_odd/
-        params:
-          P1: "RAW"
-          P2: "{{key.led_next}}" # DOUT: next P4
-          P3: "GND"
-          P4: "{{key.led_this}}" # DIN: previous P2 or pro micro data pin
-          #reversible: true
-          #gnd_trace_width: 0.5
-          #vcc_trace_width: 0.5
-          include_keepout: true
-        adjust:
-          shift: [0, -4.96]
-          #TODO: flip based on LTR or RTL
-          #rotate: 180
-      rgbcap_o: # 104
-        what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
-        where: meta.tags ~ /row_odd/
-        params:
-          P1: RAW
-          P2: GND
-          side: B
-          #value: 104
-        adjust:
-          #shift: [(2.5 / 2), -8.4]
-          #shift: [(5 / 2), -8.4]
-          #shift: [4.5, -6]
-          shift: [2.5, -8.3]
-          rotate: 180
-          #rotate: -90
+          U: U
+          name: "{{name}}"
+          colnet: "{{column_net}}"
+          rownet: "{{row_net}}"
+          led_this: "{{key.led_this}}"
+          led_next: "{{key.led_next}}"
     references: true
