@@ -3,6 +3,7 @@ module.exports = {
   params: {
     designator: 'KEY',
     U: 19.05,
+    dir: 'RTL',
     name: {type: 'net', value: ''},
     colnet: {type: 'net', value: ''},
     rownet: {type: 'net', value: ''},
@@ -15,6 +16,7 @@ module.exports = {
   },
   body: p => {
     const index = +p.ref.match(/\d+/);
+    
     // this is modified from from ceolide/nice_view
     const adjust_point = (x, y) => {
       const at_x = p.x;
@@ -32,6 +34,8 @@ module.exports = {
       const point_str = `${nx.toFixed(4)} ${ny.toFixed(4)}`;
       return point_str;
     };
+
+    // TODO: when dir === 'LTR' rotate LED and CAP by 180
 
     return `
 (module MX (layer F.Cu) (tedit 5DD4F656)
