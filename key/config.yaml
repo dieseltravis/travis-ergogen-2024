@@ -11,7 +11,7 @@ points:
   zones:
     single:
       anchor:
-        shift: [100, -100]
+        shift: [0, 0]
         rotate: 0
       key:
         padding: U

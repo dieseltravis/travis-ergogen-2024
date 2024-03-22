@@ -16,8 +16,8 @@ module.exports = {
   },
   body: p => {
     const index = +p.ref.match(/\d+/);
-    
-    // this is modified from from ceolide/nice_view
+
+    // this is modified from: https://nilnil.notion.site/Convert-Kicad-Footprints-to-Ergogen-8340ce87ad554c69af4e3f92bc9a0898#ed6d01a226714e72941138ca24a38b4a
     const adjust_point = (x, y) => {
       const at_x = p.x;
       const at_y = p.y;
@@ -246,6 +246,70 @@ module.exports = {
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
+)
+
+(segment 
+  (start ${adjust_point(8.525, -2.397)}) 
+  (end ${adjust_point(8.525, -0.905)}) 
+  (width 0.25) 
+  (layer "B.Cu") 
+  (net ${p.name.index}) 
+)
+(segment
+  (start ${adjust_point(5.842, -5.08)})
+  (end ${adjust_point(8.525, -2.397)})
+  (width 0.25)
+  (layer "B.Cu")
+  (net ${p.name.index})
+)
+(segment
+  (start ${adjust_point(2.5, 8.3)})
+  (end ${adjust_point(2.7, 5.86)})
+  (width 0.5)
+  (layer "B.Cu")
+  (net ${p.power.index})
+)
+(segment
+  (start ${adjust_point(2.5, 5.86)})
+  (end ${adjust_point(2.7, 5.66)})
+  (width 0.5)
+  (layer "B.Cu")
+  (net ${p.power.index})
+)
+(segment
+  (start ${adjust_point(-4.318, 4.318)})
+  (end ${adjust_point(-4.318, 6.482)})
+  (width 0.5)
+  (layer "F.Cu")
+  (net ${p.gnd.index})
+)
+(segment
+  (start ${adjust_point(-4.318, 6.482)})
+  (end ${adjust_point(-2.5, 8.3)})
+  (width 0.5)
+  (layer "F.Cu")
+  (net ${p.gnd.index})
+)
+(via
+  (at ${adjust_point(-4.318, 4.318)})
+  (size 0.8)
+  (drill 0.4)
+  (layers "F.Cu" "B.Cu")
+  (net ${p.gnd.index})
+)
+(segment
+  (start ${adjust_point(-2.7, 4.26)})
+  (end ${adjust_point(-4.26, 4.26)})
+  (width 0.5)
+  (layer "B.Cu")
+  (net ${p.gnd.index})
+)
+(segment
+  (start ${adjust_point(-4.26, 4.26)})
+  (end ${adjust_point(-4.318, 4.318)})
+  (width 0.5)
+  (layer "B.Cu")
+  (net ${p.gnd.index})
 )`;
   }
 };

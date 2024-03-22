@@ -121,7 +121,7 @@
             
         
       (module MX (layer F.Cu) (tedit 5DD4F656)
-      (at 100 100 0)
+      (at 0 0 0)
 
       
       (fp_text reference "S1" (at 0 0) (layer F.SilkS)  (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -165,7 +165,7 @@
     (module "Diode_DO-35" (layer "B.Cu")
     (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
     (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
-    (at 108.525 91.475 270)
+    (at 8.525 -8.525 270)
 
     
     (fp_text reference "D1" (at 3.81 -2.12 270) (layer "B.SilkS") 
@@ -240,7 +240,7 @@
 
       (module "ceoloide:led_SK6812mini-e (per-keysingle-side)" 
         (layer B.Cu) (tedit 5F70BC98)
-        (at 100 104.96 0)
+        (at 0 4.96 0)
 
         (fp_text reference "LED1" (at -4.75 0 90) (layer B.SilkS) 
           (effects (font (size 1 1) (thickness 0.15)))
@@ -313,10 +313,10 @@
         (fill (thermal_gap 0.5) (thermal_bridge_width 0.5))
         (polygon
           (pts
-            (xy 98.000 103.110)
-            (xy 102.000 103.110)
-            (xy 102.000 106.810)
-            (xy 98.000 106.810)
+            (xy -2.000 3.110)
+            (xy 2.000 3.110)
+            (xy 2.000 6.810)
+            (xy -2.000 6.810)
           )
         )
       )
@@ -325,13 +325,13 @@
     (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu) (tedit 5AE50EF0)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-    (at 102.5 108.3 180)
+    (at 2.5 8.3 180)
 
     (fp_text reference "C1" (at 2.5 -2.5 180) (layer B.SilkS) 
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value "104" (at 2.5 2.5 180) (layer B.Fab)
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
     (fp_line (start 0.15 1.25) (end 4.85 1.25) (layer B.Fab) (width 0.1))
@@ -358,14 +358,14 @@
       (rotate (xyz 0 0 0))
     )
   )
-            (gr_line (start 80.95 116.05) (end 80.95 83.95) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 83.95 80.95) (end 116.05 80.95) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 119.05 83.95) (end 119.05 116.05) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 116.05 119.05) (end 83.95 119.05) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 83.95 83.95) (end 83.95 80.95) (angle -90) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 116.05 83.95) (end 119.05 83.95) (angle -90) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 116.05 116.05) (end 116.05 119.05) (angle -90) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 83.95 116.05) (end 80.95 116.05) (angle -90) (layer Edge.Cuts) (width 0.15))
+            (gr_line (start -19.05 16.05) (end -19.05 -16.05) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start -16.05 -19.05) (end 16.05 -19.05) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 19.05 -16.05) (end 19.05 16.05) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 16.05 19.05) (end -16.05 19.05) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start -16.05 -16.05) (end -16.05 -19.05) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 16.05 -16.05) (end 19.05 -16.05) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 16.05 16.05) (end 16.05 19.05) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start -16.05 16.05) (end -19.05 16.05) (angle -90) (layer Edge.Cuts) (width 0.15))
             
 )
 
