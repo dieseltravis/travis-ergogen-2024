@@ -1,8 +1,8 @@
 meta:
   engine: 4.0.5
   name: "travis_key"
-  version: &meta_version "2024.03.20"
-  date: "2024-03-20"
+  version: &meta_version "2024.03.21"
+  date: "2024-03-21"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
   tags: [ "ergogen", "mx", "key" ]
@@ -101,15 +101,12 @@ pcbs:
           P2: "{{key.led_next}}" # DOUT: next P4
           P3: "GND"
           P4: "{{key.led_this}}" # DIN: previous P2 or pro micro data pin
-          #reversible: true
-          #gnd_trace_width: 0.5
-          #vcc_trace_width: 0.5
           include_keepout: true
         adjust:
           shift: [0, -4.96]
           #TODO: flip based on LTR or RTL
           #rotate: 180
-      rgbcap_o: # 104
+      cap: # 104
         what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
         where: meta.tags ~ /row_odd/
         params:
@@ -118,10 +115,6 @@ pcbs:
           side: B
           #value: 104
         adjust:
-          #shift: [(2.5 / 2), -8.4]
-          #shift: [(5 / 2), -8.4]
-          #shift: [4.5, -6]
           shift: [2.5, -8.3]
           rotate: 180
-          #rotate: -90
     references: true

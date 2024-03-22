@@ -37,11 +37,11 @@ module.exports = {
 
     // TODO: when dir === 'LTR' rotate LED and CAP by 180
 
-    return `
-(module MX (layer F.Cu) (tedit 5DD4F656)
+    const key = `
+(module MX (layer F.Cu)
     ${p.at /* parametric position */}
-    (fp_text reference "S${index}" (at 0 0) (layer F.SilkS)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-    (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+    (fp_text reference "S${index}" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 0.8 0.8) (thickness 0.15))))
+    (fp_text value "mx" (at 0 0) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
     (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
@@ -66,24 +66,21 @@ module.exports = {
 
     (pad 1 smd rect (at -7.085 -2.54 ${p.r}) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) ${p.colnet.str})
     (pad 2 smd rect (at 5.842 -5.08 ${p.r}) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) ${p.name.str})
-)
-
+)`;
+    const diode = `
 (module "Diode_DO-35" (layer "B.Cu")
   (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at ${adjust_point((p.U / 2 - 1), -(p.U / 2 - 1))} ${p.r + 270})
   
-  (fp_text reference "D${index}" (at 3.81 -2.12 ${p.r + 270}) (layer "B.SilkS") 
+  (fp_text user "D${index}" (at 4 0 0) (layer "F.SilkS") 
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
+  (fp_text reference "D${index}" (at 5.985 1.921 ${p.r + 270}) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "1N4148" (at 3.81 0 ${p.r + 270}) (layer "B.Fab")
-    (effects (font (size 0.8 1) (thickness 0.15)))
-  )
-  (fp_text user "K" (at 0 -1.8 ${p.r + 270}) (layer "B.SilkS")
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-  )
-  (fp_text user "K" (at 0 -1.8 ${p.r + 270}) (layer "B.Fab")
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  (fp_text value "1N4148" (at 11.065 0 ${p.r + 270}) (layer "B.Fab")
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
 
   (fp_line (start 1.04 0) (end 1.69 0)
@@ -141,14 +138,20 @@ module.exports = {
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-)
-
+)`;
+    const led = `
 (module "ceoloide:led_SK6812mini-e (per-keysingle-side)" 
-  (layer B.Cu) (tedit 5F70BC98)
+  (layer B.Cu)
   (at ${adjust_point(0, 4.96)} ${p.r})
 
   (fp_text reference "LED${index}" (at -4.75 0 ${p.r + 90}) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)))
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (fp_text value "SK6812mini-e" (at 0 -2.25 ${p.r}) (layer "B.Fab")
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
+  )
+  (fp_text user "${p.led_this.name}" (at 2.70 -0.7 0) (layer "F.SilkS")
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
   )
 
   (fp_line (start -1.6 -1.4) (end 1.6 -1.4) (layer Dwgs.User) (width 0.12))
@@ -209,18 +212,21 @@ module.exports = {
       (xy ${adjust_point(-2, 6.81)})
     )
   )
-)
-
-(module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu) (tedit 5AE50EF0)
+)`;
+    const cap = `
+(module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at ${adjust_point(2.5, 8.3)} ${p.r + 180})
 
-  (fp_text reference "C${index}" (at 2.5 -2.5 ${p.r + 180}) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  (fp_text user "C${index}" (at 2.5 0 0) (layer F.SilkS)
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
+  (fp_text reference "C${index}" (at -1.056 -0.082 ${p.r + 180}) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at 2.5 2.5 ${p.r + 180}) (layer B.Fab)
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
   (fp_line (start 0.15 1.25) (end 4.85 1.25) (layer B.Fab) (width 0.1))
@@ -238,16 +244,16 @@ module.exports = {
   (fp_line (start 6.05 -1.5) (end -1.05 -1.5) (layer B.CrtYd) (width 0.05))
   (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.power.str})
   (pad 2 thru_hole circle (at 5 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.gnd.str})
-  (fp_text user %R (at 2.5 0) (layer B.Fab)
-    (effects (font (size 0.94 0.94) (thickness 0.141)))
+  (fp_text user %R (at 7.326 0) (layer B.Fab)
+    (effects (font (size 0.8 0.8) (thickness 0.141)) (justify ))
   )
   (model ${p.KISYS3DMOD}/Capacitor_THT.3dshapes/C_Disc_D4.7mm_W2.5mm_P5.00mm.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-)
-
+)`;
+    const routes = `
 (segment 
   (start ${adjust_point(8.525, -2.397)}) 
   (end ${adjust_point(8.525, -0.905)}) 
@@ -311,5 +317,6 @@ module.exports = {
   (layer "B.Cu")
   (net ${p.gnd.index})
 )`;
+    return key + diode + led + cap + routes;
   }
 };

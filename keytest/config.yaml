@@ -1,11 +1,10 @@
 meta:
   engine: 4.0.5
-  name: "travis_key"
-  version: &meta_version "2024.03.20"
-  date: "2024-03-20"
+  name: "travis_keytest"
+  version: &meta_version "2024.03.21"
+  date: "2024-03-21"
   author: '"Travis Hardiman"'
-  url: https://github.com/dieseltravis/travis-ergogen-2024
-  tags: [ "ergogen", "mx", "key" ]
+  url: https://github.com/dieseltravis/travis-ergogen-2024/keytest
 units:
 points:
   zones:
@@ -35,17 +34,17 @@ points:
             - row_odd
   rotate: 0
 outlines:
-  raw:
+  _raw:
     - what: rectangle
       where: true
       bound: true
       size: [U + 2, U + 2]
-  keys:
+  _keys:
     - what: rectangle
       where: true
       bound: false
       size: [U - 0.5, U - 0.5]
-  board:
+  _board:
     - what: polygon
       operation: stack
       points:
@@ -62,16 +61,15 @@ outlines:
         - ref: single_A_one
           shift: [-1U, -1U]
       fillet: 3
-  combo:
-    - name: board
+  _combo:
+    - name: _board
     - operation: subtract
-      name: keys
-cases:
+      name: _keys
 pcbs:
-  travis_key:
+  travis_keytest:
     outlines:
       main:
-        outline: board
+        outline: _board
     footprints:
       keymod:
         what: custom/key-module

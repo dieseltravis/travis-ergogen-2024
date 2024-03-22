@@ -2,7 +2,7 @@
 Built with Ergogen v4.
 ![keyboard plate outline](./output/outlines/plate.svg)
 
-![keyboard key and led mapping](./datasheets/plate-legend.webp)
+![rough keyboard key and led mapping](./datasheets/plate-legend.webp)
 
 ## Project Details ##
 * `/config.yaml`
@@ -10,7 +10,9 @@ Built with Ergogen v4.
 * `/output/outlines/` generated 2d models
 * `/output/cases/` generated 3d models
 * `/output/pcbs/` generated PCB
-* `/footprints/` Custom parts' footprints
+* `/footprints/custom/` Custom parts' footprints
+* `/key/` generator for individual key footprint (key-module.js)
+    * `/keytest/` test for individual key footprint
 * `/datasheets/` PDFs for some of the parts used
 
 ## References ##

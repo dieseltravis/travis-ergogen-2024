@@ -324,7 +324,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
 		(property "Reference" "C1"
-			(at -2.58 -0.082 180)
+			(at -1.056 -0.082 180)
 			(layer "B.SilkS")
 			(uuid "9bc1b60c-b3d5-476c-9770-bea3db372218")
 			(effects
@@ -332,12 +332,13 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
-				(justify mirror)
+				(justify right mirror)
 			)
 		)
 		(property "Value" "104"
 			(at 2.5 2.5 180)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "05da1a81-f81b-4f60-8b36-a776f85df12d")
 			(effects
 				(font
@@ -523,16 +524,15 @@
 			(layer "B.Fab")
 			(uuid "55a08eca-f1ae-4c7f-ba9a-2c6456d7e23b")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 2.5 0 0)
+		(fp_text user "104"
+			(at 7.326 0 0)
 			(layer "B.Fab")
 			(uuid "d9b68f4e-1a5f-4739-8ae4-3703c1ae19ce")
 			(effects
 				(font
-					(size 0.94 0.94)
+					(size 0.8 0.8)
 					(thickness 0.141)
 				)
-				(justify mirror)
 			)
 		)
 		(pad "1" thru_hole circle
@@ -584,12 +584,12 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 3.81 0 -90)
+			(at 11.065 0 270)
 			(layer "B.Fab")
 			(uuid "2c9723b5-63b2-4d1a-a112-713eeb902fb9")
 			(effects
 				(font
-					(size 0.8 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 			)
@@ -850,30 +850,6 @@
 			)
 			(layer "B.Fab")
 			(uuid "1a97ab6d-a4ad-4b6c-83fe-b1706a2baeae")
-		)
-		(fp_text user "K"
-			(at 0 1.667 -90)
-			(layer "B.SilkS")
-			(uuid "3a3f7617-9802-463a-8e61-d3e9457cbf83")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(fp_text user "K"
-			(at 0 1.667 -90)
-			(layer "B.Fab")
-			(uuid "97ac958d-7b6f-441c-aa59-a0b325df6d38")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
 		)
 		(pad "1" thru_hole rect
 			(at 0 0 270)

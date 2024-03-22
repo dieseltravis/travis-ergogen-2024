@@ -133,3 +133,4 @@ dist
 # kicad temps
 output/pcbs/_*
 output/pcbs/~*
+fp-info*

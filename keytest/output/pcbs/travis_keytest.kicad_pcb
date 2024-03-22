@@ -4,8 +4,8 @@
 
   (page A3)
   (title_block
-    (title travis_key)
-    (rev 2024.03.20)
+    (title travis_keytest)
+    (rev 2024.03.21)
     (company "Travis Hardiman")
   )
 
@@ -119,10 +119,10 @@
   )
 
             
-(module MX (layer F.Cu) (tedit 5DD4F656)
+(module MX (layer F.Cu)
     (at 100 100 45)
-    (fp_text reference "S1" (at 0 0) (layer F.SilkS)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-    (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+    (fp_text reference "S1" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 0.8 0.8) (thickness 0.15))))
+    (fp_text value "mx" (at 0 0) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
     (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
@@ -148,23 +148,19 @@
     (pad 1 smd rect (at -7.085 -2.54 45) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 2 "col0"))
     (pad 2 smd rect (at 5.842 -5.08 45) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) (net 1 "single_A_one"))
 )
-
 (module "Diode_DO-35" (layer "B.Cu")
   (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 100.0000 87.9438 315)
   
-  (fp_text reference "D1" (at 3.81 -2.12 315) (layer "B.SilkS") 
+  (fp_text user "D1" (at 4 0 0) (layer "F.SilkS") 
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
+  (fp_text reference "D1" (at 5.985 1.921 315) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "1N4148" (at 3.81 0 315) (layer "B.Fab")
-    (effects (font (size 0.8 1) (thickness 0.15)))
-  )
-  (fp_text user "K" (at 0 -1.8 315) (layer "B.SilkS")
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-  )
-  (fp_text user "K" (at 0 -1.8 315) (layer "B.Fab")
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  (fp_text value "1N4148" (at 11.065 0 315) (layer "B.Fab")
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
 
   (fp_line (start 1.04 0) (end 1.69 0)
@@ -223,13 +219,18 @@
     (rotate (xyz 0 0 0))
   )
 )
-
 (module "ceoloide:led_SK6812mini-e (per-keysingle-side)" 
-  (layer B.Cu) (tedit 5F70BC98)
+  (layer B.Cu)
   (at 103.5072 103.5072 45)
 
   (fp_text reference "LED1" (at -4.75 0 135) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)))
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (fp_text value "SK6812mini-e" (at 0 -2.25 45) (layer "B.Fab")
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
+  )
+  (fp_text user "LED_1" (at 2.70 -0.7 0) (layer "F.SilkS")
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
   )
 
   (fp_line (start -1.6 -1.4) (end 1.6 -1.4) (layer Dwgs.User) (width 0.12))
@@ -291,17 +292,19 @@
     )
   )
 )
-
-(module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu) (tedit 5AE50EF0)
+(module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 107.6368 104.1012 225)
 
-  (fp_text reference "C1" (at 2.5 -2.5 225) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  (fp_text user "C1" (at 2.5 0 0) (layer F.SilkS)
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
+  (fp_text reference "C1" (at -1.056 -0.082 225) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at 2.5 2.5 225) (layer B.Fab)
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
   (fp_line (start 0.15 1.25) (end 4.85 1.25) (layer B.Fab) (width 0.1))
@@ -319,8 +322,8 @@
   (fp_line (start 6.05 -1.5) (end -1.05 -1.5) (layer B.CrtYd) (width 0.05))
   (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) (net 6 "RAW"))
   (pad 2 thru_hole circle (at 5 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) (net 7 "GND"))
-  (fp_text user %R (at 2.5 0) (layer B.Fab)
-    (effects (font (size 0.94 0.94) (thickness 0.141)))
+  (fp_text user %R (at 7.326 0) (layer B.Fab)
+    (effects (font (size 0.8 0.8) (thickness 0.141)) (justify ))
   )
   (model ${KISYS3DMOD}/Capacitor_THT.3dshapes/C_Disc_D4.7mm_W2.5mm_P5.00mm.wrl
     (at (xyz 0 0 0))
@@ -328,7 +331,6 @@
     (rotate (xyz 0 0 0))
   )
 )
-
 (segment 
   (start 104.3332 92.2770) 
   (end 105.3882 93.3320) 
