@@ -230,8 +230,8 @@ module.exports = {
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at ${adjust_point((isRtl ? -2.5 : 2.5), 8.3)} ${isRtl ? p.r : p.r + 180})
 
-  (fp_text reference "C${index}" (at 7.5 0 ${isRtl ? p.r : p.r + 180}) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C${index}" (at 6.0 0 ${isRtl ? p.r : p.r + 180}) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify ${isRtl ? 'right' : 'left'} mirror))
   )
   (fp_text value "104" (at -2.5 0 ${isRtl ? p.r : p.r + 180}) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))

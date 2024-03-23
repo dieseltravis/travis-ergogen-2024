@@ -725,8 +725,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 39.2994 183.1303 180.25)
 
-  (fp_text reference "C1" (at 7.5 0 180.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C1" (at 6.0 0 180.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -1010,8 +1010,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 33.8707 145.0536 180.25)
 
-  (fp_text reference "C2" (at 7.5 0 180.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C2" (at 6.0 0 180.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -1295,8 +1295,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 38.9669 106.9310 180.25)
 
-  (fp_text reference "C3" (at 7.5 0 180.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C3" (at 6.0 0 180.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -1580,8 +1580,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 58.3492 183.0471 180.25)
 
-  (fp_text reference "C4" (at 7.5 0 180.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C4" (at 6.0 0 180.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -1865,8 +1865,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 58.1830 144.9475 180.25)
 
-  (fp_text reference "C5" (at 7.5 0 180.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C5" (at 6.0 0 180.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -2150,8 +2150,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 58.0168 106.8479 180.25)
 
-  (fp_text reference "C6" (at 7.5 0 180.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C6" (at 6.0 0 180.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -2435,8 +2435,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 77.4453 181.0097 179.25)
 
-  (fp_text reference "C7" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C7" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -2720,8 +2720,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 78.1440 142.9155 179.25)
 
-  (fp_text reference "C8" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C8" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -3005,8 +3005,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 78.8427 104.8214 179.25)
 
-  (fp_text reference "C9" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C9" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -3290,8 +3290,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 96.5608 180.3092 178.25)
 
-  (fp_text reference "C10" (at 7.5 0 178.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C10" (at 6.0 0 178.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 178.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -3575,8 +3575,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 98.1241 142.2392 178.25)
 
-  (fp_text reference "C11" (at 7.5 0 178.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C11" (at 6.0 0 178.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 178.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -3860,8 +3860,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 99.6874 104.1691 178.25)
 
-  (fp_text reference "C12" (at 7.5 0 178.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C12" (at 6.0 0 178.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 178.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -4145,8 +4145,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 117.4524 143.8888 177.25)
 
-  (fp_text reference "C13" (at 7.5 0 177.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C13" (at 6.0 0 177.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -4430,8 +4430,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 119.4801 105.8423 177.25)
 
-  (fp_text reference "C14" (at 7.5 0 177.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C14" (at 6.0 0 177.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -4715,8 +4715,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 134.6405 183.1086 177.25)
 
-  (fp_text reference "C15" (at 7.5 0 177.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C15" (at 6.0 0 177.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -5000,8 +5000,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 136.4684 145.0525 177.25)
 
-  (fp_text reference "C16" (at 7.5 0 177.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C16" (at 6.0 0 177.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -5285,8 +5285,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 138.2964 106.9964 177.25)
 
-  (fp_text reference "C17" (at 7.5 0 177.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C17" (at 6.0 0 177.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -5570,8 +5570,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 193.9726 183.1582 182.25)
 
-  (fp_text reference "C18" (at 7.5 0 182.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C18" (at 6.0 0 182.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -5855,8 +5855,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 193.0763 145.0640 182.25)
 
-  (fp_text reference "C19" (at 7.5 0 182.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C19" (at 6.0 0 182.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -6140,8 +6140,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 191.5805 106.9933 182.25)
 
-  (fp_text reference "C20" (at 7.5 0 182.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C20" (at 6.0 0 182.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -6425,8 +6425,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 212.1018 144.0663 182.25)
 
-  (fp_text reference "C21" (at 7.5 0 182.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C21" (at 6.0 0 182.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -6710,8 +6710,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 210.6060 105.9956 182.25)
 
-  (fp_text reference "C22" (at 7.5 0 182.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C22" (at 6.0 0 182.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -6995,8 +6995,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 232.6502 180.4334 181.25)
 
-  (fp_text reference "C23" (at 7.5 0 181.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C23" (at 6.0 0 181.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 181.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -7280,8 +7280,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 232.2189 142.3338 181.25)
 
-  (fp_text reference "C24" (at 7.5 0 181.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C24" (at 6.0 0 181.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 181.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -7565,8 +7565,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 231.7877 104.2341 181.25)
 
-  (fp_text reference "C25" (at 7.5 0 181.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C25" (at 6.0 0 181.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 181.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -7850,8 +7850,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 251.5732 181.0666 180.25)
 
-  (fp_text reference "C26" (at 7.5 0 180.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C26" (at 6.0 0 180.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -8135,8 +8135,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 251.8070 142.9653 180.25)
 
-  (fp_text reference "C27" (at 7.5 0 180.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C27" (at 6.0 0 180.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -8420,8 +8420,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 252.0407 104.8639 180.25)
 
-  (fp_text reference "C28" (at 7.5 0 180.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C28" (at 6.0 0 180.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -8705,8 +8705,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 270.4867 183.0300 179.25)
 
-  (fp_text reference "C29" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C29" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -8990,8 +8990,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 271.3854 144.9385 179.25)
 
-  (fp_text reference "C30" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C30" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -9275,8 +9275,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 272.2840 106.8470 179.25)
 
-  (fp_text reference "C31" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C31" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -9560,8 +9560,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 289.3351 183.2767 179.25)
 
-  (fp_text reference "C32" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C32" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -9845,8 +9845,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 289.8338 145.1800 179.25)
 
-  (fp_text reference "C33" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C33" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -10130,8 +10130,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 290.3325 107.0833 179.25)
 
-  (fp_text reference "C34" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C34" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -10415,8 +10415,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 314.2442 145.4995 179.25)
 
-  (fp_text reference "C35" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C35" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -10700,8 +10700,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 309.3809 107.3326 179.25)
 
-  (fp_text reference "C36" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C36" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -10985,8 +10985,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 333.7913 107.6522 179.25)
 
-  (fp_text reference "C37" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C37" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -11270,8 +11270,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 345.1052 189.3182 227.25)
 
-  (fp_text reference "C38" (at 7.5 0 227.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C38" (at 6.0 0 227.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 227.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -11555,8 +11555,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 358.0363 175.3293 227.25)
 
-  (fp_text reference "C39" (at 7.5 0 227.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C39" (at 6.0 0 227.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 227.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -11840,8 +11840,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 374.2003 157.8433 227.25)
 
-  (fp_text reference "C40" (at 7.5 0 227.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C40" (at 6.0 0 227.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 227.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -12125,8 +12125,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 387.1314 143.8544 227.25)
 
-  (fp_text reference "C41" (at 7.5 0 227.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C41" (at 6.0 0 227.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 227.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -12410,8 +12410,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 376.0502 108.2054 179.25)
 
-  (fp_text reference "C42" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C42" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -12695,8 +12695,8 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 395.0985 108.4547 179.25)
 
-  (fp_text reference "C43" (at 7.5 0 179.25) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+  (fp_text reference "C43" (at 6.0 0 179.25) (layer B.SilkS) 
+    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -12980,7 +12980,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 28.9539 164.1252 0.25)
 
-  (fp_text reference "C44" (at 7.5 0 0.25) (layer B.SilkS) 
+  (fp_text reference "C44" (at 6.0 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
@@ -13265,7 +13265,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 28.7877 126.0256 0.25)
 
-  (fp_text reference "C45" (at 7.5 0 0.25) (layer B.SilkS) 
+  (fp_text reference "C45" (at 6.0 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
@@ -13550,7 +13550,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 33.8839 87.9030 0.25)
 
-  (fp_text reference "C46" (at 7.5 0 0.25) (layer B.SilkS) 
+  (fp_text reference "C46" (at 6.0 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
@@ -13835,7 +13835,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 53.2662 164.0191 0.25)
 
-  (fp_text reference "C47" (at 7.5 0 0.25) (layer B.SilkS) 
+  (fp_text reference "C47" (at 6.0 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
@@ -14120,7 +14120,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 53.0999 125.9195 0.25)
 
-  (fp_text reference "C48" (at 7.5 0 0.25) (layer B.SilkS) 
+  (fp_text reference "C48" (at 6.0 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
@@ -14405,7 +14405,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 72.6951 161.8958 -0.75)
 
-  (fp_text reference "C49" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C49" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -14690,7 +14690,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 73.5937 123.8043 -0.75)
 
-  (fp_text reference "C50" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C50" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -14975,7 +14975,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 74.2924 85.7102 -0.75)
 
-  (fp_text reference "C51" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C51" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -15260,7 +15260,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 92.1449 161.1154 -1.75)
 
-  (fp_text reference "C52" (at 7.5 0 -1.75) (layer B.SilkS) 
+  (fp_text reference "C52" (at 6.0 0 -1.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -1.75) (layer B.Fab)
@@ -15545,7 +15545,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 94.1080 123.0576 -1.75)
 
-  (fp_text reference "C53" (at 7.5 0 -1.75) (layer B.SilkS) 
+  (fp_text reference "C53" (at 6.0 0 -1.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -1.75) (layer B.Fab)
@@ -15830,7 +15830,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 95.6713 84.9875 -1.75)
 
-  (fp_text reference "C54" (at 7.5 0 -1.75) (layer B.SilkS) 
+  (fp_text reference "C54" (at 6.0 0 -1.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -1.75) (layer B.Fab)
@@ -16115,7 +16115,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 111.3444 162.6674 -2.75)
 
-  (fp_text reference "C55" (at 7.5 0 -2.75) (layer B.SilkS) 
+  (fp_text reference "C55" (at 6.0 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
@@ -16400,7 +16400,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 113.5719 124.6305 -2.75)
 
-  (fp_text reference "C56" (at 7.5 0 -2.75) (layer B.SilkS) 
+  (fp_text reference "C56" (at 6.0 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
@@ -16685,7 +16685,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 115.5996 86.5839 -2.75)
 
-  (fp_text reference "C57" (at 7.5 0 -2.75) (layer B.SilkS) 
+  (fp_text reference "C57" (at 6.0 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
@@ -16970,7 +16970,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 130.5602 163.8407 -2.75)
 
-  (fp_text reference "C58" (at 7.5 0 -2.75) (layer B.SilkS) 
+  (fp_text reference "C58" (at 6.0 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
@@ -17255,7 +17255,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 132.3882 125.7846 -2.75)
 
-  (fp_text reference "C59" (at 7.5 0 -2.75) (layer B.SilkS) 
+  (fp_text reference "C59" (at 6.0 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
@@ -17540,7 +17540,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 134.2161 87.7284 -2.75)
 
-  (fp_text reference "C60" (at 7.5 0 -2.75) (layer B.SilkS) 
+  (fp_text reference "C60" (at 6.0 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
@@ -17825,7 +17825,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 188.8281 164.2956 2.25)
 
-  (fp_text reference "C61" (at 7.5 0 2.25) (layer B.SilkS) 
+  (fp_text reference "C61" (at 6.0 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
@@ -18110,7 +18110,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 187.3323 126.2250 2.25)
 
-  (fp_text reference "C62" (at 7.5 0 2.25) (layer B.SilkS) 
+  (fp_text reference "C62" (at 6.0 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
@@ -18395,7 +18395,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 185.8365 88.1543 2.25)
 
-  (fp_text reference "C63" (at 7.5 0 2.25) (layer B.SilkS) 
+  (fp_text reference "C63" (at 6.0 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
@@ -18680,7 +18680,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 207.8536 163.2979 2.25)
 
-  (fp_text reference "C64" (at 7.5 0 2.25) (layer B.SilkS) 
+  (fp_text reference "C64" (at 6.0 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
@@ -18965,7 +18965,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 206.3578 125.2273 2.25)
 
-  (fp_text reference "C65" (at 7.5 0 2.25) (layer B.SilkS) 
+  (fp_text reference "C65" (at 6.0 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
@@ -19250,7 +19250,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 204.8620 87.1566 2.25)
 
-  (fp_text reference "C66" (at 7.5 0 2.25) (layer B.SilkS) 
+  (fp_text reference "C66" (at 6.0 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
@@ -19535,7 +19535,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 227.4357 161.4927 1.25)
 
-  (fp_text reference "C67" (at 7.5 0 1.25) (layer B.SilkS) 
+  (fp_text reference "C67" (at 6.0 0 1.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 1.25) (layer B.Fab)
@@ -19820,7 +19820,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 227.0045 123.3930 1.25)
 
-  (fp_text reference "C68" (at 7.5 0 1.25) (layer B.SilkS) 
+  (fp_text reference "C68" (at 6.0 0 1.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 1.25) (layer B.Fab)
@@ -20105,7 +20105,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 226.5732 85.2934 1.25)
 
-  (fp_text reference "C69" (at 7.5 0 1.25) (layer B.SilkS) 
+  (fp_text reference "C69" (at 6.0 0 1.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 1.25) (layer B.Fab)
@@ -20390,7 +20390,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 246.6901 162.0378 0.25)
 
-  (fp_text reference "C70" (at 7.5 0 0.25) (layer B.SilkS) 
+  (fp_text reference "C70" (at 6.0 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
@@ -20675,7 +20675,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 246.9239 123.9364 0.25)
 
-  (fp_text reference "C71" (at 7.5 0 0.25) (layer B.SilkS) 
+  (fp_text reference "C71" (at 6.0 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
@@ -20960,7 +20960,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 247.1576 85.8350 0.25)
 
-  (fp_text reference "C72" (at 7.5 0 0.25) (layer B.SilkS) 
+  (fp_text reference "C72" (at 6.0 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
@@ -21245,7 +21245,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 265.9365 163.9188 -0.75)
 
-  (fp_text reference "C73" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C73" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -21530,7 +21530,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 266.8351 125.8273 -0.75)
 
-  (fp_text reference "C74" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C74" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -21815,7 +21815,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 289.9469 164.2331 -0.75)
 
-  (fp_text reference "C75" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C75" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -22100,7 +22100,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 285.0836 126.0662 -0.75)
 
-  (fp_text reference "C76" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C76" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -22385,7 +22385,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 285.5823 87.9694 -0.75)
 
-  (fp_text reference "C77" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C77" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -22670,7 +22670,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 304.1319 126.3155 -0.75)
 
-  (fp_text reference "C78" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C78" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -22955,7 +22955,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 304.6307 88.2188 -0.75)
 
-  (fp_text reference "C79" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C79" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -23240,7 +23240,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 323.1803 126.5649 -0.75)
 
-  (fp_text reference "C80" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C80" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -23525,7 +23525,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 323.6790 88.4682 -0.75)
 
-  (fp_text reference "C81" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C81" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -23810,7 +23810,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 342.7274 88.7175 -0.75)
 
-  (fp_text reference "C82" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C82" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -24095,7 +24095,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 327.7223 180.0586 47.25)
 
-  (fp_text reference "C83" (at 7.5 0 47.25) (layer B.SilkS) 
+  (fp_text reference "C83" (at 6.0 0 47.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 47.25) (layer B.Fab)
@@ -24380,7 +24380,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 340.6535 166.0698 47.25)
 
-  (fp_text reference "C84" (at 7.5 0 47.25) (layer B.SilkS) 
+  (fp_text reference "C84" (at 6.0 0 47.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 47.25) (layer B.Fab)
@@ -24665,7 +24665,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 356.8174 148.5837 47.25)
 
-  (fp_text reference "C85" (at 7.5 0 47.25) (layer B.SilkS) 
+  (fp_text reference "C85" (at 6.0 0 47.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 47.25) (layer B.Fab)
@@ -24950,7 +24950,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 369.7486 134.5949 47.25)
 
-  (fp_text reference "C86" (at 7.5 0 47.25) (layer B.SilkS) 
+  (fp_text reference "C86" (at 6.0 0 47.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 47.25) (layer B.Fab)
@@ -25235,7 +25235,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 371.2999 89.0916 -0.75)
 
-  (fp_text reference "C87" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C87" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
@@ -25520,7 +25520,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 390.3483 89.3409 -0.75)
 
-  (fp_text reference "C88" (at 7.5 0 -0.75) (layer B.SilkS) 
+  (fp_text reference "C88" (at 6.0 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
