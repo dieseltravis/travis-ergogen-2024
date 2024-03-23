@@ -1,8 +1,8 @@
 meta:
   engine: 4.0.5
   name: "travis_keytest"
-  version: &meta_version "2024.03.21"
-  date: "2024-03-21"
+  version: &meta_version "2024.03.23"
+  date: "2024-03-23"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024/keytest
 units:
@@ -11,7 +11,7 @@ points:
     single:
       anchor:
         shift: [100, -100]
-        rotate: 45
+        rotate: 5
       key:
         padding: U
         spread: U

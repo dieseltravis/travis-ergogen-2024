@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "travis_key.kicad_prl",
+    "filename": "travis_key-ltr.kicad_prl",
     "version": 3
   },
   "project": {

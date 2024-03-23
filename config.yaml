@@ -1,8 +1,8 @@
 meta:
   engine: 4.0.5
   name: "travis-ergogen-2024"
-  version: &meta_version "2024.03.2a"
-  date: "2024-03-21"
+  version: &meta_version "2024.03.23"
+  date: "2024-03-23"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
   tags: [ "ergogen", "promicro", "keyboard", "cherrymx", "hotswap", "rgb" ]
@@ -815,9 +815,21 @@ pcbs:
     footprints:
       keymod:
         what: custom/key-module
-        where: true
+        where: meta.tags ~ /row_odd/
         params:
           U: U
+          dir: 'LTR'
+          name: "{{name}}"
+          colnet: "{{column_net}}"
+          rownet: "{{row_net}}"
+          led_this: "{{key.led_this}}"
+          led_next: "{{key.led_next}}"
+      keymod-e:
+        what: custom/key-module
+        where: meta.tags ~ /row_even/
+        params:
+          U: U
+          dir: 'RTL'
           name: "{{name}}"
           colnet: "{{column_net}}"
           rownet: "{{row_net}}"
@@ -1186,4 +1198,4 @@ pcbs:
         adjust:
           shift: [0, -1.25]
 
-    references: true
+    references: false

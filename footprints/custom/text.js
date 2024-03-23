@@ -41,17 +41,20 @@ module.exports = {
     size: 1,
     bold: false,
     italic: false,
+    align: '',
     face: '',   // default is KiCad Font
     text: ''
   },
   body: p => {
     const generate_text = (side, layer, mirror, thickness, size, text, face, bold, italic) => {
+      let justify = '';
+      if (p.align || (mirror && side != p.side)) {
+        justify = ` (justify ${p.align}${mirror && side != p.side ? ' mirror' : ''})`;
+      }
       const gr_text = `
       (gr_text "${text}" ${p.at} (layer ${side}.${layer})
-        (effects (font${face && face.length ? " (face \"" + face + "\")" : "" } (size ${size} ${size}) (thickness ${thickness})${ bold ? " (bold yes)" : ""}${ italic ? " (italic yes)" : ""})
-        ${(mirror && side != p.side ? ` (justify mirror)` : ``)})
-      )
-      `;
+        (effects (font${face && face.length ? " (face \"" + face + "\")" : "" } (size ${size} ${size}) (thickness ${thickness})${ bold ? " (bold yes)" : ""}${ italic ? " (italic yes)" : ""})${justify})
+      )`;
       return gr_text;
     };
 

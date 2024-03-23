@@ -1,8 +1,8 @@
 meta:
   engine: 4.0.5
   name: "travis_key"
-  version: &meta_version "2024.03.21"
-  date: "2024-03-21"
+  version: &meta_version "2024.03.23"
+  date: "2024-03-23"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
   tags: [ "ergogen", "mx", "key" ]
@@ -26,7 +26,7 @@ points:
             one:
               row_net: row0
               key:
-                led_next: LED_0
+                led_next: LED_2
                 led_this: LED_1
               width: 1.0U
       rows:
@@ -74,14 +74,15 @@ pcbs:
         outline: board
     footprints:
       mx_hotswap:
-        what: mx
+        what: custom/mx
         where: true
         params:
           keycaps: true
           reverse: false
           hotswap: true
           from: "{{column_net}}"
-          to: "{{name}}"        
+          to: "{{name}}"
+          value: "Kailh MX Switch Sockets"
       diode:
         what: custom/ScottoKeebs-Diode_DO-35 #diode
         where: true
@@ -89,23 +90,46 @@ pcbs:
           side: B
           from: "{{name}}"
           to: "{{row_net}}"
+          refpos: [5.985, 1.921]
+          valpos: [11.065, 0]
         adjust:
           # place "to" pin in top right
-          shift: [U / 2 - 1, U / 2 - 1]
+          shift: [U / 2 - 1, U / 2 - 1.5]
           rotate: 90 + 180
+      diodelabel:
+        what: custom/text
+        where: true
+        params:
+          text: "D1"
+          align: "left"
+          size: 0.9
+        adjust:
+          shift: [U / 2 - 1 - 1, U / 2 - 1.5 - (7.62 / 2)]
+          rotate: 0        
       rgb:
-        what: ceoloide/led_sk6812mini-e
+        what: custom/led_sk6812mini-e
         where: meta.tags ~ /row_odd/
         params:
           P1: "RAW"
           P2: "{{key.led_next}}" # DOUT: next P4
           P3: "GND"
           P4: "{{key.led_this}}" # DIN: previous P2 or pro micro data pin
+          refpos: [-5.25, 0]
           include_keepout: true
         adjust:
           shift: [0, -4.96]
           #TODO: flip based on LTR or RTL
           #rotate: 180
+      rgblabel:
+        what: custom/text
+        where: true
+        params:
+          text: "{{key.led_this}}"
+          align: "right"
+          size: 0.8
+        adjust:
+          shift:  [-2.70, -4.96 - 0.7]
+          rotate: 0        
       cap: # 104
         what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
         where: meta.tags ~ /row_odd/
@@ -113,8 +137,18 @@ pcbs:
           P1: RAW
           P2: GND
           side: B
-          #value: 104
+          refpos: [7.5, 0]
+          valpos: [-2.5, 0]
         adjust:
           shift: [2.5, -8.3]
           rotate: 180
+      caplabel:
+        what: custom/text
+        where: true
+        params:
+          text: "C1"
+          size: 0.9
+        adjust:
+          shift: [0, -8.3]
+          rotate: 0        
     references: true

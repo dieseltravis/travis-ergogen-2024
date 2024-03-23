@@ -26,6 +26,7 @@ Built with Ergogen v4.
     * TildeWill's Ergogen PCB footprints https://github.com/TildeWill/ergogen_footprints
     * MvEerd https://github.com/MvEerd/ergogen/tree/mveerd/src/footprints
     * daprice's keyswitches.pretty https://github.com/daprice/keyswitches.pretty
+    * joe-scotto's scottokeebs: https://github.com/joe-scotto/scottokeebs/tree/main/Extras/ScottoKicad
     * Convert Kicad Footprints to Ergogen https://nilnil.notion.site/Convert-Kicad-Footprints-to-Ergogen-8340ce87ad554c69af4e3f92bc9a0898
     * KiCad Footprints: https://kicad.github.io/footprints/
 * Other helpful build guides:
