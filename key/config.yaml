@@ -35,17 +35,17 @@ points:
             - row_odd
   rotate: 0
 outlines:
-  raw:
+  _raw:
     - what: rectangle
       where: true
       bound: true
       size: [U + 2, U + 2]
-  keys:
+  _keys:
     - what: rectangle
       where: true
       bound: false
       size: [U - 0.5, U - 0.5]
-  board:
+  _board:
     - what: polygon
       operation: stack
       points:
@@ -62,16 +62,16 @@ outlines:
         - ref: single_A_one
           shift: [-1U, -1U]
       fillet: 3
-  combo:
-    - name: board
+  _combo:
+    - name: _board
     - operation: subtract
-      name: keys
+      name: _keys
 cases:
 pcbs:
   travis_key:
     outlines:
       main:
-        outline: board
+        outline: _board
     footprints:
       mx_hotswap:
         what: custom/mx
@@ -114,21 +114,23 @@ pcbs:
           P2: "{{key.led_next}}" # DOUT: next P4
           P3: "GND"
           P4: "{{key.led_this}}" # DIN: previous P2 or pro micro data pin
-          refpos: [-5.25, 0]
+          #refpos: [-5.25, 0]
+          valpos: [0, 2.25]
           include_keepout: true
         adjust:
           shift: [0, -4.96]
           #TODO: flip based on LTR or RTL
-          #rotate: 180
+          rotate: 180
       rgblabel:
         what: custom/text
         where: true
         params:
           text: "{{key.led_this}}"
-          align: "right"
+          align: "left"
           size: 0.8
         adjust:
-          shift:  [-2.70, -4.96 - 0.7]
+          #shift:  [-2.70, -4.96 - 0.7]
+          shift:  [2.70, -4.96 + 0.7]
           rotate: 0        
       cap: # 104
         what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
@@ -140,8 +142,9 @@ pcbs:
           refpos: [7.5, 0]
           valpos: [-2.5, 0]
         adjust:
-          shift: [2.5, -8.3]
-          rotate: 180
+          #shift: [2.5, -8.3]
+          shift: [-2.5, -8.3]
+          #rotate: 180
       caplabel:
         what: custom/text
         where: true

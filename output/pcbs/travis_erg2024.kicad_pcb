@@ -12902,12 +12902,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 31.4393 160.7744 0.25)
+  (at 31.4393 160.7744 180.25)
 
-  (fp_text reference "LED44" (at -5.25 0 90.25) (layer B.SilkS) 
+  (fp_text reference "LED44" (at -4.75 0 90.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 0.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 0.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -12932,10 +12932,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 4 "LED_29"))
-  (pad 1 smd rect (at 2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 118 "LED_28"))
+  (pad 2 smd rect (at 2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 4 "LED_29"))
+  (pad 1 smd rect (at 2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 118 "LED_28"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -12972,18 +12972,18 @@
     )
   )
 )
-(gr_text "LED_28" (at 28.7424 161.4861 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_28" (at 34.1362 160.0626 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 33.9539 164.1034 180.25)
+  (at 28.9539 164.1252 0.25)
 
-  (fp_text reference "C44" (at 7.5 0 180.25) (layer B.SilkS) 
+  (fp_text reference "C44" (at 7.5 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -13031,14 +13031,14 @@
   (end 34.1530 163.9025)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 34.1530 163.9025)
   (end 33.9539 164.1034)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -13046,14 +13046,14 @@
   (end 27.1790 162.3658)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 27.1790 162.3658)
   (end 28.9539 164.1252)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -13061,7 +13061,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -13069,14 +13069,14 @@
   (end 27.1763 160.0929)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 27.1763 160.0929)
   (end 27.1691 160.1002)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -13187,12 +13187,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 31.2731 122.6747 0.25)
+  (at 31.2731 122.6747 180.25)
 
-  (fp_text reference "LED45" (at -5.25 0 90.25) (layer B.SilkS) 
+  (fp_text reference "LED45" (at -4.75 0 90.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 0.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 0.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -13217,10 +13217,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 10 "LED_17"))
-  (pad 1 smd rect (at 2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 120 "LED_16"))
+  (pad 2 smd rect (at 2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 10 "LED_17"))
+  (pad 1 smd rect (at 2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 120 "LED_16"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -13257,18 +13257,18 @@
     )
   )
 )
-(gr_text "LED_16" (at 28.5761 123.3865 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_16" (at 33.9700 121.9629 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 33.7876 126.0038 180.25)
+  (at 28.7877 126.0256 0.25)
 
-  (fp_text reference "C45" (at 7.5 0 180.25) (layer B.SilkS) 
+  (fp_text reference "C45" (at 7.5 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -13316,14 +13316,14 @@
   (end 33.9867 125.8029)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 33.9867 125.8029)
   (end 33.7876 126.0038)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -13331,14 +13331,14 @@
   (end 27.0128 124.2661)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 27.0128 124.2661)
   (end 28.7877 126.0256)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -13346,7 +13346,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -13354,14 +13354,14 @@
   (end 27.0101 121.9933)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 27.0101 121.9933)
   (end 27.0029 122.0005)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -13472,12 +13472,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 36.3693 84.5521 0.25)
+  (at 36.3693 84.5521 180.25)
 
-  (fp_text reference "LED46" (at -5.25 0 90.25) (layer B.SilkS) 
+  (fp_text reference "LED46" (at -4.75 0 90.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 0.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 0.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -13502,10 +13502,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 14 "LED_5"))
-  (pad 1 smd rect (at 2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 123 "LED_4"))
+  (pad 2 smd rect (at 2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 14 "LED_5"))
+  (pad 1 smd rect (at 2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 123 "LED_4"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -13542,18 +13542,18 @@
     )
   )
 )
-(gr_text "LED_4" (at 33.6724 85.2639 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_4" (at 39.0662 83.8403 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 38.8838 87.8812 180.25)
+  (at 33.8839 87.9030 0.25)
 
-  (fp_text reference "C46" (at 7.5 0 180.25) (layer B.SilkS) 
+  (fp_text reference "C46" (at 7.5 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -13601,14 +13601,14 @@
   (end 39.0829 87.6803)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 39.0829 87.6803)
   (end 38.8838 87.8812)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -13616,14 +13616,14 @@
   (end 32.1090 86.1435)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 32.1090 86.1435)
   (end 33.8839 87.9030)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -13631,7 +13631,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -13639,14 +13639,14 @@
   (end 32.1063 83.8707)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 32.1063 83.8707)
   (end 32.0991 83.8779)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -13757,12 +13757,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 55.7516 160.6683 0.25)
+  (at 55.7516 160.6683 180.25)
 
-  (fp_text reference "LED47" (at -5.25 0 90.25) (layer B.SilkS) 
+  (fp_text reference "LED47" (at -4.75 0 90.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 0.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 0.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -13787,10 +13787,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 118 "LED_28"))
-  (pad 1 smd rect (at 2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 125 "LED_27"))
+  (pad 2 smd rect (at 2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 118 "LED_28"))
+  (pad 1 smd rect (at 2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 125 "LED_27"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -13827,18 +13827,18 @@
     )
   )
 )
-(gr_text "LED_27" (at 53.0547 161.3800 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_27" (at 58.4485 159.9565 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 58.2661 163.9973 180.25)
+  (at 53.2662 164.0191 0.25)
 
-  (fp_text reference "C47" (at 7.5 0 180.25) (layer B.SilkS) 
+  (fp_text reference "C47" (at 7.5 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -13886,14 +13886,14 @@
   (end 58.4653 163.7965)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 58.4653 163.7965)
   (end 58.2661 163.9973)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -13901,14 +13901,14 @@
   (end 51.4913 162.2597)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 51.4913 162.2597)
   (end 53.2662 164.0191)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -13916,7 +13916,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -13924,14 +13924,14 @@
   (end 51.4886 159.9869)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 51.4886 159.9869)
   (end 51.4814 159.9941)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -14042,12 +14042,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 55.5853 122.5686 0.25)
+  (at 55.5853 122.5686 180.25)
 
-  (fp_text reference "LED48" (at -5.25 0 90.25) (layer B.SilkS) 
+  (fp_text reference "LED48" (at -4.75 0 90.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 0.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 0.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -14072,10 +14072,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 120 "LED_16"))
-  (pad 1 smd rect (at 2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 127 "LED_15"))
+  (pad 2 smd rect (at 2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 120 "LED_16"))
+  (pad 1 smd rect (at 2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 127 "LED_15"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -14112,18 +14112,18 @@
     )
   )
 )
-(gr_text "LED_15" (at 52.8884 123.2804 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_15" (at 58.2823 121.8569 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 58.0999 125.8977 180.25)
+  (at 53.0999 125.9195 0.25)
 
-  (fp_text reference "C48" (at 7.5 0 180.25) (layer B.SilkS) 
+  (fp_text reference "C48" (at 7.5 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -14171,14 +14171,14 @@
   (end 58.2990 125.6968)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 58.2990 125.6968)
   (end 58.0999 125.8977)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -14186,14 +14186,14 @@
   (end 51.3250 124.1600)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 51.3250 124.1600)
   (end 53.0999 125.9195)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -14201,7 +14201,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -14209,14 +14209,14 @@
   (end 51.3223 121.8872)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 51.3223 121.8872)
   (end 51.3152 121.8945)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -14327,12 +14327,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 75.2386 158.5889 -0.75)
+  (at 75.2386 158.5889 179.25)
 
-  (fp_text reference "LED49" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED49" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -14357,10 +14357,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 125 "LED_27"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 129 "LED_26"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 125 "LED_27"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 129 "LED_26"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -14397,18 +14397,18 @@
     )
   )
 )
-(gr_text "LED_26" (at 72.5296 159.2535 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_26" (at 77.9475 157.9243 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 77.6946 161.9613 179.25)
+  (at 72.6951 161.8958 -0.75)
 
-  (fp_text reference "C49" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C49" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -14456,14 +14456,14 @@
   (end 77.8972 161.7639)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 77.8972 161.7639)
   (end 77.6946 161.9613)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -14471,14 +14471,14 @@
   (end 70.9511 160.1057)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 70.9511 160.1057)
   (end 72.6951 161.8958)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -14486,7 +14486,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -14494,14 +14494,14 @@
   (end 70.9881 157.8332)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 70.9881 157.8332)
   (end 70.9808 157.8403)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -14612,12 +14612,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 76.1372 120.4974 -0.75)
+  (at 76.1372 120.4974 179.25)
 
-  (fp_text reference "LED50" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED50" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -14642,10 +14642,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 127 "LED_15"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 131 "LED_14"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 127 "LED_15"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 131 "LED_14"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -14682,18 +14682,18 @@
     )
   )
 )
-(gr_text "LED_14" (at 73.4283 121.1620 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_14" (at 78.8462 119.8328 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 78.5933 123.8698 179.25)
+  (at 73.5937 123.8043 -0.75)
 
-  (fp_text reference "C50" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C50" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -14741,14 +14741,14 @@
   (end 78.7959 123.6724)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 78.7959 123.6724)
   (end 78.5933 123.8698)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -14756,14 +14756,14 @@
   (end 71.8498 122.0142)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 71.8498 122.0142)
   (end 73.5937 123.8043)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -14771,7 +14771,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -14779,14 +14779,14 @@
   (end 71.8868 119.7417)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 71.8868 119.7417)
   (end 71.8795 119.7488)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -14897,12 +14897,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 76.8359 82.4032 -0.75)
+  (at 76.8359 82.4032 179.25)
 
-  (fp_text reference "LED51" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED51" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -14927,10 +14927,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 123 "LED_4"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 133 "LED_3"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 123 "LED_4"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 133 "LED_3"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -14967,18 +14967,18 @@
     )
   )
 )
-(gr_text "LED_3" (at 74.1270 83.0678 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_3" (at 79.5449 81.7386 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 79.2920 85.7757 179.25)
+  (at 74.2924 85.7102 -0.75)
 
-  (fp_text reference "C51" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C51" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -15026,14 +15026,14 @@
   (end 79.4946 85.5783)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 79.4946 85.5783)
   (end 79.2920 85.7757)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -15041,14 +15041,14 @@
   (end 72.5485 83.9200)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 72.5485 83.9200)
   (end 74.2924 85.7102)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -15056,7 +15056,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -15064,14 +15064,14 @@
   (end 72.5855 81.6475)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 72.5855 81.6475)
   (end 72.5782 81.6546)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -15182,12 +15182,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 94.7457 157.8533 -1.75)
+  (at 94.7457 157.8533 178.25)
 
-  (fp_text reference "LED52" (at -5.25 0 88.25) (layer B.SilkS) 
+  (fp_text reference "LED52" (at -4.75 0 88.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -1.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -1.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -15212,10 +15212,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 129 "LED_26"))
-  (pad 1 smd rect (at 2.70 0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 135 "LED_25"))
+  (pad 2 smd rect (at 2.70 -0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 129 "LED_26"))
+  (pad 1 smd rect (at 2.70 0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 135 "LED_25"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -15252,18 +15252,18 @@
     )
   )
 )
-(gr_text "LED_25" (at 92.0256 158.4705 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_25" (at 97.4658 157.2360 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 97.1425 161.2680 178.25)
+  (at 92.1449 161.1154 -1.75)
 
-  (fp_text reference "C52" (at 7.5 0 178.25) (layer B.SilkS) 
+  (fp_text reference "C52" (at 7.5 0 -1.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 178.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -1.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -15311,14 +15311,14 @@
   (end 97.3486 161.0743)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 97.3486 161.0743)
   (end 97.1425 161.2680)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -15326,14 +15326,14 @@
   (end 90.4325 159.2950)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 90.4325 159.2950)
   (end 92.1449 161.1154)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -15341,7 +15341,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -15349,14 +15349,14 @@
   (end 90.5091 157.0235)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 90.5091 157.0235)
   (end 90.5017 157.0305)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -15467,12 +15467,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 96.7088 119.7955 -1.75)
+  (at 96.7088 119.7955 178.25)
 
-  (fp_text reference "LED53" (at -5.25 0 88.25) (layer B.SilkS) 
+  (fp_text reference "LED53" (at -4.75 0 88.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -1.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -1.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -15497,10 +15497,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 131 "LED_14"))
-  (pad 1 smd rect (at 2.70 0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 137 "LED_13"))
+  (pad 2 smd rect (at 2.70 -0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 131 "LED_14"))
+  (pad 1 smd rect (at 2.70 0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 137 "LED_13"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -15537,18 +15537,18 @@
     )
   )
 )
-(gr_text "LED_13" (at 93.9887 120.4127 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_13" (at 99.4290 119.1782 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 99.1057 123.2103 178.25)
+  (at 94.1080 123.0576 -1.75)
 
-  (fp_text reference "C53" (at 7.5 0 178.25) (layer B.SilkS) 
+  (fp_text reference "C53" (at 7.5 0 -1.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 178.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -1.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -15596,14 +15596,14 @@
   (end 99.3117 123.0165)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 99.3117 123.0165)
   (end 99.1057 123.2103)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -15611,14 +15611,14 @@
   (end 92.3956 121.2372)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 92.3956 121.2372)
   (end 94.1080 123.0576)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -15626,7 +15626,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -15634,14 +15634,14 @@
   (end 92.4722 118.9657)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 92.4722 118.9657)
   (end 92.4648 118.9727)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -15752,12 +15752,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 98.2722 81.7254 -1.75)
+  (at 98.2722 81.7254 178.25)
 
-  (fp_text reference "LED54" (at -5.25 0 88.25) (layer B.SilkS) 
+  (fp_text reference "LED54" (at -4.75 0 88.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -1.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -1.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -15782,10 +15782,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 133 "LED_3"))
-  (pad 1 smd rect (at 2.70 0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -1.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 139 "LED_2"))
+  (pad 2 smd rect (at 2.70 -0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 133 "LED_3"))
+  (pad 1 smd rect (at 2.70 0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 178.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 139 "LED_2"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -15822,18 +15822,18 @@
     )
   )
 )
-(gr_text "LED_2" (at 95.5521 82.3427 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_2" (at 100.9923 81.1082 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 100.6690 85.1402 178.25)
+  (at 95.6713 84.9875 -1.75)
 
-  (fp_text reference "C54" (at 7.5 0 178.25) (layer B.SilkS) 
+  (fp_text reference "C54" (at 7.5 0 -1.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 178.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -1.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -15881,14 +15881,14 @@
   (end 100.8750 84.9464)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 100.8750 84.9464)
   (end 100.6690 85.1402)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -15896,14 +15896,14 @@
   (end 93.9589 83.1672)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 93.9589 83.1672)
   (end 95.6713 84.9875)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -15911,7 +15911,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -15919,14 +15919,14 @@
   (end 94.0355 80.8957)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 94.0355 80.8957)
   (end 94.0281 80.9027)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -16037,12 +16037,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 114.0017 159.4512 -2.75)
+  (at 114.0017 159.4512 177.25)
 
-  (fp_text reference "LED55" (at -5.25 0 87.25) (layer B.SilkS) 
+  (fp_text reference "LED55" (at -4.75 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -2.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -2.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -16067,10 +16067,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 135 "LED_25"))
-  (pad 1 smd rect (at 2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 141 "LED_24"))
+  (pad 2 smd rect (at 2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 135 "LED_25"))
+  (pad 1 smd rect (at 2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 141 "LED_24"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -16107,18 +16107,18 @@
     )
   )
 )
-(gr_text "LED_24" (at 111.2713 160.0208 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_24" (at 116.7322 158.8815 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 116.3386 162.9073 177.25)
+  (at 111.3444 162.6674 -2.75)
 
-  (fp_text reference "C55" (at 7.5 0 177.25) (layer B.SilkS) 
+  (fp_text reference "C55" (at 7.5 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -16166,14 +16166,14 @@
   (end 116.5480 162.7171)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 116.5480 162.7171)
   (end 116.3386 162.9073)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -16181,14 +16181,14 @@
   (end 109.6640 160.8174)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 109.6640 160.8174)
   (end 111.3444 162.6674)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -16196,7 +16196,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -16204,14 +16204,14 @@
   (end 109.7802 158.5476)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 109.7802 158.5476)
   (end 109.7727 158.5544)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -16322,12 +16322,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 116.2292 121.4143 -2.75)
+  (at 116.2292 121.4143 177.25)
 
-  (fp_text reference "LED56" (at -5.25 0 87.25) (layer B.SilkS) 
+  (fp_text reference "LED56" (at -4.75 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -2.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -2.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -16352,10 +16352,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 137 "LED_13"))
-  (pad 1 smd rect (at 2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 143 "LED_12"))
+  (pad 2 smd rect (at 2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 137 "LED_13"))
+  (pad 1 smd rect (at 2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 143 "LED_12"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -16392,18 +16392,18 @@
     )
   )
 )
-(gr_text "LED_12" (at 113.4988 121.9839 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_12" (at 118.9597 120.8446 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 118.5661 124.8704 177.25)
+  (at 113.5719 124.6305 -2.75)
 
-  (fp_text reference "C56" (at 7.5 0 177.25) (layer B.SilkS) 
+  (fp_text reference "C56" (at 7.5 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -16451,14 +16451,14 @@
   (end 118.7755 124.6802)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 118.7755 124.6802)
   (end 118.5661 124.8704)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -16466,14 +16466,14 @@
   (end 111.8915 122.7805)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 111.8915 122.7805)
   (end 113.5719 124.6305)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -16481,7 +16481,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -16489,14 +16489,14 @@
   (end 112.0077 120.5107)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 112.0077 120.5107)
   (end 112.0002 120.5175)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -16607,12 +16607,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 118.2570 83.3677 -2.75)
+  (at 118.2570 83.3677 177.25)
 
-  (fp_text reference "LED57" (at -5.25 0 87.25) (layer B.SilkS) 
+  (fp_text reference "LED57" (at -4.75 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -2.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -2.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -16637,10 +16637,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 139 "LED_2"))
-  (pad 1 smd rect (at 2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 145 "LED_1"))
+  (pad 2 smd rect (at 2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 139 "LED_2"))
+  (pad 1 smd rect (at 2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 145 "LED_1"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -16677,18 +16677,18 @@
     )
   )
 )
-(gr_text "LED_1" (at 115.5265 83.9374 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_1" (at 120.9875 82.7981 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 120.5938 86.8238 177.25)
+  (at 115.5996 86.5839 -2.75)
 
-  (fp_text reference "C57" (at 7.5 0 177.25) (layer B.SilkS) 
+  (fp_text reference "C57" (at 7.5 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -16736,14 +16736,14 @@
   (end 120.8032 86.6336)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 120.8032 86.6336)
   (end 120.5938 86.8238)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -16751,14 +16751,14 @@
   (end 113.9192 84.7340)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 113.9192 84.7340)
   (end 115.5996 86.5839)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -16766,7 +16766,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -16774,14 +16774,14 @@
   (end 114.0355 82.4641)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 114.0355 82.4641)
   (end 114.0279 82.4710)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -16892,12 +16892,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 133.2176 160.6245 -2.75)
+  (at 133.2176 160.6245 177.25)
 
-  (fp_text reference "LED58" (at -5.25 0 87.25) (layer B.SilkS) 
+  (fp_text reference "LED58" (at -4.75 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -2.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -2.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -16922,10 +16922,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 141 "LED_24"))
-  (pad 1 smd rect (at 2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 46 "LED_23"))
+  (pad 2 smd rect (at 2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 141 "LED_24"))
+  (pad 1 smd rect (at 2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 46 "LED_23"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -16962,18 +16962,18 @@
     )
   )
 )
-(gr_text "LED_23" (at 130.4871 161.1941 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_23" (at 135.9480 160.0548 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 135.5544 164.0806 177.25)
+  (at 130.5602 163.8407 -2.75)
 
-  (fp_text reference "C58" (at 7.5 0 177.25) (layer B.SilkS) 
+  (fp_text reference "C58" (at 7.5 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -17021,14 +17021,14 @@
   (end 135.7638 163.8904)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 135.7638 163.8904)
   (end 135.5544 164.0806)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -17036,14 +17036,14 @@
   (end 128.8798 161.9907)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 128.8798 161.9907)
   (end 130.5602 163.8407)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -17051,7 +17051,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -17059,14 +17059,14 @@
   (end 128.9961 159.7209)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 128.9961 159.7209)
   (end 128.9885 159.7277)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -17177,12 +17177,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 135.0455 122.5684 -2.75)
+  (at 135.0455 122.5684 177.25)
 
-  (fp_text reference "LED59" (at -5.25 0 87.25) (layer B.SilkS) 
+  (fp_text reference "LED59" (at -4.75 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -2.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -2.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -17207,10 +17207,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 143 "LED_12"))
-  (pad 1 smd rect (at 2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 48 "LED_11"))
+  (pad 2 smd rect (at 2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 143 "LED_12"))
+  (pad 1 smd rect (at 2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 48 "LED_11"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -17247,18 +17247,18 @@
     )
   )
 )
-(gr_text "LED_11" (at 132.3151 123.1380 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_11" (at 137.7760 121.9987 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 137.3824 126.0245 177.25)
+  (at 132.3882 125.7846 -2.75)
 
-  (fp_text reference "C59" (at 7.5 0 177.25) (layer B.SilkS) 
+  (fp_text reference "C59" (at 7.5 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -17306,14 +17306,14 @@
   (end 137.5918 125.8343)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 137.5918 125.8343)
   (end 137.3824 126.0245)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -17321,14 +17321,14 @@
   (end 130.7078 123.9346)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 130.7078 123.9346)
   (end 132.3882 125.7846)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -17336,7 +17336,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -17344,14 +17344,14 @@
   (end 130.8240 121.6648)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 130.8240 121.6648)
   (end 130.8165 121.6716)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -17462,12 +17462,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 136.8735 84.5122 -2.75)
+  (at 136.8735 84.5122 177.25)
 
-  (fp_text reference "LED60" (at -5.25 0 87.25) (layer B.SilkS) 
+  (fp_text reference "LED60" (at -4.75 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -2.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -2.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -17492,10 +17492,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 145 "LED_1"))
-  (pad 1 smd rect (at 2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -2.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 149 "LED_0"))
+  (pad 2 smd rect (at 2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 145 "LED_1"))
+  (pad 1 smd rect (at 2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 177.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 149 "LED_0"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -17532,18 +17532,18 @@
     )
   )
 )
-(gr_text "LED_0" (at 134.1430 85.0819 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_0" (at 139.6040 83.9426 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 139.2104 87.9683 177.25)
+  (at 134.2161 87.7284 -2.75)
 
-  (fp_text reference "C60" (at 7.5 0 177.25) (layer B.SilkS) 
+  (fp_text reference "C60" (at 7.5 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -17591,14 +17591,14 @@
   (end 139.4197 87.7782)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 139.4197 87.7782)
   (end 139.2104 87.9683)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -17606,14 +17606,14 @@
   (end 132.5358 85.8785)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 132.5358 85.8785)
   (end 134.2161 87.7284)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -17621,7 +17621,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -17629,14 +17629,14 @@
   (end 132.6520 83.6086)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 132.6520 83.6086)
   (end 132.6445 83.6155)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -17747,12 +17747,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 191.1950 160.8600 2.25)
+  (at 191.1950 160.8600 182.25)
 
-  (fp_text reference "LED61" (at -5.25 0 92.25) (layer B.SilkS) 
+  (fp_text reference "LED61" (at -4.75 0 92.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 2.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 2.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -17777,10 +17777,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 53 "LED_49"))
-  (pad 1 smd rect (at 2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 151 "LED_48"))
+  (pad 2 smd rect (at 2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 53 "LED_49"))
+  (pad 1 smd rect (at 2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 151 "LED_48"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -17817,18 +17817,18 @@
     )
   )
 )
-(gr_text "LED_48" (at 188.5246 161.6655 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_48" (at 193.8654 160.0546 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 193.8242 164.0993 182.25)
+  (at 188.8281 164.2956 2.25)
 
-  (fp_text reference "C61" (at 7.5 0 182.25) (layer B.SilkS) 
+  (fp_text reference "C61" (at 7.5 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -17876,14 +17876,14 @@
   (end 194.0162 163.8916)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 194.0162 163.8916)
   (end 193.8242 164.0993)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -17891,14 +17891,14 @@
   (end 186.9928 162.5991)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 186.9928 162.5991)
   (end 188.8281 164.2956)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -17906,7 +17906,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -17914,14 +17914,14 @@
   (end 186.9108 160.3278)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 186.9108 160.3278)
   (end 186.9039 160.3353)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -18032,12 +18032,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 189.6992 122.7894 2.25)
+  (at 189.6992 122.7894 182.25)
 
-  (fp_text reference "LED62" (at -5.25 0 92.25) (layer B.SilkS) 
+  (fp_text reference "LED62" (at -4.75 0 92.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 2.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 2.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -18062,10 +18062,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 56 "LED_68"))
-  (pad 1 smd rect (at 2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 153 "LED_67"))
+  (pad 2 smd rect (at 2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 56 "LED_68"))
+  (pad 1 smd rect (at 2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 153 "LED_67"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -18102,18 +18102,18 @@
     )
   )
 )
-(gr_text "LED_67" (at 187.0288 123.5948 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_67" (at 192.3696 121.9839 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 192.3284 126.0287 182.25)
+  (at 187.3323 126.2250 2.25)
 
-  (fp_text reference "C62" (at 7.5 0 182.25) (layer B.SilkS) 
+  (fp_text reference "C62" (at 7.5 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -18161,14 +18161,14 @@
   (end 192.5204 125.8210)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 192.5204 125.8210)
   (end 192.3284 126.0287)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -18176,14 +18176,14 @@
   (end 185.4971 124.5285)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 185.4971 124.5285)
   (end 187.3323 126.2250)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -18191,7 +18191,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -18199,14 +18199,14 @@
   (end 185.4150 122.2572)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 185.4150 122.2572)
   (end 185.4081 122.2646)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -18317,12 +18317,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 188.2034 84.7188 2.25)
+  (at 188.2034 84.7188 182.25)
 
-  (fp_text reference "LED63" (at -5.25 0 92.25) (layer B.SilkS) 
+  (fp_text reference "LED63" (at -4.75 0 92.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 2.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 2.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -18347,10 +18347,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 0 ""))
-  (pad 1 smd rect (at 2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 155 "LED_87"))
+  (pad 2 smd rect (at 2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 0 ""))
+  (pad 1 smd rect (at 2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 155 "LED_87"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -18387,18 +18387,18 @@
     )
   )
 )
-(gr_text "LED_87" (at 185.5330 85.5242 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_87" (at 190.8739 83.9133 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 190.8326 87.9580 182.25)
+  (at 185.8365 88.1543 2.25)
 
-  (fp_text reference "C63" (at 7.5 0 182.25) (layer B.SilkS) 
+  (fp_text reference "C63" (at 7.5 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -18446,14 +18446,14 @@
   (end 191.0246 87.7503)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 191.0246 87.7503)
   (end 190.8326 87.9580)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -18461,14 +18461,14 @@
   (end 184.0013 86.4579)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 184.0013 86.4579)
   (end 185.8365 88.1543)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -18476,7 +18476,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -18484,14 +18484,14 @@
   (end 183.9192 84.1865)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 183.9192 84.1865)
   (end 183.9123 84.1940)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -18602,12 +18602,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 210.2205 159.8623 2.25)
+  (at 210.2205 159.8623 182.25)
 
-  (fp_text reference "LED64" (at -5.25 0 92.25) (layer B.SilkS) 
+  (fp_text reference "LED64" (at -4.75 0 92.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 2.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 2.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -18632,10 +18632,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 151 "LED_48"))
-  (pad 1 smd rect (at 2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 157 "LED_47"))
+  (pad 2 smd rect (at 2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 151 "LED_48"))
+  (pad 1 smd rect (at 2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 157 "LED_47"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -18672,18 +18672,18 @@
     )
   )
 )
-(gr_text "LED_47" (at 207.5501 160.6678 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_47" (at 212.8909 159.0568 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 212.8497 163.1016 182.25)
+  (at 207.8536 163.2979 2.25)
 
-  (fp_text reference "C64" (at 7.5 0 182.25) (layer B.SilkS) 
+  (fp_text reference "C64" (at 7.5 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -18731,14 +18731,14 @@
   (end 213.0417 162.8939)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 213.0417 162.8939)
   (end 212.8497 163.1016)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -18746,14 +18746,14 @@
   (end 206.0183 161.6014)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 206.0183 161.6014)
   (end 207.8536 163.2979)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -18761,7 +18761,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -18769,14 +18769,14 @@
   (end 205.9363 159.3301)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 205.9363 159.3301)
   (end 205.9294 159.3376)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -18887,12 +18887,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 208.7247 121.7917 2.25)
+  (at 208.7247 121.7917 182.25)
 
-  (fp_text reference "LED65" (at -5.25 0 92.25) (layer B.SilkS) 
+  (fp_text reference "LED65" (at -4.75 0 92.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 2.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 2.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -18917,10 +18917,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 153 "LED_67"))
-  (pad 1 smd rect (at 2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 159 "LED_66"))
+  (pad 2 smd rect (at 2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 153 "LED_67"))
+  (pad 1 smd rect (at 2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 159 "LED_66"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -18957,18 +18957,18 @@
     )
   )
 )
-(gr_text "LED_66" (at 206.0543 122.5971 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_66" (at 211.3951 120.9862 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 211.3539 125.0310 182.25)
+  (at 206.3578 125.2273 2.25)
 
-  (fp_text reference "C65" (at 7.5 0 182.25) (layer B.SilkS) 
+  (fp_text reference "C65" (at 7.5 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -19016,14 +19016,14 @@
   (end 211.5459 124.8233)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 211.5459 124.8233)
   (end 211.3539 125.0310)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -19031,14 +19031,14 @@
   (end 204.5225 123.5308)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 204.5225 123.5308)
   (end 206.3578 125.2273)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -19046,7 +19046,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -19054,14 +19054,14 @@
   (end 204.4405 121.2595)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 204.4405 121.2595)
   (end 204.4336 121.2669)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -19172,12 +19172,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 207.2289 83.7211 2.25)
+  (at 207.2289 83.7211 182.25)
 
-  (fp_text reference "LED66" (at -5.25 0 92.25) (layer B.SilkS) 
+  (fp_text reference "LED66" (at -4.75 0 92.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 2.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 2.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -19202,10 +19202,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 155 "LED_87"))
-  (pad 1 smd rect (at 2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 2.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 161 "LED_86"))
+  (pad 2 smd rect (at 2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 155 "LED_87"))
+  (pad 1 smd rect (at 2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 182.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 161 "LED_86"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -19242,18 +19242,18 @@
     )
   )
 )
-(gr_text "LED_86" (at 204.5585 84.5265 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_86" (at 209.8993 82.9156 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 209.8581 86.9603 182.25)
+  (at 204.8620 87.1566 2.25)
 
-  (fp_text reference "C66" (at 7.5 0 182.25) (layer B.SilkS) 
+  (fp_text reference "C66" (at 7.5 0 2.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 182.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 2.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -19301,14 +19301,14 @@
   (end 210.0501 86.7526)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 210.0501 86.7526)
   (end 209.8581 86.9603)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -19316,14 +19316,14 @@
   (end 203.0267 85.4602)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 203.0267 85.4602)
   (end 204.8620 87.1566)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -19331,7 +19331,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -19339,14 +19339,14 @@
   (end 202.9447 83.1888)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 202.9447 83.1888)
   (end 202.9378 83.1963)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -19457,12 +19457,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 229.8623 158.0989 1.25)
+  (at 229.8623 158.0989 181.25)
 
-  (fp_text reference "LED67" (at -5.25 0 91.25) (layer B.SilkS) 
+  (fp_text reference "LED67" (at -4.75 0 91.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 1.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 1.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -19487,10 +19487,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 157 "LED_47"))
-  (pad 1 smd rect (at 2.70 0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 163 "LED_46"))
+  (pad 2 smd rect (at 2.70 -0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 157 "LED_47"))
+  (pad 1 smd rect (at 2.70 0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 163 "LED_46"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -19527,18 +19527,18 @@
     )
   )
 )
-(gr_text "LED_46" (at 227.1782 158.8577 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_46" (at 232.5464 157.3402 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 232.4345 161.3836 181.25)
+  (at 227.4357 161.4927 1.25)
 
-  (fp_text reference "C67" (at 7.5 0 181.25) (layer B.SilkS) 
+  (fp_text reference "C67" (at 7.5 0 1.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 181.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 1.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -19586,14 +19586,14 @@
   (end 232.6301 161.1793)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 232.6301 161.1793)
   (end 232.4345 161.3836)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -19601,14 +19601,14 @@
   (end 225.6304 159.7645)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 225.6304 159.7645)
   (end 227.4357 161.4927)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -19616,7 +19616,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -19624,14 +19624,14 @@
   (end 225.5880 157.4920)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 225.5880 157.4920)
   (end 225.5810 157.4994)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -19742,12 +19742,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 229.4310 119.9993 1.25)
+  (at 229.4310 119.9993 181.25)
 
-  (fp_text reference "LED68" (at -5.25 0 91.25) (layer B.SilkS) 
+  (fp_text reference "LED68" (at -4.75 0 91.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 1.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 1.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -19772,10 +19772,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 159 "LED_66"))
-  (pad 1 smd rect (at 2.70 0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 165 "LED_65"))
+  (pad 2 smd rect (at 2.70 -0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 159 "LED_66"))
+  (pad 1 smd rect (at 2.70 0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 165 "LED_65"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -19812,18 +19812,18 @@
     )
   )
 )
-(gr_text "LED_65" (at 226.7469 120.7580 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_65" (at 232.1151 119.2405 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 232.0033 123.2840 181.25)
+  (at 227.0045 123.3930 1.25)
 
-  (fp_text reference "C68" (at 7.5 0 181.25) (layer B.SilkS) 
+  (fp_text reference "C68" (at 7.5 0 1.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 181.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 1.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -19871,14 +19871,14 @@
   (end 232.1989 123.0796)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 232.1989 123.0796)
   (end 232.0033 123.2840)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -19886,14 +19886,14 @@
   (end 225.1992 121.6648)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 225.1992 121.6648)
   (end 227.0045 123.3930)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -19901,7 +19901,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -19909,14 +19909,14 @@
   (end 225.1568 119.3924)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 225.1568 119.3924)
   (end 225.1497 119.3997)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -20027,12 +20027,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 228.9998 81.8996 1.25)
+  (at 228.9998 81.8996 181.25)
 
-  (fp_text reference "LED69" (at -5.25 0 91.25) (layer B.SilkS) 
+  (fp_text reference "LED69" (at -4.75 0 91.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 1.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 1.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -20057,10 +20057,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 161 "LED_86"))
-  (pad 1 smd rect (at 2.70 0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 1.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 167 "LED_85"))
+  (pad 2 smd rect (at 2.70 -0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 161 "LED_86"))
+  (pad 1 smd rect (at 2.70 0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 181.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 167 "LED_85"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -20097,18 +20097,18 @@
     )
   )
 )
-(gr_text "LED_85" (at 226.3157 82.6584 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_85" (at 231.6839 81.1409 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 231.5720 85.1843 181.25)
+  (at 226.5732 85.2934 1.25)
 
-  (fp_text reference "C69" (at 7.5 0 181.25) (layer B.SilkS) 
+  (fp_text reference "C69" (at 7.5 0 1.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 181.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 1.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -20156,14 +20156,14 @@
   (end 231.7676 84.9800)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 231.7676 84.9800)
   (end 231.5720 85.1843)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -20171,14 +20171,14 @@
   (end 224.7679 83.5651)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 224.7679 83.5651)
   (end 226.5732 85.2934)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -20186,7 +20186,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -20194,14 +20194,14 @@
   (end 224.7255 81.2927)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 224.7255 81.2927)
   (end 224.7185 81.3001)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -20312,12 +20312,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 249.1755 158.6869 0.25)
+  (at 249.1755 158.6869 180.25)
 
-  (fp_text reference "LED70" (at -5.25 0 90.25) (layer B.SilkS) 
+  (fp_text reference "LED70" (at -4.75 0 90.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 0.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 0.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -20342,10 +20342,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 163 "LED_46"))
-  (pad 1 smd rect (at 2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 169 "LED_45"))
+  (pad 2 smd rect (at 2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 163 "LED_46"))
+  (pad 1 smd rect (at 2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 169 "LED_45"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -20382,18 +20382,18 @@
     )
   )
 )
-(gr_text "LED_45" (at 246.4786 159.3987 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_45" (at 251.8725 157.9751 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 251.6901 162.0160 180.25)
+  (at 246.6901 162.0378 0.25)
 
-  (fp_text reference "C70" (at 7.5 0 180.25) (layer B.SilkS) 
+  (fp_text reference "C70" (at 7.5 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -20441,14 +20441,14 @@
   (end 251.8892 161.8151)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 251.8892 161.8151)
   (end 251.6901 162.0160)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -20456,14 +20456,14 @@
   (end 244.9152 160.2783)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 244.9152 160.2783)
   (end 246.6901 162.0378)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -20471,7 +20471,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -20479,14 +20479,14 @@
   (end 244.9125 158.0055)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 244.9125 158.0055)
   (end 244.9054 158.0127)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -20597,12 +20597,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 249.4093 120.5855 0.25)
+  (at 249.4093 120.5855 180.25)
 
-  (fp_text reference "LED71" (at -5.25 0 90.25) (layer B.SilkS) 
+  (fp_text reference "LED71" (at -4.75 0 90.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 0.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 0.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -20627,10 +20627,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 165 "LED_65"))
-  (pad 1 smd rect (at 2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 171 "LED_64"))
+  (pad 2 smd rect (at 2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 165 "LED_65"))
+  (pad 1 smd rect (at 2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 171 "LED_64"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -20667,18 +20667,18 @@
     )
   )
 )
-(gr_text "LED_64" (at 246.7124 121.2973 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_64" (at 252.1062 119.8737 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 251.9238 123.9146 180.25)
+  (at 246.9239 123.9364 0.25)
 
-  (fp_text reference "C71" (at 7.5 0 180.25) (layer B.SilkS) 
+  (fp_text reference "C71" (at 7.5 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -20726,14 +20726,14 @@
   (end 252.1230 123.7137)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 252.1230 123.7137)
   (end 251.9238 123.9146)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -20741,14 +20741,14 @@
   (end 245.1490 122.1769)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 245.1490 122.1769)
   (end 246.9239 123.9364)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -20756,7 +20756,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -20764,14 +20764,14 @@
   (end 245.1463 119.9041)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 245.1463 119.9041)
   (end 245.1391 119.9113)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -20882,12 +20882,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 249.6430 82.4841 0.25)
+  (at 249.6430 82.4841 180.25)
 
-  (fp_text reference "LED72" (at -5.25 0 90.25) (layer B.SilkS) 
+  (fp_text reference "LED72" (at -4.75 0 90.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 0.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 0.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -20912,10 +20912,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 167 "LED_85"))
-  (pad 1 smd rect (at 2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 0.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 173 "LED_84"))
+  (pad 2 smd rect (at 2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 167 "LED_85"))
+  (pad 1 smd rect (at 2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 180.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 173 "LED_84"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -20952,18 +20952,18 @@
     )
   )
 )
-(gr_text "LED_84" (at 246.9461 83.1959 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_84" (at 252.3400 81.7724 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 252.1576 85.8132 180.25)
+  (at 247.1576 85.8350 0.25)
 
-  (fp_text reference "C72" (at 7.5 0 180.25) (layer B.SilkS) 
+  (fp_text reference "C72" (at 7.5 0 0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 180.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 0.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -21011,14 +21011,14 @@
   (end 252.3567 85.6123)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 252.3567 85.6123)
   (end 252.1576 85.8132)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -21026,14 +21026,14 @@
   (end 245.3827 84.0755)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 245.3827 84.0755)
   (end 247.1576 85.8350)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -21041,7 +21041,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -21049,14 +21049,14 @@
   (end 245.3800 81.8027)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 245.3800 81.8027)
   (end 245.3729 81.8100)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -21167,12 +21167,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 268.4800 160.6118 -0.75)
+  (at 268.4800 160.6118 179.25)
 
-  (fp_text reference "LED73" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED73" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -21197,10 +21197,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 169 "LED_45"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 175 "LED_44"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 169 "LED_45"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 175 "LED_44"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -21237,18 +21237,18 @@
     )
   )
 )
-(gr_text "LED_44" (at 265.7710 161.2764 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_44" (at 271.1889 159.9472 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 270.9360 163.9842 179.25)
+  (at 265.9365 163.9188 -0.75)
 
-  (fp_text reference "C73" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C73" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -21296,14 +21296,14 @@
   (end 271.1386 163.7869)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 271.1386 163.7869)
   (end 270.9360 163.9842)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -21311,14 +21311,14 @@
   (end 264.1925 162.1286)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 264.1925 162.1286)
   (end 265.9365 163.9188)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -21326,7 +21326,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -21334,14 +21334,14 @@
   (end 264.2295 159.8561)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 264.2295 159.8561)
   (end 264.2222 159.8632)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -21452,12 +21452,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 269.3786 122.5203 -0.75)
+  (at 269.3786 122.5203 179.25)
 
-  (fp_text reference "LED74" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED74" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -21482,10 +21482,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 171 "LED_64"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 177 "LED_63"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 171 "LED_64"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 177 "LED_63"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -21522,18 +21522,18 @@
     )
   )
 )
-(gr_text "LED_63" (at 266.6697 123.1849 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_63" (at 272.0876 121.8557 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 271.8347 125.8927 179.25)
+  (at 266.8351 125.8273 -0.75)
 
-  (fp_text reference "C74" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C74" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -21581,14 +21581,14 @@
   (end 272.0373 125.6954)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 272.0373 125.6954)
   (end 271.8347 125.8927)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -21596,14 +21596,14 @@
   (end 265.0912 124.0371)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 265.0912 124.0371)
   (end 266.8351 125.8273)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -21611,7 +21611,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -21619,14 +21619,14 @@
   (end 265.1282 121.7646)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 265.1282 121.7646)
   (end 265.1209 121.7717)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -21737,12 +21737,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 292.4904 160.9261 -0.75)
+  (at 292.4904 160.9261 179.25)
 
-  (fp_text reference "LED75" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED75" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -21767,10 +21767,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 175 "LED_44"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 179 "LED_43"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 175 "LED_44"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 179 "LED_43"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -21807,18 +21807,18 @@
     )
   )
 )
-(gr_text "LED_43" (at 289.7815 161.5907 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_43" (at 295.1993 160.2615 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 294.9465 164.2986 179.25)
+  (at 289.9469 164.2331 -0.75)
 
-  (fp_text reference "C75" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C75" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -21866,14 +21866,14 @@
   (end 295.1491 164.1012)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 295.1491 164.1012)
   (end 294.9465 164.2986)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -21881,14 +21881,14 @@
   (end 288.2030 162.4429)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 288.2030 162.4429)
   (end 289.9469 164.2331)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -21896,7 +21896,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -21904,14 +21904,14 @@
   (end 288.2399 160.1704)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 288.2399 160.1704)
   (end 288.2326 160.1775)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -22022,12 +22022,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 287.6271 122.7592 -0.75)
+  (at 287.6271 122.7592 179.25)
 
-  (fp_text reference "LED76" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED76" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -22052,10 +22052,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 177 "LED_63"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 181 "LED_62"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 177 "LED_63"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 181 "LED_62"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -22092,18 +22092,18 @@
     )
   )
 )
-(gr_text "LED_62" (at 284.9181 123.4238 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_62" (at 290.3360 122.0946 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 290.0831 126.1316 179.25)
+  (at 285.0836 126.0662 -0.75)
 
-  (fp_text reference "C76" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C76" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -22151,14 +22151,14 @@
   (end 290.2857 125.9343)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 290.2857 125.9343)
   (end 290.0831 126.1316)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -22166,14 +22166,14 @@
   (end 283.3397 124.2760)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 283.3397 124.2760)
   (end 285.0836 126.0662)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -22181,7 +22181,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -22189,14 +22189,14 @@
   (end 283.3766 122.0035)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 283.3766 122.0035)
   (end 283.3693 122.0106)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -22307,12 +22307,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 288.1258 84.6625 -0.75)
+  (at 288.1258 84.6625 179.25)
 
-  (fp_text reference "LED77" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED77" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -22337,10 +22337,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 173 "LED_84"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 183 "LED_83"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 173 "LED_84"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 183 "LED_83"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -22377,18 +22377,18 @@
     )
   )
 )
-(gr_text "LED_83" (at 285.4169 85.3271 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_83" (at 290.8347 83.9979 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 290.5819 88.0349 179.25)
+  (at 285.5823 87.9694 -0.75)
 
-  (fp_text reference "C77" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C77" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -22436,14 +22436,14 @@
   (end 290.7845 87.8375)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 290.7845 87.8375)
   (end 290.5819 88.0349)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -22451,14 +22451,14 @@
   (end 283.8384 86.1793)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 283.8384 86.1793)
   (end 285.5823 87.9694)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -22466,7 +22466,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -22474,14 +22474,14 @@
   (end 283.8753 83.9068)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 283.8753 83.9068)
   (end 283.8680 83.9139)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -22592,12 +22592,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 306.6754 123.0085 -0.75)
+  (at 306.6754 123.0085 179.25)
 
-  (fp_text reference "LED78" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED78" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -22622,10 +22622,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 181 "LED_62"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 185 "LED_61"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 181 "LED_62"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 185 "LED_61"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -22662,18 +22662,18 @@
     )
   )
 )
-(gr_text "LED_61" (at 303.9665 123.6731 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_61" (at 309.3844 122.3439 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 309.1315 126.3810 179.25)
+  (at 304.1319 126.3155 -0.75)
 
-  (fp_text reference "C78" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C78" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -22721,14 +22721,14 @@
   (end 309.3341 126.1836)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 309.3341 126.1836)
   (end 309.1315 126.3810)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -22736,14 +22736,14 @@
   (end 302.3880 124.5254)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 302.3880 124.5254)
   (end 304.1319 126.3155)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -22751,7 +22751,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -22759,14 +22759,14 @@
   (end 302.4250 122.2528)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 302.4250 122.2528)
   (end 302.4177 122.2600)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -22877,12 +22877,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 307.1742 84.9118 -0.75)
+  (at 307.1742 84.9118 179.25)
 
-  (fp_text reference "LED79" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED79" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -22907,10 +22907,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 183 "LED_83"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 187 "LED_82"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 183 "LED_83"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 187 "LED_82"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -22947,18 +22947,18 @@
     )
   )
 )
-(gr_text "LED_82" (at 304.4652 85.5764 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_82" (at 309.8831 84.2472 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 309.6302 88.2842 179.25)
+  (at 304.6307 88.2188 -0.75)
 
-  (fp_text reference "C79" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C79" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -23006,14 +23006,14 @@
   (end 309.8328 88.0869)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 309.8328 88.0869)
   (end 309.6302 88.2842)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -23021,14 +23021,14 @@
   (end 302.8867 86.4286)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 302.8867 86.4286)
   (end 304.6307 88.2188)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -23036,7 +23036,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -23044,14 +23044,14 @@
   (end 302.9237 84.1561)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 302.9237 84.1561)
   (end 302.9164 84.1632)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -23162,12 +23162,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 325.7238 123.2579 -0.75)
+  (at 325.7238 123.2579 179.25)
 
-  (fp_text reference "LED80" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED80" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -23192,10 +23192,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 185 "LED_61"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 189 "LED_60"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 185 "LED_61"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 189 "LED_60"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -23232,18 +23232,18 @@
     )
   )
 )
-(gr_text "LED_60" (at 323.0149 123.9225 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_60" (at 328.4327 122.5933 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 328.1799 126.6303 179.25)
+  (at 323.1803 126.5649 -0.75)
 
-  (fp_text reference "C80" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C80" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -23291,14 +23291,14 @@
   (end 328.3825 126.4330)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 328.3825 126.4330)
   (end 328.1799 126.6303)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -23306,14 +23306,14 @@
   (end 321.4364 124.7747)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 321.4364 124.7747)
   (end 323.1803 126.5649)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -23321,7 +23321,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -23329,14 +23329,14 @@
   (end 321.4733 122.5022)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 321.4733 122.5022)
   (end 321.4660 122.5093)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -23447,12 +23447,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 326.2225 85.1612 -0.75)
+  (at 326.2225 85.1612 179.25)
 
-  (fp_text reference "LED81" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED81" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -23477,10 +23477,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 187 "LED_82"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 191 "LED_81"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 187 "LED_82"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 191 "LED_81"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -23517,18 +23517,18 @@
     )
   )
 )
-(gr_text "LED_81" (at 323.5136 85.8258 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_81" (at 328.9315 84.4966 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 328.6786 88.5336 179.25)
+  (at 323.6790 88.4682 -0.75)
 
-  (fp_text reference "C81" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C81" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -23576,14 +23576,14 @@
   (end 328.8812 88.3362)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 328.8812 88.3362)
   (end 328.6786 88.5336)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -23591,14 +23591,14 @@
   (end 321.9351 86.6780)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 321.9351 86.6780)
   (end 323.6790 88.4682)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -23606,7 +23606,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -23614,14 +23614,14 @@
   (end 321.9721 84.4055)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 321.9721 84.4055)
   (end 321.9648 84.4126)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -23732,12 +23732,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 345.2709 85.4105 -0.75)
+  (at 345.2709 85.4105 179.25)
 
-  (fp_text reference "LED82" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED82" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -23762,10 +23762,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 191 "LED_81"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 193 "LED_80"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 191 "LED_81"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 193 "LED_80"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -23802,18 +23802,18 @@
     )
   )
 )
-(gr_text "LED_80" (at 342.5620 86.0751 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_80" (at 347.9798 84.7459 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 347.7270 88.7830 179.25)
+  (at 342.7274 88.7175 -0.75)
 
-  (fp_text reference "C82" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C82" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -23861,14 +23861,14 @@
   (end 347.9296 88.5856)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 347.9296 88.5856)
   (end 347.7270 88.7830)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -23876,14 +23876,14 @@
   (end 340.9835 86.9273)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 340.9835 86.9273)
   (end 342.7274 88.7175)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -23891,7 +23891,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -23899,14 +23899,14 @@
   (end 341.0204 84.6548)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 341.0204 84.6548)
   (end 341.0131 84.6619)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -24017,12 +24017,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 326.9667 175.9556 47.25)
+  (at 326.9667 175.9556 227.25)
 
-  (fp_text reference "LED83" (at -5.25 0 137.25) (layer B.SilkS) 
+  (fp_text reference "LED83" (at -4.75 0 137.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 47.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 47.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -24047,10 +24047,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 101 "LED_40"))
-  (pad 1 smd rect (at 2.70 0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 86 "LED_39"))
+  (pad 2 smd rect (at 2.70 -0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 101 "LED_40"))
+  (pad 1 smd rect (at 2.70 0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 86 "LED_39"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -24087,18 +24087,18 @@
     )
   )
 )
-(gr_text "LED_39" (at 325.6480 178.4135 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_39" (at 328.2854 173.4978 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 331.1163 176.3870 227.25)
+  (at 327.7223 180.0586 47.25)
 
-  (fp_text reference "C83" (at 7.5 0 227.25) (layer B.SilkS) 
+  (fp_text reference "C83" (at 7.5 0 47.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 227.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 47.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -24146,14 +24146,14 @@
   (end 331.1052 176.1044)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 331.1052 176.1044)
   (end 331.1163 176.3870)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -24161,14 +24161,14 @@
   (end 325.2251 180.1568)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 325.2251 180.1568)
   (end 327.7223 180.0586)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -24176,7 +24176,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -24184,14 +24184,14 @@
   (end 323.5610 178.6087)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 323.5610 178.6087)
   (end 323.5614 178.6189)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -24302,12 +24302,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 339.8979 161.9668 47.25)
+  (at 339.8979 161.9668 227.25)
 
-  (fp_text reference "LED84" (at -5.25 0 137.25) (layer B.SilkS) 
+  (fp_text reference "LED84" (at -4.75 0 137.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 47.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 47.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -24332,10 +24332,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 179 "LED_43"))
-  (pad 1 smd rect (at 2.70 0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 105 "LED_42"))
+  (pad 2 smd rect (at 2.70 -0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 179 "LED_43"))
+  (pad 1 smd rect (at 2.70 0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 105 "LED_42"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -24372,18 +24372,18 @@
     )
   )
 )
-(gr_text "LED_42" (at 338.5791 164.4246 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_42" (at 341.2166 159.5090 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 344.0475 162.3982 227.25)
+  (at 340.6535 166.0698 47.25)
 
-  (fp_text reference "C84" (at 7.5 0 227.25) (layer B.SilkS) 
+  (fp_text reference "C84" (at 7.5 0 47.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 227.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 47.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -24431,14 +24431,14 @@
   (end 344.0364 162.1156)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 344.0364 162.1156)
   (end 344.0475 162.3982)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -24446,14 +24446,14 @@
   (end 338.1562 166.1679)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 338.1562 166.1679)
   (end 340.6535 166.0698)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -24461,7 +24461,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -24469,14 +24469,14 @@
   (end 336.4921 164.6199)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 336.4921 164.6199)
   (end 336.4925 164.6300)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -24587,12 +24587,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 356.0618 144.4807 47.25)
+  (at 356.0618 144.4807 227.25)
 
-  (fp_text reference "LED85" (at -5.25 0 137.25) (layer B.SilkS) 
+  (fp_text reference "LED85" (at -4.75 0 137.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 47.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 47.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -24617,10 +24617,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 107 "LED_57"))
-  (pad 1 smd rect (at 2.70 0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 93 "LED_56"))
+  (pad 2 smd rect (at 2.70 -0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 107 "LED_57"))
+  (pad 1 smd rect (at 2.70 0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 93 "LED_56"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -24657,18 +24657,18 @@
     )
   )
 )
-(gr_text "LED_56" (at 354.7431 146.9386 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_56" (at 357.3805 142.0229 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 360.2114 144.9121 227.25)
+  (at 356.8174 148.5837 47.25)
 
-  (fp_text reference "C85" (at 7.5 0 227.25) (layer B.SilkS) 
+  (fp_text reference "C85" (at 7.5 0 47.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 227.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 47.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -24716,14 +24716,14 @@
   (end 360.2003 144.6295)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 360.2003 144.6295)
   (end 360.2114 144.9121)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -24731,14 +24731,14 @@
   (end 354.3202 148.6819)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 354.3202 148.6819)
   (end 356.8174 148.5837)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -24746,7 +24746,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -24754,14 +24754,14 @@
   (end 352.6561 147.1338)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 352.6561 147.1338)
   (end 352.6565 147.1440)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -24872,12 +24872,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 368.9930 130.4919 47.25)
+  (at 368.9930 130.4919 227.25)
 
-  (fp_text reference "LED86" (at -5.25 0 137.25) (layer B.SilkS) 
+  (fp_text reference "LED86" (at -4.75 0 137.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 47.25) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 47.25) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -24902,10 +24902,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 189 "LED_60"))
-  (pad 1 smd rect (at 2.70 0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 47.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 111 "LED_59"))
+  (pad 2 smd rect (at 2.70 -0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 189 "LED_60"))
+  (pad 1 smd rect (at 2.70 0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 227.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 111 "LED_59"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -24942,18 +24942,18 @@
     )
   )
 )
-(gr_text "LED_59" (at 367.6742 132.9497 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_59" (at 370.3117 128.0341 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 373.1426 130.9233 227.25)
+  (at 369.7486 134.5949 47.25)
 
-  (fp_text reference "C86" (at 7.5 0 227.25) (layer B.SilkS) 
+  (fp_text reference "C86" (at 7.5 0 47.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 227.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 47.25) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -25001,14 +25001,14 @@
   (end 373.1315 130.6407)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 373.1315 130.6407)
   (end 373.1426 130.9233)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -25016,14 +25016,14 @@
   (end 367.2513 134.6930)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 367.2513 134.6930)
   (end 369.7486 134.5949)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -25031,7 +25031,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -25039,14 +25039,14 @@
   (end 365.5872 133.1450)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 365.5872 133.1450)
   (end 365.5876 133.1551)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -25157,12 +25157,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 373.8434 85.7846 -0.75)
+  (at 373.8434 85.7846 179.25)
 
-  (fp_text reference "LED87" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED87" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -25187,10 +25187,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 193 "LED_80"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 199 "LED_79"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 193 "LED_80"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 199 "LED_79"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -25227,18 +25227,18 @@
     )
   )
 )
-(gr_text "LED_79" (at 371.1345 86.4492 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_79" (at 376.5524 85.1200 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 376.2995 89.1570 179.25)
+  (at 371.2999 89.0916 -0.75)
 
-  (fp_text reference "C87" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C87" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -25286,14 +25286,14 @@
   (end 376.5021 88.9596)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 376.5021 88.9596)
   (end 376.2995 89.1570)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -25301,14 +25301,14 @@
   (end 369.5560 87.3014)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 369.5560 87.3014)
   (end 371.2999 89.0916)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -25316,7 +25316,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -25324,14 +25324,14 @@
   (end 369.5930 85.0289)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 369.5930 85.0289)
   (end 369.5857 85.0360)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (module MX (layer F.Cu)
@@ -25442,12 +25442,12 @@
 )
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at 392.8918 86.0339 -0.75)
+  (at 392.8918 86.0339 179.25)
 
-  (fp_text reference "LED88" (at -5.25 0 89.25) (layer B.SilkS) 
+  (fp_text reference "LED88" (at -4.75 0 89.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 -0.75) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 2.25 -0.75) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -25472,10 +25472,10 @@
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 199 "LED_79"))
-  (pad 1 smd rect (at 2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
-  (pad 3 smd rect (at -2.70 -0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
-  (pad 4 smd rect (at -2.70 0.7 -0.75) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 116 "LED_78"))
+  (pad 2 smd rect (at 2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 199 "LED_79"))
+  (pad 1 smd rect (at 2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 6 "RAW"))
+  (pad 3 smd rect (at -2.70 -0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 7 "GND"))
+  (pad 4 smd rect (at -2.70 0.7 179.25) (size 1.4 1) (layers B.Cu B.Paste B.Mask) (net 116 "LED_78"))
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -25512,18 +25512,18 @@
     )
   )
 )
-(gr_text "LED_78" (at 390.1829 86.6985 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "LED_78" (at 395.6007 85.3693 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at 395.3479 89.4064 179.25)
+  (at 390.3483 89.3409 -0.75)
 
-  (fp_text reference "C88" (at 7.5 0 179.25) (layer B.SilkS) 
+  (fp_text reference "C88" (at 7.5 0 -0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 179.25) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 -0.75) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -25571,14 +25571,14 @@
   (end 395.5505 89.2090)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 (segment
   (start 395.5505 89.2090)
   (end 395.3479 89.4064)
   (width 0.5)
   (layer "B.Cu")
-  (net 6)
+  (net 7)
 )
 
 (segment
@@ -25586,14 +25586,14 @@
   (end 388.6044 87.5507)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 388.6044 87.5507)
   (end 390.3483 89.3409)
   (width 0.5)
   (layer "F.Cu")
-  (net 7)
+  (net 6)
 )
 
 (via
@@ -25601,7 +25601,7 @@
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net 7)
+  (net 6)
 )
 
 (segment
@@ -25609,14 +25609,14 @@
   (end 388.6413 85.2782)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 (segment
   (start 388.6413 85.2782)
   (end 388.6340 85.2853)
   (width 0.5)
   (layer "B.Cu")
-  (net 7)
+  (net 6)
 )
 
     (module R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (layer B.Cu) (tedit 5AE5139B)

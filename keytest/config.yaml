@@ -25,13 +25,22 @@ points:
             one:
               row_net: row0
               key:
-                led_next: LED_0
+                led_next: LED_2
                 led_this: LED_1
               width: 1.0U
+            two:
+              row_net: row1
+              key:
+                led_next: LED_3
+                led_this: LED_2
+              width: 1.0U      
       rows:
         one:
           tags: 
             - row_odd
+        two:
+          tags: 
+            - row_even
   rotate: 0
 outlines:
   _raw:
@@ -49,10 +58,10 @@ outlines:
       operation: stack
       points:
         # top left
-        - ref: single_A_one
+        - ref: single_A_two
           shift: [-1U, 1U]
         # top right
-        - ref: single_A_one
+        - ref: single_A_two
           shift: [1U, 1U]
         # bottom right
         - ref: single_A_one
@@ -71,9 +80,9 @@ pcbs:
       main:
         outline: _board
     footprints:
-      keymod:
+      keymod-odd:
         what: custom/key-module
-        where: true
+        where: meta.tags ~ /row_odd/
         params:
           U: U
           name: "{{name}}"
@@ -81,4 +90,15 @@ pcbs:
           rownet: "{{row_net}}"
           led_this: "{{key.led_this}}"
           led_next: "{{key.led_next}}"
+      keymod-even:
+        what: custom/key-module
+        where: meta.tags ~ /row_even/
+        params:
+          U: U
+          name: "{{name}}"
+          colnet: "{{column_net}}"
+          rownet: "{{row_net}}"
+          led_this: "{{key.led_this}}"
+          led_next: "{{key.led_next}}"
+          dir: "RTL"
     references: true

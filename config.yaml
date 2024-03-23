@@ -813,7 +813,7 @@ pcbs:
       main:
         outline: board
     footprints:
-      keymod:
+      keymod-odd:
         what: custom/key-module
         where: meta.tags ~ /row_odd/
         params:
@@ -824,7 +824,7 @@ pcbs:
           rownet: "{{row_net}}"
           led_this: "{{key.led_this}}"
           led_next: "{{key.led_next}}"
-      keymod-e:
+      keymod-even:
         what: custom/key-module
         where: meta.tags ~ /row_even/
         params:

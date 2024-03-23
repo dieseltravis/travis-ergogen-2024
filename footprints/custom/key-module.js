@@ -35,7 +35,8 @@ module.exports = {
       return point_str;
     };
 
-    // TODO: when dir === 'RTL' rotate LED and CAP by 180
+    // when dir === 'RTL' rotate LED and CAP by 180, adjust text a bit, remap routes
+    const isRtl = p.dir === 'RTL';
 
     const key = `
 (module MX (layer F.Cu)
@@ -149,12 +150,12 @@ module.exports = {
     const led = `
 (module "ceoloide:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
-  (at ${adjust_point(0, 4.96)} ${p.r})
+  (at ${adjust_point(0, 4.96)} ${isRtl ? 180 + p.r : p.r})
 
-  (fp_text reference "LED${index}" (at -5.25 0 ${p.r + 90}) (layer B.SilkS) 
+  (fp_text reference "LED${index}" (at ${isRtl ? -4.75 : -5.25} 0 ${p.r + 90}) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 -2.25 ${p.r}) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 ${isRtl ? 2.25 : -2.25} ${p.r}) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -179,10 +180,10 @@ module.exports = {
   (fp_line (start -3.8 0) (end -3.8 -1.6) (layer B.SilkS) (width 0.12))
   (fp_line (start -3.8 -1.36) (end -3.56 -1.6) (layer B.SilkS) (width 0.12))
 
-  (pad 2 smd rect (at 2.70 -0.7 ${p.r}) (size 1.4 1) (layers B.Cu B.Paste B.Mask) ${p.led_next.str})
-  (pad 1 smd rect (at 2.70 0.7 ${p.r}) (size 1.4 1) (layers B.Cu B.Paste B.Mask) ${p.power.str})
-  (pad 3 smd rect (at -2.70 -0.7 ${p.r}) (size 1.4 1) (layers B.Cu B.Paste B.Mask) ${p.gnd.str})
-  (pad 4 smd rect (at -2.70 0.7 ${p.r}) (size 1.4 1) (layers B.Cu B.Paste B.Mask) ${p.led_this.str})
+  (pad 2 smd rect (at 2.70 -0.7 ${isRtl ? 180 + p.r : p.r}) (size 1.4 1) (layers B.Cu B.Paste B.Mask) ${p.led_next.str})
+  (pad 1 smd rect (at 2.70 0.7 ${isRtl ? 180 + p.r : p.r}) (size 1.4 1) (layers B.Cu B.Paste B.Mask) ${p.power.str})
+  (pad 3 smd rect (at -2.70 -0.7 ${isRtl ? 180 + p.r : p.r}) (size 1.4 1) (layers B.Cu B.Paste B.Mask) ${p.gnd.str})
+  (pad 4 smd rect (at -2.70 0.7 ${isRtl ? 180 + p.r : p.r}) (size 1.4 1) (layers B.Cu B.Paste B.Mask) ${p.led_this.str})
     
   (fp_line (start -0.8 -1.4) (end -0.8 1.4) (layer Dwgs.User) (width 0.12))
   (fp_line (start 0.8 -1.4) (end 0.8 1.4) (layer Dwgs.User) (width 0.12))
@@ -220,19 +221,19 @@ module.exports = {
   )
 )`;
     const led_label =`
-(gr_text "${p.led_this.name}" (at ${adjust_point(-2.70, -(-4.96 - 0.7))} 0) (layer F.SilkS)
-  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+(gr_text "${p.led_this.name}" (at ${adjust_point((isRtl ? 2.7 : -2.7), -(-4.96 + (isRtl ? 0.7 : -0.7)))} 0) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify ${isRtl ? 'left' : 'right'}))
 )`;
     const cap = `
 (module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
-  (at ${adjust_point(2.5, 8.3)} ${p.r + 180})
+  (at ${adjust_point((isRtl ? -2.5 : 2.5), 8.3)} ${isRtl ? p.r : p.r + 180})
 
-  (fp_text reference "C${index}" (at 7.5 0 ${p.r + 180}) (layer B.SilkS) 
+  (fp_text reference "C${index}" (at 7.5 0 ${isRtl ? p.r : p.r + 180}) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
-  (fp_text value "104" (at -2.5 0 ${p.r + 180}) (layer B.Fab)
+  (fp_text value "104" (at -2.5 0 ${isRtl ? p.r : p.r + 180}) (layer B.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
@@ -282,14 +283,14 @@ module.exports = {
   (end ${adjust_point(2.7, 8.1)})
   (width 0.5)
   (layer "B.Cu")
-  (net ${p.power.index})
+  (net ${isRtl ? p.gnd.index : p.power.index})
 )
 (segment
   (start ${adjust_point(2.7, 8.1)})
   (end ${adjust_point(2.5, 8.3)})
   (width 0.5)
   (layer "B.Cu")
-  (net ${p.power.index})
+  (net ${isRtl ? p.gnd.index : p.power.index})
 )
 
 (segment
@@ -297,14 +298,14 @@ module.exports = {
   (end ${adjust_point(-4.2672, 6.5328)})
   (width 0.5)
   (layer "F.Cu")
-  (net ${p.gnd.index})
+  (net ${isRtl ? p.power.index : p.gnd.index})
 )
 (segment
   (start ${adjust_point(-4.2672, 6.5328)})
   (end ${adjust_point(-2.5, 8.3)})
   (width 0.5)
   (layer "F.Cu")
-  (net ${p.gnd.index})
+  (net ${isRtl ? p.power.index : p.gnd.index})
 )
 
 (via
@@ -312,7 +313,7 @@ module.exports = {
   (size 0.8)
   (drill 0.4)
   (layers "F.Cu" "B.Cu")
-  (net ${p.gnd.index})
+  (net ${isRtl ? p.power.index : p.gnd.index})
 )
 
 (segment
@@ -320,14 +321,14 @@ module.exports = {
   (end ${adjust_point(-4.26, 4.26)})
   (width 0.5)
   (layer "B.Cu")
-  (net ${p.gnd.index})
+  (net ${isRtl ? p.power.index : p.gnd.index})
 )
 (segment
   (start ${adjust_point(-4.26, 4.26)})
   (end ${adjust_point(-4.2672, 4.2672)})
   (width 0.5)
   (layer "B.Cu")
-  (net ${p.gnd.index})
+  (net ${isRtl ? p.power.index : p.gnd.index})
 )`;
     return key + diode + diode_label + led + led_label + cap + cap_label + routes;
   }
