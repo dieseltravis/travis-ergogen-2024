@@ -26240,7 +26240,7 @@
     (module Stabilizer_MX_2.00u (layer F.Cu) (tedit 0)
     (descr "MX PCB Stabilizer 2.00u 2.25u 2.50u 2.75u")
     (tags "MX Keyboard Stabilizer 2.00u 2.25u 2.50u 2.75u Cutout")
-    (at 132.5415574 174.6982491 -2.75)
+    (at 132.511811 175.3175351 177.25)
 
     (attr virtual)
     (fp_text reference "STAB2u1" (at 0 -2) (layer F.SilkS) hide
@@ -26276,7 +26276,7 @@
     (module Stabilizer_MX_3.00u (layer F.Cu) (tedit 0)
     (descr "MX PCB Stabilizer 3.00u")
     (tags "MX Keyboard Stabilizer 3.00u Cutout")
-    (at 132.5415574 174.6982491 -2.75)
+    (at 132.57130379999998 174.0789631 -2.75)
 
     (attr virtual)
     (fp_text reference "STAB3u1" (at 0 -2) (layer F.SilkS) hide
@@ -26312,7 +26312,7 @@
     (module Stabilizer_MX_2.00u (layer F.Cu) (tedit 0)
     (descr "MX PCB Stabilizer 2.00u 2.25u 2.50u 2.75u")
     (tags "MX Keyboard Stabilizer 2.00u 2.25u 2.50u 2.75u Cutout")
-    (at 191.1486452 174.9627056 2.25)
+    (at 191.1729863 175.58222759999998 182.25)
 
     (attr virtual)
     (fp_text reference "STAB2u2" (at 0 -2) (layer F.SilkS) hide
@@ -26348,7 +26348,7 @@
     (module Stabilizer_MX_3.00u (layer F.Cu) (tedit 0)
     (descr "MX PCB Stabilizer 3.00u")
     (tags "MX Keyboard Stabilizer 3.00u Cutout")
-    (at 191.1486452 174.9627056 2.25)
+    (at 191.12430410000002 174.3431836 2.25)
 
     (attr virtual)
     (fp_text reference "STAB3u2" (at 0 -2) (layer F.SilkS) hide

@@ -20,6 +20,8 @@ units:
   # plate switch width
   pw: 14
   boardThick: 1.6
+  # stab Y adjust
+  staby: 0.62
 points:
   zones:
     matrixl:
@@ -1095,25 +1097,25 @@ pcbs:
         what: custom/ScottoKeebs-Stabilizer_MX_2u
         where:
           ref: matrixl_inner_mod
-          shift: [0, 0]
-          #rotate: 180
+          shift: [0, -staby]
+          rotate: 180
       spacel3u:
         what: custom/ScottoKeebs-Stabilizer_MX_3u
         where:
           ref: matrixl_inner_mod
-          shift: [0, 0]
+          shift: [0, staby]
       spacer2u:
         #what: MX_Stabilizer_Cutout-2u
         what: custom/ScottoKeebs-Stabilizer_MX_2u
         where:
           ref: matrixr_inner_mod
-          shift: [0, 0]
-          #rotate: 180
+          shift: [0, -staby]
+          rotate: 180
       spacer3u:
         what: custom/ScottoKeebs-Stabilizer_MX_3u
         where:
           ref: matrixr_inner_mod
-          shift: [0, 0]
+          shift: [0, staby]
       # holes:
       holeTopLeft:
         what: custom/mountinghole #infused-kim/mounting_hole
