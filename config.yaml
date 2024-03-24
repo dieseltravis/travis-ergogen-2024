@@ -32,7 +32,7 @@ points:
     matrixl:
       anchor:
         # move the PCB into view for KiCad
-        shift: [36, -175]
+        shift: [40, -200]
         #rotate: 0
       key:
         padding: U
@@ -522,14 +522,14 @@ outlines:
         - ref: matrixl_index_func
           shift: [0, 20]
         - ref: matrixl_inner_func
-          shift: [0.5op, 20]
+          shift: [0.25op, 20]
         - ref: matrixl_inner_func
-          shift: [0.75op, 15]
+          shift: [0.5op, 15]
         # top center
         - ref: matrixr_inner_func
-          shift: [-0.75op, 15]
+          shift: [-0.5op, 15]
         - ref: matrixr_inner_func
-          shift: [-0.5op, 20]
+          shift: [-0.25op, 20]
         - ref: matrixr_index_func
           shift: [0, 20]
         - ref: matrixr_middle_func
@@ -609,14 +609,14 @@ outlines:
         - ref: matrixl_index_func
           shift: [0, 20 + wall3d]
         - ref: matrixl_inner_func
-          shift: [0.5stlp, 20 + wall3d]
+          shift: [0.25stlp, 20 + wall3d]
         - ref: matrixl_inner_func
-          shift: [0.75stlp, 15 + wall3d]
+          shift: [0.5stlp, 15 + wall3d]
         # top center
         - ref: matrixr_inner_func
-          shift: [-0.75stlp, 15 + wall3d]
+          shift: [-0.5stlp, 15 + wall3d]
         - ref: matrixr_inner_func
-          shift: [-0.5stlp, 20 + wall3d]
+          shift: [-0.25stlp, 20 + wall3d]
         - ref: matrixr_index_func
           shift: [0, 20 + wall3d]
         - ref: matrixr_middle_func
@@ -982,7 +982,8 @@ pcbs:
           #P2: RST
         where:
           ref: matrixr_inner_func
-          shift: [-1U / 2, 3U / 4 + 2]
+          #shift: [-1U / 2, 3U / 4 + 2]
+          shift: [-6.5 / 2, 3U / 4 + 2]
       scrollwheel:
         what: scrollwheel
         params:

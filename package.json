@@ -1,6 +1,6 @@
 {
   "name": "travis-ergogen-2024",
-  "version": "2024.03.21",
+  "version": "2024.03.24",
   "description": "Travis's first Ergogen keyboard (2024)",
   "scripts": {
     "test": "npx yamllint config.yaml",
@@ -8,6 +8,8 @@
     "gen": "npx ergogen . -o output",
     "3d": "for i in output/cases/*.jscad; do npx @jscad/cli@1 \"$i\" -of stla; done",
     "all": "yarn gen && yarn svg && yarn 3d",
+    "key": "cd key && npx ergogen . && cd ..",
+    "keytest": "cd keytest && npx ergogen . && cd ..",
     "ps": "npx ergogen . -o output && gci output/outlines -Filter *.dxf | % { npx dxf-to-svg $_.FullName } && gci output/cases -Filter *.jscad | % { npx @jscad/cli@1 $_.FullName -of stla }"
   },
   "engines": {

@@ -4,6 +4,10 @@ Built with Ergogen v4.
 
 ![rough keyboard key and led mapping](./datasheets/plate-legend.webp)
 
+![PCB front](./output/pcbs/travis_erg2024-front.png)
+
+![PCB back](./output/pcbs/travis_erg2024-back.png)
+
 ## Project Details ##
 * `/config.yaml`
 * `/package.json` yarn commands and metadata
