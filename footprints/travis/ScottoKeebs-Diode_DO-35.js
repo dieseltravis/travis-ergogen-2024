@@ -23,7 +23,7 @@ module.exports = {
         p.valpos.push(p.r);
       }
       return `
-    (module "Diode_DO-35" (layer "${p.side}.Cu")
+    (module "travis:Diode_DO-35" (layer "${p.side}.Cu")
     (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
     (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
     ${p.at /* parametric position */}

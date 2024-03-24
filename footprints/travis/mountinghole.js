@@ -10,7 +10,7 @@ module.exports = {
         class: 'HOLE'
     },
     body: p => `
-    (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "${p.side}.Cu")
+    (module "travis:MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "${p.side}.Cu")
       (tedit 56DDB9C7)
       ${p.at /* parametric position */} 
     

@@ -5,7 +5,7 @@ module.exports = {
         side: 'F'
     },
     body: p => `
-    (module travis (layer "${p.side}.Cu") (tedit 0)
+    (module "travis:travis" (layer "${p.side}.Cu") (tedit 0)
     ${p.at /* parametric position */}
     (attr virtual)
     (fp_text reference "${p.ref}" (at 0 -0.5 0)(layer "${p.side}.SilkS") hide

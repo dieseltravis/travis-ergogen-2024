@@ -81,7 +81,7 @@ pcbs:
         outline: _board
     footprints:
       keymod-odd:
-        what: custom/key-module
+        what: travis/key-module
         where: meta.tags ~ /row_odd/
         params:
           U: U
@@ -91,7 +91,7 @@ pcbs:
           led_this: "{{key.led_this}}"
           led_next: "{{key.led_next}}"
       keymod-even:
-        what: custom/key-module
+        what: travis/key-module
         where: meta.tags ~ /row_even/
         params:
           U: U

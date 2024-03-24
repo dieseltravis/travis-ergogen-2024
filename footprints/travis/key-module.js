@@ -39,7 +39,7 @@ module.exports = {
     const isRtl = p.dir === 'RTL';
 
     const key = `
-(module MX (layer F.Cu)
+(module "travis:MX" (layer F.Cu)
     ${p.at /* parametric position */}
     (fp_text reference "S${index}" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -74,8 +74,15 @@ module.exports = {
       (rotate (xyz 0 0 0) )
     )
 )`;
+    const key_label =`
+(gr_text "${p.name.name}\\n${p.colnet.name} ${p.rownet.name}" (at ${adjust_point(-p.U/2 + 0.5, -p.U/2 + 0.5)} ${p.r}) (layer F.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify top left))
+)
+(gr_text "${p.name.name}\\n${p.colnet.name} ${p.rownet.name}" (at ${adjust_point(-p.U/2 + 0.5, -p.U/2 + 0.5)}  ${p.r}) (layer B.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify top right mirror))
+)`;
     const diode = `
-(module "Diode_DO-35" (layer "B.Cu")
+(module "travis:Diode_DO-35" (layer "B.Cu")
   (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at ${adjust_point((p.U / 2 - 1), -(p.U / 2 - 1.5))} ${p.r + 270})
@@ -148,7 +155,7 @@ module.exports = {
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )`;
     const led = `
-(module "ceoloide:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at ${adjust_point(0, 4.96)} ${isRtl ? 180 + p.r : p.r})
 
@@ -225,7 +232,7 @@ module.exports = {
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify ${isRtl ? 'left' : 'right'}))
 )`;
     const cap = `
-(module C_Disc_D4.7mm_W2.5mm_P5.00mm (layer B.Cu)
+(module "travis:C_Disc_D4.7mm_W2.5mm_P5.00mm" (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at ${adjust_point((isRtl ? -2.5 : 2.5), 8.3)} ${isRtl ? p.r : p.r + 180})
@@ -330,6 +337,6 @@ module.exports = {
   (layer "B.Cu")
   (net ${isRtl ? p.power.index : p.gnd.index})
 )`;
-    return key + diode + diode_label + led + led_label + cap + cap_label + routes;
+    return key + key_label + diode + diode_label + led + led_label + cap + cap_label + routes;
   }
 };

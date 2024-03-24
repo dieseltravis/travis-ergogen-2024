@@ -10,7 +10,7 @@ module.exports = {
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
-(module C_Radial_D6.3mm_H11.0mm_P2.50mm (layer ${p.side}.Cu) (tedit 5BC5C9B9)
+(module "travis:C_Radial_D6.3mm_H11.0mm_P2.50mm" (layer ${p.side}.Cu) (tedit 5BC5C9B9)
   (descr "C, Radial series, Radial, pin pitch=2.50mm, diameter=6.3mm, height=11mm, Non-Polar Electrolytic Capacitor")
   (tags "C Radial series Radial pin pitch 2.50mm diameter 6.3mm height 11mm Non-Polar Electrolytic Capacitor")
   ${p.at /* parametric position */}

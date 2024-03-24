@@ -23,7 +23,7 @@ module.exports = {
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
-    (module DIP-16_W7.62mm_Socket (layer ${p.side}.Cu) (tedit 5A02E8C5)
+    (module "travis:DIP-16_W7.62mm_Socket" (layer ${p.side}.Cu) (tedit 5A02E8C5)
   (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
   (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
   ${p.at /* parametric position */}

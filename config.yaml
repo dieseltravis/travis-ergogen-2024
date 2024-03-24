@@ -828,7 +828,7 @@ pcbs:
         outline: board
     footprints:
       keymod-odd:
-        what: custom/key-module
+        what: travis/key-module
         where: meta.tags ~ /row_odd/
         params:
           U: U
@@ -839,7 +839,7 @@ pcbs:
           led_this: "{{key.led_this}}"
           led_next: "{{key.led_next}}"
       keymod-even:
-        what: custom/key-module
+        what: travis/key-module
         where: meta.tags ~ /row_even/
         params:
           U: U
@@ -850,7 +850,7 @@ pcbs:
           led_this: "{{key.led_this}}"
           led_next: "{{key.led_next}}"
       rgbr: # 470 ohm resistor
-        what: custom/RAxialL6D25P10H
+        what: travis/RAxialL6D25P10H
         params:
           # designator: "R"
           # value: 470
@@ -862,14 +862,14 @@ pcbs:
           shift: [U / 2 + 2, -14]
           rotate: 90
       cap3: # 6.3V 1000uF
-        what: custom/CRadialD63H11P25
+        what: travis/CRadialD63H11P25
         params:
           P1: RAW
           P2: GND
           side: B
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
-          shift: [+(2.5 / 2), 4]
+          shift: [+(2.5 / 2), 8]
           rotate: 180
       promicro:
         what: promicro
@@ -906,7 +906,7 @@ pcbs:
           shift: [0, -2.75]
           rotate: -90
       cap1: # 104
-        what: custom/CDiscD38W26P25
+        what: travis/CDiscD38W26P25
         params:
           P1: VCC
           P2: GND
@@ -916,7 +916,7 @@ pcbs:
           shift: [(2.5 / 2), (21.34 / 2) + 3.25]
           rotate: 180
       dip1: # 74HC138N
-        what: custom/DIP16W762
+        what: travis/DIP16W762
         params:
           p01: mux0 #A
           p02: mux1 #B
@@ -940,7 +940,7 @@ pcbs:
           shift: [-(7.62 / 2), (21.34 / 2)]
           rotate: 0
       cap2: # 104
-        what: custom/CDiscD38W26P25
+        what: travis/CDiscD38W26P25
         params:
           P1: VCC
           P2: GND
@@ -950,7 +950,7 @@ pcbs:
           shift: [(2.5 / 2), (21.34 / 2) + 3.25]
           rotate: 180
       dip2: # 74HC138N
-        what: custom/DIP16W762
+        what: travis/DIP16W762
         params:
           p01: mux0 #A
           p02: mux1 #B
@@ -974,7 +974,7 @@ pcbs:
           shift: [-(7.62 / 2), (21.34 / 2)]
           rotate: 0
       reset:
-        what: custom/SWPUSH6H43  #button
+        what: travis/SWPUSH6H43  #button
         params:
           #from: GND
           #P1: GND
@@ -997,7 +997,7 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
           shift: [0, 0]
       sdiode:
-        what: custom/ScottoKeebs-Diode_DO-35 #diode
+        what: travis/ScottoKeebs-Diode_DO-35 #diode
         where: 
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
           #shift: [-6, 9]
@@ -1022,7 +1022,7 @@ pcbs:
           shift: [0, 0]
           rotate: -90
       rdiode:
-        what: custom/ScottoKeebs-Diode_DO-35 #diode
+        what: travis/ScottoKeebs-Diode_DO-35 #diode
         where: 
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
           #shift: [0, -10]
@@ -1036,76 +1036,76 @@ pcbs:
           to: row5
       # stabs
       spacel2u:
-        what: custom/ScottoKeebs-Stabilizer_MX_2u
+        what: travis/ScottoKeebs-Stabilizer_MX_2u
         where:
           ref: matrixl_inner_mod
           shift: [0, -staby]
           rotate: 180
       #spacel3u:
-      #  what: custom/ScottoKeebs-Stabilizer_MX_3u
+      #  what: travis/ScottoKeebs-Stabilizer_MX_3u
       #  where:
       #    ref: matrixl_inner_mod
       #    shift: [0, staby]
       spacer2u:
-        what: custom/ScottoKeebs-Stabilizer_MX_2u
+        what: travis/ScottoKeebs-Stabilizer_MX_2u
         where:
           ref: matrixr_inner_mod
           shift: [0, -staby]
           rotate: 180
       #spacer3u:
-      #  what: custom/ScottoKeebs-Stabilizer_MX_3u
+      #  what: travis/ScottoKeebs-Stabilizer_MX_3u
       #  where:
       #    ref: matrixr_inner_mod
       #    shift: [0, staby]
       # holes:
       holeTopLeft:
-        what: custom/mountinghole #infused-kim/mounting_hole
+        what: travis/mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixl_outer_func
           shift: [-0.5U + 2, 0.5U + 4]
       holeTopMidL:
-        what: custom/mountinghole #infused-kim/mounting_hole
+        what: travis/mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixl_inner_num
           shift: [2U/3, 0]
       holeTopMidR:
-        what: custom/mountinghole #infused-kim/mounting_hole
+        what: travis/mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixr_inner_num
           shift: [-2U/3, 0]
       holeBottomMidL:
-        what: custom/mountinghole #infused-kim/mounting_hole
+        what: travis/mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixl_inner_bottom
           shift: [2U/3, 0]
       holeBottomMidR:
-        what: custom/mountinghole #infused-kim/mounting_hole
+        what: travis/mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixr_inner_bottom
           shift: [-2U/3, 0]
       holeTopRight:
-        what: custom/mountinghole #infused-kim/mounting_hole
+        what: travis/mountinghole #infused-kim/mounting_hole
         where:
           ref: special_right_top
           shift: [0.5U - 2, 0.5U + 4]
       holeBottomRight1:
-        what: custom/mountinghole #infused-kim/mounting_hole
+        what: travis/mountinghole #infused-kim/mounting_hole
         where:
           ref.aggregate.parts: [pages_right_bottom, special_right_bottom]
           shift: [0.3U, -0.3U]
       holeBottomRight2:
-        what: custom/mountinghole #infused-kim/mounting_hole
+        what: travis/mountinghole #infused-kim/mounting_hole
         where:
           ref.aggregate.parts: [matrixr_outer_mod, arrows_left_bottom]
           shift: [0, -0.5U]
       holeBottomLeft:
-        what: custom/mountinghole #infused-kim/mounting_hole
+        what: travis/mountinghole #infused-kim/mounting_hole
         where:
           ref: matrixl_outer_mod
           shift: [-0.5U - 3, 0]
       # logos
       ki:
-        what: custom/KiCad-Logo5Copper
+        what: travis/KiCad-Logo5Copper
         where:
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
           shift: [0, -5]
@@ -1119,19 +1119,19 @@ pcbs:
         adjust:
           shift: [0, -8]
       ergologo:
-        what: custom/ergogen
+        what: travis/ergogen
         where: 
           ref.aggregate.parts: [matrixl_inner_num, matrixr_inner_num]
         adjust:
           shift: [0, -3]
       travis:
-        what: custom/travis
+        what: travis/travis
         where: 
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
         adjust:
           shift: [0, -3]
       version:
-        what: custom/text
+        what: travis/text
         where: 
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
         params:

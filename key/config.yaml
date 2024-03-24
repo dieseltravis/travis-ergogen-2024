@@ -74,7 +74,7 @@ pcbs:
         outline: _board
     footprints:
       mx_hotswap:
-        what: custom/mx
+        what: travis/mx
         where: true
         params:
           keycaps: true
@@ -84,7 +84,7 @@ pcbs:
           to: "{{name}}"
           value: "Kailh MX Switch Sockets"
       diode:
-        what: custom/ScottoKeebs-Diode_DO-35 #diode
+        what: travis/ScottoKeebs-Diode_DO-35 #diode
         where: true
         params:
           side: B
@@ -97,7 +97,7 @@ pcbs:
           shift: [U / 2 - 1, U / 2 - 1.5]
           rotate: 90 + 180
       diodelabel:
-        what: custom/text
+        what: travis/text
         where: true
         params:
           text: "D1"
@@ -107,7 +107,7 @@ pcbs:
           shift: [U / 2 - 1 - 1, U / 2 - 1.5 - (7.62 / 2)]
           rotate: 0        
       rgb:
-        what: custom/led_sk6812mini-e
+        what: travis/led_sk6812mini-e
         where: meta.tags ~ /row_odd/
         params:
           P1: "RAW"
@@ -122,7 +122,7 @@ pcbs:
           #TODO: flip based on LTR or RTL
           rotate: 180
       rgblabel:
-        what: custom/text
+        what: travis/text
         where: true
         params:
           text: "{{key.led_this}}"
@@ -133,7 +133,7 @@ pcbs:
           shift:  [2.70, -4.96 + 0.7]
           rotate: 0        
       cap: # 104
-        what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
+        what: travis/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
         where: meta.tags ~ /row_odd/
         params:
           P1: RAW
@@ -146,7 +146,7 @@ pcbs:
           shift: [-2.5, -8.3]
           #rotate: 180
       caplabel:
-        what: custom/text
+        what: travis/text
         where: true
         params:
           text: "C1"

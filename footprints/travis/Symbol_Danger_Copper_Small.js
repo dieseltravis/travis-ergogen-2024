@@ -6,7 +6,7 @@ module.exports = {
         layer: 'Cu'
     },
     body: p => `
-    (module Symbol_Danger_CopperTop_Small (layer ${p.side}.Cu)
+    (module "travis:Symbol_Danger_CopperTop_Small" (layer ${p.side}.Cu)
     (at 0 0)
     (descr "Symbol, Danger, Copper Top, Small,")
     (tags "Symbol, Danger, Copper Top, Small,")

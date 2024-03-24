@@ -6,7 +6,7 @@ module.exports = {
         layer: 'SilkS'
     },
     body: p => `
-    (module ergogen (layer "${p.side}.Cu") (tedit 0)
+    (module "travis:ergogen" (layer "${p.side}.Cu") (tedit 0)
     ${p.at /* parametric position */}
     (attr virtual)
     (fp_text reference "${p.ref}" (at 4.572 0 0) (layer "${p.side}.${p.layer}") hide

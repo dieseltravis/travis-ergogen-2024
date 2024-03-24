@@ -30,7 +30,7 @@ module.exports = {
     },
     body: p => {
       const standard = `
-        (module MX (layer F.Cu)
+        (module "travis:MX" (layer F.Cu)
         ${p.at /* parametric position */}
   
         ${'' /* footprint reference */}
