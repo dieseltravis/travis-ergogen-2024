@@ -20,6 +20,11 @@ units:
   # plate switch width
   pw: 14
   boardThick: 1.6
+  # spacebar settings
+  #spacew: 3U
+  spacew: 2.75U
+  #spaceshiftx: 0.6
+  spaceshiftx: -1.5
   # stab Y adjust
   staby: 0.62
 points:
@@ -28,11 +33,11 @@ points:
       anchor:
         # move the PCB into view for KiCad
         shift: [36, -175]
-        rotate: 0
+        #rotate: 0
       key:
         padding: U
         spread: U
-        splay: -1
+        splay: 0
         tags: 
           - key
       columns:
@@ -79,8 +84,9 @@ points:
             func.skip: true
         ring:
           key:
+            splay: -1
             stagger: 2
-            shift: [0.2, 0]
+            #shift: [0.2, 0]
             column_net: col2
           rows:
             mod.key.led_next: LED_32
@@ -99,8 +105,9 @@ points:
             func.key.led_this: LED_3
         middle:
           key:
+            splay: -1
             stagger: 1
-            shift: [0.4, 0]
+            #shift: [0.4, 0]
             column_net: col3
           rows:
             mod.key.led_next: LED_33
@@ -119,8 +126,9 @@ points:
             func.key.led_this: LED_2
         index:
           key:
+            splay: -1
             stagger: -1
-            shift: [0.2, 0]
+            #shift: [0.2, 0]
             column_net: col4
           rows:
             mod.skip: true
@@ -138,23 +146,23 @@ points:
         inner:
           key:
             stagger: -0.25
-            splay: 0
+            splay: -0.25
             column_net: col5
           rows:
             mod:
-              shift: [0.6, 0]
-              width: 3U
+              shift: [spaceshiftx, 0]
+              width: spacew
             mod.key.led_next: LED_34
             mod.key.led_this: LED_33
             bottom:
-              shift: [0, 0]
+              shift: [-spaceshiftx, 0]
             bottom.key.led_next: LED_24
             bottom.key.led_this: LED_23
             home.key.led_next: LED_23
             home.key.led_this: LED_22
             top.key.led_next: LED_12
             top.key.led_this: LED_11
-            num.shift: [0, 0]
+            #num.shift: [0, 0]
             num.key.led_next: LED_11
             num.key.led_this: LED_10
             func.key.led_next: LED_1
@@ -180,13 +188,13 @@ points:
           row_net: row0
     matrixr:
       anchor:
-        ref: matrixl_inner_home
-        shift: [3U + 2, -2U + 2.6]
-        rotate: 5
+        ref: matrixl_inner_func
+        shift: [spacew, -5U + 2.525]
+        rotate: 5.5
       key:
         padding: U
         spread: U
-        splay: -1
+        splay: 0
         rotate: 0
         tags: 
           - key
@@ -194,15 +202,15 @@ points:
         inner:
           key:
             splay: 0
-            rotate: 0
+            #rotate: 0
             column_net: col6
           rows:
             mod:
-              shift: [-0.6, 0]
-              width: 3U
+              shift: [-spaceshiftx, 0]
+              width: spacew
             mod.key.led_next: LED_35
             mod.key.led_this: LED_34
-            bottom.shift: [0.6, 0]
+            bottom.shift: [spaceshiftx, 0]
             bottom.key.led_next: LED_49
             bottom.key.led_this: LED_48
             home.key.led_next: LED_50
@@ -232,8 +240,9 @@ points:
             func.key.led_this: LED_86
         middle:
           key:
-            shift: [0.2, 0]
+            #shift: [.2, 0]
             stagger: 1
+            splay: -1
             column_net: col8
           rows:
             mod.key.led_next: LED_36
@@ -250,7 +259,8 @@ points:
             func.key.led_this: LED_85
         ring:
           key:
-            shift: [0.2, 0]
+            splay: -1
+            #shift: [0.2, 0]
             stagger: -1
             column_net: col9
           rows:
@@ -268,7 +278,8 @@ points:
             func.key.led_this: LED_84
         pinky:
           key:
-            shift: [0.2, 0]
+            splay: -1
+            #shift: [0.2, 0]
             stagger: -2
             column_net: col10
           rows:
@@ -285,7 +296,7 @@ points:
             func.skip: true
         outer:
           key:
-            splay: -0.75
+            #splay: -0.75
             column_net: col11
           rows:
             mod.key.led_next: LED_39
@@ -476,7 +487,8 @@ points:
         top:
           tags: row_even
           row_net: row0
-  rotate: 0.25
+  #rotate: 0.25
+  rotate: 0.5
 outlines:
   # hmm this doesn't work any more
   #raw:
@@ -990,7 +1002,8 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
           #shift: [-6, 9]
           #shift: [-5.5, 16]
-          shift: [-8.5, 15]
+          #shift: [-8.5, 15]
+          shift: [-11, 14]
           rotate: -45
         params:
           side: B
@@ -1014,7 +1027,8 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
           #shift: [0, -10]
           #shift: [-4.5, -14.5]
-          shift: [-6.5, -15.5]
+          #shift: [-6.5, -15.5]
+          shift: [-9.5, -14.5]
           rotate: 45
         params:
           side: B
@@ -1027,23 +1041,22 @@ pcbs:
           ref: matrixl_inner_mod
           shift: [0, -staby]
           rotate: 180
-      spacel3u:
-        what: custom/ScottoKeebs-Stabilizer_MX_3u
-        where:
-          ref: matrixl_inner_mod
-          shift: [0, staby]
+      #spacel3u:
+      #  what: custom/ScottoKeebs-Stabilizer_MX_3u
+      #  where:
+      #    ref: matrixl_inner_mod
+      #    shift: [0, staby]
       spacer2u:
-        #what: MX_Stabilizer_Cutout-2u
         what: custom/ScottoKeebs-Stabilizer_MX_2u
         where:
           ref: matrixr_inner_mod
           shift: [0, -staby]
           rotate: 180
-      spacer3u:
-        what: custom/ScottoKeebs-Stabilizer_MX_3u
-        where:
-          ref: matrixr_inner_mod
-          shift: [0, staby]
+      #spacer3u:
+      #  what: custom/ScottoKeebs-Stabilizer_MX_3u
+      #  where:
+      #    ref: matrixr_inner_mod
+      #    shift: [0, staby]
       # holes:
       holeTopLeft:
         what: custom/mountinghole #infused-kim/mounting_hole
