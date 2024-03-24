@@ -285,7 +285,7 @@ points:
             func.skip: true
         outer:
           key:
-            splay: 0
+            splay: -0.75
             column_net: col11
           rows:
             mod.key.led_next: LED_39
@@ -837,78 +837,6 @@ pcbs:
           rownet: "{{row_net}}"
           led_this: "{{key.led_this}}"
           led_next: "{{key.led_next}}"
-      # mx_hotswap:
-      #   what: mx
-      #   where: true
-      #   params:
-      #     keycaps: true
-      #     reverse: false
-      #     hotswap: true
-      #     from: "{{column_net}}"
-      #     to: "{{name}}"        
-      # diode:
-      #   what: custom/ScottoKeebs-Diode_DO-35 #diode
-      #   where: true
-      #   params:
-      #     side: B
-      #     from: "{{name}}"
-      #     to: "{{row_net}}"
-      #   adjust:
-      #     # place "to" pin in top right
-      #     shift: [U / 2 - 1, U / 2 - 1]
-      #     rotate: 90 + 180
-      # rgb_e:
-      #   what: ceoloide/led_sk6812mini-e
-      #   where: meta.tags ~ /row_even/
-      #   params:
-      #     P1: RAW
-      #     P2: "{{key.led_next}}" # DOUT: next P4
-      #     P3: GND
-      #     P4: "{{key.led_this}}" # DIN: previous P2 or pro micro data pin
-      #     include_keepout: true
-      #   adjust:
-      #     shift: [0, -4.96]
-      #     rotate: 180
-      # rgb_o:
-      #   what: ceoloide/led_sk6812mini-e
-      #   where: meta.tags ~ /row_odd/
-      #   params:
-      #     P1: RAW
-      #     P2: "{{key.led_next}}" # DOUT: next P4
-      #     P3: GND
-      #     P4: "{{key.led_this}}" # DIN: previous P2 or pro micro data pin
-      #     include_keepout: true
-      #   adjust:
-      #     shift: [0, -4.96]
-      # rgbcap_e: # 104
-      #   what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
-      #   where: meta.tags ~ /row_even/
-      #   params:
-      #     P1: RAW
-      #     P2: GND
-      #     side: B
-      #     #value: 104
-      #   adjust:
-      #     #shift: [-(2.5 / 2), -8.4]
-      #     #shift: [-(5 / 2), -8.4]
-      #     #shift: [-5, -4]
-      #     #rotate: 270
-      #     shift: [-2.5, -8.3]
-      # rgbcap_o: # 104
-      #   what: custom/CDiscD47W25P5 #CDiscD38W26P25 #CSMD_0805_2012Metric
-      #   where: meta.tags ~ /row_odd/
-      #   params:
-      #     P1: RAW
-      #     P2: GND
-      #     side: B
-      #     #value: 104
-      #   adjust:
-      #     #shift: [(2.5 / 2), -8.4]
-      #     #shift: [(5 / 2), -8.4]
-      #     #shift: [4.5, -6]
-      #     shift: [2.5, -8.3]
-      #     rotate: 180
-      #     #rotate: -90
       rgbr: # 470 ohm resistor
         what: custom/RAxialL6D25P10H
         params:
@@ -1063,7 +991,7 @@ pcbs:
           #shift: [-6, 9]
           #shift: [-5.5, 16]
           shift: [-8.5, 15]
-          rotate: -60
+          rotate: -45
         params:
           side: B
           from: scr_to
@@ -1087,7 +1015,7 @@ pcbs:
           #shift: [0, -10]
           #shift: [-4.5, -14.5]
           shift: [-6.5, -15.5]
-          rotate: 60
+          rotate: 45
         params:
           side: B
           from: enc_to
