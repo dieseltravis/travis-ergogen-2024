@@ -1,7 +1,7 @@
 // key-module : mx, hotswap, diode, led, capacitor
 module.exports = {
   params: {
-    designator: 'KEY',
+    designator: 'K',
     U: 19.05,
     dir: 'LTR',
     name: {type: 'net', value: ''},
@@ -41,7 +41,7 @@ module.exports = {
     const key = `
 (module "travis:MX" (layer F.Cu)
     ${p.at /* parametric position */}
-    (fp_text reference "S${index}" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "${p.designator}SW${index}" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -87,7 +87,7 @@ module.exports = {
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at ${adjust_point((p.U / 2 - 1), -(p.U / 2 - 1.5))} ${p.r + 270})
   
-  (fp_text reference "D${index}" (at 5.985 1.921 ${p.r + 270}) (layer "B.SilkS") 
+  (fp_text reference "${p.designator}D${index}" (at 5.985 1.921 ${p.r + 270}) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 ${p.r + 270}) (layer "B.Fab")
@@ -151,7 +151,7 @@ module.exports = {
   )
 )`;
     const diode_label = `
-(gr_text "D${index}" (at ${adjust_point((p.U / 2 - 1) - 1, -(p.U / 2 - 1.5) + (7.62 / 2))} 0) (layer F.SilkS)
+(gr_text "${p.designator}D${index}" (at ${adjust_point((p.U / 2 - 1) - 1, -(p.U / 2 - 1.5) + (7.62 / 2))} 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )`;
     const led = `
@@ -159,7 +159,7 @@ module.exports = {
   (layer B.Cu)
   (at ${adjust_point(0, 4.96)} ${isRtl ? 180 + p.r : p.r})
 
-  (fp_text reference "LED${index}" (at ${isRtl ? -4.75 : -5.25} 0 ${p.r + 90}) (layer B.SilkS) 
+  (fp_text reference "${p.designator}LED${index}" (at ${isRtl ? -4.75 : -5.25} 0 ${p.r + 90}) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 ${isRtl ? 2.25 : -2.25} ${p.r}) (layer "B.Fab")
@@ -237,7 +237,7 @@ module.exports = {
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at ${adjust_point((isRtl ? -2.5 : 2.5), 8.3)} ${isRtl ? p.r : p.r + 180})
 
-  (fp_text reference "C${index}" (at 6.0 0 ${isRtl ? p.r : p.r + 180}) (layer B.SilkS) 
+  (fp_text reference "${p.designator}C${index}" (at 6.0 0 ${isRtl ? p.r : p.r + 180}) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify ${isRtl ? 'right' : 'left'} mirror))
   )
   (fp_text value "104" (at -2.5 0 ${isRtl ? p.r : p.r + 180}) (layer B.Fab)
@@ -266,7 +266,7 @@ module.exports = {
   )
 )`;
     const cap_label = `
-(gr_text "C${index}" (at ${adjust_point(0, 8.3)} 0) (layer F.SilkS)
+(gr_text "${p.designator}C${index}" (at ${adjust_point(0, 8.3)} 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )`;
     const routes = `

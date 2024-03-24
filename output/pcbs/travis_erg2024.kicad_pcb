@@ -541,7 +541,7 @@
             
 (module "travis:MX" (layer F.Cu)
     (at 41.743784 199.6433232 0.5)
-    (fp_text reference "S1" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW1" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -585,7 +585,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 50.1984 191.5442 270.5)
   
-  (fp_text reference "D1" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD1" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -648,14 +648,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D1" (at 49.2317 195.3628 0) (layer F.SilkS)
+(gr_text "KD1" (at 49.2317 195.3628 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 41.7871 204.6031 0.5)
 
-  (fp_text reference "LED1" (at -5.25 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED1" (at -5.25 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 0.5) (layer "B.Fab")
@@ -731,7 +731,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 44.3161 207.9212 180.5)
 
-  (fp_text reference "C1" (at 6.0 0 180.5) (layer B.SilkS) 
+  (fp_text reference "KC1" (at 6.0 0 180.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.5) (layer B.Fab)
@@ -759,7 +759,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C1" (at 41.8162 207.9430 0) (layer F.SilkS)
+(gr_text "KC1" (at 41.8162 207.9430 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -832,7 +832,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 36.1490034 161.5906973 0.5)
-    (fp_text reference "S2" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW2" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -876,7 +876,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 44.6036 153.4916 270.5)
   
-  (fp_text reference "D2" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD2" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -939,14 +939,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D2" (at 43.6369 157.3102 0) (layer F.SilkS)
+(gr_text "KD2" (at 43.6369 157.3102 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 36.1923 166.5505 0.5)
 
-  (fp_text reference "LED2" (at -5.25 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED2" (at -5.25 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 0.5) (layer "B.Fab")
@@ -1022,7 +1022,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 38.7213 169.8686 180.5)
 
-  (fp_text reference "C2" (at 6.0 0 180.5) (layer B.SilkS) 
+  (fp_text reference "KC2" (at 6.0 0 180.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.5) (layer B.Fab)
@@ -1050,7 +1050,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C2" (at 36.2214 169.8904 0) (layer F.SilkS)
+(gr_text "KC2" (at 36.2214 169.8904 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -1123,7 +1123,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 41.078822 123.4462247 0.5)
-    (fp_text reference "S3" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW3" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -1167,7 +1167,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 49.5335 115.3471 270.5)
   
-  (fp_text reference "D3" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD3" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -1230,14 +1230,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D3" (at 48.5668 119.1657 0) (layer F.SilkS)
+(gr_text "KD3" (at 48.5668 119.1657 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 41.1221 128.4060 0.5)
 
-  (fp_text reference "LED3" (at -5.25 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED3" (at -5.25 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 0.5) (layer "B.Fab")
@@ -1313,7 +1313,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 43.6512 131.7241 180.5)
 
-  (fp_text reference "C3" (at 6.0 0 180.5) (layer B.SilkS) 
+  (fp_text reference "KC3" (at 6.0 0 180.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.5) (layer B.Fab)
@@ -1341,7 +1341,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C3" (at 41.1513 131.7459 0) (layer F.SilkS)
+(gr_text "KC3" (at 41.1513 131.7459 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -1414,7 +1414,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 60.7930587 199.4770827 0.5)
-    (fp_text reference "S4" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW4" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -1458,7 +1458,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 69.2477 191.3780 270.5)
   
-  (fp_text reference "D4" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD4" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -1521,14 +1521,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D4" (at 68.2810 195.1966 0) (layer F.SilkS)
+(gr_text "KD4" (at 68.2810 195.1966 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 60.8363 204.4369 0.5)
 
-  (fp_text reference "LED4" (at -5.25 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED4" (at -5.25 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 0.5) (layer "B.Fab")
@@ -1604,7 +1604,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 63.3654 207.7550 180.5)
 
-  (fp_text reference "C4" (at 6.0 0 180.5) (layer B.SilkS) 
+  (fp_text reference "KC4" (at 6.0 0 180.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.5) (layer B.Fab)
@@ -1632,7 +1632,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C4" (at 60.8655 207.7768 0) (layer F.SilkS)
+(gr_text "KC4" (at 60.8655 207.7768 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -1705,7 +1705,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 60.4605777 161.3785334 0.5)
-    (fp_text reference "S5" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW5" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -1749,7 +1749,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 68.9152 153.2794 270.5)
   
-  (fp_text reference "D5" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD5" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -1812,14 +1812,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D5" (at 67.9485 157.0980 0) (layer F.SilkS)
+(gr_text "KD5" (at 67.9485 157.0980 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 60.5039 166.3383 0.5)
 
-  (fp_text reference "LED5" (at -5.25 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED5" (at -5.25 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 0.5) (layer "B.Fab")
@@ -1895,7 +1895,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 63.0329 169.6564 180.5)
 
-  (fp_text reference "C5" (at 6.0 0 180.5) (layer B.SilkS) 
+  (fp_text reference "KC5" (at 6.0 0 180.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.5) (layer B.Fab)
@@ -1923,7 +1923,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C5" (at 60.5330 169.6782 0) (layer F.SilkS)
+(gr_text "KC5" (at 60.5330 169.6782 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -1996,7 +1996,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 60.1280967 123.2799842 0.5)
-    (fp_text reference "S6" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW6" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -2040,7 +2040,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 68.5827 115.1809 270.5)
   
-  (fp_text reference "D6" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD6" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -2103,14 +2103,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D6" (at 67.6160 118.9995 0) (layer F.SilkS)
+(gr_text "KD6" (at 67.6160 118.9995 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 60.1714 128.2398 0.5)
 
-  (fp_text reference "LED6" (at -5.25 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED6" (at -5.25 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 0.5) (layer "B.Fab")
@@ -2186,7 +2186,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 62.7004 131.5579 180.5)
 
-  (fp_text reference "C6" (at 6.0 0 180.5) (layer B.SilkS) 
+  (fp_text reference "KC6" (at 6.0 0 180.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.5) (layer B.Fab)
@@ -2214,7 +2214,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C6" (at 60.2005 131.5797 0) (layer F.SilkS)
+(gr_text "KC6" (at 60.2005 131.5797 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -2287,7 +2287,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 79.8248802 197.3109183 -0.5)
-    (fp_text reference "S7" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW7" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -2331,7 +2331,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 88.4196 189.3606 269.5)
   
-  (fp_text reference "D7" (at 5.985 1.921 269.5) (layer "B.SilkS") 
+  (fp_text reference "KD7" (at 5.985 1.921 269.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.5) (layer "B.Fab")
@@ -2394,14 +2394,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D7" (at 87.3864 193.1617 0) (layer F.SilkS)
+(gr_text "KD7" (at 87.3864 193.1617 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 79.7816 202.2707 -0.5)
 
-  (fp_text reference "LED7" (at -5.25 0 89.5) (layer B.SilkS) 
+  (fp_text reference "KLED7" (at -5.25 0 89.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.5) (layer "B.Fab")
@@ -2477,7 +2477,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 82.2524 205.6324 179.5)
 
-  (fp_text reference "C7" (at 6.0 0 179.5) (layer B.SilkS) 
+  (fp_text reference "KC7" (at 6.0 0 179.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.5) (layer B.Fab)
@@ -2505,7 +2505,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C7" (at 79.7524 205.6106 0) (layer F.SilkS)
+(gr_text "KC7" (at 79.7524 205.6106 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -2578,7 +2578,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 80.1573611 159.2123691 -0.5)
-    (fp_text reference "S8" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW8" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -2622,7 +2622,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 88.7521 151.2621 269.5)
   
-  (fp_text reference "D8" (at 5.985 1.921 269.5) (layer "B.SilkS") 
+  (fp_text reference "KD8" (at 5.985 1.921 269.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.5) (layer "B.Fab")
@@ -2685,14 +2685,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D8" (at 87.7189 155.0632 0) (layer F.SilkS)
+(gr_text "KD8" (at 87.7189 155.0632 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 80.1141 164.1722 -0.5)
 
-  (fp_text reference "LED8" (at -5.25 0 89.5) (layer B.SilkS) 
+  (fp_text reference "KLED8" (at -5.25 0 89.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.5) (layer "B.Fab")
@@ -2768,7 +2768,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 82.5848 167.5339 179.5)
 
-  (fp_text reference "C8" (at 6.0 0 179.5) (layer B.SilkS) 
+  (fp_text reference "KC8" (at 6.0 0 179.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.5) (layer B.Fab)
@@ -2796,7 +2796,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C8" (at 80.0849 167.5121 0) (layer F.SilkS)
+(gr_text "KC8" (at 80.0849 167.5121 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -2869,7 +2869,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 80.4898421 121.1138198 -0.5)
-    (fp_text reference "S9" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW9" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -2913,7 +2913,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 89.0845 113.1635 269.5)
   
-  (fp_text reference "D9" (at 5.985 1.921 269.5) (layer "B.SilkS") 
+  (fp_text reference "KD9" (at 5.985 1.921 269.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.5) (layer "B.Fab")
@@ -2976,14 +2976,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D9" (at 88.0513 116.9646 0) (layer F.SilkS)
+(gr_text "KD9" (at 88.0513 116.9646 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 80.4466 126.0736 -0.5)
 
-  (fp_text reference "LED9" (at -5.25 0 89.5) (layer B.SilkS) 
+  (fp_text reference "KLED9" (at -5.25 0 89.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.5) (layer "B.Fab")
@@ -3059,7 +3059,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 82.9173 129.4353 179.5)
 
-  (fp_text reference "C9" (at 6.0 0 179.5) (layer B.SilkS) 
+  (fp_text reference "KC9" (at 6.0 0 179.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.5) (layer B.Fab)
@@ -3087,7 +3087,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C9" (at 80.4174 129.4135 0) (layer F.SilkS)
+(gr_text "KC9" (at 80.4174 129.4135 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -3160,7 +3160,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 98.8828814 196.4771969 -1.5)
-    (fp_text reference "S10" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW10" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -3204,7 +3204,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 107.6150 188.6781 268.5)
   
-  (fp_text reference "D10" (at 5.985 1.921 268.5) (layer "B.SilkS") 
+  (fp_text reference "KD10" (at 5.985 1.921 268.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 268.5) (layer "B.Fab")
@@ -3267,14 +3267,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D10" (at 106.5156 192.4606 0) (layer F.SilkS)
+(gr_text "KD10" (at 106.5156 192.4606 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 98.7530 201.4355 -1.5)
 
-  (fp_text reference "LED10" (at -5.25 0 88.5) (layer B.SilkS) 
+  (fp_text reference "KLED10" (at -5.25 0 88.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -1.5) (layer "B.Fab")
@@ -3350,7 +3350,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 101.1648 204.8398 178.5)
 
-  (fp_text reference "C10" (at 6.0 0 178.5) (layer B.SilkS) 
+  (fp_text reference "KC10" (at 6.0 0 178.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 178.5) (layer B.Fab)
@@ -3378,7 +3378,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C10" (at 98.6656 204.7744 0) (layer F.SilkS)
+(gr_text "KC10" (at 98.6656 204.7744 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -3451,7 +3451,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 99.8802231 158.3902527 -1.5)
-    (fp_text reference "S11" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW11" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -3495,7 +3495,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 108.6124 150.5912 268.5)
   
-  (fp_text reference "D11" (at 5.985 1.921 268.5) (layer "B.SilkS") 
+  (fp_text reference "KD11" (at 5.985 1.921 268.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 268.5) (layer "B.Fab")
@@ -3558,14 +3558,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D11" (at 107.5130 154.3737 0) (layer F.SilkS)
+(gr_text "KD11" (at 107.5130 154.3737 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 99.7504 163.3486 -1.5)
 
-  (fp_text reference "LED11" (at -5.25 0 88.5) (layer B.SilkS) 
+  (fp_text reference "KLED11" (at -5.25 0 88.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -1.5) (layer "B.Fab")
@@ -3641,7 +3641,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 102.1621 166.7529 178.5)
 
-  (fp_text reference "C11" (at 6.0 0 178.5) (layer B.SilkS) 
+  (fp_text reference "KC11" (at 6.0 0 178.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 178.5) (layer B.Fab)
@@ -3669,7 +3669,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C11" (at 99.6630 166.6874 0) (layer F.SilkS)
+(gr_text "KC11" (at 99.6630 166.6874 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -3742,7 +3742,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 100.8775648 120.3033085 -1.5)
-    (fp_text reference "S12" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW12" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -3786,7 +3786,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 109.6097 112.5042 268.5)
   
-  (fp_text reference "D12" (at 5.985 1.921 268.5) (layer "B.SilkS") 
+  (fp_text reference "KD12" (at 5.985 1.921 268.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 268.5) (layer "B.Fab")
@@ -3849,14 +3849,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D12" (at 108.5103 116.2867 0) (layer F.SilkS)
+(gr_text "KD12" (at 108.5103 116.2867 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 100.7477 125.2616 -1.5)
 
-  (fp_text reference "LED12" (at -5.25 0 88.5) (layer B.SilkS) 
+  (fp_text reference "KLED12" (at -5.25 0 88.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -1.5) (layer "B.Fab")
@@ -3932,7 +3932,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 103.1594 128.6659 178.5)
 
-  (fp_text reference "C12" (at 6.0 0 178.5) (layer B.SilkS) 
+  (fp_text reference "KC12" (at 6.0 0 178.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 178.5) (layer B.Fab)
@@ -3960,7 +3960,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C12" (at 100.6603 128.6005 0) (layer F.SilkS)
+(gr_text "KC12" (at 100.6603 128.6005 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -4033,7 +4033,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 119.5620753 159.911788 -2.5)
-    (fp_text reference "S13" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW13" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -4077,7 +4077,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 128.4290 152.2663 267.5)
   
-  (fp_text reference "D13" (at 5.985 1.921 267.5) (layer "B.SilkS") 
+  (fp_text reference "KD13" (at 5.985 1.921 267.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.5) (layer "B.Fab")
@@ -4140,14 +4140,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D13" (at 127.2638 156.0290 0) (layer F.SilkS)
+(gr_text "KD13" (at 127.2638 156.0290 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 119.3457 164.8671 -2.5)
 
-  (fp_text reference "LED13" (at -5.25 0 87.5) (layer B.SilkS) 
+  (fp_text reference "KLED13" (at -5.25 0 87.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -2.5) (layer "B.Fab")
@@ -4223,7 +4223,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 121.6977 168.3129 177.5)
 
-  (fp_text reference "C13" (at 6.0 0 177.5) (layer B.SilkS) 
+  (fp_text reference "KC13" (at 6.0 0 177.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.5) (layer B.Fab)
@@ -4251,7 +4251,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C13" (at 119.2000 168.2039 0) (layer F.SilkS)
+(gr_text "KC13" (at 119.2000 168.2039 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -4324,7 +4324,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 121.223974 121.8480508 -2.5)
-    (fp_text reference "S14" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW14" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -4368,7 +4368,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 130.0909 114.2025 267.5)
   
-  (fp_text reference "D14" (at 5.985 1.921 267.5) (layer "B.SilkS") 
+  (fp_text reference "KD14" (at 5.985 1.921 267.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.5) (layer "B.Fab")
@@ -4431,14 +4431,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D14" (at 128.9257 117.9653 0) (layer F.SilkS)
+(gr_text "KD14" (at 128.9257 117.9653 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 121.0076 126.8033 -2.5)
 
-  (fp_text reference "LED14" (at -5.25 0 87.5) (layer B.SilkS) 
+  (fp_text reference "KLED14" (at -5.25 0 87.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -2.5) (layer "B.Fab")
@@ -4514,7 +4514,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 123.3596 130.2492 177.5)
 
-  (fp_text reference "C14" (at 6.0 0 177.5) (layer B.SilkS) 
+  (fp_text reference "KC14" (at 6.0 0 177.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.5) (layer B.Fab)
@@ -4542,7 +4542,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C14" (at 120.8619 130.1402 0) (layer F.SilkS)
+(gr_text "KC14" (at 120.8619 130.1402 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -4615,7 +4615,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 135.4228678 198.9842693 -2.75)
-    (fp_text reference "S15" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW15" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -4659,7 +4659,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 144.3231 191.3775 267.25)
   
-  (fp_text reference "D15" (at 5.985 1.921 267.25) (layer "B.SilkS") 
+  (fp_text reference "KD15" (at 5.985 1.921 267.25) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.25) (layer "B.Fab")
@@ -4722,14 +4722,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D15" (at 143.1414 195.1352 0) (layer F.SilkS)
+(gr_text "KD15" (at 143.1414 195.1352 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 135.1849 203.9386 -2.75)
 
-  (fp_text reference "LED15" (at -5.25 0 87.25) (layer B.SilkS) 
+  (fp_text reference "KLED15" (at -5.25 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -2.75) (layer "B.Fab")
@@ -4805,7 +4805,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 137.5218 207.3947 177.25)
 
-  (fp_text reference "C15" (at 6.0 0 177.25) (layer B.SilkS) 
+  (fp_text reference "KC15" (at 6.0 0 177.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
@@ -4833,7 +4833,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C15" (at 135.0246 207.2747 0) (layer F.SilkS)
+(gr_text "KC15" (at 135.0246 207.2747 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -4906,7 +4906,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 138.749107 161.0001131 -2.75)
-    (fp_text reference "S16" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW16" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -4950,7 +4950,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 147.6493 153.3934 267.25)
   
-  (fp_text reference "D16" (at 5.985 1.921 267.25) (layer "B.SilkS") 
+  (fp_text reference "KD16" (at 5.985 1.921 267.25) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.25) (layer "B.Fab")
@@ -5013,14 +5013,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D16" (at 146.4677 157.1510 0) (layer F.SilkS)
+(gr_text "KD16" (at 146.4677 157.1510 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 138.5111 165.9544 -2.75)
 
-  (fp_text reference "LED16" (at -5.25 0 87.25) (layer B.SilkS) 
+  (fp_text reference "KLED16" (at -5.25 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -2.75) (layer "B.Fab")
@@ -5096,7 +5096,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 140.8480 169.4105 177.25)
 
-  (fp_text reference "C16" (at 6.0 0 177.25) (layer B.SilkS) 
+  (fp_text reference "KC16" (at 6.0 0 177.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
@@ -5124,7 +5124,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C16" (at 138.3509 169.2906 0) (layer F.SilkS)
+(gr_text "KC16" (at 138.3509 169.2906 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -5197,7 +5197,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 140.5770737 122.9439896 -2.75)
-    (fp_text reference "S17" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW17" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -5241,7 +5241,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 149.4773 115.3372 267.25)
   
-  (fp_text reference "D17" (at 5.985 1.921 267.25) (layer "B.SilkS") 
+  (fp_text reference "KD17" (at 5.985 1.921 267.25) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.25) (layer "B.Fab")
@@ -5304,14 +5304,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D17" (at 148.2956 119.0949 0) (layer F.SilkS)
+(gr_text "KD17" (at 148.2956 119.0949 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 140.3391 127.8983 -2.75)
 
-  (fp_text reference "LED17" (at -5.25 0 87.25) (layer B.SilkS) 
+  (fp_text reference "KLED17" (at -5.25 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -2.75) (layer "B.Fab")
@@ -5387,7 +5387,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 142.6760 131.3544 177.25)
 
-  (fp_text reference "C17" (at 6.0 0 177.25) (layer B.SilkS) 
+  (fp_text reference "KC17" (at 6.0 0 177.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 177.25) (layer B.Fab)
@@ -5415,7 +5415,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C17" (at 140.1789 131.2344 0) (layer F.SilkS)
+(gr_text "KC17" (at 140.1789 131.2344 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -5488,7 +5488,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 190.8677276 198.9756316 2.75)
-    (fp_text reference "S18" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW18" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -5532,7 +5532,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 198.9979 190.5509 272.75)
   
-  (fp_text reference "D18" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD18" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -5595,14 +5595,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D18" (at 198.1818 194.4045 0) (layer F.SilkS)
+(gr_text "KD18" (at 198.1818 194.4045 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 191.1057 203.9299 2.75)
 
-  (fp_text reference "LED18" (at -5.25 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED18" (at -5.25 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 2.75) (layer "B.Fab")
@@ -5678,7 +5678,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 193.7631 207.1461 182.75)
 
-  (fp_text reference "C18" (at 6.0 0 182.75) (layer B.SilkS) 
+  (fp_text reference "KC18" (at 6.0 0 182.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.75) (layer B.Fab)
@@ -5706,7 +5706,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C18" (at 191.2659 207.2661 0) (layer F.SilkS)
+(gr_text "KC18" (at 191.2659 207.2661 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -5779,7 +5779,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 187.5414882 160.9914753 2.75)
-    (fp_text reference "S19" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW19" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -5823,7 +5823,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 195.6716 152.5667 272.75)
   
-  (fp_text reference "D19" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD19" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -5886,14 +5886,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D19" (at 194.8556 156.4203 0) (layer F.SilkS)
+(gr_text "KD19" (at 194.8556 156.4203 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 187.7795 165.9458 2.75)
 
-  (fp_text reference "LED19" (at -5.25 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED19" (at -5.25 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 2.75) (layer "B.Fab")
@@ -5969,7 +5969,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 190.4368 169.1620 182.75)
 
-  (fp_text reference "C19" (at 6.0 0 182.75) (layer B.SilkS) 
+  (fp_text reference "KC19" (at 6.0 0 182.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.75) (layer B.Fab)
@@ -5997,7 +5997,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C19" (at 187.9397 169.2819 0) (layer F.SilkS)
+(gr_text "KC19" (at 187.9397 169.2819 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -6070,7 +6070,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 185.7135215 122.9353519 2.75)
-    (fp_text reference "S20" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW20" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -6114,7 +6114,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 193.8437 114.5106 272.75)
   
-  (fp_text reference "D20" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD20" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -6177,14 +6177,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D20" (at 193.0276 118.3642 0) (layer F.SilkS)
+(gr_text "KD20" (at 193.0276 118.3642 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 185.9515 127.8896 2.75)
 
-  (fp_text reference "LED20" (at -5.25 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED20" (at -5.25 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 2.75) (layer "B.Fab")
@@ -6260,7 +6260,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 188.6089 131.1058 182.75)
 
-  (fp_text reference "C20" (at 6.0 0 182.75) (layer B.SilkS) 
+  (fp_text reference "KC20" (at 6.0 0 182.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.75) (layer B.Fab)
@@ -6288,7 +6288,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C20" (at 186.1117 131.2258 0) (layer F.SilkS)
+(gr_text "KC20" (at 186.1117 131.2258 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -6361,7 +6361,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 206.5575555 159.8277799 2.75)
-    (fp_text reference "S21" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW21" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -6405,7 +6405,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 214.6877 151.4030 272.75)
   
-  (fp_text reference "D21" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD21" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -6468,14 +6468,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D21" (at 213.8717 155.2566 0) (layer F.SilkS)
+(gr_text "KD21" (at 213.8717 155.2566 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 206.7955 164.7821 2.75)
 
-  (fp_text reference "LED21" (at -5.25 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED21" (at -5.25 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 2.75) (layer "B.Fab")
@@ -6551,7 +6551,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 209.4529 167.9983 182.75)
 
-  (fp_text reference "C21" (at 6.0 0 182.75) (layer B.SilkS) 
+  (fp_text reference "KC21" (at 6.0 0 182.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.75) (layer B.Fab)
@@ -6579,7 +6579,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C21" (at 206.9558 168.1182 0) (layer F.SilkS)
+(gr_text "KC21" (at 206.9558 168.1182 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -6652,7 +6652,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 204.7295888 121.7716565 2.75)
-    (fp_text reference "S22" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW22" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -6696,7 +6696,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 212.8597 113.3469 272.75)
   
-  (fp_text reference "D22" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD22" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -6759,14 +6759,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D22" (at 212.0437 117.2005 0) (layer F.SilkS)
+(gr_text "KD22" (at 212.0437 117.2005 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 204.9676 126.7259 2.75)
 
-  (fp_text reference "LED22" (at -5.25 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED22" (at -5.25 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 2.75) (layer "B.Fab")
@@ -6842,7 +6842,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 207.6249 129.9422 182.75)
 
-  (fp_text reference "C22" (at 6.0 0 182.75) (layer B.SilkS) 
+  (fp_text reference "KC22" (at 6.0 0 182.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 182.75) (layer B.Fab)
@@ -6870,7 +6870,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C22" (at 205.1278 130.0621 0) (layer F.SilkS)
+(gr_text "KC22" (at 205.1278 130.0621 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -6943,7 +6943,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 227.3656058 195.9710715 1.75)
-    (fp_text reference "S23" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW23" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -6987,7 +6987,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 235.6416 187.6895 271.75)
   
-  (fp_text reference "D23" (at 5.985 1.921 271.75) (layer "B.SilkS") 
+  (fp_text reference "KD23" (at 5.985 1.921 271.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 271.75) (layer "B.Fab")
@@ -7050,14 +7050,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D23" (at 234.7584 191.5282 0) (layer F.SilkS)
+(gr_text "KD23" (at 234.7584 191.5282 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 227.5171 200.9288 1.75)
 
-  (fp_text reference "LED23" (at -5.25 0 91.75) (layer B.SilkS) 
+  (fp_text reference "KLED23" (at -5.25 0 91.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 1.75) (layer "B.Fab")
@@ -7133,7 +7133,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 230.1179 204.1909 181.75)
 
-  (fp_text reference "C23" (at 6.0 0 181.75) (layer B.SilkS) 
+  (fp_text reference "KC23" (at 6.0 0 181.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 181.75) (layer B.Fab)
@@ -7161,7 +7161,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C23" (at 227.6191 204.2672 0) (layer F.SilkS)
+(gr_text "KC23" (at 227.6191 204.2672 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -7234,7 +7234,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 226.2020884 157.8888418 1.75)
-    (fp_text reference "S24" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW24" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -7278,7 +7278,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 234.4780 149.6072 271.75)
   
-  (fp_text reference "D24" (at 5.985 1.921 271.75) (layer "B.SilkS") 
+  (fp_text reference "KD24" (at 5.985 1.921 271.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 271.75) (layer "B.Fab")
@@ -7341,14 +7341,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D24" (at 233.5949 153.4460 0) (layer F.SilkS)
+(gr_text "KD24" (at 233.5949 153.4460 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 226.3536 162.8465 1.75)
 
-  (fp_text reference "LED24" (at -5.25 0 91.75) (layer B.SilkS) 
+  (fp_text reference "KLED24" (at -5.25 0 91.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 1.75) (layer "B.Fab")
@@ -7424,7 +7424,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 228.9544 166.1086 181.75)
 
-  (fp_text reference "C24" (at 6.0 0 181.75) (layer B.SilkS) 
+  (fp_text reference "KC24" (at 6.0 0 181.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 181.75) (layer B.Fab)
@@ -7452,7 +7452,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C24" (at 226.4556 166.1850 0) (layer F.SilkS)
+(gr_text "KC24" (at 226.4556 166.1850 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -7525,7 +7525,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 225.0385709 119.806612 1.75)
-    (fp_text reference "S25" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW25" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -7569,7 +7569,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 233.3145 111.5250 271.75)
   
-  (fp_text reference "D25" (at 5.985 1.921 271.75) (layer "B.SilkS") 
+  (fp_text reference "KD25" (at 5.985 1.921 271.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 271.75) (layer "B.Fab")
@@ -7632,14 +7632,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D25" (at 232.4313 115.3638 0) (layer F.SilkS)
+(gr_text "KD25" (at 232.4313 115.3638 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 225.1900 124.7643 1.75)
 
-  (fp_text reference "LED25" (at -5.25 0 91.75) (layer B.SilkS) 
+  (fp_text reference "KLED25" (at -5.25 0 91.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 1.75) (layer "B.Fab")
@@ -7715,7 +7715,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 227.7909 128.0264 181.75)
 
-  (fp_text reference "C25" (at 6.0 0 181.75) (layer B.SilkS) 
+  (fp_text reference "KC25" (at 6.0 0 181.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 181.75) (layer B.Fab)
@@ -7743,7 +7743,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C25" (at 225.2920 128.1027 0) (layer F.SilkS)
+(gr_text "KC25" (at 225.2920 128.1027 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -7816,7 +7816,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 246.4372592 196.3888465 0.75)
-    (fp_text reference "S26" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW26" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -7860,7 +7860,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 254.8565 188.2529 270.75)
   
-  (fp_text reference "D26" (at 5.985 1.921 270.75) (layer "B.SilkS") 
+  (fp_text reference "KD26" (at 5.985 1.921 270.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.75) (layer "B.Fab")
@@ -7923,14 +7923,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D26" (at 253.9064 192.0757 0) (layer F.SilkS)
+(gr_text "KD26" (at 253.9064 192.0757 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 246.5022 201.3484 0.75)
 
-  (fp_text reference "LED26" (at -5.25 0 90.75) (layer B.SilkS) 
+  (fp_text reference "KLED26" (at -5.25 0 90.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 0.75) (layer "B.Fab")
@@ -8006,7 +8006,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 249.0457 204.6554 180.75)
 
-  (fp_text reference "C26" (at 6.0 0 180.75) (layer B.SilkS) 
+  (fp_text reference "KC26" (at 6.0 0 180.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.75) (layer B.Fab)
@@ -8034,7 +8034,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C26" (at 246.5459 204.6881 0) (layer F.SilkS)
+(gr_text "KC26" (at 246.5459 204.6881 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -8107,7 +8107,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 245.9385457 158.2921105 0.75)
-    (fp_text reference "S27" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW27" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -8151,7 +8151,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 254.3578 150.1562 270.75)
   
-  (fp_text reference "D27" (at 5.985 1.921 270.75) (layer "B.SilkS") 
+  (fp_text reference "KD27" (at 5.985 1.921 270.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.75) (layer "B.Fab")
@@ -8214,14 +8214,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D27" (at 253.4077 153.9790 0) (layer F.SilkS)
+(gr_text "KD27" (at 253.4077 153.9790 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 246.0035 163.2517 0.75)
 
-  (fp_text reference "LED27" (at -5.25 0 90.75) (layer B.SilkS) 
+  (fp_text reference "KLED27" (at -5.25 0 90.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 0.75) (layer "B.Fab")
@@ -8297,7 +8297,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 248.5470 166.5587 180.75)
 
-  (fp_text reference "C27" (at 6.0 0 180.75) (layer B.SilkS) 
+  (fp_text reference "KC27" (at 6.0 0 180.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.75) (layer B.Fab)
@@ -8325,7 +8325,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C27" (at 246.0472 166.5914 0) (layer F.SilkS)
+(gr_text "KC27" (at 246.0472 166.5914 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -8398,7 +8398,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 245.4398322 120.1953746 0.75)
-    (fp_text reference "S28" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW28" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -8442,7 +8442,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 253.8591 112.0595 270.75)
   
-  (fp_text reference "D28" (at 5.985 1.921 270.75) (layer "B.SilkS") 
+  (fp_text reference "KD28" (at 5.985 1.921 270.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.75) (layer "B.Fab")
@@ -8505,14 +8505,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D28" (at 252.9090 115.8822 0) (layer F.SilkS)
+(gr_text "KD28" (at 252.9090 115.8822 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 245.5048 125.1549 0.75)
 
-  (fp_text reference "LED28" (at -5.25 0 90.75) (layer B.SilkS) 
+  (fp_text reference "KLED28" (at -5.25 0 90.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 0.75) (layer "B.Fab")
@@ -8588,7 +8588,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 248.0483 128.4619 180.75)
 
-  (fp_text reference "C28" (at 6.0 0 180.75) (layer B.SilkS) 
+  (fp_text reference "KC28" (at 6.0 0 180.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 180.75) (layer B.Fab)
@@ -8616,7 +8616,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C28" (at 245.5485 128.4947 0) (layer F.SilkS)
+(gr_text "KC28" (at 245.5485 128.4947 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -8689,7 +8689,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 265.5118064 198.1393183 -0.25)
-    (fp_text reference "S29" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW29" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -8733,7 +8733,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 274.0717 190.1516 269.75)
   
-  (fp_text reference "D29" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD29" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -8796,14 +8796,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D29" (at 273.0551 193.9572 0) (layer F.SilkS)
+(gr_text "KD29" (at 273.0551 193.9572 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 265.4902 203.0993 -0.25)
 
-  (fp_text reference "LED29" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED29" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -8879,7 +8879,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 267.9756 206.4501 179.75)
 
-  (fp_text reference "C29" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC29" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -8907,7 +8907,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C29" (at 265.4756 206.4392 0) (layer F.SilkS)
+(gr_text "KC29" (at 265.4756 206.4392 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -8980,7 +8980,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 265.6780485 160.0396811 -0.25)
-    (fp_text reference "S30" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW30" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -9024,7 +9024,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 274.2380 152.0520 269.75)
   
-  (fp_text reference "D30" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD30" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -9087,14 +9087,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D30" (at 273.2214 155.8576 0) (layer F.SilkS)
+(gr_text "KD30" (at 273.2214 155.8576 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 265.6564 164.9996 -0.25)
 
-  (fp_text reference "LED30" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED30" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -9170,7 +9170,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 268.1418 168.3505 179.75)
 
-  (fp_text reference "C30" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC30" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -9198,7 +9198,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C30" (at 265.6418 168.3396 0) (layer F.SilkS)
+(gr_text "KC30" (at 265.6418 168.3396 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -9271,7 +9271,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 265.8442906 121.9400439 -0.25)
-    (fp_text reference "S31" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW31" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -9315,7 +9315,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 274.4042 113.9523 269.75)
   
-  (fp_text reference "D31" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD31" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -9378,14 +9378,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D31" (at 273.3876 117.7579 0) (layer F.SilkS)
+(gr_text "KD31" (at 273.3876 117.7579 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 265.8226 126.9000 -0.25)
 
-  (fp_text reference "LED31" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED31" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -9461,7 +9461,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 268.3081 130.2509 179.75)
 
-  (fp_text reference "C31" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC31" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -9489,7 +9489,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C31" (at 265.8081 130.2400 0) (layer F.SilkS)
+(gr_text "KC31" (at 265.8081 130.2400 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -9562,7 +9562,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 284.561625 198.2224394 -0.25)
-    (fp_text reference "S32" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW32" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -9606,7 +9606,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 293.1216 190.2347 269.75)
   
-  (fp_text reference "D32" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD32" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -9669,14 +9669,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D32" (at 292.1049 194.0403 0) (layer F.SilkS)
+(gr_text "KD32" (at 292.1049 194.0403 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 284.5400 203.1824 -0.25)
 
-  (fp_text reference "LED32" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED32" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -9752,7 +9752,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 287.0254 206.5333 179.75)
 
-  (fp_text reference "C32" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC32" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -9780,7 +9780,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C32" (at 284.5254 206.5224 0) (layer F.SilkS)
+(gr_text "KC32" (at 284.5254 206.5224 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -9853,7 +9853,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 284.7278671 160.1228021 -0.25)
-    (fp_text reference "S33" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW33" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -9897,7 +9897,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 293.2878 152.1351 269.75)
   
-  (fp_text reference "D33" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD33" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -9960,14 +9960,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D33" (at 292.2712 155.9407 0) (layer F.SilkS)
+(gr_text "KD33" (at 292.2712 155.9407 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 284.7062 165.0828 -0.25)
 
-  (fp_text reference "LED33" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED33" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -10043,7 +10043,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 287.1916 168.4336 179.75)
 
-  (fp_text reference "C33" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC33" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -10071,7 +10071,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C33" (at 284.6917 168.4227 0) (layer F.SilkS)
+(gr_text "KC33" (at 284.6917 168.4227 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -10144,7 +10144,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 284.8941092 122.0231649 -0.25)
-    (fp_text reference "S34" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW34" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -10188,7 +10188,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 293.4540 114.0354 269.75)
   
-  (fp_text reference "D34" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD34" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -10251,14 +10251,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D34" (at 292.4374 117.8410 0) (layer F.SilkS)
+(gr_text "KD34" (at 292.4374 117.8410 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 284.8725 126.9831 -0.25)
 
-  (fp_text reference "LED34" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED34" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -10334,7 +10334,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 287.3579 130.3340 179.75)
 
-  (fp_text reference "C34" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC34" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -10362,7 +10362,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C34" (at 284.8579 130.3231 0) (layer F.SilkS)
+(gr_text "KC34" (at 284.8579 130.3231 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -10435,7 +10435,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 309.1401348 160.2293216 -0.25)
-    (fp_text reference "S35" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW35" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -10479,7 +10479,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 317.7001 152.2416 269.75)
   
-  (fp_text reference "D35" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD35" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -10542,14 +10542,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D35" (at 316.6835 156.0472 0) (layer F.SilkS)
+(gr_text "KD35" (at 316.6835 156.0472 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 309.1185 165.1893 -0.25)
 
-  (fp_text reference "LED35" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED35" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -10625,7 +10625,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 311.6039 168.5402 179.75)
 
-  (fp_text reference "C35" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC35" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -10653,7 +10653,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C35" (at 309.1039 168.5292 0) (layer F.SilkS)
+(gr_text "KC35" (at 309.1039 168.5292 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -10726,7 +10726,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 303.9439279 122.1062861 -0.25)
-    (fp_text reference "S36" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW36" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -10770,7 +10770,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 312.5039 114.1186 269.75)
   
-  (fp_text reference "D36" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD36" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -10833,14 +10833,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D36" (at 311.4872 117.9242 0) (layer F.SilkS)
+(gr_text "KD36" (at 311.4872 117.9242 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 303.9223 127.0662 -0.25)
 
-  (fp_text reference "LED36" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED36" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -10916,7 +10916,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 306.4077 130.4171 179.75)
 
-  (fp_text reference "C36" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC36" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -10944,7 +10944,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C36" (at 303.9077 130.4062 0) (layer F.SilkS)
+(gr_text "KC36" (at 303.9077 130.4062 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -11017,7 +11017,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 328.3561955 122.2128053 -0.25)
-    (fp_text reference "S37" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW37" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -11061,7 +11061,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 336.9161 114.2251 269.75)
   
-  (fp_text reference "D37" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD37" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -11124,14 +11124,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D37" (at 335.8995 118.0307 0) (layer F.SilkS)
+(gr_text "KD37" (at 335.8995 118.0307 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 328.3346 127.1728 -0.25)
 
-  (fp_text reference "LED37" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED37" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -11207,7 +11207,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 330.8200 130.5236 179.75)
 
-  (fp_text reference "C37" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC37" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -11235,7 +11235,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C37" (at 328.3200 130.5127 0) (layer F.SilkS)
+(gr_text "KC37" (at 328.3200 130.5127 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -11308,7 +11308,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 337.1189532 208.25696 47.75)
-    (fp_text reference "S38" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW38" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -11352,7 +11352,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 336.9106 196.5509 317.75)
   
-  (fp_text reference "D38" (at 5.985 1.921 317.75) (layer "B.SilkS") 
+  (fp_text reference "KD38" (at 5.985 1.921 317.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 317.75) (layer "B.Fab")
@@ -11415,14 +11415,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D38" (at 339.0585 199.8528 0) (layer F.SilkS)
+(gr_text "KD38" (at 339.0585 199.8528 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 340.7904 211.5919 47.75)
 
-  (fp_text reference "LED38" (at -5.25 0 137.75) (layer B.SilkS) 
+  (fp_text reference "KLED38" (at -5.25 0 137.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 47.75) (layer "B.Fab")
@@ -11498,7 +11498,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 344.9437 211.9871 227.75)
 
-  (fp_text reference "C38" (at 6.0 0 227.75) (layer B.SilkS) 
+  (fp_text reference "KC38" (at 6.0 0 227.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 227.75) (layer B.Fab)
@@ -11526,7 +11526,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C38" (at 343.2628 213.8376 0) (layer F.SilkS)
+(gr_text "KC38" (at 343.2628 213.8376 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -11599,7 +11599,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 349.9275409 194.1558047 47.75)
-    (fp_text reference "S39" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW39" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -11643,7 +11643,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 349.7192 182.4497 317.75)
   
-  (fp_text reference "D39" (at 5.985 1.921 317.75) (layer "B.SilkS") 
+  (fp_text reference "KD39" (at 5.985 1.921 317.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 317.75) (layer "B.Fab")
@@ -11706,14 +11706,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D39" (at 351.8671 185.7516 0) (layer F.SilkS)
+(gr_text "KD39" (at 351.8671 185.7516 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 353.5990 197.4907 47.75)
 
-  (fp_text reference "LED39" (at -5.25 0 137.75) (layer B.SilkS) 
+  (fp_text reference "KLED39" (at -5.25 0 137.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 47.75) (layer "B.Fab")
@@ -11789,7 +11789,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 357.7523 197.8859 227.75)
 
-  (fp_text reference "C39" (at 6.0 0 227.75) (layer B.SilkS) 
+  (fp_text reference "KC39" (at 6.0 0 227.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 227.75) (layer B.Fab)
@@ -11817,7 +11817,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C39" (at 356.0714 199.7364 0) (layer F.SilkS)
+(gr_text "KC39" (at 356.0714 199.7364 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -11890,7 +11890,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 365.9382755 176.5293604 47.75)
-    (fp_text reference "S40" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW40" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -11934,7 +11934,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 365.7300 164.8233 317.75)
   
-  (fp_text reference "D40" (at 5.985 1.921 317.75) (layer "B.SilkS") 
+  (fp_text reference "KD40" (at 5.985 1.921 317.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 317.75) (layer "B.Fab")
@@ -11997,14 +11997,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D40" (at 367.8778 168.1252 0) (layer F.SilkS)
+(gr_text "KD40" (at 367.8778 168.1252 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 369.6098 179.8643 47.75)
 
-  (fp_text reference "LED40" (at -5.25 0 137.75) (layer B.SilkS) 
+  (fp_text reference "KLED40" (at -5.25 0 137.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 47.75) (layer "B.Fab")
@@ -12080,7 +12080,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 373.7630 180.2595 227.75)
 
-  (fp_text reference "C40" (at 6.0 0 227.75) (layer B.SilkS) 
+  (fp_text reference "KC40" (at 6.0 0 227.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 227.75) (layer B.Fab)
@@ -12108,7 +12108,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C40" (at 372.0821 182.1100 0) (layer F.SilkS)
+(gr_text "KC40" (at 372.0821 182.1100 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -12181,7 +12181,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 378.7468632 162.4282051 47.75)
-    (fp_text reference "S41" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW41" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -12225,7 +12225,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 378.5385 150.7221 317.75)
   
-  (fp_text reference "D41" (at 5.985 1.921 317.75) (layer "B.SilkS") 
+  (fp_text reference "KD41" (at 5.985 1.921 317.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 317.75) (layer "B.Fab")
@@ -12288,14 +12288,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D41" (at 380.6864 154.0240 0) (layer F.SilkS)
+(gr_text "KD41" (at 380.6864 154.0240 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 382.4183 165.7631 47.75)
 
-  (fp_text reference "LED41" (at -5.25 0 137.75) (layer B.SilkS) 
+  (fp_text reference "KLED41" (at -5.25 0 137.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 47.75) (layer "B.Fab")
@@ -12371,7 +12371,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 386.5716 166.1583 227.75)
 
-  (fp_text reference "C41" (at 6.0 0 227.75) (layer B.SilkS) 
+  (fp_text reference "KC41" (at 6.0 0 227.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 227.75) (layer B.Fab)
@@ -12399,7 +12399,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C41" (at 384.8907 168.0088 0) (layer F.SilkS)
+(gr_text "KC41" (at 384.8907 168.0088 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -12472,7 +12472,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 370.6182932 122.3972097 -0.25)
-    (fp_text reference "S42" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW42" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -12516,7 +12516,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 379.1782 114.4095 269.75)
   
-  (fp_text reference "D42" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD42" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -12579,14 +12579,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D42" (at 378.1616 118.2151 0) (layer F.SilkS)
+(gr_text "KD42" (at 378.1616 118.2151 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 370.5967 127.3572 -0.25)
 
-  (fp_text reference "LED42" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED42" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -12662,7 +12662,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 373.0821 130.7080 179.75)
 
-  (fp_text reference "C42" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC42" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -12690,7 +12690,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C42" (at 370.5821 130.6971 0) (layer F.SilkS)
+(gr_text "KC42" (at 370.5821 130.6971 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -12763,7 +12763,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 389.6681118 122.4803308 -0.25)
-    (fp_text reference "S43" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW43" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -12807,7 +12807,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 398.2280 114.4926 269.75)
   
-  (fp_text reference "D43" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD43" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -12870,14 +12870,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D43" (at 397.2114 118.2982 0) (layer F.SilkS)
+(gr_text "KD43" (at 397.2114 118.2982 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 389.6465 127.4403 -0.25)
 
-  (fp_text reference "LED43" (at -5.25 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED43" (at -5.25 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 -0.25) (layer "B.Fab")
@@ -12953,7 +12953,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 392.1319 130.7912 179.75)
 
-  (fp_text reference "C43" (at 6.0 0 179.75) (layer B.SilkS) 
+  (fp_text reference "KC43" (at 6.0 0 179.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 179.75) (layer B.Fab)
@@ -12981,7 +12981,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C43" (at 389.6319 130.7803 0) (layer F.SilkS)
+(gr_text "KC43" (at 389.6319 130.7803 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -13054,7 +13054,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 36.3152439 180.639972 0.5)
-    (fp_text reference "S44" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW44" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -13098,7 +13098,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 44.7699 172.5409 270.5)
   
-  (fp_text reference "D44" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD44" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -13161,14 +13161,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D44" (at 43.8032 176.3595 0) (layer F.SilkS)
+(gr_text "KD44" (at 43.8032 176.3595 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 36.3585 185.5998 180.5)
 
-  (fp_text reference "LED44" (at -4.75 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED44" (at -4.75 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 0.5) (layer "B.Fab")
@@ -13244,7 +13244,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 33.8878 188.9615 0.5)
 
-  (fp_text reference "C44" (at 6.0 0 0.5) (layer B.SilkS) 
+  (fp_text reference "KC44" (at 6.0 0 0.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.5) (layer B.Fab)
@@ -13272,7 +13272,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C44" (at 36.3877 188.9397 0) (layer F.SilkS)
+(gr_text "KC44" (at 36.3877 188.9397 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -13345,7 +13345,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 35.9827629 142.5414227 0.5)
-    (fp_text reference "S45" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW45" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -13389,7 +13389,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 44.4374 134.4423 270.5)
   
-  (fp_text reference "D45" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD45" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -13452,14 +13452,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D45" (at 43.4707 138.2609 0) (layer F.SilkS)
+(gr_text "KD45" (at 43.4707 138.2609 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 36.0260 147.5012 180.5)
 
-  (fp_text reference "LED45" (at -4.75 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED45" (at -4.75 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 0.5) (layer "B.Fab")
@@ -13535,7 +13535,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 33.5553 150.8629 0.5)
 
-  (fp_text reference "C45" (at 6.0 0 0.5) (layer B.SilkS) 
+  (fp_text reference "KC45" (at 6.0 0 0.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.5) (layer B.Fab)
@@ -13563,7 +13563,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C45" (at 36.0552 150.8411 0) (layer F.SilkS)
+(gr_text "KC45" (at 36.0552 150.8411 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -13636,7 +13636,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 40.9125815 104.39695 0.5)
-    (fp_text reference "S46" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW46" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -13680,7 +13680,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 49.3672 96.2979 270.5)
   
-  (fp_text reference "D46" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD46" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -13743,14 +13743,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D46" (at 48.4005 100.1164 0) (layer F.SilkS)
+(gr_text "KD46" (at 48.4005 100.1164 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 40.9559 109.3568 180.5)
 
-  (fp_text reference "LED46" (at -4.75 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED46" (at -4.75 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 0.5) (layer "B.Fab")
@@ -13826,7 +13826,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 38.4851 112.7185 0.5)
 
-  (fp_text reference "C46" (at 6.0 0 0.5) (layer B.SilkS) 
+  (fp_text reference "KC46" (at 6.0 0 0.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.5) (layer B.Fab)
@@ -13854,7 +13854,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C46" (at 40.9850 112.6966 0) (layer F.SilkS)
+(gr_text "KC46" (at 40.9850 112.6966 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -13927,7 +13927,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 60.6268182 180.4278081 0.5)
-    (fp_text reference "S47" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW47" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -13971,7 +13971,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 69.0815 172.3287 270.5)
   
-  (fp_text reference "D47" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD47" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -14034,14 +14034,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D47" (at 68.1147 176.1473 0) (layer F.SilkS)
+(gr_text "KD47" (at 68.1147 176.1473 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 60.6701 185.3876 180.5)
 
-  (fp_text reference "LED47" (at -4.75 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED47" (at -4.75 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 0.5) (layer "B.Fab")
@@ -14117,7 +14117,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 58.1993 188.7493 0.5)
 
-  (fp_text reference "C47" (at 6.0 0 0.5) (layer B.SilkS) 
+  (fp_text reference "KC47" (at 6.0 0 0.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.5) (layer B.Fab)
@@ -14145,7 +14145,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C47" (at 60.6992 188.7275 0) (layer F.SilkS)
+(gr_text "KC47" (at 60.6992 188.7275 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -14218,7 +14218,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 60.2943372 142.3292588 0.5)
-    (fp_text reference "S48" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW48" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -14262,7 +14262,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 68.7490 134.2302 270.5)
   
-  (fp_text reference "D48" (at 5.985 1.921 270.5) (layer "B.SilkS") 
+  (fp_text reference "KD48" (at 5.985 1.921 270.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.5) (layer "B.Fab")
@@ -14325,14 +14325,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D48" (at 67.7823 138.0488 0) (layer F.SilkS)
+(gr_text "KD48" (at 67.7823 138.0488 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 60.3376 147.2891 180.5)
 
-  (fp_text reference "LED48" (at -4.75 0 90.5) (layer B.SilkS) 
+  (fp_text reference "KLED48" (at -4.75 0 90.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 0.5) (layer "B.Fab")
@@ -14408,7 +14408,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 57.8669 150.6508 0.5)
 
-  (fp_text reference "C48" (at 6.0 0 0.5) (layer B.SilkS) 
+  (fp_text reference "KC48" (at 6.0 0 0.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.5) (layer B.Fab)
@@ -14436,7 +14436,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C48" (at 60.3668 150.6289 0) (layer F.SilkS)
+(gr_text "KC48" (at 60.3668 150.6289 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -14509,7 +14509,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 79.9911207 178.2616437 -0.5)
-    (fp_text reference "S49" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW49" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -14553,7 +14553,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 88.5858 170.3113 269.5)
   
-  (fp_text reference "D49" (at 5.985 1.921 269.5) (layer "B.SilkS") 
+  (fp_text reference "KD49" (at 5.985 1.921 269.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.5) (layer "B.Fab")
@@ -14616,14 +14616,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D49" (at 87.5526 174.1125 0) (layer F.SilkS)
+(gr_text "KD49" (at 87.5526 174.1125 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 79.9478 183.2215 179.5)
 
-  (fp_text reference "LED49" (at -4.75 0 89.5) (layer B.SilkS) 
+  (fp_text reference "KLED49" (at -4.75 0 89.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.5) (layer "B.Fab")
@@ -14699,7 +14699,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 77.4188 186.5395 -0.5)
 
-  (fp_text reference "C49" (at 6.0 0 -0.5) (layer B.SilkS) 
+  (fp_text reference "KC49" (at 6.0 0 -0.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.5) (layer B.Fab)
@@ -14727,7 +14727,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C49" (at 79.9187 186.5613 0) (layer F.SilkS)
+(gr_text "KC49" (at 79.9187 186.5613 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -14800,7 +14800,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 80.3236016 140.1630944 -0.5)
-    (fp_text reference "S50" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW50" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -14844,7 +14844,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 88.9183 132.2128 269.5)
   
-  (fp_text reference "D50" (at 5.985 1.921 269.5) (layer "B.SilkS") 
+  (fp_text reference "KD50" (at 5.985 1.921 269.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.5) (layer "B.Fab")
@@ -14907,14 +14907,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D50" (at 87.8851 136.0139 0) (layer F.SilkS)
+(gr_text "KD50" (at 87.8851 136.0139 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 80.2803 145.1229 179.5)
 
-  (fp_text reference "LED50" (at -4.75 0 89.5) (layer B.SilkS) 
+  (fp_text reference "KLED50" (at -4.75 0 89.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.5) (layer "B.Fab")
@@ -14990,7 +14990,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 77.7513 148.4410 -0.5)
 
-  (fp_text reference "C50" (at 6.0 0 -0.5) (layer B.SilkS) 
+  (fp_text reference "KC50" (at 6.0 0 -0.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.5) (layer B.Fab)
@@ -15018,7 +15018,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C50" (at 80.2512 148.4628 0) (layer F.SilkS)
+(gr_text "KC50" (at 80.2512 148.4628 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -15091,7 +15091,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 80.6560825 102.0645451 -0.5)
-    (fp_text reference "S51" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW51" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -15135,7 +15135,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 89.2508 94.1142 269.5)
   
-  (fp_text reference "D51" (at 5.985 1.921 269.5) (layer "B.SilkS") 
+  (fp_text reference "KD51" (at 5.985 1.921 269.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.5) (layer "B.Fab")
@@ -15198,14 +15198,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D51" (at 88.2176 97.9154 0) (layer F.SilkS)
+(gr_text "KD51" (at 88.2176 97.9154 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 80.6128 107.0244 179.5)
 
-  (fp_text reference "LED51" (at -4.75 0 89.5) (layer B.SilkS) 
+  (fp_text reference "KLED51" (at -4.75 0 89.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.5) (layer "B.Fab")
@@ -15281,7 +15281,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 78.0837 110.3424 -0.5)
 
-  (fp_text reference "C51" (at 6.0 0 -0.5) (layer B.SilkS) 
+  (fp_text reference "KC51" (at 6.0 0 -0.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.5) (layer B.Fab)
@@ -15309,7 +15309,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C51" (at 80.5837 110.3642 0) (layer F.SilkS)
+(gr_text "KC51" (at 80.5837 110.3642 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -15382,7 +15382,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 99.3815522 177.4337248 -1.5)
-    (fp_text reference "S52" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW52" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -15426,7 +15426,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 108.1137 169.6346 268.5)
   
-  (fp_text reference "D52" (at 5.985 1.921 268.5) (layer "B.SilkS") 
+  (fp_text reference "KD52" (at 5.985 1.921 268.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 268.5) (layer "B.Fab")
@@ -15489,14 +15489,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D52" (at 107.0143 173.4172 0) (layer F.SilkS)
+(gr_text "KD52" (at 107.0143 173.4172 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 99.2517 182.3920 178.5)
 
-  (fp_text reference "LED52" (at -4.75 0 88.5) (layer B.SilkS) 
+  (fp_text reference "KLED52" (at -4.75 0 88.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -1.5) (layer "B.Fab")
@@ -15572,7 +15572,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 96.6651 185.6654 -1.5)
 
-  (fp_text reference "C52" (at 6.0 0 -1.5) (layer B.SilkS) 
+  (fp_text reference "KC52" (at 6.0 0 -1.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -1.5) (layer B.Fab)
@@ -15600,7 +15600,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C52" (at 99.1643 185.7309 0) (layer F.SilkS)
+(gr_text "KC52" (at 99.1643 185.7309 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -15673,7 +15673,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 100.3788939 139.3467806 -1.5)
-    (fp_text reference "S53" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW53" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -15717,7 +15717,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 109.1110 131.5477 268.5)
   
-  (fp_text reference "D53" (at 5.985 1.921 268.5) (layer "B.SilkS") 
+  (fp_text reference "KD53" (at 5.985 1.921 268.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 268.5) (layer "B.Fab")
@@ -15780,14 +15780,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D53" (at 108.0117 135.3302 0) (layer F.SilkS)
+(gr_text "KD53" (at 108.0117 135.3302 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 100.2491 144.3051 178.5)
 
-  (fp_text reference "LED53" (at -4.75 0 88.5) (layer B.SilkS) 
+  (fp_text reference "KLED53" (at -4.75 0 88.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -1.5) (layer "B.Fab")
@@ -15863,7 +15863,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 97.6625 147.5785 -1.5)
 
-  (fp_text reference "C53" (at 6.0 0 -1.5) (layer B.SilkS) 
+  (fp_text reference "KC53" (at 6.0 0 -1.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -1.5) (layer B.Fab)
@@ -15891,7 +15891,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C53" (at 100.1616 147.6439 0) (layer F.SilkS)
+(gr_text "KC53" (at 100.1616 147.6439 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -15964,7 +15964,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 101.3762357 101.2598364 -1.5)
-    (fp_text reference "S54" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW54" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -16008,7 +16008,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 110.1084 93.4607 268.5)
   
-  (fp_text reference "D54" (at 5.985 1.921 268.5) (layer "B.SilkS") 
+  (fp_text reference "KD54" (at 5.985 1.921 268.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 268.5) (layer "B.Fab")
@@ -16071,14 +16071,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D54" (at 109.0090 97.2433 0) (layer F.SilkS)
+(gr_text "KD54" (at 109.0090 97.2433 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 101.2464 106.2181 178.5)
 
-  (fp_text reference "LED54" (at -4.75 0 88.5) (layer B.SilkS) 
+  (fp_text reference "KLED54" (at -4.75 0 88.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -1.5) (layer "B.Fab")
@@ -16154,7 +16154,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 98.6598 109.4915 -1.5)
 
-  (fp_text reference "C54" (at 6.0 0 -1.5) (layer B.SilkS) 
+  (fp_text reference "KC54" (at 6.0 0 -1.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -1.5) (layer B.Fab)
@@ -16182,7 +16182,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C54" (at 101.1590 109.5570 0) (layer F.SilkS)
+(gr_text "KC54" (at 101.1590 109.5570 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -16255,7 +16255,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 118.7311259 178.9436565 -2.5)
-    (fp_text reference "S55" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW55" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -16299,7 +16299,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 127.5981 171.2981 267.5)
   
-  (fp_text reference "D55" (at 5.985 1.921 267.5) (layer "B.SilkS") 
+  (fp_text reference "KD55" (at 5.985 1.921 267.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.5) (layer "B.Fab")
@@ -16362,14 +16362,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D55" (at 126.4328 175.0609 0) (layer F.SilkS)
+(gr_text "KD55" (at 126.4328 175.0609 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 118.5148 183.8989 177.5)
 
-  (fp_text reference "LED55" (at -4.75 0 87.5) (layer B.SilkS) 
+  (fp_text reference "KLED55" (at -4.75 0 87.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -2.5) (layer "B.Fab")
@@ -16445,7 +16445,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 115.8715 187.1267 -2.5)
 
-  (fp_text reference "C55" (at 6.0 0 -2.5) (layer B.SilkS) 
+  (fp_text reference "KC55" (at 6.0 0 -2.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.5) (layer B.Fab)
@@ -16473,7 +16473,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C55" (at 118.3691 187.2358 0) (layer F.SilkS)
+(gr_text "KC55" (at 118.3691 187.2358 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -16546,7 +16546,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 120.3930246 140.8799194 -2.5)
-    (fp_text reference "S56" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW56" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -16590,7 +16590,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 129.2600 133.2344 267.5)
   
-  (fp_text reference "D56" (at 5.985 1.921 267.5) (layer "B.SilkS") 
+  (fp_text reference "KD56" (at 5.985 1.921 267.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.5) (layer "B.Fab")
@@ -16653,14 +16653,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D56" (at 128.0947 136.9972 0) (layer F.SilkS)
+(gr_text "KD56" (at 128.0947 136.9972 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 120.1767 145.8352 177.5)
 
-  (fp_text reference "LED56" (at -4.75 0 87.5) (layer B.SilkS) 
+  (fp_text reference "KLED56" (at -4.75 0 87.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -2.5) (layer "B.Fab")
@@ -16736,7 +16736,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 117.5334 149.0630 -2.5)
 
-  (fp_text reference "C56" (at 6.0 0 -2.5) (layer B.SilkS) 
+  (fp_text reference "KC56" (at 6.0 0 -2.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.5) (layer B.Fab)
@@ -16764,7 +16764,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C56" (at 120.0310 149.1720 0) (layer F.SilkS)
+(gr_text "KC56" (at 120.0310 149.1720 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -16837,7 +16837,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 122.0549233 102.8161822 -2.5)
-    (fp_text reference "S57" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW57" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -16881,7 +16881,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 130.9219 95.1707 267.5)
   
-  (fp_text reference "D57" (at 5.985 1.921 267.5) (layer "B.SilkS") 
+  (fp_text reference "KD57" (at 5.985 1.921 267.5) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.5) (layer "B.Fab")
@@ -16944,14 +16944,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D57" (at 129.7566 98.9334 0) (layer F.SilkS)
+(gr_text "KD57" (at 129.7566 98.9334 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 121.8386 107.7715 177.5)
 
-  (fp_text reference "LED57" (at -4.75 0 87.5) (layer B.SilkS) 
+  (fp_text reference "KLED57" (at -4.75 0 87.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -2.5) (layer "B.Fab")
@@ -17027,7 +17027,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 119.1953 110.9992 -2.5)
 
-  (fp_text reference "C57" (at 6.0 0 -2.5) (layer B.SilkS) 
+  (fp_text reference "KC57" (at 6.0 0 -2.5) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.5) (layer B.Fab)
@@ -17055,7 +17055,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C57" (at 121.6929 111.1083 0) (layer F.SilkS)
+(gr_text "KC57" (at 121.6929 111.1083 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -17128,7 +17128,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 137.8351237 180.0281748 -2.75)
-    (fp_text reference "S58" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW58" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -17172,7 +17172,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 146.7353 172.4214 267.25)
   
-  (fp_text reference "D58" (at 5.985 1.921 267.25) (layer "B.SilkS") 
+  (fp_text reference "KD58" (at 5.985 1.921 267.25) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.25) (layer "B.Fab")
@@ -17235,14 +17235,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D58" (at 145.5537 176.1791 0) (layer F.SilkS)
+(gr_text "KD58" (at 145.5537 176.1791 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 137.5972 184.9825 177.25)
 
-  (fp_text reference "LED58" (at -4.75 0 87.25) (layer B.SilkS) 
+  (fp_text reference "KLED58" (at -4.75 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -2.75) (layer "B.Fab")
@@ -17318,7 +17318,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 134.9398 188.1987 -2.75)
 
-  (fp_text reference "C58" (at 6.0 0 -2.75) (layer B.SilkS) 
+  (fp_text reference "KC58" (at 6.0 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
@@ -17346,7 +17346,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C58" (at 137.4369 188.3186 0) (layer F.SilkS)
+(gr_text "KC58" (at 137.4369 188.3186 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -17419,7 +17419,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 139.6630904 141.9720513 -2.75)
-    (fp_text reference "S59" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW59" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -17463,7 +17463,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 148.5633 134.3653 267.25)
   
-  (fp_text reference "D59" (at 5.985 1.921 267.25) (layer "B.SilkS") 
+  (fp_text reference "KD59" (at 5.985 1.921 267.25) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.25) (layer "B.Fab")
@@ -17526,14 +17526,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D59" (at 147.3817 138.1229 0) (layer F.SilkS)
+(gr_text "KD59" (at 147.3817 138.1229 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 139.4251 146.9263 177.25)
 
-  (fp_text reference "LED59" (at -4.75 0 87.25) (layer B.SilkS) 
+  (fp_text reference "KLED59" (at -4.75 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -2.75) (layer "B.Fab")
@@ -17609,7 +17609,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 136.7678 150.1425 -2.75)
 
-  (fp_text reference "C59" (at 6.0 0 -2.75) (layer B.SilkS) 
+  (fp_text reference "KC59" (at 6.0 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
@@ -17637,7 +17637,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C59" (at 139.2649 150.2625 0) (layer F.SilkS)
+(gr_text "KC59" (at 139.2649 150.2625 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -17710,7 +17710,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 141.4910571 103.9159279 -2.75)
-    (fp_text reference "S60" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW60" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -17754,7 +17754,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 150.3913 96.3092 267.25)
   
-  (fp_text reference "D60" (at 5.985 1.921 267.25) (layer "B.SilkS") 
+  (fp_text reference "KD60" (at 5.985 1.921 267.25) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 267.25) (layer "B.Fab")
@@ -17817,14 +17817,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D60" (at 149.2096 100.0668 0) (layer F.SilkS)
+(gr_text "KD60" (at 149.2096 100.0668 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 141.2531 108.8702 177.25)
 
-  (fp_text reference "LED60" (at -4.75 0 87.25) (layer B.SilkS) 
+  (fp_text reference "KLED60" (at -4.75 0 87.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -2.75) (layer "B.Fab")
@@ -17900,7 +17900,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 138.5957 112.0864 -2.75)
 
-  (fp_text reference "C60" (at 6.0 0 -2.75) (layer B.SilkS) 
+  (fp_text reference "KC60" (at 6.0 0 -2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -2.75) (layer B.Fab)
@@ -17928,7 +17928,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C60" (at 141.0928 112.2064 0) (layer F.SilkS)
+(gr_text "KC60" (at 141.0928 112.2064 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -18001,7 +18001,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 188.4554716 180.019537 2.75)
-    (fp_text reference "S61" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW61" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -18045,7 +18045,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 196.5856 171.5948 272.75)
   
-  (fp_text reference "D61" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD61" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -18108,14 +18108,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D61" (at 195.7696 175.4484 0) (layer F.SilkS)
+(gr_text "KD61" (at 195.7696 175.4484 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 188.6934 184.9738 182.75)
 
-  (fp_text reference "LED61" (at -4.75 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED61" (at -4.75 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 2.75) (layer "B.Fab")
@@ -18191,7 +18191,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 186.3566 188.4299 2.75)
 
-  (fp_text reference "C61" (at 6.0 0 2.75) (layer B.SilkS) 
+  (fp_text reference "KC61" (at 6.0 0 2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.75) (layer B.Fab)
@@ -18219,7 +18219,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C61" (at 188.8537 188.3100 0) (layer F.SilkS)
+(gr_text "KC61" (at 188.8537 188.3100 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -18292,7 +18292,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 186.6275049 141.9634136 2.75)
-    (fp_text reference "S62" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW62" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -18336,7 +18336,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 194.7577 133.5386 272.75)
   
-  (fp_text reference "D62" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD62" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -18399,14 +18399,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D62" (at 193.9416 137.3922 0) (layer F.SilkS)
+(gr_text "KD62" (at 193.9416 137.3922 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 186.8655 146.9177 182.75)
 
-  (fp_text reference "LED62" (at -4.75 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED62" (at -4.75 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 2.75) (layer "B.Fab")
@@ -18482,7 +18482,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 184.5286 150.3738 2.75)
 
-  (fp_text reference "C62" (at 6.0 0 2.75) (layer B.SilkS) 
+  (fp_text reference "KC62" (at 6.0 0 2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.75) (layer B.Fab)
@@ -18510,7 +18510,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C62" (at 187.0257 150.2539 0) (layer F.SilkS)
+(gr_text "KC62" (at 187.0257 150.2539 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -18583,7 +18583,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 184.7995382 103.9072901 2.75)
-    (fp_text reference "S63" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW63" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -18627,7 +18627,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 192.9297 95.4825 272.75)
   
-  (fp_text reference "D63" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD63" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -18690,14 +18690,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D63" (at 192.1136 99.3361 0) (layer F.SilkS)
+(gr_text "KD63" (at 192.1136 99.3361 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 185.0375 108.8616 182.75)
 
-  (fp_text reference "LED63" (at -4.75 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED63" (at -4.75 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 2.75) (layer "B.Fab")
@@ -18773,7 +18773,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 182.7006 112.3177 2.75)
 
-  (fp_text reference "C63" (at 6.0 0 2.75) (layer B.SilkS) 
+  (fp_text reference "KC63" (at 6.0 0 2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.75) (layer B.Fab)
@@ -18801,7 +18801,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C63" (at 185.1978 112.1977 0) (layer F.SilkS)
+(gr_text "KC63" (at 185.1978 112.1977 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -18874,7 +18874,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 207.4715388 178.8558416 2.75)
-    (fp_text reference "S64" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW64" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -18918,7 +18918,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 215.6017 170.4311 272.75)
   
-  (fp_text reference "D64" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD64" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -18981,14 +18981,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D64" (at 214.7856 174.2847 0) (layer F.SilkS)
+(gr_text "KD64" (at 214.7856 174.2847 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 207.7095 183.8101 182.75)
 
-  (fp_text reference "LED64" (at -4.75 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED64" (at -4.75 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 2.75) (layer "B.Fab")
@@ -19064,7 +19064,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 205.3726 187.2662 2.75)
 
-  (fp_text reference "C64" (at 6.0 0 2.75) (layer B.SilkS) 
+  (fp_text reference "KC64" (at 6.0 0 2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.75) (layer B.Fab)
@@ -19092,7 +19092,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C64" (at 207.8698 187.1463 0) (layer F.SilkS)
+(gr_text "KC64" (at 207.8698 187.1463 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -19165,7 +19165,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 205.6435721 140.7997182 2.75)
-    (fp_text reference "S65" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW65" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -19209,7 +19209,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 213.7737 132.3749 272.75)
   
-  (fp_text reference "D65" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD65" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -19272,14 +19272,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D65" (at 212.9577 136.2285 0) (layer F.SilkS)
+(gr_text "KD65" (at 212.9577 136.2285 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 205.8815 145.7540 182.75)
 
-  (fp_text reference "LED65" (at -4.75 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED65" (at -4.75 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 2.75) (layer "B.Fab")
@@ -19355,7 +19355,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 203.5447 149.2101 2.75)
 
-  (fp_text reference "C65" (at 6.0 0 2.75) (layer B.SilkS) 
+  (fp_text reference "KC65" (at 6.0 0 2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.75) (layer B.Fab)
@@ -19383,7 +19383,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C65" (at 206.0418 149.0902 0) (layer F.SilkS)
+(gr_text "KC65" (at 206.0418 149.0902 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -19456,7 +19456,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 203.8156054 102.7435947 2.75)
-    (fp_text reference "S66" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW66" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -19500,7 +19500,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 211.9458 94.3188 272.75)
   
-  (fp_text reference "D66" (at 5.985 1.921 272.75) (layer "B.SilkS") 
+  (fp_text reference "KD66" (at 5.985 1.921 272.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 272.75) (layer "B.Fab")
@@ -19563,14 +19563,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D66" (at 211.1297 98.1724 0) (layer F.SilkS)
+(gr_text "KD66" (at 211.1297 98.1724 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 204.0536 107.6979 182.75)
 
-  (fp_text reference "LED66" (at -4.75 0 92.75) (layer B.SilkS) 
+  (fp_text reference "KLED66" (at -4.75 0 92.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 2.75) (layer "B.Fab")
@@ -19646,7 +19646,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 201.7167 111.1540 2.75)
 
-  (fp_text reference "C66" (at 6.0 0 2.75) (layer B.SilkS) 
+  (fp_text reference "KC66" (at 6.0 0 2.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 2.75) (layer B.Fab)
@@ -19674,7 +19674,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C66" (at 204.2138 111.0340 0) (layer F.SilkS)
+(gr_text "KC66" (at 204.2138 111.0340 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -19747,7 +19747,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 226.7838471 176.9299567 1.75)
-    (fp_text reference "S67" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW67" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -19791,7 +19791,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 235.0598 168.6484 271.75)
   
-  (fp_text reference "D67" (at 5.985 1.921 271.75) (layer "B.SilkS") 
+  (fp_text reference "KD67" (at 5.985 1.921 271.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 271.75) (layer "B.Fab")
@@ -19854,14 +19854,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D67" (at 234.1766 172.4871 0) (layer F.SilkS)
+(gr_text "KD67" (at 234.1766 172.4871 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 226.9353 181.8876 181.75)
 
-  (fp_text reference "LED67" (at -4.75 0 91.75) (layer B.SilkS) 
+  (fp_text reference "KLED67" (at -4.75 0 91.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 1.75) (layer "B.Fab")
@@ -19937,7 +19937,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 224.5385 185.3024 1.75)
 
-  (fp_text reference "C67" (at 6.0 0 1.75) (layer B.SilkS) 
+  (fp_text reference "KC67" (at 6.0 0 1.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 1.75) (layer B.Fab)
@@ -19965,7 +19965,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C67" (at 227.0373 185.2261 0) (layer F.SilkS)
+(gr_text "KC67" (at 227.0373 185.2261 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -20038,7 +20038,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 225.6203296 138.8477269 1.75)
-    (fp_text reference "S68" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW68" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -20082,7 +20082,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 233.8963 130.5661 271.75)
   
-  (fp_text reference "D68" (at 5.985 1.921 271.75) (layer "B.SilkS") 
+  (fp_text reference "KD68" (at 5.985 1.921 271.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 271.75) (layer "B.Fab")
@@ -20145,14 +20145,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D68" (at 233.0131 134.4049 0) (layer F.SilkS)
+(gr_text "KD68" (at 233.0131 134.4049 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 225.7718 143.8054 181.75)
 
-  (fp_text reference "LED68" (at -4.75 0 91.75) (layer B.SilkS) 
+  (fp_text reference "KLED68" (at -4.75 0 91.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 1.75) (layer "B.Fab")
@@ -20228,7 +20228,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 223.3750 147.2202 1.75)
 
-  (fp_text reference "C68" (at 6.0 0 1.75) (layer B.SilkS) 
+  (fp_text reference "KC68" (at 6.0 0 1.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 1.75) (layer B.Fab)
@@ -20256,7 +20256,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C68" (at 225.8738 147.1439 0) (layer F.SilkS)
+(gr_text "KC68" (at 225.8738 147.1439 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -20329,7 +20329,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 224.4568122 100.7654971 1.75)
-    (fp_text reference "S69" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW69" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -20373,7 +20373,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 232.7328 92.4839 271.75)
   
-  (fp_text reference "D69" (at 5.985 1.921 271.75) (layer "B.SilkS") 
+  (fp_text reference "KD69" (at 5.985 1.921 271.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 271.75) (layer "B.Fab")
@@ -20436,14 +20436,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D69" (at 231.8496 96.3227 0) (layer F.SilkS)
+(gr_text "KD69" (at 231.8496 96.3227 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 224.6083 105.7232 181.75)
 
-  (fp_text reference "LED69" (at -4.75 0 91.75) (layer B.SilkS) 
+  (fp_text reference "KLED69" (at -4.75 0 91.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 1.75) (layer "B.Fab")
@@ -20519,7 +20519,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 222.2114 109.1380 1.75)
 
-  (fp_text reference "C69" (at 6.0 0 1.75) (layer B.SilkS) 
+  (fp_text reference "KC69" (at 6.0 0 1.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 1.75) (layer B.Fab)
@@ -20547,7 +20547,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C69" (at 224.7103 109.0616 0) (layer F.SilkS)
+(gr_text "KC69" (at 224.7103 109.0616 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -20620,7 +20620,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 246.1879025 177.3404785 0.75)
-    (fp_text reference "S70" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW70" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -20664,7 +20664,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 254.6071 169.2046 270.75)
   
-  (fp_text reference "D70" (at 5.985 1.921 270.75) (layer "B.SilkS") 
+  (fp_text reference "KD70" (at 5.985 1.921 270.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.75) (layer "B.Fab")
@@ -20727,14 +20727,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D70" (at 253.6571 173.0273 0) (layer F.SilkS)
+(gr_text "KD70" (at 253.6571 173.0273 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 246.2528 182.3001 180.75)
 
-  (fp_text reference "LED70" (at -4.75 0 90.75) (layer B.SilkS) 
+  (fp_text reference "KLED70" (at -4.75 0 90.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 0.75) (layer "B.Fab")
@@ -20810,7 +20810,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 243.7968 185.6725 0.75)
 
-  (fp_text reference "C70" (at 6.0 0 0.75) (layer B.SilkS) 
+  (fp_text reference "KC70" (at 6.0 0 0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.75) (layer B.Fab)
@@ -20838,7 +20838,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C70" (at 246.2965 185.6398 0) (layer F.SilkS)
+(gr_text "KC70" (at 246.2965 185.6398 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -20911,7 +20911,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 245.689189 139.2437425 0.75)
-    (fp_text reference "S71" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW71" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -20955,7 +20955,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 254.1084 131.1078 270.75)
   
-  (fp_text reference "D71" (at 5.985 1.921 270.75) (layer "B.SilkS") 
+  (fp_text reference "KD71" (at 5.985 1.921 270.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.75) (layer "B.Fab")
@@ -21018,14 +21018,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D71" (at 253.1584 134.9306 0) (layer F.SilkS)
+(gr_text "KD71" (at 253.1584 134.9306 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 245.7541 144.2033 180.75)
 
-  (fp_text reference "LED71" (at -4.75 0 90.75) (layer B.SilkS) 
+  (fp_text reference "KLED71" (at -4.75 0 90.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 0.75) (layer "B.Fab")
@@ -21101,7 +21101,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 243.2980 147.5758 0.75)
 
-  (fp_text reference "C71" (at 6.0 0 0.75) (layer B.SilkS) 
+  (fp_text reference "KC71" (at 6.0 0 0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.75) (layer B.Fab)
@@ -21129,7 +21129,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C71" (at 245.7978 147.5430 0) (layer F.SilkS)
+(gr_text "KC71" (at 245.7978 147.5430 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -21202,7 +21202,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 245.1904754 101.1470066 0.75)
-    (fp_text reference "S72" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW72" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -21246,7 +21246,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 253.6097 93.0111 270.75)
   
-  (fp_text reference "D72" (at 5.985 1.921 270.75) (layer "B.SilkS") 
+  (fp_text reference "KD72" (at 5.985 1.921 270.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 270.75) (layer "B.Fab")
@@ -21309,14 +21309,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D72" (at 252.6597 96.8339 0) (layer F.SilkS)
+(gr_text "KD72" (at 252.6597 96.8339 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 245.2554 106.1066 180.75)
 
-  (fp_text reference "LED72" (at -4.75 0 90.75) (layer B.SilkS) 
+  (fp_text reference "KLED72" (at -4.75 0 90.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 0.75) (layer "B.Fab")
@@ -21392,7 +21392,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 242.7993 109.4790 0.75)
 
-  (fp_text reference "C72" (at 6.0 0 0.75) (layer B.SilkS) 
+  (fp_text reference "KC72" (at 6.0 0 0.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 0.75) (layer B.Fab)
@@ -21420,7 +21420,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C72" (at 245.2991 109.4463 0) (layer F.SilkS)
+(gr_text "KC72" (at 245.2991 109.4463 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -21493,7 +21493,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 265.5949274 179.0894997 -0.25)
-    (fp_text reference "S73" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW73" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -21537,7 +21537,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 274.1549 171.1018 269.75)
   
-  (fp_text reference "D73" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD73" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -21600,14 +21600,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D73" (at 273.1382 174.9074 0) (layer F.SilkS)
+(gr_text "KD73" (at 273.1382 174.9074 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 265.5733 184.0495 179.75)
 
-  (fp_text reference "LED73" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED73" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -21683,7 +21683,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 263.0587 187.3785 -0.25)
 
-  (fp_text reference "C73" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC73" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -21711,7 +21711,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C73" (at 265.5587 187.3894 0) (layer F.SilkS)
+(gr_text "KC73" (at 265.5587 187.3894 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -21784,7 +21784,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 265.7611695 140.9898625 -0.25)
-    (fp_text reference "S74" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW74" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -21828,7 +21828,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 274.3211 133.0021 269.75)
   
-  (fp_text reference "D74" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD74" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -21891,14 +21891,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D74" (at 273.3045 136.8077 0) (layer F.SilkS)
+(gr_text "KD74" (at 273.3045 136.8077 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 265.7395 145.9498 179.75)
 
-  (fp_text reference "LED74" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED74" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -21974,7 +21974,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 263.2250 149.2789 -0.25)
 
-  (fp_text reference "C74" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC74" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -22002,7 +22002,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C74" (at 265.7250 149.2898 0) (layer F.SilkS)
+(gr_text "KC74" (at 265.7250 149.2898 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -22075,7 +22075,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 290.007195 179.1960191 -0.25)
-    (fp_text reference "S75" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW75" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -22119,7 +22119,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 298.5671 171.2083 269.75)
   
-  (fp_text reference "D75" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD75" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -22182,14 +22182,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D75" (at 297.5505 175.0139 0) (layer F.SilkS)
+(gr_text "KD75" (at 297.5505 175.0139 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 289.9856 184.1560 179.75)
 
-  (fp_text reference "LED75" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED75" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -22265,7 +22265,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 287.4710 187.4850 -0.25)
 
-  (fp_text reference "C75" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC75" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -22293,7 +22293,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C75" (at 289.9710 187.4959 0) (layer F.SilkS)
+(gr_text "KC75" (at 289.9710 187.4959 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -22366,7 +22366,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 284.8109881 141.0729835 -0.25)
-    (fp_text reference "S76" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW76" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -22410,7 +22410,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 293.3709 133.0853 269.75)
   
-  (fp_text reference "D76" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD76" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -22473,14 +22473,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D76" (at 292.3543 136.8909 0) (layer F.SilkS)
+(gr_text "KD76" (at 292.3543 136.8909 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 284.7893 146.0329 179.75)
 
-  (fp_text reference "LED76" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED76" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -22556,7 +22556,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 282.2748 149.3620 -0.25)
 
-  (fp_text reference "C76" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC76" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -22584,7 +22584,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C76" (at 284.7748 149.3729 0) (layer F.SilkS)
+(gr_text "KC76" (at 284.7748 149.3729 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -22657,7 +22657,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 284.9772302 102.9733463 -0.25)
-    (fp_text reference "S77" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW77" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -22701,7 +22701,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 293.5372 94.9856 269.75)
   
-  (fp_text reference "D77" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD77" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -22764,14 +22764,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D77" (at 292.5205 98.7912 0) (layer F.SilkS)
+(gr_text "KD77" (at 292.5205 98.7912 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 284.9556 107.9333 179.75)
 
-  (fp_text reference "LED77" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED77" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -22847,7 +22847,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 282.4410 111.2624 -0.25)
 
-  (fp_text reference "C77" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC77" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -22875,7 +22875,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C77" (at 284.9410 111.2733 0) (layer F.SilkS)
+(gr_text "KC77" (at 284.9410 111.2733 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -22948,7 +22948,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 303.8608068 141.1561047 -0.25)
-    (fp_text reference "S78" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW78" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -22992,7 +22992,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 312.4207 133.1684 269.75)
   
-  (fp_text reference "D78" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD78" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -23055,14 +23055,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D78" (at 311.4041 136.9740 0) (layer F.SilkS)
+(gr_text "KD78" (at 311.4041 136.9740 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 303.8392 146.1161 179.75)
 
-  (fp_text reference "LED78" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED78" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -23138,7 +23138,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 301.3246 149.4451 -0.25)
 
-  (fp_text reference "C78" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC78" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -23166,7 +23166,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C78" (at 303.8246 149.4560 0) (layer F.SilkS)
+(gr_text "KC78" (at 303.8246 149.4560 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -23239,7 +23239,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 304.0270489 103.0564674 -0.25)
-    (fp_text reference "S79" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW79" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -23283,7 +23283,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 312.5870 95.0687 269.75)
   
-  (fp_text reference "D79" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD79" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -23346,14 +23346,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D79" (at 311.5704 98.8743 0) (layer F.SilkS)
+(gr_text "KD79" (at 311.5704 98.8743 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 304.0054 108.0164 179.75)
 
-  (fp_text reference "LED79" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED79" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -23429,7 +23429,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 301.4909 111.3455 -0.25)
 
-  (fp_text reference "C79" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC79" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -23457,7 +23457,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C79" (at 303.9908 111.3564 0) (layer F.SilkS)
+(gr_text "KC79" (at 303.9908 111.3564 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -23530,7 +23530,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 322.9106255 141.2392256 -0.25)
-    (fp_text reference "S80" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW80" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -23574,7 +23574,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 331.4706 133.2515 269.75)
   
-  (fp_text reference "D80" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD80" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -23637,14 +23637,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D80" (at 330.4539 137.0571 0) (layer F.SilkS)
+(gr_text "KD80" (at 330.4539 137.0571 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 322.8890 146.1992 179.75)
 
-  (fp_text reference "LED80" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED80" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -23720,7 +23720,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 320.3744 149.5282 -0.25)
 
-  (fp_text reference "C80" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC80" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -23748,7 +23748,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C80" (at 322.8744 149.5391 0) (layer F.SilkS)
+(gr_text "KC80" (at 322.8744 149.5391 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -23821,7 +23821,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 323.0768676 103.1395884 -0.25)
-    (fp_text reference "S81" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW81" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -23865,7 +23865,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 331.6368 95.1519 269.75)
   
-  (fp_text reference "D81" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD81" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -23928,14 +23928,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D81" (at 330.6202 98.9575 0) (layer F.SilkS)
+(gr_text "KD81" (at 330.6202 98.9575 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 323.0552 108.0995 179.75)
 
-  (fp_text reference "LED81" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED81" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -24011,7 +24011,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 320.5407 111.4286 -0.25)
 
-  (fp_text reference "C81" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC81" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -24039,7 +24039,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C81" (at 323.0407 111.4395 0) (layer F.SilkS)
+(gr_text "KC81" (at 323.0407 111.4395 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -24112,7 +24112,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 342.1266863 103.2227095 -0.25)
-    (fp_text reference "S82" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW82" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -24156,7 +24156,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 350.6866 95.2350 269.75)
   
-  (fp_text reference "D82" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD82" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -24219,14 +24219,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D82" (at 349.6700 99.0406 0) (layer F.SilkS)
+(gr_text "KD82" (at 349.6700 99.0406 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 342.1050 108.1827 179.75)
 
-  (fp_text reference "LED82" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED82" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -24302,7 +24302,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 339.5905 111.5117 -0.25)
 
-  (fp_text reference "C82" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC82" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -24330,7 +24330,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C82" (at 342.0905 111.5226 0) (layer F.SilkS)
+(gr_text "KC82" (at 342.0905 111.5226 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -24403,7 +24403,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 323.0177979 195.4483723 47.75)
-    (fp_text reference "S83" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW83" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -24447,7 +24447,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 322.8095 183.7423 317.75)
   
-  (fp_text reference "D83" (at 5.985 1.921 317.75) (layer "B.SilkS") 
+  (fp_text reference "KD83" (at 5.985 1.921 317.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 317.75) (layer "B.Fab")
@@ -24510,14 +24510,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D83" (at 324.9573 187.0442 0) (layer F.SilkS)
+(gr_text "KD83" (at 324.9573 187.0442 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 326.6893 198.7833 227.75)
 
-  (fp_text reference "LED83" (at -4.75 0 137.75) (layer B.SilkS) 
+  (fp_text reference "KLED83" (at -4.75 0 137.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 47.75) (layer "B.Fab")
@@ -24593,7 +24593,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 327.4807 202.8796 47.75)
 
-  (fp_text reference "C83" (at 6.0 0 47.75) (layer B.SilkS) 
+  (fp_text reference "KC83" (at 6.0 0 47.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 47.75) (layer B.Fab)
@@ -24621,7 +24621,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C83" (at 329.1616 201.0290 0) (layer F.SilkS)
+(gr_text "KC83" (at 329.1616 201.0290 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -24694,7 +24694,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 335.8263856 181.347217 47.75)
-    (fp_text reference "S84" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW84" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -24738,7 +24738,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 335.6181 169.6411 317.75)
   
-  (fp_text reference "D84" (at 5.985 1.921 317.75) (layer "B.SilkS") 
+  (fp_text reference "KD84" (at 5.985 1.921 317.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 317.75) (layer "B.Fab")
@@ -24801,14 +24801,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D84" (at 337.7659 172.9430 0) (layer F.SilkS)
+(gr_text "KD84" (at 337.7659 172.9430 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 339.4979 184.6822 227.75)
 
-  (fp_text reference "LED84" (at -4.75 0 137.75) (layer B.SilkS) 
+  (fp_text reference "KLED84" (at -4.75 0 137.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 47.75) (layer "B.Fab")
@@ -24884,7 +24884,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 340.2893 188.7784 47.75)
 
-  (fp_text reference "C84" (at 6.0 0 47.75) (layer B.SilkS) 
+  (fp_text reference "KC84" (at 6.0 0 47.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 47.75) (layer B.Fab)
@@ -24912,7 +24912,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C84" (at 341.9702 186.9279 0) (layer F.SilkS)
+(gr_text "KC84" (at 341.9702 186.9279 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -24985,7 +24985,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 351.8371202 163.7207728 47.75)
-    (fp_text reference "S85" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW85" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -25029,7 +25029,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 351.6288 152.0147 317.75)
   
-  (fp_text reference "D85" (at 5.985 1.921 317.75) (layer "B.SilkS") 
+  (fp_text reference "KD85" (at 5.985 1.921 317.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 317.75) (layer "B.Fab")
@@ -25092,14 +25092,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D85" (at 353.7767 155.3166 0) (layer F.SilkS)
+(gr_text "KD85" (at 353.7767 155.3166 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 355.5086 167.0557 227.75)
 
-  (fp_text reference "LED85" (at -4.75 0 137.75) (layer B.SilkS) 
+  (fp_text reference "KLED85" (at -4.75 0 137.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 47.75) (layer "B.Fab")
@@ -25175,7 +25175,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 356.3000 171.1520 47.75)
 
-  (fp_text reference "C85" (at 6.0 0 47.75) (layer B.SilkS) 
+  (fp_text reference "KC85" (at 6.0 0 47.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 47.75) (layer B.Fab)
@@ -25203,7 +25203,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C85" (at 357.9809 169.3014 0) (layer F.SilkS)
+(gr_text "KC85" (at 357.9809 169.3014 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -25276,7 +25276,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 364.6457079 149.6196174 47.75)
-    (fp_text reference "S86" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW86" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -25320,7 +25320,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 364.4374 137.9135 317.75)
   
-  (fp_text reference "D86" (at 5.985 1.921 317.75) (layer "B.SilkS") 
+  (fp_text reference "KD86" (at 5.985 1.921 317.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 317.75) (layer "B.Fab")
@@ -25383,14 +25383,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D86" (at 366.5852 141.2154 0) (layer F.SilkS)
+(gr_text "KD86" (at 366.5852 141.2154 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 368.3172 152.9546 227.75)
 
-  (fp_text reference "LED86" (at -4.75 0 137.75) (layer B.SilkS) 
+  (fp_text reference "KLED86" (at -4.75 0 137.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 47.75) (layer "B.Fab")
@@ -25466,7 +25466,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 369.1086 157.0508 47.75)
 
-  (fp_text reference "C86" (at 6.0 0 47.75) (layer B.SilkS) 
+  (fp_text reference "KC86" (at 6.0 0 47.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 47.75) (layer B.Fab)
@@ -25494,7 +25494,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C86" (at 370.7895 155.2003 0) (layer F.SilkS)
+(gr_text "KC86" (at 370.7895 155.2003 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -25567,7 +25567,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 370.7014143 103.3473911 -0.25)
-    (fp_text reference "S87" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW87" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -25611,7 +25611,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 379.2613 95.3597 269.75)
   
-  (fp_text reference "D87" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD87" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -25674,14 +25674,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D87" (at 378.2447 99.1653 0) (layer F.SilkS)
+(gr_text "KD87" (at 378.2447 99.1653 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 370.6798 108.3073 179.75)
 
-  (fp_text reference "LED87" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED87" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -25757,7 +25757,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 368.1652 111.6364 -0.25)
 
-  (fp_text reference "C87" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC87" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -25785,7 +25785,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C87" (at 370.6652 111.6473 0) (layer F.SilkS)
+(gr_text "KC87" (at 370.6652 111.6473 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
@@ -25858,7 +25858,7 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 389.7512329 103.4305121 -0.25)
-    (fp_text reference "S88" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW88" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
     (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
@@ -25902,7 +25902,7 @@
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at 398.3112 95.4428 269.75)
   
-  (fp_text reference "D88" (at 5.985 1.921 269.75) (layer "B.SilkS") 
+  (fp_text reference "KD88" (at 5.985 1.921 269.75) (layer "B.SilkS") 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 269.75) (layer "B.Fab")
@@ -25965,14 +25965,14 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "D88" (at 397.2946 99.2484 0) (layer F.SilkS)
+(gr_text "KD88" (at 397.2946 99.2484 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 389.7296 108.3905 179.75)
 
-  (fp_text reference "LED88" (at -4.75 0 89.75) (layer B.SilkS) 
+  (fp_text reference "KLED88" (at -4.75 0 89.75) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 -0.25) (layer "B.Fab")
@@ -26048,7 +26048,7 @@
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at 387.2150 111.7195 -0.25)
 
-  (fp_text reference "C88" (at 6.0 0 -0.25) (layer B.SilkS) 
+  (fp_text reference "KC88" (at 6.0 0 -0.25) (layer B.SilkS) 
     (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 -0.25) (layer B.Fab)
@@ -26076,7 +26076,7 @@
     (rotate (xyz 0 0 0))
   )
 )
-(gr_text "C88" (at 389.7150 111.7304 0) (layer F.SilkS)
+(gr_text "KC88" (at 389.7150 111.7304 0) (layer F.SilkS)
   (effects (font (size 0.9 0.9) (thickness 0.15)))
 )
 (segment 
