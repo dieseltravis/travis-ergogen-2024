@@ -127,7 +127,7 @@ module.exports = {
     }
 
     const standard_opening = `
-      (module "travis:led_SK6812mini-e (${p.reverse_mount ? "per-key" : "underglow"} ${p.reversible ? ", reversible" : "single-side"})" 
+      (module "travis:led_SK6812mini-e (${p.reverse_mount ? "per-key" : "underglow"}, ${p.reversible ? "reversible" : "single-side"})" 
         (layer ${p.side}.Cu)
         ${p.at /* parametric position */}
 

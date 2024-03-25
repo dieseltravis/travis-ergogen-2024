@@ -26,7 +26,7 @@ module.exports = {
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
-    (module "travis:USB_C_Receptacle_GCT_USB4085" (layer ${p.side}.Cu) (tedit 5BCCCD93)
+    (module "Connector_USB:USB_C_Receptacle_GCT_USB4085" (layer ${p.side}.Cu) (tedit 5BCCCD93)
     (descr "USB 2.0 Type C Receptacle, https://gct.co/Files/Drawings/USB4085.pdf")
     (tags "USB Type-C Receptacle Through-hole Right angle")
     ${p.at /* parametric position */}

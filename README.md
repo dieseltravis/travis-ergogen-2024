@@ -1,5 +1,6 @@
 # Travis's Ergogen Keyboard 2024 #
-Built with Ergogen v4.
+Built with Ergogen v4. *Alpha* quality!
+
 ![keyboard plate outline](./output/outlines/plate.svg)
 
 ![rough keyboard key and led mapping](./datasheets/plate-legend.webp)
@@ -14,7 +15,8 @@ Built with Ergogen v4.
 * `/output/outlines/` generated 2d models
 * `/output/cases/` generated 3d models
 * `/output/pcbs/` generated PCB
-* `/footprints/custom/` Custom parts' footprints
+* `/footprints/travis/` Custom parts' footprints
+    * `/footprints/travis/travis.pretty/` KiCad footprints
 * `/key/` generator for individual key footprint (key-module.js)
     * `/keytest/` test for individual key footprint
 * `/datasheets/` PDFs for some of the parts used

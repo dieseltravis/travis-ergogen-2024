@@ -6,7 +6,7 @@ module.exports = {
         layer: 'Cu'
     },
     body: p => `
-    (module "travis:Symbol_Danger_CopperTop_Small" (layer ${p.side}.Cu)
+    (module "Symbol:Symbol_Danger_8x8mm_Copper" (layer ${p.side}.Cu)
     (at 0 0)
     (descr "Symbol, Danger, Copper Top, Small,")
     (tags "Symbol, Danger, Copper Top, Small,")
@@ -16,7 +16,7 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 0.254 -4.699) (layer ${p.side}.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Symbol_Danger_CopperTop_Small (at 0.889 4.572) (layer ${p.side}.Fab) hide
+    (fp_text value "" (at 0.889 4.572) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 2.667 2.032) (end 2.667 2.413) (layer ${p.side}.${p.layer}) (width 0.381))

@@ -10,7 +10,7 @@ module.exports = {
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
-    (module "travis:SW_PUSH_6mm_H4.3mm" (layer ${p.side}.Cu) (tedit 5A02FE31)
+    (module "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" (layer ${p.side}.Cu) (tedit 5A02FE31)
     (descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=4.3mm")
     (tags "tact sw push 6mm")
     ${p.at /* parametric position */}

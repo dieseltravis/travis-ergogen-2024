@@ -82,7 +82,7 @@ module.exports = {
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify top right mirror))
 )`;
     const diode = `
-(module "travis:Diode_DO-35" (layer "B.Cu")
+(module "ScottoKeebs_Components:Diode_DO-35" (layer "B.Cu")
   (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
   (at ${adjust_point((p.U / 2 - 1), -(p.U / 2 - 1.5))} ${p.r + 270})
@@ -232,7 +232,7 @@ module.exports = {
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify ${isRtl ? 'left' : 'right'}))
 )`;
     const cap = `
-(module "travis:C_Disc_D4.7mm_W2.5mm_P5.00mm" (layer B.Cu)
+(module "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" (layer B.Cu)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
   (at ${adjust_point((isRtl ? -2.5 : 2.5), 8.3)} ${isRtl ? p.r : p.r + 180})

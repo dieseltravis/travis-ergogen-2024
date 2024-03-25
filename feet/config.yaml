@@ -1,0 +1,121 @@
+meta:
+  engine: 4.0.5
+  name: "travis_feet"
+  version: &meta_version "2024.03.25"
+  date: "2024-03-25"
+  author: '"Travis Hardiman"'
+  url: https://github.com/dieseltravis/travis-ergogen-2024
+  tags: [ "ergogen", "mx", "footprints" ]
+units:
+points:
+  zones:
+    single:
+      anchor:
+        shift: [0, 0]
+        rotate: 0
+      key:
+        padding: U
+        spread: U
+        tags: 
+          - key
+      columns:
+        A:
+          key:
+            column_net: col0
+          rows:
+            one:
+              row_net: row0
+              key:
+                led_next: LED_2
+                led_this: LED_1
+              width: 1.0U
+      rows:
+        one:
+          tags: 
+            - row_odd
+  rotate: 0
+outlines:
+  _raw:
+    - what: rectangle
+      where: true
+      bound: true
+      size: [U + 2, U + 2]
+  _keys:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [U - 0.5, U - 0.5]
+  _board:
+    - what: polygon
+      operation: stack
+      points:
+        # top left
+        - ref: single_A_one
+          shift: [-1U, 1U]
+        # top right
+        - ref: single_A_one
+          shift: [1U, 1U]
+        # bottom right
+        - ref: single_A_one
+          shift: [1U, -1U]
+        # bottom left
+        - ref: single_A_one
+          shift: [-1U, -1U]
+      fillet: 3
+  _combo:
+    - name: _board
+    - operation: subtract
+      name: _keys
+cases:
+pcbs:
+  ergogen:
+    outlines:
+      main:
+        outline: _board
+    footprints:
+      mod:
+        what: travis/ergogen
+        where: true
+  ledSK6812minie:
+    outlines:
+      main:
+        outline: _board
+    footprints:
+      mod:
+        what: travis/led_sk6812mini-e
+        where: true
+        params:
+          P2: "DOUT"
+          P4: "DIN"
+    references: true
+  mountinghole:
+    outlines:
+      main:
+        outline: _board
+    footprints:
+      mod:
+        what: travis/mountinghole
+        where: true
+    references: true
+  travis:
+    outlines:
+      main:
+        outline: _board
+    footprints:
+      mod:
+        what: travis/travis
+        where: true
+    references: true
+  mx:
+    outlines:
+      main:
+        outline: _board
+    footprints:
+      mod:
+        what: travis/mx
+        where: true
+        params:
+          from: "from_col"
+          to: "to_diode"
+    references: true
+    

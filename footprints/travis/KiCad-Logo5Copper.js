@@ -6,7 +6,7 @@ module.exports = {
         layer: 'Cu'
     },
     body: p => `
-    (module "travis:KiCad-Logo_5mm_Copper" (layer ${p.side}.${p.layer}) (tedit 0)
+    (module "Symbol:KiCad-Logo_5mm_Copper" (layer ${p.side}.${p.layer}) (tedit 0)
     (descr "KiCad Logo")
     (tags "Logo KiCad")
     ${p.at /* parametric position */}

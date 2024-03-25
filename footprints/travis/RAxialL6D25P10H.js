@@ -10,7 +10,7 @@ module.exports = {
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
-    (module "travis:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer ${p.side}.Cu) (tedit 5AE5139B)
+    (module "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer ${p.side}.Cu) (tedit 5AE5139B)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     ${p.at /* parametric position */}

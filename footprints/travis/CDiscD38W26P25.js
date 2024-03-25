@@ -10,7 +10,7 @@ module.exports = {
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
-    (module "travis:C_Disc_D3.8mm_W2.6mm_P2.50mm" (layer ${p.side}.Cu) (tedit 5AE50EF0)
+    (module "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" (layer ${p.side}.Cu) (tedit 5AE50EF0)
     (descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.8*2.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 2.50mm  diameter 3.8mm width 2.6mm Capacitor")
     ${p.at /* parametric position */}

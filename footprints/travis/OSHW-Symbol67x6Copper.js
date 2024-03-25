@@ -7,7 +7,7 @@ module.exports = {
         layer: 'Cu'
     },
     body: p => `
-    (module "travis:OSHW-Symbol_6.7x6mm_Copper" (layer ${p.side}.Cu) (tedit 0)
+    (module "Symbol:OSHW-Symbol_6.7x6mm_Copper" (layer ${p.side}.Cu) (tedit 0)
     (descr "Open Source Hardware Symbol")
     (tags "Logo Symbol OSHW")
     ${p.at /* parametric position */}

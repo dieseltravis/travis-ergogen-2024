@@ -7,7 +7,7 @@ module.exports = {
         SCOTTOKEEBS_KICAD: '${SCOTTOKEEBS_KICAD}'
     },
     body: p => `
-    (module "travis:Stabilizer_MX_3.00u" (layer ${p.side}.Cu) (tedit 0)
+    (module "ScottoKeebs_Stabilizer_MX_3.00u" (layer ${p.side}.Cu) (tedit 0)
     (descr "MX PCB Stabilizer 3.00u")
     (tags "MX Keyboard Stabilizer 3.00u Cutout")
     ${p.at /* parametric position */}

@@ -21,7 +21,7 @@ module.exports = {
         p.valpos.push(p.r);
       }
       return `
-    (module "travis:C_Disc_D4.7mm_W2.5mm_P5.00mm" (layer ${p.side}.Cu)
+    (module "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" (layer ${p.side}.Cu)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.7*2.5mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.7mm width 2.5mm Capacitor")
     ${p.at /* parametric position */}
