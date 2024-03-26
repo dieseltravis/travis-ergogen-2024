@@ -127,8 +127,8 @@
             
 (module "travis:MX" (layer F.Cu)
     (at 100 100 5)
-    (fp_text reference "KSW1" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
-    (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW1" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 0.8 0.8) (thickness 0.15))))
+    (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
     (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
@@ -172,7 +172,7 @@
   (at 107.7931 91.2625 275)
   
   (fp_text reference "KD1" (at 5.985 1.921 275) (layer "B.SilkS") 
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 275) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.15)))
@@ -235,14 +235,14 @@
   )
 )
 (gr_text "KD1" (at 107.1290 95.1452 0) (layer F.SilkS)
-  (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 100.4323 104.9411 5)
 
   (fp_text reference "KLED1" (at -5.25 0 95) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 -2.25 5) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
@@ -318,10 +318,10 @@
   (at 103.2139 108.0505 185)
 
   (fp_text reference "KC1" (at 6.0 0 185) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror))
   )
   (fp_text value "104" (at -2.5 0 185) (layer B.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
   (fp_line (start 0.15 1.25) (end 4.85 1.25) (layer B.Fab) (width 0.1))
@@ -346,7 +346,7 @@
   )
 )
 (gr_text "KC1" (at 100.7234 108.2684 0) (layer F.SilkS)
-  (effects (font (size 0.9 0.9) (thickness 0.15)))
+  (effects (font (size 0.8 0.8) (thickness 0.15)))
 )
 (segment 
   (start 105.5506 96.4146) 
@@ -418,8 +418,8 @@
 
 (module "travis:MX" (layer F.Cu)
     (at 98.3396831 81.022491 5)
-    (fp_text reference "KSW2" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
-    (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "KSW2" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 0.8 0.8) (thickness 0.15))))
+    (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
     (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
@@ -463,7 +463,7 @@
   (at 106.1328 72.2850 275)
   
   (fp_text reference "KD2" (at 5.985 1.921 275) (layer "B.SilkS") 
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 275) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.15)))
@@ -526,14 +526,14 @@
   )
 )
 (gr_text "KD2" (at 105.4687 76.1677 0) (layer F.SilkS)
-  (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
 (module "travis:led_SK6812mini-e (per-key single-side)" 
   (layer B.Cu)
   (at 98.7720 85.9636 185)
 
   (fp_text reference "KLED2" (at -4.75 0 95) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 2.25 5) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
@@ -609,10 +609,10 @@
   (at 96.5726 89.5088 5)
 
   (fp_text reference "KC2" (at 6.0 0 5) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror))
   )
   (fp_text value "104" (at -2.5 0 5) (layer B.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
   (fp_line (start 0.15 1.25) (end 4.85 1.25) (layer B.Fab) (width 0.1))
@@ -637,7 +637,7 @@
   )
 )
 (gr_text "KC2" (at 99.0631 89.2909 0) (layer F.SilkS)
-  (effects (font (size 0.9 0.9) (thickness 0.15)))
+  (effects (font (size 0.8 0.8) (thickness 0.15)))
 )
 (segment 
   (start 103.8903 77.4371) 

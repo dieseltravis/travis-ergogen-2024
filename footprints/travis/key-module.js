@@ -41,8 +41,8 @@ module.exports = {
     const key = `
 (module "travis:MX" (layer F.Cu)
     ${p.at /* parametric position */}
-    (fp_text reference "${p.designator}SW${index}" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 1 1) (thickness 0.15))))
-    (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+    (fp_text reference "${p.designator}SW${index}" (at 0 -3.25) (layer F.SilkS)  (effects (font (size 0.8 0.8) (thickness 0.15))))
+    (fp_text value "Kailh MX Switch Sockets" (at 0 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.15))))
     
     (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
     (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
@@ -88,7 +88,7 @@ module.exports = {
   (at ${adjust_point((p.U / 2 - 1), -(p.U / 2 - 1.5))} ${p.r + 270})
   
   (fp_text reference "${p.designator}D${index}" (at 5.985 1.921 ${p.r + 270}) (layer "B.SilkS") 
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "1N4148" (at 11.065 0 ${p.r + 270}) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.15)))
@@ -152,7 +152,7 @@ module.exports = {
 )`;
     const diode_label = `
 (gr_text "${p.designator}D${index}" (at ${adjust_point((p.U / 2 - 1) - 1, -(p.U / 2 - 1.5) + (7.62 / 2))} 0) (layer F.SilkS)
-  (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )`;
     const led = `
 (module "travis:led_SK6812mini-e (per-key single-side)" 
@@ -160,7 +160,7 @@ module.exports = {
   (at ${adjust_point(0, 4.96)} ${isRtl ? 180 + p.r : p.r})
 
   (fp_text reference "${p.designator}LED${index}" (at ${isRtl ? -4.75 : -5.25} 0 ${p.r + 90}) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 ${isRtl ? 2.25 : -2.25} ${p.r}) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
@@ -238,10 +238,10 @@ module.exports = {
   (at ${adjust_point((isRtl ? -2.5 : 2.5), 8.3)} ${isRtl ? p.r : p.r + 180})
 
   (fp_text reference "${p.designator}C${index}" (at 6.0 0 ${isRtl ? p.r : p.r + 180}) (layer B.SilkS) 
-    (effects (font (size 1 1) (thickness 0.15)) (justify ${isRtl ? 'right' : 'left'} mirror))
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify ${isRtl ? 'right' : 'left'} mirror))
   )
   (fp_text value "104" (at -2.5 0 ${isRtl ? p.r : p.r + 180}) (layer B.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (fp_line (start 0.15 -1.25) (end 0.15 1.25) (layer B.Fab) (width 0.1))
   (fp_line (start 0.15 1.25) (end 4.85 1.25) (layer B.Fab) (width 0.1))
@@ -267,7 +267,7 @@ module.exports = {
 )`;
     const cap_label = `
 (gr_text "${p.designator}C${index}" (at ${adjust_point(0, 8.3)} 0) (layer F.SilkS)
-  (effects (font (size 0.9 0.9) (thickness 0.15)))
+  (effects (font (size 0.8 0.8) (thickness 0.15)))
 )`;
     const routes = `
 (segment 
