@@ -20,7 +20,7 @@
                 {"label":"F6", "x":7, "y":0},
                 {"label":"F7", "x":8, "y":0},
                 {"label":"F8", "x":9, "y":0},
-                {"label":"",  "x":10, "y":0},
+
                 {"label":"F9", "x":11, "y":0},
                 {"label":"F10", "x":12, "y":0},
                 {"label":"F11", "x":13, "y":0},
@@ -28,6 +28,7 @@
 
                 {"label":"Insert", "x":14, "y":0},
                 {"label":"KC_PSCR", "x":15, "y":0},
+
 
                 {"label":"`", "x":0, "y":1},
                 {"label":"1", "x":1, "y":1},
@@ -48,6 +49,7 @@
                 {"label":"Delete", "x":14, "y":1},
                 {"label":"Scroll", "x":15, "y":1},
 
+
                 {"label":"Tab", "x":0, "y":2, "w":1.5},
                 {"label":"q", "x":1, "y":2},
                 {"label":"w", "x":2, "y":2},
@@ -66,6 +68,7 @@
                 {"label":"PgUp", "x":14, "y":2},
                 {"label":"End", "x":15, "y":2},
 
+
                 {"label":"Caps Lock", "x":0, "y":3, "w":1.5},
                 {"label":"a", "x":1, "y":3},
                 {"label":"s", "x":2, "y":3},
@@ -83,6 +86,7 @@
 
                 {"label":"Home", "x":14, "y":3},
                 {"label":"PgDn", "x":15, "y":3},
+
 
                 {"label":"Shift", "x":0, "y":4, "w":1.5},
                 {"label":"z", "x":1, "y":4},
@@ -103,6 +107,7 @@
                 {"label":"Up", "x":14, "y":4},
                 {"label":"Right", "x":15, "y":4},
                 
+
                 {"label":"Ctrl", "x":0, "y":5},
                 {"label":"Fn", "x":1, "y":5},
                 {"label":"Win", "x":2, "y":5},
@@ -118,7 +123,6 @@
 
                 {"label":"Left", "x":14, "y":5},
                 {"label":"Down", "x":15, "y":5}
-
             ]
         }
     }
