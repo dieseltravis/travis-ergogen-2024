@@ -37,6 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 // RGB config, for changing RGB settings on non-VIA firmwares
+/*
 void change_RGB(bool clockwise) {
     bool shift = get_mods() & MOD_MASK_SHIFT;
     bool alt = get_mods() & MOD_MASK_ALT;
@@ -90,3 +91,4 @@ void matrix_scan_user(void) {
   // Scan and parse keystrokes from remote keyboard, if connected (see readme)
   matrix_scan_remote_kb();
 }
+*/

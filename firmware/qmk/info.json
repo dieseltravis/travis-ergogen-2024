@@ -2,9 +2,9 @@
     "version": 1,
     "maintainer": "dieseltravis",
     "author": "Travis Hardiman",
-    "keyboard_name": "travis-ergogen-2024",
-    "keyboard": "dieseltravis/travis-ergogen-2024",
-    "keymap": "dieseltravis_travis-ergogen-2024_layout_base_mine",
+    "keyboard_name": "travisergogen2024",
+    "keyboard": "dieseltravis/travisergogen2024",
+    "keymap": "dieseltravis_travisergogen2024_layout_base_default",
     "url": "https://github.com/dieseltravis/travis-ergogen-2024",
     "layouts": {
         "LAYOUT_base": {

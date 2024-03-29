@@ -18,8 +18,8 @@
 #define ___ KC_NO
 
 #include "quantum.h"
-#include "common/remote_kb.h"
-#include "common/bitc_led.h"
+//#include "common/remote_kb.h"
+//#include "common/bitc_led.h"
 
 #define LAYOUT_base( \
     K00, K01, K02, K03, K04, K05,   K06, K07, K08, K09,      K0B, K0C, K0D,  K0E, K0F, \

@@ -53,6 +53,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MATRIX_HAS_GHOST
 
 /* Optional SMT LED pins */
+#define BACKLIGHT_PIN B5
 #define RGB_DI_PIN E6
 #define RGBLED_NUM 10
 #define RGBLIGHT_ANIMATIONS
