@@ -6,6 +6,12 @@
     "keyboard": "dieseltravis/travisergogen2024",
     "keymap": "dieseltravis_travisergogen2024_layout_base_default",
     "url": "https://github.com/dieseltravis/travis-ergogen-2024",
+    "processor": "atmega32u4",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0000",
+        "vid": "0xFEED"
+    },
     "layouts": {
         "LAYOUT_base": {
             "layout": [
@@ -105,7 +111,7 @@
 
                 {"label":"Up", "x":14, "y":4},
                 {"label":"Right", "x":15, "y":4},
-                
+
 
                 {"label":"Ctrl", "x":0, "y":5},
                 {"label":"Fn", "x":1, "y":5},
