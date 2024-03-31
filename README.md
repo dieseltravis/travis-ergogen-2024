@@ -9,6 +9,8 @@ Built with Ergogen v4. *Alpha* quality!
 
 ![PCB back](./output/pcbs/travis_erg2024-back.png)
 
+[![keyboard-layout-editor.com](./kle/travis-ergogen-2024.svg)](./kle/travis-ergogen-2024.json)
+
 ## Project Details ##
 * `/config.yaml`
 * `/package.json` yarn commands and metadata
