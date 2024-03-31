@@ -58,6 +58,7 @@ module.exports = {
         (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
 
+    ${'' /* left pad labels */}
     (fp_text user "D3" (at -5.461 -13.97) (layer "F.SilkS")
         (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
@@ -131,6 +132,7 @@ module.exports = {
         (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
 
+    ${'' /* right pad labels */}
     (fp_text user "RAW" (at 5.461 -13.97) (layer "F.SilkS")
         (effects (font (size 0.8 0.8) (thickness 0.15)))
     )

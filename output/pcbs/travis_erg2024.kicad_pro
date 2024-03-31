@@ -1115,10 +1115,6 @@
       },
       {
         "netclass": "Default",
-        "pattern": "undefined"
-      },
-      {
-        "netclass": "Default",
         "pattern": "enc_to"
       }
     ]

@@ -308,8 +308,7 @@
 (net 213 "VCC")
 (net 214 "RST")
 (net 215 "scr_to")
-(net 216 "undefined")
-(net 217 "enc_to")
+(net 216 "enc_to")
             
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -534,7 +533,6 @@
 (add_net "VCC")
 (add_net "RST")
 (add_net "scr_to")
-(add_net "undefined")
 (add_net "enc_to")
   )
 
@@ -26222,10 +26220,11 @@
         (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
 
-    (fp_text user "D3" (at -3.571872 -13.97) (layer "F.SilkS")
+    
+    (fp_text user "D3" (at -5.461 -13.97) (layer "F.SilkS")
         (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
-    (fp_text user "D3" (at -3.571872 -13.97) (layer "B.SilkS")
+    (fp_text user "D3" (at -5.461 -13.97) (layer "B.SilkS")
         (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
     (fp_text user "D2" (at -5.461 -11.43) (layer "F.SilkS")
@@ -26295,6 +26294,7 @@
         (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
     )
 
+    
     (fp_text user "RAW" (at 5.461 -13.97) (layer "F.SilkS")
         (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
@@ -26763,10 +26763,15 @@
   
 
         
-        (module RollerEncoder_Panasonic_EVQWGD001 (layer F.Cu) (tedit 6040A10C)
-        (at 163.14529764999997 141.96773245 0)   
-        (fp_text reference REF** (at 0 0 0) (layer F.Fab) (effects (font (size 1 1) (thickness 0.15))))
-        (fp_text value RollerEncoder_Panasonic_EVQWGD001 (at -0.1 9 0) (layer F.Fab) (effects (font (size 1 1) (thickness 0.15))))
+        (module "travis:evqwgd001" (layer F.Cu)
+        (at 163.14529764999997 141.96773245 0)
+        (attr through_hole)
+        (fp_text reference "SCR1" (at 0 0 0) (layer F.SilkS) hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
+        (fp_text value "RollerEncoder_Panasonic_EVQWGD001" (at -0.1 9 0) (layer F.Fab) hide
+            (effects (font (size 0.8 0.8) (thickness 0.15)))
+        )
         
         
         (fp_line (start -8.4 -6.4) (end 8.4 -6.4) (layer Dwgs.User) (width 0.12))
@@ -26791,12 +26796,17 @@
           (pad A thru_hole circle (at -5.625 -3.81 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 209 "scrA"))
           (pad B thru_hole circle (at -5.625 -1.27 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 7 "GND"))
           (pad C thru_hole circle (at -5.625 1.27 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 208 "scrC"))
-          (pad D thru_hole circle (at -5.625 3.81 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 216 "undefined"))
+          (pad D thru_hole circle (at -5.625 3.81 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (net 0 ""))
 
           
           (pad "" np_thru_hole circle (at -5.625 6.3 0) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
-        )
         
+        (model "${TRAVIS_KICAD}/evqwgd001.step"
+    (offset (xyz 8.5 -7.4 -3.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -90))
+  )
+)
 
     (module "ScottoKeebs_Components:Diode_DO-35" (layer "B.Cu")
     (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
@@ -26911,7 +26921,7 @@
             (pad C thru_hole circle (at -7.62 -0.04) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 211 "encC"))
             (pad B thru_hole circle (at -7.62 2.46) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 7 "GND"))
             (pad 1 thru_hole circle (at 6.88 -2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 38 "col4"))
-            (pad 2 thru_hole circle (at 6.88 2.46) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 217 "enc_to"))
+            (pad 2 thru_hole circle (at 6.88 2.46) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 216 "enc_to"))
 
             
             (pad "" thru_hole rect (at -0.12 -5.64 -90) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
@@ -26980,7 +26990,7 @@
       (stroke (width 0.1) (type solid)) (layer "B.Fab") )
     
     (pad 1 thru_hole rect (at 0 0 45) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 3 "row5"))
-    (pad 2 thru_hole oval (at 7.62 0 45) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 217 "enc_to"))
+    (pad 2 thru_hole oval (at 7.62 0 45) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 216 "enc_to"))
 
     (model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
       (offset (xyz 0 0 0))

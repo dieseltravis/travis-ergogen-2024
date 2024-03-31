@@ -10,6 +10,7 @@
     "all": "yarn gen && yarn svg && yarn 3d",
     "key": "cd key && npx ergogen . && cd ..",
     "keytest": "cd keytest && npx ergogen . && cd ..",
+    "feet": "cd feet && npx ergogen . && cd ..",
     "ps": "npx ergogen . -o output && gci output/outlines -Filter *.dxf | % { npx dxf-to-svg $_.FullName } && gci output/cases -Filter *.jscad | % { npx @jscad/cli@1 $_.FullName -of stla }"
   },
   "engines": {

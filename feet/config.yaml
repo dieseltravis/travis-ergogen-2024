@@ -118,4 +118,19 @@ pcbs:
           from: "from_col"
           to: "to_diode"
     references: true
-    
+  evqwgd001:
+    outlines:
+      main:
+        outline: _board
+    footprints:
+      mod:
+        what: travis/evqwgd001
+        where: true
+        params:
+          from: "from_col"
+          to: "to_diode"
+          A: "scrA"
+          B: "scrB"
+          C: "scrC"
+          D: "scrD"
+    references: true    

@@ -987,7 +987,7 @@ pcbs:
           #shift: [-1U / 2, 3U / 4 + 2]
           shift: [-6.5 / 2, 3U / 4 + 2]
       scrollwheel:
-        what: scrollwheel
+        what: travis/evqwgd001
         params:
           from: col1
           to: scr_to
@@ -995,7 +995,7 @@ pcbs:
           B: GND
           C: scrC
           # This pin is unused
-          D: undefined
+          #D: ""
         where:
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
           shift: [0, 0]
