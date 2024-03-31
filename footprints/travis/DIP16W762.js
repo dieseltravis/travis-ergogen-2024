@@ -4,6 +4,7 @@ module.exports = {
     params: {
         designator: 'DIP',
         side: 'F',
+        value: 'DIP-16_W7.62mm_Socket',
         p01: {type: 'net', value: ''},
         p02: {type: 'net', value: ''},
         p03: {type: 'net', value: ''},
@@ -23,7 +24,7 @@ module.exports = {
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
-    (module "Package_DIP:DIP-16_W7.62mm_Socket" (layer ${p.side}.Cu) (tedit 5A02E8C5)
+    (module "Package_DIP:DIP-16_W7.62mm_Socket" (layer ${p.side}.Cu)
   (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
   (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
   ${p.at /* parametric position */}
@@ -31,8 +32,8 @@ module.exports = {
   (fp_text reference "${p.ref}" (at 3.81 -2.33) (layer ${p.side}.SilkS) ${p.ref_hide}
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value DIP-16_W7.62mm_Socket (at 3.81 20.11) (layer ${p.side}.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
+  (fp_text value "${p.value}" (at 3.81 20.11) (layer ${p.side}.Fab) hide
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (fp_arc (start 3.81 -1.33) (end 2.81 -1.33) (angle -180.000000) (layer ${p.side}.SilkS) (width 0.12))
   (fp_line (start 1.635 -1.27) (end 6.985 -1.27) (layer ${p.side}.Fab) (width 0.1))

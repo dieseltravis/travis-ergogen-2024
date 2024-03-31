@@ -872,39 +872,39 @@ pcbs:
           shift: [+(2.5 / 2), 8]
           rotate: 180
       promicro:
-        what: promicro
+        what: travis/ScottoKeebs-Arduino_Pro_Micro #promicro
         params:
-          orientation: "up"
+          #orientation: "up"
           # left
-          #P1:     # D3 TXO/PD3
-          #P0:     # D2 RXI/PD2
-          #GND: GND
-          #GND: GND
-          P2: mux3 # D1 SDA
-          P3: mux2 # D0 SCL PWM
-          P4: mux1 # D4 A6
-          P5: mux0 # C6 PWM
-          P6: scrC # D7 A7 PWM
-          P7: scrA # E6
-          #P8:     # B4 A8
-          P9: LED  # B5 A9 PWM
+          #P1:      # D3 TXO/PD3
+          #P2:      # D2 RXI/PD2
+          #P3: GND
+          #P3: GND
+          P5: mux3  # D1 SDA
+          P6: mux2  # D0 SCL PWM
+          P7: mux1  # D4 A6
+          P8: mux0  # C6 PWM
+          P9: scrC  # D7 A7 PWM
+          P10: scrA # E6
+          #P11:     # B4 A8
+          P12: LED  # B5 A9 PWM
           # right
-          #RAW: LEDV
-          #GND: GND
-          #RESET
-          #VCC: 3.3V
-          P21: col7 # F4 A3
-          P20: col6 # F5 A2
-          P19: row2 # F6 A1
-          P18: row3 # F7 A0
-          P15: row4 # B1 SCLK
-          P14: row5 # B3 MISO
-          P16: encA # B2 MOSI
-          P10: encC # B6 A10 PWM
+          #P24: RAW LEDV
+          #P23: GND
+          #P22: RESET 13
+          #P21: 3.3V
+          P20: row0 # F4 A3
+          P19: row1 # F5 A2
+          P18: row2 # F6 A1
+          P17: row3 # F7 A0
+          P16: row4 # B1 SCLK
+          P15: row5 # B3 MISO
+          P14: encA # B2 MOSI
+          P13: encC # B6 A10 PWM
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
           shift: [0, -2.75]
-          rotate: -90
+          #rotate: -90
       cap1: # 104
         what: travis/CDiscD38W26P25
         params:
@@ -918,21 +918,22 @@ pcbs:
       dip1: # 74HC138N
         what: travis/DIP16W762
         params:
+          value: "74HC138N"
           p01: mux0 #A
           p02: mux1 #B
           p03: mux2 #C
           p04: GND #G2A
           p05: mux3 #G2B
           p06: VCC #G1
-          p07: row0 #row5 #Y7 (there is no row6)
+          p07: col0 #row5 #Y7 (there is no row6)
           p08: GND #GND C1 P2
-          p09: row1 #row4 #Y6
-          p10: col0 #row3 #Y5
-          p11: col1 #row2 #Y4
-          p12: col2 #row1 #Y3
-          p13: col3 #row0 #Y2
-          p14: col4 #Y1
-          p15: col5 #Y0
+          p09: col1 #row4 #Y6
+          p10: col2 #row3 #Y5
+          p11: col3 #row2 #Y4
+          p12: col4 #row1 #Y3
+          p13: col5 #row0 #Y2
+          p14: col6 #Y1
+          p15: col7 #Y0
           p16: VCC #VCC C1 P1
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
@@ -952,6 +953,7 @@ pcbs:
       dip2: # 74HC138N
         what: travis/DIP16W762
         params:
+          value: "74HC138N"
           p01: mux0 #A
           p02: mux1 #B
           p03: mux2 #C
