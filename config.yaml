@@ -876,31 +876,31 @@ pcbs:
         params:
           orientation: "up"
           # left
-          #P1: # TXO/PD3
-          #P0: # RXI/PD2
+          #P1:     # D3 TXO/PD3
+          #P0:     # D2 RXI/PD2
           #GND: GND
           #GND: GND
-          P2: mux3 # SDA
-          P3: mux2 # SCL PWM
-          P4: mux1 # A6
-          P5: mux0 # PWM
-          P6: scrC # A7 PWM
-          P7: scrA
-          #P8: #A8
-          P9: LED #A9 PWM
+          P2: mux3 # D1 SDA
+          P3: mux2 # D0 SCL PWM
+          P4: mux1 # D4 A6
+          P5: mux0 # C6 PWM
+          P6: scrC # D7 A7 PWM
+          P7: scrA # E6
+          #P8:     # B4 A8
+          P9: LED  # B5 A9 PWM
           # right
           #RAW: LEDV
           #GND: GND
           #RESET
-          #VCC: 5V
-          P21: col7 # A3
-          P20: col6 # A2
-          P19: row2 # A1
-          P18: row3 # A0
-          P15: row4 # SCLK
-          P14: row5 # MISO
-          P16: encA # MOSI
-          P10: encC # A10 PWM
+          #VCC: 3.3V
+          P21: col7 # F4 A3
+          P20: col6 # F5 A2
+          P19: row2 # F6 A1
+          P18: row3 # F7 A0
+          P15: row4 # B1 SCLK
+          P14: row5 # B3 MISO
+          P16: encA # B2 MOSI
+          P10: encC # B6 A10 PWM
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
           shift: [0, -2.75]

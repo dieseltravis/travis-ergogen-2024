@@ -15,10 +15,6 @@
 #define NO_USB_STARTUP_CHECK
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0x6E61
-#define PRODUCT_ID      0x6060
-
-#define DEVICE_VER      0x0001
 #define MANUFACTURER    travis
 #define PRODUCT         ERGO2024
 
@@ -28,10 +24,12 @@
 #define MATRIX_MUX_COLS 4
 
 //TODO:
-#define MATRIX_ROW_PINS { B6, B2, B3, B1, F7 }
-#define MATRIX_COL_PINS { }
+//#define MATRIX_ROW_PINS { B6, B2, B3, B1, F7 }
+#define MATRIX_ROW_PINS { F6, F7, B1, B3 }
+#define MATRIX_COL_PINS { F4, F5 }
 //TODO:
-#define MATRIX_COL_MUX_PINS { D7, E6, B4, B5 }
+//#define MATRIX_COL_MUX_PINS { D7, E6, B4, B5 }
+#define MATRIX_COL_MUX_PINS { D1, D0, D4, C6 }
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 10
@@ -40,18 +38,15 @@
 //#define MATRIX_HAS_GHOST
 
 /* Optional SMT LED pins */
-#define BACKLIGHT_PIN B5
-#define RGB_DI_PIN E6
+//#define BACKLIGHT_PIN
+#define RGB_DI_PIN B5
 #define RGBLED_NUM 10
 #define RGBLIGHT_ANIMATIONS
 #define RGBLIGHT_SLEEP
 
 /* Optional encoder pins */
-//TODO:
-#define ENCODERS_PAD_A { B5 }
-#define ENCODERS_PAD_B { B4 }
-#define ENCODER2_PAD_A { B5 }
-#define ENCODER2_PAD_B { B4 }
+#define ENCODERS_PAD_A { E6, B2 }
+#define ENCODERS_PAD_B { D7, B6 }
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
