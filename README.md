@@ -20,6 +20,8 @@ Built with Ergogen v4. *Alpha* quality!
 * `/key/` generator for individual key footprint (key-module.js)
     * `/keytest/` test for individual key footprint
 * `/datasheets/` PDFs for some of the parts used
+* `/kle/` keyboard-layout-editor.com layouts
+* `/firmware/` firmware is the last part I'm struggling with
 
 ## References ##
 * Ergogen project: https://github.com/ergogen/ergogen/
