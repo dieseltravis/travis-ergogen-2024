@@ -26878,15 +26878,17 @@
     )
   )
 
-        (module rotary_encoder (layer F.Cu) (tedit 603326DE)
+        (module "travis:ec11" (layer F.Cu)
 
             (at 163.145297625 170.50982505000002 -90)
         
             
-            (fp_text reference "ROT1" (at 0 0.5) (layer F.SilkS) 
-                hide (effects (font (size 1 1) (thickness 0.15))))
-            (fp_text value "" (at 0 8.89) (layer F.Fab)
-                (effects (font (size 1 1) (thickness 0.15))))
+            (fp_text reference "ROT1" (at 0 0.5 -90) (layer F.SilkS) hide
+                (effects (font (size 1 1) (thickness 0.15)))
+            )
+            (fp_text value "EC11" (at 0 8.89 -90) (layer F.Fab) hide
+                (effects (font (size 0.8 0.8) (thickness 0.15)))
+            )
 
             
             (fp_line (start -0.62 -0.04) (end 0.38 -0.04) (layer F.SilkS) (width 0.12))
@@ -26926,6 +26928,12 @@
             
             (pad "" thru_hole rect (at -0.12 -5.64 -90) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
             (pad "" thru_hole rect (at -0.12 5.56 -90)  (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
+
+            (model "${TRAVIS_KICAD}/ec11.step"
+                (offset (xyz 0 0 0))
+                (scale (xyz 1 1 1))
+                (rotate (xyz 0 0 90))
+            )
         )
     
 

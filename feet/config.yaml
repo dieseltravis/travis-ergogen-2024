@@ -134,3 +134,18 @@ pcbs:
           C: "scrC"
           D: "scrD"
     references: true    
+  ec11:
+    outlines:
+      main:
+        outline: _board
+    footprints:
+      mod:
+        what: travis/ec11
+        where: true
+        params:
+          from: "from_col"
+          to: "to_diode"
+          A: "rotA"
+          B: "rotB"
+          C: "rotC"
+    references: true  

@@ -1013,7 +1013,7 @@ pcbs:
           from: scr_to
           to: row0
       rotary:
-        what: rotary
+        what: travis/ec11
         params:
           from: col4
           to: enc_to

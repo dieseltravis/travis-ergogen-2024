@@ -37,7 +37,7 @@ module.exports = {
       B: {type: 'net', value: 'GND'},
       C: {type: 'net', value: undefined},
       D: {type: 'net', value: ''},
-      TRAVIS_KICAD: '${TRAVIS_KICAD}' // ~/Projects/travis-ergogen-2024/footprints/travis
+      TRAVIS_KICAD: '${TRAVIS_KICAD}' // ~/Projects/travis-ergogen-2024/footprints/travis/travis.pretty
     },
     body: p => {
       const pos = (arr) => arr.join(' ');
