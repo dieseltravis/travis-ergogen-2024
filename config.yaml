@@ -1,7 +1,7 @@
 meta:
   engine: 4.0.5
   name: "travis-ergogen-2024"
-  version: &meta_version "2024.03.25"
+  version: &meta_version "2024.03.31"
   date: "2024-03-25"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
@@ -1003,11 +1003,8 @@ pcbs:
         what: travis/ScottoKeebs-Diode_DO-35 #diode
         where: 
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
-          #shift: [-6, 9]
-          #shift: [-5.5, 16]
-          #shift: [-8.5, 15]
-          shift: [-11, 14]
-          rotate: -45
+          shift: [-6, 15.75]
+          rotate: -90
         params:
           side: B
           from: scr_to
@@ -1028,11 +1025,8 @@ pcbs:
         what: travis/ScottoKeebs-Diode_DO-35 #diode
         where: 
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
-          #shift: [0, -10]
-          #shift: [-4.5, -14.5]
-          #shift: [-6.5, -15.5]
-          shift: [-9.5, -14.5]
-          rotate: 45
+          shift: [-4.5, -14.5]
+          rotate: 90
         params:
           side: B
           from: enc_to
@@ -1044,22 +1038,12 @@ pcbs:
           ref: matrixl_inner_mod
           shift: [0, -staby]
           rotate: 180
-      #spacel3u:
-      #  what: travis/ScottoKeebs-Stabilizer_MX_3u
-      #  where:
-      #    ref: matrixl_inner_mod
-      #    shift: [0, staby]
       spacer2u:
         what: travis/ScottoKeebs-Stabilizer_MX_2u
         where:
           ref: matrixr_inner_mod
           shift: [0, -staby]
           rotate: 180
-      #spacer3u:
-      #  what: travis/ScottoKeebs-Stabilizer_MX_3u
-      #  where:
-      #    ref: matrixr_inner_mod
-      #    shift: [0, staby]
       # holes:
       holeTopLeft:
         what: travis/mountinghole #infused-kim/mounting_hole

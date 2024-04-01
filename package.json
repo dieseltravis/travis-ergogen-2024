@@ -1,6 +1,6 @@
 {
   "name": "travis-ergogen-2024",
-  "version": "2024.03.24",
+  "version": "2024.03.31",
   "description": "Travis's first Ergogen keyboard (2024)",
   "scripts": {
     "test": "npx yamllint config.yaml",
@@ -11,6 +11,7 @@
     "key": "cd key && npx ergogen . && cd ..",
     "keytest": "cd keytest && npx ergogen . && cd ..",
     "feet": "cd feet && npx ergogen . && cd ..",
+    "qmk": "qmk compile -kb dieseltravis/travisergogen2024 -km default",
     "ps": "npx ergogen . -o output && gci output/outlines -Filter *.dxf | % { npx dxf-to-svg $_.FullName } && gci output/cases -Filter *.jscad | % { npx @jscad/cli@1 $_.FullName -of stla }"
   },
   "engines": {

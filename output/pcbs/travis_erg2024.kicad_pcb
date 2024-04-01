@@ -5,7 +5,7 @@
   (page A3)
   (title_block
     (title travis_erg2024)
-    (rev 2024.03.25)
+    (rev 2024.03.31)
     (company "Travis Hardiman")
   )
 
@@ -26811,13 +26811,13 @@
     (module "ScottoKeebs_Components:Diode_DO-35" (layer "B.Cu")
     (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
     (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
-    (at 152.14529764999997 127.96773245 -45)
+    (at 157.14529764999997 126.21773245 -90)
 
     
-    (fp_text reference "D1" (at 3.81 -2.12 -45) (layer "B.SilkS") hide
+    (fp_text reference "D1" (at 3.81 -2.12 -90) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value "1N4148" (at 3.81 0 -45) (layer "B.Fab")
+    (fp_text value "1N4148" (at 3.81 0 -90) (layer "B.Fab")
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     
@@ -26868,8 +26868,8 @@
     (fp_line (start 7.62 0) (end 5.81 0)
       (stroke (width 0.1) (type solid)) (layer "B.Fab") )
     
-    (pad 1 thru_hole rect (at 0 0 -45) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 122 "row0"))
-    (pad 2 thru_hole oval (at 7.62 0 -45) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 215 "scr_to"))
+    (pad 1 thru_hole rect (at 0 0 -90) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 122 "row0"))
+    (pad 2 thru_hole oval (at 7.62 0 -90) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 215 "scr_to"))
 
     (model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
       (offset (xyz 0 0 0))
@@ -26940,13 +26940,13 @@
     (module "ScottoKeebs_Components:Diode_DO-35" (layer "B.Cu")
     (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
     (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
-    (at 153.645297625 185.00982505000002 45)
+    (at 158.645297625 185.00982505000002 90)
 
     
-    (fp_text reference "D2" (at 3.81 -2.12 -45) (layer "B.SilkS") hide
+    (fp_text reference "D2" (at 3.81 -2.12 -90) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value "1N4148" (at 3.81 0 -45) (layer "B.Fab")
+    (fp_text value "1N4148" (at 3.81 0 -90) (layer "B.Fab")
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     
@@ -26997,8 +26997,8 @@
     (fp_line (start 7.62 0) (end 5.81 0)
       (stroke (width 0.1) (type solid)) (layer "B.Fab") )
     
-    (pad 1 thru_hole rect (at 0 0 45) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 3 "row5"))
-    (pad 2 thru_hole oval (at 7.62 0 45) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 216 "enc_to"))
+    (pad 1 thru_hole rect (at 0 0 90) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 3 "row5"))
+    (pad 2 thru_hole oval (at 7.62 0 90) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (net 216 "enc_to"))
 
     (model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
       (offset (xyz 0 0 0))
@@ -28348,7 +28348,7 @@
        (stroke (width 0) (type solid)) (fill solid) (layer F.Cu)(uuid "7029871f-efcc-4fab-92ba-136af30a4742"))
    )
 
-      (gr_text "2024.03.25" (at 163.14529770000001 200.22995045 0) (layer F.SilkS)
+      (gr_text "2024.03.31" (at 163.14529770000001 200.22995045 0) (layer F.SilkS)
         (effects (font (face "CaskaydiaMono NFP") (size 0.9 0.9) (thickness 0.15)))
       )
             (gr_line (start 17.145605748878346 129.9389625806612) (end 27.844950045766325 86.0199604492775) (angle 90) (layer Edge.Cuts) (width 0.15))

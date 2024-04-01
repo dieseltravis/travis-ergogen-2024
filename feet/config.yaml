@@ -1,7 +1,7 @@
 meta:
   engine: 4.0.5
   name: "travis_feet"
-  version: &meta_version "2024.03.25"
+  version: &meta_version "2024.03.31"
   date: "2024-03-25"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
