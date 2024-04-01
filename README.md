@@ -23,7 +23,7 @@ Built with Ergogen v4. *Alpha* quality!
     * `/keytest/` test for individual key footprint
 * `/datasheets/` PDFs for some of the parts used
 * `/kle/` keyboard-layout-editor.com layouts
-* `/firmware/` firmware is the last part I'm struggling with
+* `/firmware/` qmk firmware compiles, but needs to be tested!
 
 ## References ##
 * Ergogen project: https://github.com/ergogen/ergogen/
@@ -61,4 +61,8 @@ Aliexpress:
 * Electrolytic Capacitor: 6.3V1000UF 6x11mm 10pcs https://www.aliexpress.us/item/3256802796040934.html
 
 Adafruit:
-* 
+* Adafruit KB2040 - RP2040 Kee Boar Driver https://www.adafruit.com/product/5302
+* 5 @ Kailh Switch Sockets for MX-compatible Mechanical Keys - 20 Pack https://www.adafruit.com/product/4958
+* 10 @ Kailh Mechanical Key Switches - Tactile Brown - 10 pack - Cherry MX Brown Compatible https://www.adafruit.com/product/4954
+* 10 @ DSA Keycaps for MX Compatible Switches - 10 pack https://www.adafruit.com/product/5008
+* USB A to USB C Cable - 2 meters long https://www.adafruit.com/product/5044
