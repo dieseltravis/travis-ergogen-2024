@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "config_common.h"
+//#include "config_common.h"
 
 /* Used to set host for remote KB if VUSB detect doesn't work. */
 // #define KEYBOARD_HOST // Force host mode
@@ -13,10 +13,6 @@
 
 // Workaround for freezing after MacOS sleep
 #define NO_USB_STARTUP_CHECK
-
-/* USB Device descriptor parameter */
-#define MANUFACTURER    travis
-#define PRODUCT         ERGO2024
 
 /* key matrix size */
 #define MATRIX_ROWS 6
@@ -39,9 +35,9 @@
 
 /* Optional SMT LED pins */
 //#define BACKLIGHT_PIN
-#define RGB_DI_PIN B5
-#define RGBLED_NUM 10
-#define RGBLIGHT_ANIMATIONS
+#define WS2812_DI_PIN B5
+#define RGBLED_NUM 88
+//#define RGBLIGHT_ANIMATIONS
 #define RGBLIGHT_SLEEP
 
 /* Optional encoder pins */
