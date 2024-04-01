@@ -155,7 +155,7 @@ module.exports = {
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )`;
     const led = `
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at ${adjust_point(0, 4.96)} ${isRtl ? 180 + p.r : p.r})
 

@@ -5,6 +5,7 @@ module.exports = {
     params: {
         designator: 'C',
         side: 'F',
+        value: 'C_Radial_D6.3mm_H11.0mm_P2.50mm',
         P1: { type: 'net', value: 'VCC' },
         P2: { type: 'net', value: 'GND' },
         KISYS3DMOD: '${KISYS3DMOD}'
@@ -17,7 +18,7 @@ module.exports = {
   (fp_text reference "${p.ref}" (at 1.25 -4.4) (layer ${p.side}.SilkS) ${p.ref_hide}
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value C_Radial_D6.3mm_H11.0mm_P2.50mm (at 1.25 4.4) (layer ${p.side}.Fab) hide
+  (fp_text value "${p.value}" (at 1.25 4.4) (layer ${p.side}.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_circle (center 1.25 0) (end 4.4 0) (layer ${p.side}.Fab) (width 0.1))

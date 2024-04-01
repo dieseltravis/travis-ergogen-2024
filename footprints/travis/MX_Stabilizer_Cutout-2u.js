@@ -10,7 +10,7 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 0.25 10.05) (layer Eco2.User) hide ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value MX_Stabilizer_Cutout-2u (at 0 -15.24) (layer ${p.side}.Fab) hide
+    (fp_text value "MX Stabilizer Cutout-2u" (at 0 -15.24) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -19 -9.5) (end 19 -9.5) (layer Dwgs.User) (width 0.15))

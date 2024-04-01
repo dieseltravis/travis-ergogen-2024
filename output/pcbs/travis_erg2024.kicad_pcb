@@ -5,7 +5,7 @@
   (page A3)
   (title_block
     (title travis_erg2024)
-    (rev 2024.03.31)
+    (rev 2024.04.01)
     (company "Travis Hardiman")
   )
 
@@ -649,7 +649,7 @@
 (gr_text "KD1" (at 49.2317 195.3628 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 41.7871 204.6031 0.5)
 
@@ -940,7 +940,7 @@
 (gr_text "KD2" (at 43.6369 157.3102 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 36.1923 166.5505 0.5)
 
@@ -1231,7 +1231,7 @@
 (gr_text "KD3" (at 48.5668 119.1657 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 41.1221 128.4060 0.5)
 
@@ -1522,7 +1522,7 @@
 (gr_text "KD4" (at 68.2810 195.1966 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 60.8363 204.4369 0.5)
 
@@ -1813,7 +1813,7 @@
 (gr_text "KD5" (at 67.9485 157.0980 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 60.5039 166.3383 0.5)
 
@@ -2104,7 +2104,7 @@
 (gr_text "KD6" (at 67.6160 118.9995 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 60.1714 128.2398 0.5)
 
@@ -2395,7 +2395,7 @@
 (gr_text "KD7" (at 87.3864 193.1617 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 79.7816 202.2707 -0.5)
 
@@ -2686,7 +2686,7 @@
 (gr_text "KD8" (at 87.7189 155.0632 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 80.1141 164.1722 -0.5)
 
@@ -2977,7 +2977,7 @@
 (gr_text "KD9" (at 88.0513 116.9646 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 80.4466 126.0736 -0.5)
 
@@ -3268,7 +3268,7 @@
 (gr_text "KD10" (at 106.5156 192.4606 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 98.7530 201.4355 -1.5)
 
@@ -3559,7 +3559,7 @@
 (gr_text "KD11" (at 107.5130 154.3737 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 99.7504 163.3486 -1.5)
 
@@ -3850,7 +3850,7 @@
 (gr_text "KD12" (at 108.5103 116.2867 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 100.7477 125.2616 -1.5)
 
@@ -4141,7 +4141,7 @@
 (gr_text "KD13" (at 127.2638 156.0290 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 119.3457 164.8671 -2.5)
 
@@ -4432,7 +4432,7 @@
 (gr_text "KD14" (at 128.9257 117.9653 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 121.0076 126.8033 -2.5)
 
@@ -4723,7 +4723,7 @@
 (gr_text "KD15" (at 143.1414 195.1352 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 135.1849 203.9386 -2.75)
 
@@ -5014,7 +5014,7 @@
 (gr_text "KD16" (at 146.4677 157.1510 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 138.5111 165.9544 -2.75)
 
@@ -5305,7 +5305,7 @@
 (gr_text "KD17" (at 148.2956 119.0949 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 140.3391 127.8983 -2.75)
 
@@ -5596,7 +5596,7 @@
 (gr_text "KD18" (at 198.1818 194.4045 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 191.1057 203.9299 2.75)
 
@@ -5887,7 +5887,7 @@
 (gr_text "KD19" (at 194.8556 156.4203 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 187.7795 165.9458 2.75)
 
@@ -6178,7 +6178,7 @@
 (gr_text "KD20" (at 193.0276 118.3642 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 185.9515 127.8896 2.75)
 
@@ -6469,7 +6469,7 @@
 (gr_text "KD21" (at 213.8717 155.2566 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 206.7955 164.7821 2.75)
 
@@ -6760,7 +6760,7 @@
 (gr_text "KD22" (at 212.0437 117.2005 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 204.9676 126.7259 2.75)
 
@@ -7051,7 +7051,7 @@
 (gr_text "KD23" (at 234.7584 191.5282 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 227.5171 200.9288 1.75)
 
@@ -7342,7 +7342,7 @@
 (gr_text "KD24" (at 233.5949 153.4460 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 226.3536 162.8465 1.75)
 
@@ -7633,7 +7633,7 @@
 (gr_text "KD25" (at 232.4313 115.3638 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 225.1900 124.7643 1.75)
 
@@ -7924,7 +7924,7 @@
 (gr_text "KD26" (at 253.9064 192.0757 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 246.5022 201.3484 0.75)
 
@@ -8215,7 +8215,7 @@
 (gr_text "KD27" (at 253.4077 153.9790 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 246.0035 163.2517 0.75)
 
@@ -8506,7 +8506,7 @@
 (gr_text "KD28" (at 252.9090 115.8822 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 245.5048 125.1549 0.75)
 
@@ -8797,7 +8797,7 @@
 (gr_text "KD29" (at 273.0551 193.9572 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 265.4902 203.0993 -0.25)
 
@@ -9088,7 +9088,7 @@
 (gr_text "KD30" (at 273.2214 155.8576 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 265.6564 164.9996 -0.25)
 
@@ -9379,7 +9379,7 @@
 (gr_text "KD31" (at 273.3876 117.7579 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 265.8226 126.9000 -0.25)
 
@@ -9670,7 +9670,7 @@
 (gr_text "KD32" (at 292.1049 194.0403 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 284.5400 203.1824 -0.25)
 
@@ -9961,7 +9961,7 @@
 (gr_text "KD33" (at 292.2712 155.9407 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 284.7062 165.0828 -0.25)
 
@@ -10252,7 +10252,7 @@
 (gr_text "KD34" (at 292.4374 117.8410 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 284.8725 126.9831 -0.25)
 
@@ -10543,7 +10543,7 @@
 (gr_text "KD35" (at 316.6835 156.0472 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 309.1185 165.1893 -0.25)
 
@@ -10834,7 +10834,7 @@
 (gr_text "KD36" (at 311.4872 117.9242 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 303.9223 127.0662 -0.25)
 
@@ -11125,7 +11125,7 @@
 (gr_text "KD37" (at 335.8995 118.0307 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 328.3346 127.1728 -0.25)
 
@@ -11416,7 +11416,7 @@
 (gr_text "KD38" (at 339.0585 199.8528 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 340.7904 211.5919 47.75)
 
@@ -11707,7 +11707,7 @@
 (gr_text "KD39" (at 351.8671 185.7516 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 353.5990 197.4907 47.75)
 
@@ -11998,7 +11998,7 @@
 (gr_text "KD40" (at 367.8778 168.1252 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 369.6098 179.8643 47.75)
 
@@ -12289,7 +12289,7 @@
 (gr_text "KD41" (at 380.6864 154.0240 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 382.4183 165.7631 47.75)
 
@@ -12580,7 +12580,7 @@
 (gr_text "KD42" (at 378.1616 118.2151 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 370.5967 127.3572 -0.25)
 
@@ -12871,7 +12871,7 @@
 (gr_text "KD43" (at 397.2114 118.2982 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 389.6465 127.4403 -0.25)
 
@@ -13162,7 +13162,7 @@
 (gr_text "KD44" (at 43.8032 176.3595 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 36.3585 185.5998 180.5)
 
@@ -13453,7 +13453,7 @@
 (gr_text "KD45" (at 43.4707 138.2609 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 36.0260 147.5012 180.5)
 
@@ -13744,7 +13744,7 @@
 (gr_text "KD46" (at 48.4005 100.1164 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 40.9559 109.3568 180.5)
 
@@ -14035,7 +14035,7 @@
 (gr_text "KD47" (at 68.1147 176.1473 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 60.6701 185.3876 180.5)
 
@@ -14326,7 +14326,7 @@
 (gr_text "KD48" (at 67.7823 138.0488 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 60.3376 147.2891 180.5)
 
@@ -14617,7 +14617,7 @@
 (gr_text "KD49" (at 87.5526 174.1125 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 79.9478 183.2215 179.5)
 
@@ -14908,7 +14908,7 @@
 (gr_text "KD50" (at 87.8851 136.0139 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 80.2803 145.1229 179.5)
 
@@ -15199,7 +15199,7 @@
 (gr_text "KD51" (at 88.2176 97.9154 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 80.6128 107.0244 179.5)
 
@@ -15490,7 +15490,7 @@
 (gr_text "KD52" (at 107.0143 173.4172 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 99.2517 182.3920 178.5)
 
@@ -15781,7 +15781,7 @@
 (gr_text "KD53" (at 108.0117 135.3302 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 100.2491 144.3051 178.5)
 
@@ -16072,7 +16072,7 @@
 (gr_text "KD54" (at 109.0090 97.2433 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 101.2464 106.2181 178.5)
 
@@ -16363,7 +16363,7 @@
 (gr_text "KD55" (at 126.4328 175.0609 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 118.5148 183.8989 177.5)
 
@@ -16654,7 +16654,7 @@
 (gr_text "KD56" (at 128.0947 136.9972 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 120.1767 145.8352 177.5)
 
@@ -16945,7 +16945,7 @@
 (gr_text "KD57" (at 129.7566 98.9334 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 121.8386 107.7715 177.5)
 
@@ -17236,7 +17236,7 @@
 (gr_text "KD58" (at 145.5537 176.1791 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 137.5972 184.9825 177.25)
 
@@ -17527,7 +17527,7 @@
 (gr_text "KD59" (at 147.3817 138.1229 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 139.4251 146.9263 177.25)
 
@@ -17818,7 +17818,7 @@
 (gr_text "KD60" (at 149.2096 100.0668 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 141.2531 108.8702 177.25)
 
@@ -18109,7 +18109,7 @@
 (gr_text "KD61" (at 195.7696 175.4484 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 188.6934 184.9738 182.75)
 
@@ -18400,7 +18400,7 @@
 (gr_text "KD62" (at 193.9416 137.3922 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 186.8655 146.9177 182.75)
 
@@ -18691,7 +18691,7 @@
 (gr_text "KD63" (at 192.1136 99.3361 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 185.0375 108.8616 182.75)
 
@@ -18982,7 +18982,7 @@
 (gr_text "KD64" (at 214.7856 174.2847 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 207.7095 183.8101 182.75)
 
@@ -19273,7 +19273,7 @@
 (gr_text "KD65" (at 212.9577 136.2285 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 205.8815 145.7540 182.75)
 
@@ -19564,7 +19564,7 @@
 (gr_text "KD66" (at 211.1297 98.1724 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 204.0536 107.6979 182.75)
 
@@ -19855,7 +19855,7 @@
 (gr_text "KD67" (at 234.1766 172.4871 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 226.9353 181.8876 181.75)
 
@@ -20146,7 +20146,7 @@
 (gr_text "KD68" (at 233.0131 134.4049 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 225.7718 143.8054 181.75)
 
@@ -20437,7 +20437,7 @@
 (gr_text "KD69" (at 231.8496 96.3227 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 224.6083 105.7232 181.75)
 
@@ -20728,7 +20728,7 @@
 (gr_text "KD70" (at 253.6571 173.0273 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 246.2528 182.3001 180.75)
 
@@ -21019,7 +21019,7 @@
 (gr_text "KD71" (at 253.1584 134.9306 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 245.7541 144.2033 180.75)
 
@@ -21310,7 +21310,7 @@
 (gr_text "KD72" (at 252.6597 96.8339 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 245.2554 106.1066 180.75)
 
@@ -21601,7 +21601,7 @@
 (gr_text "KD73" (at 273.1382 174.9074 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 265.5733 184.0495 179.75)
 
@@ -21892,7 +21892,7 @@
 (gr_text "KD74" (at 273.3045 136.8077 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 265.7395 145.9498 179.75)
 
@@ -22183,7 +22183,7 @@
 (gr_text "KD75" (at 297.5505 175.0139 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 289.9856 184.1560 179.75)
 
@@ -22474,7 +22474,7 @@
 (gr_text "KD76" (at 292.3543 136.8909 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 284.7893 146.0329 179.75)
 
@@ -22765,7 +22765,7 @@
 (gr_text "KD77" (at 292.5205 98.7912 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 284.9556 107.9333 179.75)
 
@@ -23056,7 +23056,7 @@
 (gr_text "KD78" (at 311.4041 136.9740 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 303.8392 146.1161 179.75)
 
@@ -23347,7 +23347,7 @@
 (gr_text "KD79" (at 311.5704 98.8743 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 304.0054 108.0164 179.75)
 
@@ -23638,7 +23638,7 @@
 (gr_text "KD80" (at 330.4539 137.0571 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 322.8890 146.1992 179.75)
 
@@ -23929,7 +23929,7 @@
 (gr_text "KD81" (at 330.6202 98.9575 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 323.0552 108.0995 179.75)
 
@@ -24220,7 +24220,7 @@
 (gr_text "KD82" (at 349.6700 99.0406 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 342.1050 108.1827 179.75)
 
@@ -24511,7 +24511,7 @@
 (gr_text "KD83" (at 324.9573 187.0442 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 326.6893 198.7833 227.75)
 
@@ -24802,7 +24802,7 @@
 (gr_text "KD84" (at 337.7659 172.9430 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 339.4979 184.6822 227.75)
 
@@ -25093,7 +25093,7 @@
 (gr_text "KD85" (at 353.7767 155.3166 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 355.5086 167.0557 227.75)
 
@@ -25384,7 +25384,7 @@
 (gr_text "KD86" (at 366.5852 141.2154 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 368.3172 152.9546 227.75)
 
@@ -25675,7 +25675,7 @@
 (gr_text "KD87" (at 378.2447 99.1653 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 370.6798 108.3073 179.75)
 
@@ -25966,7 +25966,7 @@
 (gr_text "KD88" (at 397.2946 99.2484 0) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )
-(module "travis:led_SK6812mini-e (per-key single-side)" 
+(module "travis:led_SK6812mini-e" 
   (layer B.Cu)
   (at 389.7296 108.3905 179.75)
 
@@ -26145,14 +26145,14 @@
   (net 6)
 )
 
-    (module "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer B.Cu) (tedit 5AE5139B)
+    (module "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer B.Cu)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (at 152.33109100000001 118.4527532 87.25)
     (fp_text reference "R1" (at 5.08 -2.37) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (at 5.08 2.37) (layer B.Fab) hide
+    (fp_text value "470R" (at 5.08 2.37) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.93 -1.25) (end 1.93 1.25) (layer B.Fab) (width 0.1))
@@ -26190,7 +26190,7 @@
   (fp_text reference "C1" (at 1.25 -4.4) (layer B.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value C_Radial_D6.3mm_H11.0mm_P2.50mm (at 1.25 4.4) (layer B.Fab) hide
+  (fp_text value "6.3V 1000uF" (at 1.25 4.4) (layer B.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_circle (center 1.25 0) (end 4.4 0) (layer B.Fab) (width 0.1))
@@ -26216,7 +26216,7 @@
     (fp_text reference "MCU1" (at 0 1.625 0) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "Arduino_Pro_Micro" (at 0 0 0) (layer "F.Fab") hide
+    (fp_text value "Arduino Pro Micro" (at 0 0 0) (layer "F.Fab") hide
         (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
 
@@ -26516,7 +26516,7 @@
     )
   )
 
-    (module "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" (layer F.Cu) (tedit 5AE50EF0)
+    (module "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" (layer F.Cu)
     (descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.8*2.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 2.50mm  diameter 3.8mm width 2.6mm Capacitor")
     (at 62.034332 89.31074755 180)
@@ -26524,7 +26524,7 @@
     (fp_text reference "C2" (at 1.25 -2.55) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value C_Disc_D3.8mm_W2.6mm_P2.50mm (at 1.25 2.55) (layer F.Fab) hide
+    (fp_text value "104" (at 1.25 2.55) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.65 -1.3) (end -0.65 1.3) (layer F.Fab) (width 0.1))
@@ -26615,7 +26615,7 @@
   )
 )
 
-    (module "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" (layer F.Cu) (tedit 5AE50EF0)
+    (module "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" (layer F.Cu)
     (descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.8*2.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 2.50mm  diameter 3.8mm width 2.6mm Capacitor")
     (at 266.2731036 88.13485485 180.25)
@@ -26623,7 +26623,7 @@
     (fp_text reference "C3" (at 1.25 -2.55) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value C_Disc_D3.8mm_W2.6mm_P2.50mm (at 1.25 2.55) (layer F.Fab) hide
+    (fp_text value "104" (at 1.25 2.55) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.65 -1.3) (end -0.65 1.3) (layer F.Fab) (width 0.1))
@@ -26722,7 +26722,7 @@
     (fp_text reference "SW1" (at 3.25 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_PUSH_6mm_H4.3mm (at 3.75 6.7) (layer F.Fab) hide
+    (fp_text value "6mm button" (at 3.75 6.7) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 3.25 2.25) (layer F.Fab)
@@ -26769,7 +26769,7 @@
         (fp_text reference "SCR1" (at 0 0 0) (layer F.SilkS) hide
             (effects (font (size 1 1) (thickness 0.15)))
         )
-        (fp_text value "RollerEncoder_Panasonic_EVQWGD001" (at -0.1 9 0) (layer F.Fab) hide
+        (fp_text value "EVQWGD001" (at -0.1 9 0) (layer F.Fab) hide
             (effects (font (size 0.8 0.8) (thickness 0.15)))
         )
         
@@ -27016,7 +27016,7 @@
     (fp_text reference "STAB2u1" (at 0 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Stabilizer_MX_2.00u (at 0 2) (layer F.Fab) hide
+    (fp_text value "Stabilizer_MX_2.00u" (at 0 2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 2) (end 0 -2) (layer Dwgs.User) (width 0.1))
@@ -27052,7 +27052,7 @@
     (fp_text reference "STAB2u2" (at 0 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Stabilizer_MX_2.00u (at 0 2) (layer F.Fab) hide
+    (fp_text value "Stabilizer_MX_2.00u" (at 0 2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 2) (end 0 -2) (layer Dwgs.User) (width 0.1))
@@ -28348,8 +28348,8 @@
        (stroke (width 0) (type solid)) (fill solid) (layer F.Cu)(uuid "7029871f-efcc-4fab-92ba-136af30a4742"))
    )
 
-      (gr_text "2024.03.31" (at 163.14529770000001 200.22995045 0) (layer F.SilkS)
-        (effects (font (face "CaskaydiaMono NFP") (size 0.9 0.9) (thickness 0.15)))
+      (gr_text "2024.04.01" (at 163.14529770000001 200.22995045 0) (layer F.SilkS)
+        (effects (font (size 0.9 0.9) (thickness 0.15)))
       )
             (gr_line (start 17.145605748878346 129.9389625806612) (end 27.844950045766325 86.0199604492775) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 29.77066606875543 84.49342245400724) (end 40.68865784084912 84.39814254599295) (angle 90) (layer Edge.Cuts) (width 0.15))

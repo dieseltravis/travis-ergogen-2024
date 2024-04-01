@@ -4,6 +4,7 @@ module.exports = {
     params: {
         designator: 'STAB2u',
         side: 'F',
+        value: 'Stabilizer_MX_2.00u',
         SCOTTOKEEBS_KICAD: '${SCOTTOKEEBS_KICAD}'
     },
     body: p => `
@@ -16,7 +17,7 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 0 -2) (layer ${p.side}.SilkS) ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Stabilizer_MX_2.00u (at 0 2) (layer ${p.side}.Fab) hide
+    (fp_text value "${p.value}" (at 0 2) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 2) (end 0 -2) (layer Dwgs.User) (width 0.1))

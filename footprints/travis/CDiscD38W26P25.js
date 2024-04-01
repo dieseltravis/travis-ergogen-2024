@@ -5,12 +5,13 @@ module.exports = {
     params: {
         designator: 'C',
         side: 'F',
+        value: 'C_Disc_D3.8mm_W2.6mm_P2.50mm',
         P1: {type: 'net', value: ''},
         P2: {type: 'net', value: ''},
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
-    (module "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" (layer ${p.side}.Cu) (tedit 5AE50EF0)
+    (module "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" (layer ${p.side}.Cu)
     (descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.8*2.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 2.50mm  diameter 3.8mm width 2.6mm Capacitor")
     ${p.at /* parametric position */}
@@ -18,7 +19,7 @@ module.exports = {
     (fp_text reference "${p.ref}" (at 1.25 -2.55) (layer ${p.side}.SilkS) ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value C_Disc_D3.8mm_W2.6mm_P2.50mm (at 1.25 2.55) (layer ${p.side}.Fab) hide
+    (fp_text value "${p.value}" (at 1.25 2.55) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.65 -1.3) (end -0.65 1.3) (layer ${p.side}.Fab) (width 0.1))

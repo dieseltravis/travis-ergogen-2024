@@ -5,19 +5,20 @@ module.exports = {
     params: {
         designator: 'R',
         side: 'F',
+        value: 'R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal',
         from: { type: 'net', value: undefined },
         to: { type: 'net', value: undefined },
         KISYS3DMOD: '${KISYS3DMOD}'
     },
     body: p => `
-    (module "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer ${p.side}.Cu) (tedit 5AE5139B)
+    (module "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer ${p.side}.Cu)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     ${p.at /* parametric position */}
     (fp_text reference "${p.ref}" (at 5.08 -2.37) (layer ${p.side}.SilkS) ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (at 5.08 2.37) (layer ${p.side}.Fab) hide
+    (fp_text value "${p.value}" (at 5.08 2.37) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.93 -1.25) (end 1.93 1.25) (layer ${p.side}.Fab) (width 0.1))

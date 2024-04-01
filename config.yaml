@@ -1,8 +1,8 @@
 meta:
   engine: 4.0.5
   name: "travis-ergogen-2024"
-  version: &meta_version "2024.03.31"
-  date: "2024-03-25"
+  version: &meta_version "2024.04.01"
+  date: "2024-04-01"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
   tags: [ "ergogen", "promicro", "keyboard", "cherrymx", "hotswap", "rgb" ]
@@ -852,11 +852,10 @@ pcbs:
       rgbr: # 470 ohm resistor
         what: travis/RAxialL6D25P10H
         params:
-          # designator: "R"
-          # value: 470
           from: LED #P9 on Promicro
           to: LED_0 #P2 on LED 0
           side: B
+          value: "470R"
         where:
           ref: matrixl_inner_func
           shift: [U / 2 + 2, -14]
@@ -867,6 +866,7 @@ pcbs:
           P1: RAW
           P2: GND
           side: B
+          value: "6.3V 1000uF"
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
           shift: [+(2.5 / 2), 8]
@@ -874,6 +874,7 @@ pcbs:
       promicro:
         what: travis/ScottoKeebs-Arduino_Pro_Micro #promicro
         params:
+          value: "Arduino Pro Micro"
           #orientation: "up"
           # left
           #P1:      # D3 TXO/PD3
@@ -910,6 +911,7 @@ pcbs:
         params:
           P1: VCC
           P2: GND
+          value: "104"
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
           # adjust to pin 1
@@ -945,6 +947,7 @@ pcbs:
         params:
           P1: VCC
           P2: GND
+          value: "104"
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
           # adjust to pin 1
@@ -982,6 +985,7 @@ pcbs:
           #P1: GND
           #to: RST
           #P2: RST
+          value: "6mm button"
         where:
           ref: matrixr_inner_func
           #shift: [-1U / 2, 3U / 4 + 2]
@@ -989,6 +993,7 @@ pcbs:
       scrollwheel:
         what: travis/evqwgd001
         params:
+          value: EVQWGD001
           from: col1
           to: scr_to
           A: scrA
@@ -1122,7 +1127,7 @@ pcbs:
         where: 
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
         params:
-          face: "CaskaydiaMono NFP"
+          #face: "CaskaydiaMono NFP"
           text: *meta_version
           size: 0.9
         adjust:
