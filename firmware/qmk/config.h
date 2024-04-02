@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "config_common.h"
+//#include "config_common.h"
 
 /* Used to set host for remote KB if VUSB detect doesn't work. */
 // #define KEYBOARD_HOST // Force host mode
@@ -15,20 +15,16 @@
 #define NO_USB_STARTUP_CHECK
 
 /* USB Device descriptor parameter */
-#define MANUFACTURER    travis
-#define PRODUCT         ERGO2024
+//#define MANUFACTURER    travis
+//#define PRODUCT         ERGO2024
 
 /* key matrix size */
 #define MATRIX_ROWS 6
 #define MATRIX_COLS 16
 #define MATRIX_MUX_COLS 4
 
-//TODO:
-//#define MATRIX_ROW_PINS { B6, B2, B3, B1, F7 }
 #define MATRIX_ROW_PINS { F4, F5, F6, F7, B1, B3 }
 #define MATRIX_COL_PINS { }
-//TODO:
-//#define MATRIX_COL_MUX_PINS { D7, E6, B4, B5 }
 #define MATRIX_COL_MUX_PINS { C6, D4, D0, D1 }
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
@@ -38,15 +34,21 @@
 //#define MATRIX_HAS_GHOST
 
 /* Optional SMT LED pins */
-//#define BACKLIGHT_PIN
-#define RGB_DI_PIN B5
-#define RGBLED_NUM 10
-#define RGBLIGHT_ANIMATIONS
-#define RGBLIGHT_SLEEP
+//#define RGB_DI_PIN B5
+#define RGBLED_NUM 88
+#define WS2812_DI_PIN B5
+#define RGB_MATRIX_LED_COUNT 88
+#define DRIVER_LED_TOTAL 88
+#define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_GRB
+//#define RGBLIGHT_ANIMATIONS
+//#define RGBLIGHT_SLEEP
+//#define LED_CAPS_LOCK_PIN 17 // or 18?
+//#define LED_SCROLL_LOCK_PIN 77 // os 78?
 
 /* Optional encoder pins */
 #define ENCODERS_PAD_A { E6, B2 }
 #define ENCODERS_PAD_B { D7, B6 }
+//#define ENCODER_RESOLUTIONS { 4, 2 }
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
