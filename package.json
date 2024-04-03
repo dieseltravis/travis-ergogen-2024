@@ -11,10 +11,10 @@
     "key": "cd key && npx ergogen . && cd ..",
     "keytest": "cd keytest && npx ergogen . && cd ..",
     "feet": "cd feet && npx ergogen . && cd ..",
-    "qmk": "qmk compile -kb dieseltravis/travisergogen2024 -km default",
+    "qmk": "qmk clean && qmk compile -kb dieseltravis/travisergogen2024 -km default",
     "qmk_config": "qmk config user.keyboard=dieseltravis/travisergogen2024 user.keymap=default",
     "qmk_gendb": "qmk generate-compilation-database -kb dieseltravis/travisergogen2024 -km default",
-    "qmk_cp": "cp -v *.{hex,uf2}  ~/Projects/travis-ergogen-2024",
+    "qmk_cp": "cp -v ~/qmk_firmware/*.{hex,uf2,bin} ~/Projects/travis-ergogen-2024/firmware/",
     "qmk_link":"ln -s ~/Projects/travis-ergogen-2024/firmware/qmk ~/qmk_firmware/keyboards/dieseltravis/travisergogen2024",
     "qmk_all": "yarn qmk && yarn qmk_cp",
     "ps": "npx ergogen . -o output && gci output/outlines -Filter *.dxf | % { npx dxf-to-svg $_.FullName } && gci output/cases -Filter *.jscad | % { npx @jscad/cli@1 $_.FullName -of stla }"

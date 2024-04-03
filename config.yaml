@@ -896,7 +896,7 @@ pcbs:
           #P21: 3.3V
           P20: row0 # F4 A3
           P19: row1 # F5 A2
-          P18: row2 # F6 A1
+          P18: row2 # F6 A1  
           P17: row3 # F7 A0
           P16: row4 # B1 SCLK
           P15: row5 # B3 MISO
