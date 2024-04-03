@@ -920,23 +920,23 @@ pcbs:
       dip1: # 74HC138N
         what: travis/DIP16W762
         params:
-          value: "74HC138N"
+          value: "SN74HC138N"
           p01: mux0 #A
           p02: mux1 #B
           p03: mux2 #C
-          p04: GND #G2A
+          p04: GND  #G2A
           p05: mux3 #G2B
-          p06: VCC #G1
-          p07: col0 #row5 #Y7 (there is no row6)
-          p08: GND #GND C1 P2
-          p09: col1 #row4 #Y6
-          p10: col2 #row3 #Y5
-          p11: col3 #row2 #Y4
-          p12: col4 #row1 #Y3
-          p13: col5 #row0 #Y2
+          p06: VCC  #G1
+          p07: col0 #Y7
+          p08: GND
+          p09: col1 #Y6
+          p10: col2 #Y5
+          p11: col3 #Y4
+          p12: col4 #Y3
+          p13: col5 #Y2
           p14: col6 #Y1
           p15: col7 #Y0
-          p16: VCC #VCC C1 P1
+          p16: VCC
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
           # adjust to pin 1
@@ -956,23 +956,23 @@ pcbs:
       dip2: # 74HC138N
         what: travis/DIP16W762
         params:
-          value: "74HC138N"
-          p01: mux0 #A
-          p02: mux1 #B
-          p03: mux2 #C
-          p04: GND #G2A
-          p05: GND #G2B
-          p06: mux3 #G1
-          p07: col8 #col15 #Y7
-          p08: GND #GND C2 P2
-          p09: col9 # #Y6
-          p10: col10 #col13 #Y5
-          p11: col11 #col12 #Y4
-          p12: col12 #col11 #Y3
-          p13: col13 #col10 #Y2
-          p14: col14 #col9 #Y1
-          p15: col15 #col8 #Y0
-          p16: VCC #VCC C2 P1
+          value: "SN74HC138N"
+          p01: mux0  #A
+          p02: mux1  #B
+          p03: mux2  #C
+          p04: GND   #G2A
+          p05: GND   #G2B
+          p06: mux3  #G1
+          p07: col8  #Y7
+          p08: GND
+          p09: col9  #Y6
+          p10: col10 #Y5
+          p11: col11 #Y4
+          p12: col12 #Y3
+          p13: col13 #Y2
+          p14: col14 #Y1
+          p15: col15 #Y0
+          p16: VCC
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
           # adjust to pin 1

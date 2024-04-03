@@ -26,12 +26,10 @@
 #define MATRIX_ROW_PINS { F4, F5, F6, F7, B1, B3 }
 #define MATRIX_COL_PINS { }
 #define MATRIX_COL_MUX_PINS { C6, D4, D0, D1 }
+//#define MATRIX_COL_MUX_PINS { D1, D0, D4, C6 }
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 10
-
-/* define if matrix has ghost (lacks anti-ghosting diodes) */
-//#define MATRIX_HAS_GHOST
 
 /* Optional SMT LED pins */
 //#define RGB_DI_PIN B5

@@ -17,6 +17,7 @@
 #include QMK_KEYBOARD_H
 #include "travisergogen2024.h"
 
+/*
 // Use Bit-C LED to show CAPS LOCK status
 bool led_update_kb(led_t led_state) {
     bool res = led_update_user(led_state);
@@ -25,8 +26,8 @@ bool led_update_kb(led_t led_state) {
     }
     return res;
 }
-
-//TODO: both encoders
+*/
+//TODO: both encoders?
 #ifdef ENCODER_ENABLE
 bool encoder_update_kb(uint8_t index, bool clockwise) {
     if (!encoder_update_user(index, clockwise)) { return false; }
