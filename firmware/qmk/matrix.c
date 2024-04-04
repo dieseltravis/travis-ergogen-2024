@@ -15,37 +15,49 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "quantum.h"
+#include "sn74x138.h"
 
 #define COL_SHIFTER ((uint32_t)1)
 
 // Column pins
 static const pin_t row_pins[MATRIX_ROWS] = MATRIX_ROW_PINS;
 static const pin_t col_pins[MATRIX_MUX_COLS] = MATRIX_COL_MUX_PINS;
+// map pins on mux to match actual columns
+static const pin_t col_map[MATRIX_COLS] = { 7,  6,  5,  4,  3,  2, 1, 0, 
+                                           15, 14, 13, 12, 11, 10, 9, 8 };
+// map columns to value from pin?
+static const pin_t map_col[MATRIX_COLS] = { 7,  6,  5,  4,  3,  2, 1, 0, 
+                                           15, 14, 13, 12, 11, 10, 9, 8 };
 
 // Internal functions
 
-static void init_pins(void) {
-    // Set cols to outputs, low
-    for (pin_t pin = 0; pin < MATRIX_MUX_COLS; pin++) {
-        setPinOutput(col_pins[pin]);
-    }
-    
-    // Unselect cols
-    for (pin_t bit = 0; bit < MATRIX_MUX_COLS; bit++) {
-        writePinLow(col_pins[bit]);
+static void unselect_cols(void) {
+    // Native
+    for (uint8_t x = 0; x < MATRIX_COLS; x++) {
+        if (col_pins[x] != NO_PIN) {
+            setPinOutput(col_pins[x]);
+            writePinHigh(col_pins[x]);
+        }
     }
 
-    // Set rows to input, pullup
-    for (pin_t pin = 0; pin < MATRIX_ROWS; pin++) {
-        setPinInputHigh(row_pins[pin]);
+    // Demultiplexer
+    sn74x138_set_enabled(false);
+}
+
+static void init_pins(void) {
+    unselect_cols();
+    for (uint8_t x = 0; x < MATRIX_ROWS; x++) {
+        setPinInputHigh(row_pins[x]);
     }
 }
 
 static void select_col(pin_t col)
 {
-    for (pin_t bit = 0; bit < MATRIX_MUX_COLS; bit++) {
-        pin_t state = (col & (0b1 << bit)) >> bit;
-        writePin(col_pins[bit], state);
+    if (col_pins[col] != NO_PIN) {
+        writePinLow(col_pins[col]);
+    } else {
+        sn74x138_set_addr(col_map[col]);
+        sn74x138_set_enabled(true);
     }
 }
 
@@ -81,16 +93,19 @@ static bool read_rows_on_col(matrix_row_t current_matrix[], pin_t current_col)
 // Matrix scan functions
 
 void matrix_init_custom(void) {
+    sn74x138_init();
     init_pins();
 }
 
 bool matrix_scan_custom(matrix_row_t current_matrix[]) {
     bool changed = false;
 
-    //Set col, read rows
+    // Set col, read rows
     for (pin_t current_col = 0; current_col < MATRIX_COLS; current_col++) {
-        changed |= read_rows_on_col(current_matrix, current_col);
+        // shift columns to match wiring
+        pin_t new_col = col_map[current_col];
+        changed |= read_rows_on_col(current_matrix, new_col);
     }
-    
+
     return (pin_t)changed;
 }

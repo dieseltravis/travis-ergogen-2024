@@ -896,7 +896,7 @@ pcbs:
           #P21: 3.3V
           P20: row0 # F4 A3
           P19: row1 # F5 A2
-          P18: row2 # F6 A1  
+          P18: row2 # F6 A1
           P17: row3 # F7 A0
           P16: row4 # B1 SCLK
           P15: row5 # B3 MISO
@@ -924,9 +924,9 @@ pcbs:
           p01: mux0 #A
           p02: mux1 #B
           p03: mux2 #C
-          p04: GND  #G2A
-          p05: mux3 #G2B
-          p06: VCC  #G1
+          p04: GND  #G2A E1
+          p05: mux3 #G2B E2
+          p06: VCC  #G1  E3
           p07: col0 #Y7
           p08: GND
           p09: col1 #Y6
@@ -960,9 +960,9 @@ pcbs:
           p01: mux0  #A
           p02: mux1  #B
           p03: mux2  #C
-          p04: GND   #G2A
-          p05: GND   #G2B
-          p06: mux3  #G1
+          p04: GND   #G2A E1
+          p05: GND   #G2B E2
+          p06: mux3  #G1  E3
           p07: col8  #Y7
           p08: GND
           p09: col9  #Y6
