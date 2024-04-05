@@ -39,17 +39,8 @@
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 10
 
-/* Optional SMT LED pins */
-//#define RGB_DI_PIN B5
-#define RGBLED_NUM 88
 #define WS2812_DI_PIN B5
-#define RGB_MATRIX_LED_COUNT 88
-#define DRIVER_LED_TOTAL 88
 #define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_GRB
-//#define RGBLIGHT_ANIMATIONS
-//#define RGBLIGHT_SLEEP
-//#define LED_CAPS_LOCK_PIN 17 // or 18?
-//#define LED_SCROLL_LOCK_PIN 77 // os 78?
 
 /* Optional encoder pins */
 #define ENCODERS_PAD_A { E6, B2 }
