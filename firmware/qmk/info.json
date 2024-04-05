@@ -9,6 +9,7 @@
     "url": "https://github.com/dieseltravis/travis-ergogen-2024",
     "processor": "atmega32u4",
     "bootloader": "atmel-dfu",
+    "debounce": 10,
     "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
@@ -22,6 +23,9 @@
         "device_version": "1.0.0",
         "pid": "0x2024",
         "vid": "0xFEED"
+    },
+    "ws2812": {
+        "pin": "B5"
     },
     "rgb_matrix": {
         "driver": "ws2812",
@@ -141,11 +145,8 @@
         "led_count": 88,
         "center_point": [81, 22]
     },
-    "ws2812": {
-        "pin": "B5"
-    },
     "layouts": {
-        "LAYOUT_base": {
+        "LAYOUT_travis": {
             "layout": [
                 {"matrix": [0, 0], "label":"Esc", "x":0, "y":0},
                 {"matrix": [0, 1], "label":"ENC1", "x":6, "y":2},
@@ -158,7 +159,7 @@
                 {"matrix": [0, 7], "label":"F6", "x":8, "y":0},
                 {"matrix": [0, 8], "label":"F7", "x":9, "y":0},
                 {"matrix": [0, 9], "label":"F8", "x":10, "y":0},
-                {"matrix": [0, 10], "x":-1, "y":-1},
+
                 {"matrix": [0, 11], "label":"F9", "x":12, "y":0},
                 {"matrix": [0, 12], "label":"F10", "x":13, "y":0},
                 {"matrix": [0, 13], "label":"F11", "x":14, "y":0},
@@ -240,8 +241,7 @@
                 {"matrix": [4, 9], "label":".", "x":10, "y":4},
                 {"matrix": [4, 10], "label":"/", "x":11, "y":4},
                 {"matrix": [4, 11], "label":"Shift", "x":12, "y":4, "w":1.5},
-                {"matrix": [4, 12], "x":-1, "y":-1},
-                {"matrix": [4, 13], "x":-1, "y":-1},
+
                 {"matrix": [4, 14], "label":"Up", "x":15, "y":4},
                 {"matrix": [4, 15], "label":"Right", "x":16, "y":4},
 
@@ -254,13 +254,12 @@
                 {"matrix": [5, 5], "label":"Space", "x":4, "y":5, "w":2.5},
 
                 {"matrix": [5, 6], "label":"Space", "x":6.25, "y":5, "w":2.5},
-                {"matrix": [5, 7], "x":-1, "y":-1},
+
                 {"matrix": [5, 8], "label":"RAlt", "x":9, "y":5},
                 {"matrix": [5, 9], "label":"RWin", "x":10, "y":5},
                 {"matrix": [5, 10], "label":"Menu", "x":11, "y":5},
                 {"matrix": [5, 11], "label":"RCtrl", "x":12, "y":5},
-                {"matrix": [5, 12], "x":-1, "y":-1},
-                {"matrix": [5, 13], "x":-1, "y":-1},
+
                 {"matrix": [5, 14], "label":"Left", "x":15, "y":5},
                 {"matrix": [5, 15], "label":"Down", "x":16, "y":5}
             ]

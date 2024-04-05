@@ -23,8 +23,8 @@
 static const pin_t row_pins[MATRIX_ROWS] = MATRIX_ROW_PINS;
 static const pin_t col_pins[MATRIX_MUX_COLS] = MATRIX_COL_MUX_PINS;
 // map pins on mux to match actual columns
-static const uint8_t col_map[MATRIX_COLS] = { 7,  6,  5,  4,  3,  2, 1, 0, 
-                                           15, 14, 13, 12, 11, 10, 9, 8 };
+//static const pin_t col_map[MATRIX_COLS] = { 7,  6,  5,  4,  3,  2, 1, 0, 
+//                                           15, 14, 13, 12, 11, 10, 9, 8 };
 
 // Internal functions
 static void init_pins(void) {
@@ -92,8 +92,8 @@ bool matrix_scan_custom(matrix_row_t current_matrix[]) {
 
     //Set col, read rows
     for (uint8_t current_col = 0; current_col < MATRIX_COLS; current_col++) {
-        uint8_t mapped_col = col_map[current_col];
-        changed |= read_rows_on_col(current_matrix, mapped_col);
+        
+        changed |= read_rows_on_col(current_matrix, current_col);
     }
     
     return (uint8_t)changed;
