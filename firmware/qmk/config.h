@@ -23,13 +23,13 @@
 #define MATRIX_COLS 16
 #define MATRIX_MUX_COLS 4
 
-#define ADDRESS_PIN_COUNT 4
-#define SN74X138_ADDRESS_PINS { C6, D4, D0, D1 }
+//#define ADDRESS_PIN_COUNT 4
+//#define SN74X138_ADDRESS_PINS { C6, D4, D0, D1 }
 //P5: mux3  # D1 SDA
 // lower cols
-#define SN74X138_E2_PIN D1
+//#define SN74X138_E2_PIN D1
 // upper cols
-#define SN74X138_E3_PIN D1
+//#define SN74X138_E3_PIN D1
 
 #define MATRIX_ROW_PINS { F4, F5, F6, F7, B1, B3 }
 #define MATRIX_COL_PINS { }
@@ -37,9 +37,9 @@
 //#define MATRIX_COL_MUX_PINS { D1, D0, D4, C6 }
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 10
+//#define DEBOUNCE 10
 
-#define WS2812_DI_PIN B5
+//#define WS2812_DI_PIN B5
 #define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_GRB
 
 /* Optional encoder pins */
