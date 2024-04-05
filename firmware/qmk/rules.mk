@@ -27,8 +27,8 @@ ENCODER_ENABLE = yes        # Use rotary encoder
 CUSTOM_MATRIX = lite        # Lite custom matrix
 
 # Project specific files
-SRC += matrix.c sn74x138.c
-#SRC += matrix.c #\
+#SRC += matrix.c sn74x138.c
+SRC += matrix.c #\
 #       common/bitc_led.c #\
 #       common/remote_kb.c
 

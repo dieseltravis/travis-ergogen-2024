@@ -20,7 +20,7 @@
     },
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0x0224",
+        "pid": "0x2024",
         "vid": "0xFEED"
     },
     "rgb_matrix": {
