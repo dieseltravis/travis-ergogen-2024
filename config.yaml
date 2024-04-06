@@ -1,11 +1,11 @@
 meta:
   engine: 4.0.5
   name: "travis-ergogen-2024"
-  version: &meta_version "2024.04.01"
-  date: "2024-04-01"
+  version: &meta_version "2024.04.05"
+  date: "2024-04-05"
   author: '"Travis Hardiman"'
   url: https://github.com/dieseltravis/travis-ergogen-2024
-  tags: [ "ergogen", "promicro", "keyboard", "cherrymx", "hotswap", "rgb" ]
+  tags: [ "ergogen", "promicro", "keyboard", "cherrymx", "hotswap", "rgb", "kb2040", "SN74HC138N" ]
 units:
   pp: U + 2
   # outer perimeter of board
@@ -907,7 +907,7 @@ pcbs:
           shift: [0, -2.75]
           #rotate: -90
       cap1: # 104
-        what: travis/CDiscD38W26P25
+        what: travis/CDiscD47W25P5
         params:
           P1: VCC
           P2: GND
@@ -915,7 +915,7 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
           # adjust to pin 1
-          shift: [(2.5 / 2), (21.34 / 2) + 3.25]
+          shift: [2.5, (21.34 / 2) + 3.5]
           rotate: 180
       dip1: # 74HC138N
         what: travis/DIP16W762
@@ -927,15 +927,15 @@ pcbs:
           p04: GND  #G2A E1
           p05: mux3 #G2B E2
           p06: VCC  #G1  E3
-          p07: col0 #Y7
+          p07: col7 #Y7
           p08: GND
-          p09: col1 #Y6
-          p10: col2 #Y5
-          p11: col3 #Y4
-          p12: col4 #Y3
-          p13: col5 #Y2
-          p14: col6 #Y1
-          p15: col7 #Y0
+          p09: col6 #Y6
+          p10: col5 #Y5
+          p11: col4 #Y4
+          p12: col3 #Y3
+          p13: col2 #Y2
+          p14: col1 #Y1
+          p15: col0 #Y0
           p16: VCC
         where:
           ref.aggregate.parts: [matrixl_outer_func, matrixl_ring_func]
@@ -943,7 +943,7 @@ pcbs:
           shift: [-(7.62 / 2), (21.34 / 2)]
           rotate: 0
       cap2: # 104
-        what: travis/CDiscD38W26P25
+        what: travis/CDiscD47W25P5
         params:
           P1: VCC
           P2: GND
@@ -951,7 +951,7 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]
           # adjust to pin 1
-          shift: [(2.5 / 2), (21.34 / 2) + 3.25]
+          shift: [2.5, (21.34 / 2) + 3.5]
           rotate: 180
       dip2: # 74HC138N
         what: travis/DIP16W762
@@ -963,15 +963,15 @@ pcbs:
           p04: GND   #G2A E1
           p05: GND   #G2B E2
           p06: mux3  #G1  E3
-          p07: col8  #Y7
+          p07: col15 #Y7
           p08: GND
-          p09: col9  #Y6
-          p10: col10 #Y5
-          p11: col11 #Y4
-          p12: col12 #Y3
-          p13: col13 #Y2
-          p14: col14 #Y1
-          p15: col15 #Y0
+          p09: col14 #Y6
+          p10: col13 #Y5
+          p11: col12 #Y4
+          p12: col11 #Y3
+          p13: col10 #Y2
+          p14: col9  #Y1
+          p15: col8  #Y0
           p16: VCC
         where:
           ref.aggregate.parts: [matrixr_outer_func, matrixr_ring_func]

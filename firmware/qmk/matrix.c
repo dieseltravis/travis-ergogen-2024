@@ -22,9 +22,6 @@
 // Column pins
 static const pin_t row_pins[MATRIX_ROWS] = MATRIX_ROW_PINS;
 static const pin_t col_pins[MATRIX_MUX_COLS] = MATRIX_COL_MUX_PINS;
-// map pins on mux to match actual columns
-//static const pin_t col_map[MATRIX_COLS] = { 7,  6,  5,  4,  3,  2, 1, 0, 
-//                                           15, 14, 13, 12, 11, 10, 9, 8 };
 
 // Internal functions
 static void init_pins(void) {

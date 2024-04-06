@@ -220,6 +220,7 @@ module.exports = {
       (stroke (width 0.2) (type solid)) (layer "B.SilkS"))
     (fp_line (start 8.89 15.24) (end 8.89 -17.78)
       (stroke (width 0.2) (type solid)) (layer "B.SilkS"))
+    ${'' /* I'm not sure what this is, a stylized R?
     (fp_poly
       (pts
         (xy 5.844635 -9.35097)
@@ -260,6 +261,7 @@ module.exports = {
         (xy 6.344635 -9.35097)
       )
       (stroke (width 0.15) (type solid)) (fill solid) (layer "B.SilkS"))
+    */}
     (fp_line (start -8.89 -17.78) (end -8.89 15.24)
       (stroke (width 0.2) (type solid)) (layer "F.SilkS"))
     (fp_line (start -8.89 15.24) (end 8.89 15.24)
@@ -274,6 +276,7 @@ module.exports = {
       (stroke (width 0.2) (type solid)) (layer "F.SilkS"))
     (fp_line (start 8.89 15.24) (end 8.89 -17.78)
       (stroke (width 0.2) (type solid)) (layer "F.SilkS"))
+      ${'' /* I'm not sure what this is, a stylized R?
     (fp_poly
       (pts
         (xy 4.531568 -9.36064)
@@ -314,6 +317,7 @@ module.exports = {
         (xy 4.831568 -8.76064)
       )
       (stroke (width 0.15) (type solid)) (fill solid) (layer "F.SilkS"))
+    */}
     (fp_line (start -3.683 -19.31) (end 3.683 -19.31)
       (stroke (width 0.2) (type solid)) (layer "Dwgs.User"))
     (fp_line (start -3.683 -14.23) (end -3.683 -19.31)
