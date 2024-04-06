@@ -163,8 +163,6 @@
                 {"matrix": [0, 11], "label":"F9", "x":12, "y":0},
                 {"matrix": [0, 12], "label":"F10", "x":13, "y":0},
                 {"matrix": [0, 13], "label":"F11", "x":14, "y":0},
-                {"matrix": [3, 13], "label":"F12", "x":15, "y":0},
-
                 {"matrix": [0, 14], "label":"Pause", "x":17, "y":0},
                 {"matrix": [0, 15], "label":"Prnt Scr", "x":18, "y":0},
 
@@ -223,6 +221,8 @@
                 {"matrix": [3, 10], "label":";", "x":11, "y":3},
                 {"matrix": [3, 11], "label":"'", "x":12, "y":3},
                 {"matrix": [3, 12], "label":"Enter", "x":13, "y":3, "w":1.5},
+
+                {"matrix": [3, 13], "label":"F12", "x":15, "y":0},
 
                 {"matrix": [3, 14], "label":"Home", "x":16, "y":3},
                 {"matrix": [3, 15], "label":"PgDn", "x":17, "y":3},
