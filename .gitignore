@@ -134,3 +134,6 @@ dist
 output/pcbs/_*
 output/pcbs/~*
 fp-info*
+
+backups/*
+.~*
