@@ -151,7 +151,7 @@ module.exports = {
   )
 )`;
     const diode_label = `
-(gr_text "${p.designator}D${index}" (at ${adjust_point((p.U / 2 - 1) - 1, -(p.U / 2 - 1.5) + (7.62 / 2))} 0) (layer F.SilkS)
+(gr_text "${p.designator}D${index}" (at ${adjust_point((p.U / 2 - 1) - 1, -(p.U / 2 - 1.5) + (7.62 / 2))} ${p.r}) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
 )`;
     const led = `
@@ -159,10 +159,10 @@ module.exports = {
   (layer B.Cu)
   (at ${adjust_point(0, 4.96)} ${isRtl ? 180 + p.r : p.r})
 
-  (fp_text reference "${p.designator}LED${index}" (at ${isRtl ? -4.75 : -5.25} 0 ${p.r + 90}) (layer B.SilkS) 
+  (fp_text reference "${p.designator}LED${index}" (at 0 ${isRtl ? 2.2 : -2.2} ${p.r}) (layer B.SilkS) 
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "SK6812mini-e" (at 0 ${isRtl ? 2.25 : -2.25} ${p.r}) (layer "B.Fab")
+  (fp_text value "SK6812mini-e" (at 0 ${isRtl ? 1.25 : -1.25} ${p.r}) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.125)))
   )
 
@@ -228,8 +228,11 @@ module.exports = {
   )
 )`;
     const led_label =`
-(gr_text "${p.led_this.name}" (at ${adjust_point((isRtl ? 2.7 : -2.7), -(-4.96 + (isRtl ? 0.7 : -0.7)))} 0) (layer F.SilkS)
+(gr_text "${p.led_this.name}" (at ${adjust_point((isRtl ? 2.7 : -2.7), -(-4.96 + (isRtl ? 0.7 : -0.7)))} ${p.r}) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify ${isRtl ? 'left' : 'right'}))
+)
+(gr_text "${p.led_this.name}" (at ${adjust_point((isRtl ? 3.7 : -3.7), -(-4.96 + (isRtl ? 0.7 : -0.7)))} ${p.r}) (layer B.SilkS)
+  (effects (font (size 0.8 0.8) (thickness 0.15)) (justify ${isRtl ? 'right' : 'left'} mirror))
 )`;
     const cap = `
 (module "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" (layer B.Cu)
@@ -266,7 +269,7 @@ module.exports = {
   )
 )`;
     const cap_label = `
-(gr_text "${p.designator}C${index}" (at ${adjust_point(0, 8.3)} 0) (layer F.SilkS)
+(gr_text "${p.designator}C${index}" (at ${adjust_point(0, 8.3)} ${p.r}) (layer F.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)))
 )`;
     const routes = `

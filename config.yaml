@@ -1102,7 +1102,7 @@ pcbs:
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
           shift: [0, -5]
       jlcpcb:
-        what: ceoloide/text
+        what: ceoloide/utility_text
         where: 
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
         params:
