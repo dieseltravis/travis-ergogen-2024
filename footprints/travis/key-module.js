@@ -159,7 +159,7 @@ module.exports = {
   (layer B.Cu)
   (at ${adjust_point(0, 4.96)} ${isRtl ? 180 + p.r : p.r})
 
-  (fp_text reference "${p.designator}LED${index}" (at 0 ${isRtl ? 2.2 : -2.2} ${p.r}) (layer B.SilkS) 
+  (fp_text reference "${p.led_this.name}-${p.rownet.name}-${p.colnet.name}" (at 0 ${isRtl ? 2.2 : -2.2} ${p.r}) (layer B.SilkS) hide
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
   (fp_text value "SK6812mini-e" (at 0 ${isRtl ? 1.25 : -1.25} ${p.r}) (layer "B.Fab")

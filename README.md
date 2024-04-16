@@ -1,5 +1,5 @@
 # Travis's Ergogen Keyboard 2024 #
-Built with Ergogen v4. *Alpha* quality!
+Built with Ergogen v4. *Beta* quality!
 
 ![keyboard plate outline](./output/outlines/plate.svg)
 
@@ -12,7 +12,7 @@ Built with Ergogen v4. *Alpha* quality!
 [![keyboard-layout-editor.com](./kle/travis-ergogen-2024.svg)](./kle/travis-ergogen-2024.json)
 
 ## Project Details ##
-* `/config.yaml`
+* `/config.yaml` Ergogen layout
 * `/package.json` yarn commands and metadata
 * `/output/outlines/` generated 2d models
 * `/output/cases/` generated 3d models
