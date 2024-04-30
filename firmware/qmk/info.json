@@ -10,14 +10,15 @@
     "processor": "atmega32u4",
     "bootloader": "atmel-dfu",
     "debounce": 10,
-    "diode_direction": "ROW2COL",
+    "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
         "command": false,
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "nkro": true,
+        "rgblight": true
     },
     "usb": {
         "device_version": "1.0.0",

@@ -11,6 +11,7 @@ module.exports = {
     led_next: {type: 'net', value: ''},
     power: {type: 'net', value: 'RAW'},
     gnd: {type: 'net', value: 'GND'},
+    iscol2row: true,
     KISYS3DMOD: '${KISYS3DMOD}',
     SCOTTOKEEBS_KICAD: '${SCOTTOKEEBS_KICAD}'
   },
@@ -81,16 +82,18 @@ module.exports = {
 (gr_text "${p.name.name}\\n${p.colnet.name} ${p.rownet.name}" (at ${adjust_point(-p.U/2 + 0.5, -p.U/2 + 0.5)}  ${p.r}) (layer B.SilkS)
   (effects (font (size 0.8 0.8) (thickness 0.15)) (justify top right mirror))
 )`;
+    const dy = p.iscol2row ? -(p.U / 2 - 1.5) : (p.U / 2 - 1.5 - 7.62);
+    const dr = p.iscol2row ? p.r + 270 : p.r + 90;
     const diode = `
 (module "ScottoKeebs_Components:Diode_DO-35" (layer "B.Cu")
   (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
   (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
-  (at ${adjust_point((p.U / 2 - 1), -(p.U / 2 - 1.5))} ${p.r + 270})
+  (at ${adjust_point((p.U / 2 - 1), dy)} ${dr})
   
-  (fp_text reference "${p.designator}D${index}" (at 5.985 1.921 ${p.r + 270}) (layer "B.SilkS") 
+  (fp_text reference "${p.designator}D${index}" (at 5.985 1.921 ${dr}) (layer "B.SilkS") 
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
-  (fp_text value "1N4148" (at 11.065 0 ${p.r + 270}) (layer "B.Fab")
+  (fp_text value "1N4148" (at ${p.iscol2row ? 11.065 : 7.62/2 } 0 ${dr}) (layer "B.Fab")
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
 
@@ -141,8 +144,8 @@ module.exports = {
   (fp_line (start 7.62 0) (end 5.81 0)
     (stroke (width 0.1) (type solid)) (layer "B.Fab") )
   
-  (pad 1 thru_hole rect (at 0 0 ${p.r + 270}) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${p.rownet.str})
-  (pad 2 thru_hole oval (at 7.62 0 ${p.r + 270}) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${p.name.str})
+  (pad 1 thru_hole rect (at 0 0 ${dr}) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${p.iscol2row ? p.rownet.str : p.name.str})
+  (pad 2 thru_hole oval (at 7.62 0 ${dr}) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") ${p.iscol2row ? p.name.str : p.rownet.str})
 
   (model "${p.SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
     (offset (xyz 0 0 0))

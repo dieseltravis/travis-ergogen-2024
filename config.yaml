@@ -838,6 +838,7 @@ pcbs:
           rownet: "{{row_net}}"
           led_this: "{{key.led_this}}"
           led_next: "{{key.led_next}}"
+          iscol2row: false
       keymod-even:
         what: travis/key-module
         where: meta.tags ~ /row_even/
@@ -849,6 +850,7 @@ pcbs:
           rownet: "{{row_net}}"
           led_this: "{{key.led_this}}"
           led_next: "{{key.led_next}}"
+          iscol2row: false
       rgbr: # 470 ohm resistor
         what: travis/RAxialL6D25P10H
         params:
@@ -1008,12 +1010,12 @@ pcbs:
         what: travis/ScottoKeebs-Diode_DO-35 #diode
         where: 
           ref.aggregate.parts: [matrixl_inner_top, matrixr_inner_top]
-          shift: [-6, 15.75]
-          rotate: -90
+          shift: [-6, 16 - 7.62]
+          rotate: 90
         params:
           side: B
-          from: scr_to
-          to: row0
+          from: row0
+          to: scr_to
       rotary:
         what: travis/ec11
         params:
@@ -1030,12 +1032,12 @@ pcbs:
         what: travis/ScottoKeebs-Diode_DO-35 #diode
         where: 
           ref.aggregate.parts: [matrixl_inner_bottom, matrixr_inner_bottom, matrixl_inner_home, matrixr_inner_home]
-          shift: [-4.5, -14.5]
-          rotate: 90
+          shift: [-4.5, -14.75 + 7.62]
+          rotate: -90
         params:
           side: B
-          from: enc_to
-          to: row5
+          from: row5
+          to: enc_to
       # stabs
       spacel2u:
         what: travis/ScottoKeebs-Stabilizer_MX_2u
@@ -1121,7 +1123,7 @@ pcbs:
         where: 
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
         adjust:
-          shift: [0, -3]
+          shift: [0, 3]
       version:
         what: travis/text
         where: 
