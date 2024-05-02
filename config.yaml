@@ -27,6 +27,12 @@ units:
   spaceshiftx: -1.5
   # stab Y adjust
   staby: 0.62
+  # stabs
+  stabilizer_width: 7 
+  stabilizer_height: 16
+  stabilizer_offset: 0 # This means south stabs, use `orient` to rotate them for north facing scenarios
+  stabilizer_spacing_3u: u * ((3 - 1) / 2)
+  stabilizer_spacing_2u: 23.86 / 2 # 0.94in / 2
 points:
   zones:
     matrixl:
@@ -152,6 +158,7 @@ points:
             mod:
               shift: [spaceshiftx, 0]
               width: spacew
+              tags: [key, 2u_stabilizers]
             mod.key.led_next: LED_34
             mod.key.led_this: LED_33
             bottom:
@@ -208,6 +215,7 @@ points:
             mod:
               shift: [-spaceshiftx, 0]
               width: spacew
+              tags: [key, 2u_stabilizers]
             mod.key.led_next: LED_35
             mod.key.led_this: LED_34
             bottom.shift: [spaceshiftx, 0]
@@ -776,12 +784,27 @@ outlines:
       where:
         ref: matrixl_outer_mod
         shift: [-0.5U - 3, 0]
+  2u_stabilizer: # This creates the stabilizer, you just need to use its name in a `where` clause of another outline
+    - operation: stack
+      where: 2u_stabilizers # Set this tag on the keys you want
+      what: rectangle
+      size: [stabilizer_width, stabilizer_height]
+      adjust:
+        shift: [stabilizer_spacing_2u, stabilizer_offset]
+    - operation: stack
+      where: 2u_stabilizers
+      what: rectangle
+      size: [stabilizer_width, stabilizer_height]
+      adjust:
+        shift: [-stabilizer_spacing_2u, stabilizer_offset]
   plate:
     - name: board
     - operation: subtract
       name: keyholes
     - operation: subtract
       name: mounting
+    - operation: subtract
+      name: 2u_stabilizer
 cases:
   bottom:
     - name: board3d
