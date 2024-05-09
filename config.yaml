@@ -1,10 +1,10 @@
 meta:
-  engine: 4.0.5
+  engine: 4.1.0
   name: "travis-ergogen-2024"
-  version: &meta_version "2024.04.30"
-  date: "2024-04-30"
-  author: '"Travis Hardiman"'
-  url: https://github.com/dieseltravis/travis-ergogen-2024
+  version: &meta_version "2024.05.07"
+  date: "2024-05-07"
+  author: 'Travis Hardiman'
+  url: &url https://github.com/dieseltravis/travis-ergogen-2024
   tags: [ "ergogen", "promicro", "keyboard", "cherrymx", "hotswap", "rgb", "kb2040", "SN74HC138N" ]
 units:
   pp: U + 2
@@ -158,7 +158,7 @@ points:
             mod:
               shift: [spaceshiftx, 0]
               width: spacew
-              tags: [key, 2u_stabilizers]
+              tags: [key, 2u_stabilizers, row_odd]
             mod.key.led_next: LED_34
             mod.key.led_this: LED_33
             bottom:
@@ -169,11 +169,11 @@ points:
             home.key.led_this: LED_22
             top.key.led_next: LED_12
             top.key.led_this: LED_11
-            #num.shift: [0, 0]
             num.key.led_next: LED_11
             num.key.led_this: LED_10
             func.key.led_next: LED_1
             func.key.led_this: LED_0  # resistor to P9 on promicro
+            func.tags: [key, led_first]
       rows:
         mod:
           tags: row_odd
@@ -215,7 +215,7 @@ points:
             mod:
               shift: [-spaceshiftx, 0]
               width: spacew
-              tags: [key, 2u_stabilizers]
+              tags: [key, 2u_stabilizers, row_odd]
             mod.key.led_next: LED_35
             mod.key.led_this: LED_34
             bottom.shift: [spaceshiftx, 0]
@@ -874,6 +874,29 @@ pcbs:
           led_this: "{{key.led_this}}"
           led_next: "{{key.led_next}}"
           iscol2row: false
+      keymod-zero:
+        what: travis/key-module
+        where: meta.tags ~ /led_first/
+        params:
+          U: U
+          dir: 'RTL'
+          name: "{{name}}"
+          colnet: "{{column_net}}"
+          rownet: "{{row_net}}"
+          led_this: "{{key.led_this}}"
+          led_next: "{{key.led_next}}"
+          power: RAWD
+          iscol2row: false
+      ldiode:
+        what: travis/ScottoKeebs-Diode_DO-35 #diode
+        where: 
+          ref: matrixl_inner_func
+          shift: [-U / 2 + 1.25, -1]
+          rotate: 270
+        params:
+          side: B
+          from: RAW
+          to: RAWD
       rgbr: # 470 ohm resistor
         what: travis/RAxialL6D25P10H
         params:
@@ -890,7 +913,8 @@ pcbs:
         params:
           P1: RAW
           P2: GND
-          side: B
+          side: F
+          bend: 90
           value: "6.3V 1000uF"
         where:
           ref.aggregate.parts: [matrixl_inner_func, matrixr_inner_func]
@@ -1126,19 +1150,22 @@ pcbs:
         where:
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
           shift: [0, -5]
-      jlcpcb:
+      pcbid:
         what: ceoloide/utility_text
         where: 
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
         params:
           text: JLCJLCJLCJLC
+          #text: JLCJLCJLCJLC
           reversible: true
         adjust:
           shift: [0, -8]
       ergologo:
-        what: travis/ergogen
+        what: ceoloide/utility_ergogen_logo
         where: 
           ref.aggregate.parts: [matrixl_inner_num, matrixr_inner_num]
+        params:
+          scale: 1.6
         adjust:
           shift: [0, -3]
       travis:
@@ -1148,14 +1175,45 @@ pcbs:
         adjust:
           shift: [0, 3]
       version:
-        what: travis/text
+        what: ceoloide/utility_text
         where: 
           ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
         params:
           #face: "CaskaydiaMono NFP"
           text: *meta_version
-          size: 0.9
+          width: 0.9
+          height: 0.9
         adjust:
           shift: [0, -1.25]
+      site:
+        what: ceoloide/utility_text
+        where: 
+          ref.aggregate.parts: [matrixl_inner_mod, matrixr_inner_mod]
+        params:
+          text: *url
+          reversible: true
+          width: 0.8
+          height: 0.8
+        adjust:
+          shift: [0, -10.5]
+      # grounds
+      background:
+        what: ceoloide/utility_filled_zone
+        params:
+          side: "B"
+          name: "back ground"
+          connect_pads: "yes"
+          #points: {{outlines.board3d.points}}
+          points: [[15, 78], [405, 78], [405, 228], [15, 228]]
+      foreground:
+        what: ceoloide/utility_filled_zone
+        params:
+          side: "F"
+          name: "fore ground"
+          connect_pads: "yes"
+          fill_type: "hatch"
+          hatch_orientation: 45
+          #points: {{outlines.board3d.points}}
+          points: [[15, 78], [405, 78], [405, 228], [15, 228]]
 
     references: false

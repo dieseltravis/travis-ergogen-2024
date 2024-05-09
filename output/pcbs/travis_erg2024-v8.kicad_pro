@@ -51,7 +51,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -171,7 +177,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.5,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -198,7 +208,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -220,7 +235,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "travis_erg2024.kicad_pro",
+    "filename": "travis_erg2024-v8.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -419,19 +434,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "matrixl_inner_mod"
+        "pattern": "matrixl_inner_home"
       },
       {
         "netclass": "Default",
         "pattern": "col5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "LED_34"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "matrixl_inner_home"
       },
       {
         "netclass": "Default",
@@ -447,19 +454,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "matrixr_inner_mod"
+        "pattern": "matrixr_inner_home"
       },
       {
         "netclass": "Default",
         "pattern": "col6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "LED_35"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "matrixr_inner_home"
       },
       {
         "netclass": "Default",
@@ -508,6 +507,10 @@
       {
         "netclass": "Default",
         "pattern": "col8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "LED_35"
       },
       {
         "netclass": "Default",

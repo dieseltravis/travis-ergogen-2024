@@ -5,6 +5,7 @@ module.exports = {
     params: {
         designator: 'C',
         side: 'F',
+        bend: 0,
         value: 'C_Radial_D6.3mm_H11.0mm_P2.50mm',
         P1: { type: 'net', value: 'VCC' },
         P2: { type: 'net', value: 'GND' },
@@ -32,7 +33,7 @@ module.exports = {
   (model ${p.KISYS3DMOD}/Capacitor_THT.3dshapes/C_Radial_D6.3mm_H11.0mm_P2.50mm.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz ${p.bend} 0 0))
   )
 )`
 };
