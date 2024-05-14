@@ -7,6 +7,7 @@ module.exports = {
         // only F for now: side: 'F',
         refpos: [0, 1.625],
         valpos: [0, 0],
+        offset3d: [0, 0, 0],
         // this footprint is different from Ergogen promicro
         // pads are mapped to promicro pin AVR names by default
         // Left (top to bottom):            // alt pin names:
@@ -352,7 +353,7 @@ module.exports = {
     (pad "23" thru_hole circle (at 7.62 -11.43 270) (size 1.7526 1.7526) (drill 1.0922) (layers "*.Cu" "*.SilkS" "*.Mask") ${ p.P23.str })
     (pad "24" thru_hole circle (at 7.62 -13.97 270) (size 1.7526 1.7526) (drill 1.0922) (layers "*.Cu" "*.SilkS" "*.Mask") ${ p.P24.str })
     (model "${p.SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Arduino_Pro_Micro.step"
-      (offset (xyz 0 0 0))
+      (offset (xyz ${pos(p.offset3d)}))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )

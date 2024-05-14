@@ -16,7 +16,7 @@ module.exports = {
     (attr smd)
     ${p.at /* parametric position */}
     (fp_text reference "${p.ref}" (at 0 -1.68) (layer ${p.side}.SilkS) ${p.ref_hide}
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify ${p.side === 'B' ? 'mirror' : ''}))
     )
     (fp_text value C_0805_2012Metric (at 0 1.68) (layer ${p.side}.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
