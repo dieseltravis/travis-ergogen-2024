@@ -72,7 +72,7 @@ module.exports = {
         (stroke (width 0.1) (type solid)) (layer "${p.side}.Fab")(uuid "3bc3d0de-5db9-4c4e-8194-c3b1a2476155"))
       (fp_line (start 1.6 0.8) (end 1.6 -0.8)
         (stroke (width 0.1) (type solid)) (layer "${p.side}.Fab")(uuid "69e4cf94-de7b-4137-be9e-8040b07d447d"))
-      (fp_text user "${'${REFERENCE}'}" (at 0 0 0) (layer "${p.side}.Fab")(uuid "5dfef82a-8485-4c7c-abcc-723721b54c46")
+      (fp_text user "${'${REFERENCE}'}" (at 0 0 0) (layer "${p.side}.Fab")(uuid "5dfef82a-8485-4c7c-abcc-723721b54c46") (hide yes)
         (effects (font (size 0.8 0.8) (thickness 0.12)))
       )
       (pad "1" smd roundrect (at -1.4 0) (size 1.25 1.75) (layers "${p.side}.Cu" "${p.side}.Paste" "${p.side}.Mask") (roundrect_rratio 0.2)

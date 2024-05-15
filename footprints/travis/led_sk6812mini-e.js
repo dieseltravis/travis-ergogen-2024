@@ -134,7 +134,7 @@ module.exports = {
         (fp_text reference "${p.ref}" (at ${pos(p.refpos)}) (layer ${p.side}.SilkS) ${p.ref_hide}
           (effects (font (size 1 1) (thickness 0.15)) (justify ${p.side === 'B' ? ' mirror' : ''}))
         )
-        (fp_text value "${p.value}" (at ${pos(p.valpos)}) (layer "${p.side}.Fab")
+        (fp_text value "${p.value}" (at ${pos(p.valpos)}) (layer "${p.side}.Fab") (hide yes)
           (effects (font (size 0.8 0.8) (thickness 0.15)))
         )
         (fp_line (start -1.6 -1.4) (end 1.6 -1.4) (layer Dwgs.User) (width 0.12))

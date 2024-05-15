@@ -26,7 +26,7 @@ module.exports = {
       (tags "capacitor")
 
       ${p.at /* parametric position */}
-      (property "Reference" "${p.ref}" (at ${pos(p.refpos)}) (layer "${p.side}.SilkS")(uuid "83cc328c-b7a6-47b2-9ffa-7ac49f4468d0")  ${p.ref_hide}
+      (property "Reference" "${p.ref}" (at ${pos(p.refpos)}) (layer "${p.side}.SilkS")(uuid "83cc328c-b7a6-47b2-9ffa-7ac49f4468d0")
         (effects (font (size 1 1) (thickness 0.15)) (justify ${p.side === 'B' ? 'mirror' : ''}))
       )
       (property "Value" "${p.value}" (at ${pos(p.valpos)}) (layer "${p.side}.Fab")(uuid "136faa66-2c23-42b0-a119-0aec3575d644") (hide yes)

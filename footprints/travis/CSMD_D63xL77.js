@@ -8,19 +8,29 @@ module.exports = {
         value: 'CP_Elec_6.3x7.7',
         P1: { type: 'net', value: 'VCC' },
         P2: { type: 'net', value: 'GND' },
+        refpos: [0, -4.35],
+        valpos: [0, 4.35],
         KICAD8_3DMODEL_DIR: '${KICAD8_3DMODEL_DIR}'
     },
-    body: p => `
+    body: p => {
+      const pos = (arr) => arr.join(' ');
+      if (p.refpos.length === 2) {
+        p.refpos.push(p.r);
+      }
+      if (p.valpos.length === 2) {
+        p.valpos.push(p.r);
+      }
+      return `
     (footprint "CP_Elec_6.3x7.7" (version 20240108) (generator "pcbnew") (generator_version "8.0")
     (layer "F.Cu")
     (descr "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x7.7mm")
     (tags "capacitor electrolytic")
 
     ${p.at /* parametric position */}
-    (property "Reference" "${p.ref}" (at 0 -4.35 0) (layer "F.SilkS")(uuid "6f925f8c-11df-49e7-9944-3b52e654cd36") ${p.ref_hide}
+    (property "Reference" "${p.ref}" (at ${pos(p.refpos)}) (layer "F.SilkS")(uuid "6f925f8c-11df-49e7-9944-3b52e654cd36")
       (effects (font (size 1 1) (thickness 0.15)) (justify ${p.side === 'B' ? 'mirror' : ''}))
     )
-    (property "Value" "${p.value}" (at 0 4.35 0) (layer "F.Fab")(uuid "6283908f-953d-4aee-b5e5-b87fc2e1e053") (hide yes)
+    (property "Value" "${p.value}" (at ${pos(p.valpos)}) (layer "F.Fab")(uuid "6283908f-953d-4aee-b5e5-b87fc2e1e053") (hide yes)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (property "Footprint" "CP_Elec_6.3x7.7" (at 0 0 0)(unlocked yes)
@@ -119,5 +129,6 @@ module.exports = {
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-  )`
+  )`;
+  }
 };
