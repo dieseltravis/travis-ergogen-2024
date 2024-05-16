@@ -75,10 +75,10 @@ module.exports = {
       (fp_text user "${'${REFERENCE}'}" (at 0 0 0) (layer "${p.side}.Fab")(uuid "5dfef82a-8485-4c7c-abcc-723721b54c46") (hide yes)
         (effects (font (size 0.8 0.8) (thickness 0.12)))
       )
-      (pad "1" smd roundrect (at -1.4 0) (size 1.25 1.75) (layers "${p.side}.Cu" "${p.side}.Paste" "${p.side}.Mask") (roundrect_rratio 0.2)
+      (pad "1" smd roundrect (at -1.4 0 ${p.r}) (size 1.25 1.75) (layers "${p.side}.Cu" "${p.side}.Paste" "${p.side}.Mask") (roundrect_rratio 0.2)
     (uuid "f55b2062-702a-4421-9ce1-b716bf19bec5") ${ p.to.str }
       )
-      (pad "2" smd roundrect (at 1.4 0) (size 1.25 1.75) (layers "${p.side}.Cu" "${p.side}.Paste" "${p.side}.Mask") (roundrect_rratio 0.2)
+      (pad "2" smd roundrect (at 1.4 0 ${p.r}) (size 1.25 1.75) (layers "${p.side}.Cu" "${p.side}.Paste" "${p.side}.Mask") (roundrect_rratio 0.2)
     (uuid "f6582e0a-091d-48a5-91b1-a6e76689891f") ${ p.from.str }
       )
       (model "${p.KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_1206_3216Metric.wrl"

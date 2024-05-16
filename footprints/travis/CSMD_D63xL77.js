@@ -118,10 +118,10 @@ module.exports = {
     (fp_text user "${'${REFERENCE}'}" (at 0 0 0) (layer "F.Fab")(uuid "0e0d1bce-9e8b-45fb-8e28-ccb8914a41b0")
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad "1" smd roundrect (at -2.7 0) (size 3.5 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15625)
+    (pad "1" smd roundrect (at -2.7 0 ${p.r}) (size 3.5 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15625)
   (uuid "1f8f5016-2d95-41e4-bab5-9bababdd56c4") ${p.P1.str}
     )
-    (pad "2" smd roundrect (at 2.7 0) (size 3.5 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15625)
+    (pad "2" smd roundrect (at 2.7 0 ${p.r}) (size 3.5 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15625)
   (uuid "7fb28d3d-e2f6-4fc2-99fe-bf3b4226934f") ${p.P2.str}
     )
     (model "${p.KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x7.7.wrl"
