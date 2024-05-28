@@ -8,9 +8,7 @@
     "keymap": "dieseltravis_travisergogen2024_layout_base_default",
     "url": "https://github.com/dieseltravis/travis-ergogen-2024",
     "processor": "atmega32u4",
-    "//1bootloader": "atmel-dfu",
     "bootloader": "caterina",
-    "//3bootloader": "rp2040",
     "debounce": 10,
     "diode_direction": "COL2ROW",
     "features": {
@@ -23,9 +21,9 @@
         "rgblight": false
     },
     "usb": {
-        "device_version": "1.0.2",
+        "device_version": "1.0.3",
         "pid": "0x2024",
-        "vid": "0xFEED"
+        "vid": "0x1979"
     },
     "ws2812": {
         "pin": "B5"
