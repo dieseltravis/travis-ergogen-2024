@@ -5,6 +5,7 @@ CONVERT_TO = kb2040
 # Bootloader selection?
 #BOOTLOADER = atmel-dfu
 #BOOTLOADER = rp2040
+#BOOTLOADER = caterina
 
 # Build Options
 #   change yes to no to disable
@@ -15,14 +16,16 @@ CONVERT_TO = kb2040
 #CONSOLE_ENABLE = no         # Console for debug
 #COMMAND_ENABLE = no         # Commands for debug and configuration
 #NKRO_ENABLE = yes           # Enable N-Key Rollover
-#BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 #RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-#RGB_MATRIX_ENABLE = yes
+
+BACKLIGHT_ENABLE = no        # Enable keyboard backlight functionality
+RGB_MATRIX_ENABLE = yes
 #RGB_MATRIX_DRIVER = ws2812
 #WS2812_DRIVER_REQUIRED = yes
 #WS2812_DRIVER = vendor
 AUDIO_ENABLE = no           # Audio output
 ENCODER_ENABLE = yes        # Use rotary encoder
+ENCODER_MAP_ENABLE = yes
 #LTO_ENABLE = yes            # Link-time optimization
 CUSTOM_MATRIX = lite        # Lite custom matrix
 
@@ -35,3 +38,5 @@ SRC += matrix.c #\
 #QUANTUM_LIB_SRC += uart.c
 # if using uart, use this:
 #UART_DRIVER_REQUIRED = yes
+
+DEFAULT_FOLDER = dieseltravis/travisergogen2024

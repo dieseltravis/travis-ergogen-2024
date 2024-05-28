@@ -42,6 +42,7 @@ Built with Ergogen v4. *Beta* quality!
 * Other helpful build guides:
     * ceoloide's corney-island build https://github.com/ceoloide/corney-island
     * zzeneg's stront40 https://github.com/zzeneg/stront/tree/stront40
+    * Minecatr's Splinar+ https://github.com/Minecatr/keyboards/
     * Kimiko Build Guide https://keycapsss.com/help/kimiko/buildguide_en
     * Nullbits Nibble https://github.com/nullbitsco/docs/blob/main/nibble/build_guide_en.md
     * Lagom https://github.com/mohoyt/lagom/

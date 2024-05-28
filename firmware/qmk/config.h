@@ -45,7 +45,7 @@
 /* Optional encoder pins */
 #define ENCODERS_PAD_A { E6, B2 }
 #define ENCODERS_PAD_B { D7, B6 }
-//#define ENCODER_RESOLUTIONS { 4, 2 }
+#define ENCODER_RESOLUTIONS { 2, 2 }
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
