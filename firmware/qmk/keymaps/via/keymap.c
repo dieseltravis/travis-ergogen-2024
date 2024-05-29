@@ -1,7 +1,7 @@
 // Copyright 2021 Jay Greco
 // Copyright 2022 mohoyt
 // Copyright 2022 QMK (James Young @noroadsleft)
-// Copyright 2024 Travis Hardiman
+// Copyright 2024 Travis Hardiman (@dieseltravis)
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include QMK_KEYBOARD_H
@@ -13,10 +13,8 @@ enum layers {
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [_BASE] = { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN), ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  },
-    [_FUNC] = { ENCODER_CCW_CW(RGB_HUD, RGB_HUI),           ENCODER_CCW_CW(RGB_SAD, RGB_SAI)  },
-    //[2] = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI),           ENCODER_CCW_CW(RGB_SPD, RGB_SPI)  },
-    //[3] = { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD),          ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
+    [_BASE] = { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN), ENCODER_CCW_CW(KC_MS_WH_LEFT, KC_MS_WH_RIGHT) },
+    [_FUNC] = { ENCODER_CCW_CW(KC_VOLD,     KC_VOLU),       ENCODER_CCW_CW(RGB_VAD, RGB_VAI) }
 };
 #endif
 
