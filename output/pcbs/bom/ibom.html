@@ -1174,7 +1174,7 @@ function initUtils() {
     .concat(units.prefixes.nano)
     .concat(units.prefixes.pico);
   var allUnits = units.unitsShort.concat(units.unitsLong);
-  units.valueRegex = new RegExp("^([0-9\.]+)" +
+  units.valueRegex = new RegExp("^([0-9.]+)" +
     "\\s*(" + allPrefixes.join("|") + ")?" +
     "(" + allUnits.join("|") + ")?" +
     "(\\b.*)?$", "");
