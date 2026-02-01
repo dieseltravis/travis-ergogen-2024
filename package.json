@@ -33,10 +33,10 @@
     "url": "https://github.com/dieseltravis/travis-ergogen-2024"
   },
   "dependencies": {
-    "ergogen": "^4.0.5"
+    "ergogen": "^4.2.1"
   },
   "devDependencies": {
-    "dxf": "^5.1.0",
+    "dxf": "^5.3.1",
     "yaml-lint": "^1.7.0"
   }
 }

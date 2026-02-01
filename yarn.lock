@@ -175,7 +175,7 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dxf@^5.1.0:
+dxf@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/dxf/-/dxf-5.3.1.tgz#6662505029817f9c07e7415f470a980e5a677ca2"
   integrity sha512-20X9WaPisX6ssBoJ0Ek+efGUKBHL5j+VwiyBUrbEN6/dISediyrLDFk98KybqzSMw4EPtH5cHKUFBDgQASx3SQ==
@@ -189,7 +189,7 @@ emoji-regex@^8.0.0:
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
   integrity sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
 
-ergogen@^4.0.5:
+ergogen@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/ergogen/-/ergogen-4.2.1.tgz#d2d17b838632bfc372566b98e5e4832b3d0f2ea2"
   integrity sha512-hmefdWjVuOuxWQWHzVq+piBRP+3BdqwN/wl625ZCZSL/wlKXQaAOMWJOn/n3l1s4/9KLfKVOwcEkOz7M6qJ25Q==
