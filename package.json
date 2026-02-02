@@ -33,7 +33,8 @@
     "url": "https://github.com/dieseltravis/travis-ergogen-2024"
   },
   "dependencies": {
-    "ergogen": "^4.2.1"
+    "ergogen": "^4.2.1",
+    "makerjs": "0.19.2"
   },
   "devDependencies": {
     "dxf": "^5.3.1",
